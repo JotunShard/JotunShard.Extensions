@@ -1,0 +1,74 @@
+﻿<#@ template language="C#" #>
+using JetBrains.Annotations;
+using System;
+
+namespace JotunShard.Extensions
+{
+    public static class Delegates
+    {<#
+var typePrefix = "TArg";
+var argPrefix = "arg";
+var maxArgs = 16;
+
+var itemSep = ", ";
+var globalTypesLine = string.Empty;
+var globalValuesLine = string.Empty;
+var resultTypeLine = string.Empty;
+var paramLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    var typesLine = globalTypesLine;
+    var argsLine = string.Empty;
+    var valuesLine = globalValuesLine;
+    for (var innerIndex = index; innerIndex <= maxArgs; ++innerIndex)
+    {
+        typesLine += typePrefix + innerIndex + itemSep;
+        argsLine += itemSep + typePrefix + innerIndex + " " + argPrefix + innerIndex;
+        valuesLine += itemSep + argPrefix + innerIndex;
+#>
+
+        public static Func<<#=resultTypeLine#>TResult> Bind<<#=typesLine#>TResult>(
+            [NotNull] this Func<<#=typesLine#>TResult> func<#=argsLine#>)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => func(<#=valuesLine.Substring(2)#>);
+        }
+<#
+    }
+    globalTypesLine += typePrefix + index + itemSep;
+    globalValuesLine += itemSep + argPrefix + index;
+    resultTypeLine += typePrefix + index + itemSep;
+    paramLine += itemSep + argPrefix + index;
+}
+globalTypesLine = string.Empty;
+globalValuesLine = string.Empty;
+resultTypeLine = string.Empty;
+paramLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    var typesLine = globalTypesLine;
+    var argsLine = string.Empty;
+    var valuesLine = globalValuesLine;
+    for (var innerIndex = index; innerIndex <= maxArgs; ++innerIndex)
+    {
+        typesLine += itemSep + typePrefix + innerIndex;
+        argsLine += itemSep + typePrefix + innerIndex + " " + argPrefix + innerIndex;
+        valuesLine += itemSep + argPrefix + innerIndex;
+#>
+
+        public static Action<#=resultTypeLine.Length == 0 ? "" : "<" + resultTypeLine.Substring(2) + ">"#> Bind<<#=typesLine.Substring(2)#>>(
+            [NotNull] this Action<<#=typesLine.Substring(2)#>> act<#=argsLine#>)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => act(<#=valuesLine.Substring(2)#>);
+        }
+<#
+    }
+    globalTypesLine += itemSep + typePrefix + index;
+    globalValuesLine += itemSep + argPrefix + index;
+    resultTypeLine += itemSep + typePrefix + index;
+    paramLine += itemSep + argPrefix + index;
+}
+#>
+    }
+}

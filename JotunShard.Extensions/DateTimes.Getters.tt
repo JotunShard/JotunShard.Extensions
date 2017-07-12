@@ -1,0 +1,66 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Reflection" #>
+using System;
+using System.Globalization;
+
+namespace JotunShard.Extensions
+{
+    public static partial class DateTimes
+    {<#
+var calendarMethods = typeof(Calendar).GetMethods(BindingFlags.Public | BindingFlags.Instance);
+foreach (var m in calendarMethods)
+{
+    if (m.GetParameters().Any() && m.GetParameters().All(p => p.ParameterType == typeof(DateTime)))
+    {
+        var returnTypeName = m.ReturnType.Name;
+        switch (returnTypeName)
+        {
+            case "Int32":
+                returnTypeName = "int";
+                break;
+            case "Double":
+                returnTypeName = "double";
+                break;
+        }
+#>
+
+        public static <#= returnTypeName #> <#= m.Name #>(this DateTime value, Calendar calendar)
+            => (calendar ?? CultureInfo.CurrentCulture.Calendar).<#= m.Name #>(value);
+
+        public static <#= returnTypeName #> <#= m.Name #>(this DateTime value, CultureInfo culture = null)
+            => value.<#= m.Name #>((culture ?? CultureInfo.CurrentCulture).Calendar);
+<#
+    }
+}
+var instanceProperties = typeof(DateTime).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+foreach (var p in instanceProperties)
+{
+    if (calendarMethods.Any(m => m.Name == "Get" + p.Name))
+    {
+#>
+
+        public static bool IsSame<#= p.Name #>(this DateTime value, Calendar calendar)
+        {
+            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
+            return calendar.Get<#= p.Name #>(value) == calendar.Get<#= p.Name #>(DateTime.Now);
+        }
+
+        public static bool IsSame<#= p.Name #>(this DateTime value, CultureInfo culture = null)
+            => value.IsSame<#= p.Name #>((culture ?? CultureInfo.CurrentCulture).Calendar);
+<#
+    }
+    else
+    {
+#>
+
+        public static bool IsSame<#= p.Name #>(this DateTime value)
+            => value.<#= p.Name #> == DateTime.Now.<#= p.Name #>;
+<#
+    }
+}
+#>
+    }
+}
