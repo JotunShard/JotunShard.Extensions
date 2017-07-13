@@ -13,7 +13,7 @@
 					]
 				}
 			],
-			"dest": "doc/api"
+			"dest": "../doc/api"
 		}
 	],
 	"build": {
