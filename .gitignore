@@ -261,4 +261,5 @@ __pycache__/
 *.pyc
 
 # DocFX
-/src/_site
+/doc/log.txt
+/doc/_site

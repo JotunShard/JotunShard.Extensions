@@ -2,13 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <DocfxConfigFile>..\docfx.json</DocfxConfigFile>
+    <LogFile>..\doc\log.txt</LogFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="_site\**" />
-    <EmbeddedResource Remove="_site\**" />
-    <None Remove="_site\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Remove="log.txt" />
