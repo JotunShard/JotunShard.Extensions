@@ -263,3 +263,6 @@ __pycache__/
 # DocFX
 /doc/log.txt
 /doc/_site
+
+# AxoCover
+/.axoCover/runs
