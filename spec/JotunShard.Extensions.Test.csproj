@@ -60,7 +60,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JotunShard.Extensions\JotunShard.Extensions.csproj">
+    <ProjectReference Include="..\src\JotunShard.Extensions.csproj">
       <Project>{3ec4fa5b-0fa4-4975-9a52-28865c450c7d}</Project>
       <Name>JotunShard.Extensions</Name>
     </ProjectReference>
