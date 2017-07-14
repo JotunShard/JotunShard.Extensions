@@ -3,63 +3,63 @@
 		{
 			"src": [
 				{
+					"src": "../",
 					"files": [
 						"src/**.csproj"
 					],
 					"exclude": [
 						"**/obj/**",
-						"**/bin/**",
-						"doc/_site/**"
+						"**/bin/**"
 					]
 				}
 			],
-			"dest": "../doc/api"
+			"dest": "api"
 		}
 	],
 	"build": {
 		"content": [
 			{
 				"files": [
-					"doc/api/**.yml",
-					"doc/api/index.md"
+					"api/**.yml",
+					"api/index.md"
 				]
 			},
 			{
 				"files": [
-					"doc/articles/**.md",
-					"doc/articles/**/toc.yml",
-					"doc/toc.yml",
-					"doc/*.md"
+					"articles/**.md",
+					"articles/**/toc.yml",
+					"toc.yml",
+					"*.md"
 				],
 				"exclude": [
 					"obj/**",
-					"doc/_site/**"
+					"_site/**"
 				]
 			}
 		],
 		"resource": [
 			{
 				"files": [
-					"doc/images/**"
+					"images/**"
 				],
 				"exclude": [
 					"obj/**",
-					"doc/_site/**"
+					"_site/**"
 				]
 			}
 		],
 		"overwrite": [
 			{
 				"files": [
-					"doc/apidoc/**.md"
+					"apidoc/**.md"
 				],
 				"exclude": [
 					"obj/**",
-					"doc/_site/**"
+					"_site/**"
 				]
 			}
 		],
-		"dest": "doc/_site",
+		"dest": "_site",
 		"globalMetadataFiles": [],
 		"fileMetadataFiles": [],
 		"template": [
