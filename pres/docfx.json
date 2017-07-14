@@ -32,8 +32,7 @@
 					"*.md"
 				],
 				"exclude": [
-					"obj/**",
-					"_site/**"
+					"obj/**"
 				]
 			}
 		],
@@ -43,8 +42,7 @@
 					"images/**"
 				],
 				"exclude": [
-					"obj/**",
-					"_site/**"
+					"obj/**"
 				]
 			}
 		],
@@ -54,12 +52,11 @@
 					"apidoc/**.md"
 				],
 				"exclude": [
-					"obj/**",
-					"_site/**"
+					"obj/**"
 				]
 			}
 		],
-		"dest": "_site",
+		"dest": "../docs",
 		"globalMetadataFiles": [],
 		"fileMetadataFiles": [],
 		"template": [

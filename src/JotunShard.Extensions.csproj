@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
-    <DocfxConfigFile>..\doc\docfx.json</DocfxConfigFile>
-    <OutputFolder>..\doc</OutputFolder>
-    <LogFile>..\doc\log.txt</LogFile>
+    <DocfxConfigFile>..\pres\docfx.json</DocfxConfigFile>
+    <OutputFolder>..\pres</OutputFolder>
+    <LogFile>..\pres\log.txt</LogFile>
   </PropertyGroup>
 
   <ItemGroup>

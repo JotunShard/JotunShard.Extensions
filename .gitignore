@@ -261,8 +261,7 @@ __pycache__/
 *.pyc
 
 # DocFX
-/doc/log.txt
-/doc/_site
+/pres/log.txt
 
 # AxoCover
 /.axoCover/runs
