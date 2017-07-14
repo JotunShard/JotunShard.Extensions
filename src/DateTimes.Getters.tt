@@ -15,6 +15,7 @@ foreach (var m in calendarMethods)
 {
     if (m.GetParameters().Any() && m.GetParameters().All(p => p.ParameterType == typeof(DateTime)))
     {
+        var propName = m.Name.Substring(3);
         var returnTypeName = m.ReturnType.Name;
         switch (returnTypeName)
         {
@@ -27,9 +28,21 @@ foreach (var m in calendarMethods)
         }
 #>
 
+        /// <summary>
+        /// Provision of the value for the property <#= propName #>
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property <#= propName #></param>
+        /// <returns>Value for the property <#= propName #></returns>
         public static <#= returnTypeName #> <#= m.Name #>(this DateTime value, Calendar calendar)
             => (calendar ?? CultureInfo.CurrentCulture.Calendar).<#= m.Name #>(value);
 
+        /// <summary>
+        /// Provision of the value for the property <#= propName #>
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property <#= propName #></param>
+        /// <returns>Value for the property <#= propName #></returns>
         public static <#= returnTypeName #> <#= m.Name #>(this DateTime value, CultureInfo culture = null)
             => value.<#= m.Name #>((culture ?? CultureInfo.CurrentCulture).Calendar);
 <#
@@ -38,26 +51,44 @@ foreach (var m in calendarMethods)
 var instanceProperties = typeof(DateTime).GetProperties(BindingFlags.Public | BindingFlags.Instance);
 foreach (var p in instanceProperties)
 {
+    var propName = p.Name;
     if (calendarMethods.Any(m => m.Name == "Get" + p.Name))
     {
 #>
 
-        public static bool IsSame<#= p.Name #>(this DateTime value, Calendar calendar)
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property <#= propName #>
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property <#= propName #></param>
+        /// <returns>Condition of equality for the property <#= propName #></returns>
+        public static bool IsSame<#= propName #>(this DateTime value, Calendar calendar)
         {
             calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            return calendar.Get<#= p.Name #>(value) == calendar.Get<#= p.Name #>(DateTime.Now);
+            return calendar.Get<#= propName #>(value) == calendar.Get<#= propName #>(DateTime.Now);
         }
 
-        public static bool IsSame<#= p.Name #>(this DateTime value, CultureInfo culture = null)
-            => value.IsSame<#= p.Name #>((culture ?? CultureInfo.CurrentCulture).Calendar);
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property <#= propName #>
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property <#= propName #></param>
+        /// <returns>Condition of equality for the property <#= propName #></returns>
+        public static bool IsSame<#= propName #>(this DateTime value, CultureInfo culture = null)
+            => value.IsSame<#= propName #>((culture ?? CultureInfo.CurrentCulture).Calendar);
 <#
     }
     else
     {
 #>
 
-        public static bool IsSame<#= p.Name #>(this DateTime value)
-            => value.<#= p.Name #> == DateTime.Now.<#= p.Name #>;
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property <#= propName #>
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <returns>Condition of equality for the property <#= propName #></returns>
+        public static bool IsSame<#= propName #>(this DateTime value)
+            => value.<#= propName #> == DateTime.Now.<#= propName #>;
 <#
     }
 }

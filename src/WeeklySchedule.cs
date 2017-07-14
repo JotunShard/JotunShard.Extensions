@@ -2,6 +2,9 @@
 
 namespace JotunShard.Extensions
 {
+    /// <summary>
+    /// Definition of the days composing a week schedule
+    /// </summary>
     [Flags]
     public enum WeeklySchedule : byte
     {

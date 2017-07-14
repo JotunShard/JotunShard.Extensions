@@ -18,15 +18,41 @@ var paramLine = string.Empty;
 for (var index = 1; index <= maxArgs; ++index)
 {
     var typesLine = globalTypesLine;
+    var summaryArgsLine = string.Empty;
+    var commentArgsLine = string.Empty;
     var argsLine = string.Empty;
     var valuesLine = globalValuesLine;
     for (var innerIndex = index; innerIndex <= maxArgs; ++innerIndex)
     {
         typesLine += typePrefix + innerIndex + itemSep;
+        summaryArgsLine += itemSep + innerIndex;
+        commentArgsLine += itemSep + argPrefix + innerIndex;
         argsLine += itemSep + typePrefix + innerIndex + " " + argPrefix + innerIndex;
         valuesLine += itemSep + argPrefix + innerIndex;
 #>
 
+        /// <summary>
+        /// Composition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// </summary>
+<#
+        for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
+        {
+#>
+        /// <typeparam name="TArg<#=commentIndex#>">The type of argument <#=commentIndex#></typeparam>
+<#
+        }
+#>
+        /// <typeparam name="TResult">Resultant type of the function</typeparam>
+        /// <param name="func">The targeted function</param>
+<#
+        for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
+        {
+#>
+        /// <param name="arg<#=commentIndex#>">The provided value for the argument <#=commentIndex#></param>
+<#
+        }
+#>
+        /// <returns>Function with the binded values of <#=commentArgsLine.Substring(2)#></returns>
         public static Func<<#=resultTypeLine#>TResult> Bind<<#=typesLine#>TResult>(
             [NotNull] this Func<<#=typesLine#>TResult> func<#=argsLine#>)
         {
@@ -47,15 +73,41 @@ paramLine = string.Empty;
 for (var index = 1; index <= maxArgs; ++index)
 {
     var typesLine = globalTypesLine;
+    var summaryArgsLine = string.Empty;
+    var commentArgsLine = string.Empty;
     var argsLine = string.Empty;
     var valuesLine = globalValuesLine;
     for (var innerIndex = index; innerIndex <= maxArgs; ++innerIndex)
     {
         typesLine += itemSep + typePrefix + innerIndex;
+        summaryArgsLine += itemSep + innerIndex;
+        commentArgsLine += itemSep + argPrefix + innerIndex;
         argsLine += itemSep + typePrefix + innerIndex + " " + argPrefix + innerIndex;
         valuesLine += itemSep + argPrefix + innerIndex;
 #>
 
+        /// <summary>
+        /// Composition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// </summary>
+<#
+        for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
+        {
+#>
+        /// <typeparam name="TArg<#=commentIndex#>">The type of argument <#=commentIndex#></typeparam>
+<#
+        }
+#>
+        /// <typeparam name="TResult">Resultant type of the function</typeparam>
+        /// <param name="func">The targeted function</param>
+<#
+        for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
+        {
+#>
+        /// <param name="arg<#=commentIndex#>">The provided value for the argument <#=commentIndex#></param>
+<#
+        }
+#>
+        /// <returns>Function with the binded values of <#=commentArgsLine.Substring(2)#></returns>
         public static Action<#=resultTypeLine.Length == 0 ? "" : "<" + resultTypeLine.Substring(2) + ">"#> Bind<<#=typesLine.Substring(2)#>>(
             [NotNull] this Action<<#=typesLine.Substring(2)#>> act<#=argsLine#>)
         {
