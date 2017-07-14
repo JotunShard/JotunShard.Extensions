@@ -87,7 +87,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
 
         /// <summary>
-        /// Composition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// Composition of an action of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
         /// </summary>
 <#
         for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
@@ -97,8 +97,7 @@ for (var index = 1; index <= maxArgs; ++index)
 <#
         }
 #>
-        /// <typeparam name="TResult">Resultant type of the function</typeparam>
-        /// <param name="func">The targeted function</param>
+        /// <param name="act">The targeted action</param>
 <#
         for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
         {
@@ -107,7 +106,6 @@ for (var index = 1; index <= maxArgs; ++index)
 <#
         }
 #>
-        /// <returns>Function with the binded values of <#=commentArgsLine.Substring(2)#></returns>
         public static Action<#=resultTypeLine.Length == 0 ? "" : "<" + resultTypeLine.Substring(2) + ">"#> Bind<<#=typesLine.Substring(2)#>>(
             [NotNull] this Action<<#=typesLine.Substring(2)#>> act<#=argsLine#>)
         {
