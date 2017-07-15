@@ -16,7 +16,8 @@ namespace JotunShard.Extensions.Test.Collections
             COUNT_ANY = 5,
             COUNT_RIGHT = 7,
             COUNT_LESSER = COUNT_RIGHT - 1,
-            COUNT_GREATER = COUNT_RIGHT + 1;
+            COUNT_GREATER = COUNT_RIGHT + 1,
+            COUNT_BIG = COUNT_RIGHT * COUNT_ANY;
 
         private static readonly IEnumerable<MultiItems>
             ENMRBL_NULL = null,
@@ -215,6 +216,52 @@ namespace JotunShard.Extensions.Test.Collections
 
         #endregion Flatten
 
+        #region Cycle
+
+        [TestMethod]
+        public void Cycle_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.Cycle().ToList());
+
+        [TestMethod]
+        public void Cycle_WithEmptyEnumerableAndNegativeRepeat_ThrowsException()
+            => ThrowsException<ArgumentOutOfRangeException>(
+                () => ENMRBL_EMPTY.Cycle(-1).ToList());
+
+        [TestMethod]
+        public void Cycle_WithEmptyEnumerable_ExpectsSameEnumerable()
+            => Utilities.AssertManySequencesEqual(
+                ENMRBL_EMPTY.Cycle(),
+                ENMRBL_EMPTY);
+
+        [TestMethod]
+        public void Cycle_WithNonEmptyEnumerableAndNoRepeat_ExpectsEmptyEnumerable()
+            => Utilities.AssertManySequencesEqual(
+                ENMRBL_NON_EMPTY.Cycle(0),
+                ENMRBL_EMPTY);
+
+        [TestMethod]
+        public void Cycle_WithNonEmptyEnumerableAndNullRepeat_ExpectsInfiniteEnumerable()
+        {
+            var cycle = ENMRBL_NON_EMPTY.Cycle();
+            using (var enmrtr = cycle.GetEnumerator())
+            {
+                for (var index = 0; enmrtr.MoveNext(); ++index)
+                    if (index == COUNT_BIG)
+                        break;
+                IsTrue(enmrtr.MoveNext());
+            }
+        }
+
+        [TestMethod]
+        public void Cycle_WithNonEmptyEnumerableAndAnyRepeat_ExpectsSameEnumerableTimesAny()
+            => Utilities.AssertManySequencesEqual(
+                ENMRBL_NON_EMPTY.Cycle(COUNT_ANY),
+                Enumerable.Repeat(ENMRBL_NON_EMPTY, COUNT_ANY)
+                    .SelectMany(coll => coll));
+
+        #endregion Cycle
+
         #region ToShuffled
 
         [TestMethod]
@@ -241,5 +288,63 @@ namespace JotunShard.Extensions.Test.Collections
                 ENMRBL_NON_EMPTY);
 
         #endregion ToShuffled
+
+        #region GetRandom
+
+        [TestMethod]
+        public void GetRandom_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.GetRandom());
+
+        [TestMethod]
+        public void GetRandom_WithEmptyEnumerable_ThrowsException()
+            => ThrowsException<ArgumentOutOfRangeException>(
+                () => ENMRBL_EMPTY.GetRandom());
+
+        [TestMethod]
+        public void GetRandom_WithNonEmptyEnumerable_ExpectsItemFromEnumerable()
+            => IsTrue(ENMRBL_NON_EMPTY.Contains(ENMRBL_NON_EMPTY.GetRandom()));
+
+        #endregion GetRandom
+
+        #region TryGetFirst
+
+        [TestMethod]
+        public void TryGetFirst()
+            => Fail();
+
+        #endregion TryGetFirst
+
+        #region TryGetLast
+
+        [TestMethod]
+        public void TryGetLast()
+            => Fail();
+
+        #endregion TryGetLast
+
+        #region TryGetSingle
+
+        [TestMethod]
+        public void TryGetSingle()
+            => Fail();
+
+        #endregion TryGetSingle
+
+        #region GroupToDictionary
+
+        [TestMethod]
+        public void GroupToDictionary()
+            => Fail();
+
+        #endregion GroupToDictionary
+
+        #region GetFNVHashCode
+
+        [TestMethod]
+        public void GetFNVHashCode()
+            => Fail();
+
+        #endregion GetFNVHashCode
     }
 }
