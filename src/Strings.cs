@@ -71,5 +71,17 @@ namespace JotunShard.Extensions
             Array.Reverse(arr);
             return new string(arr);
         }
+
+        public static void SubstringFollowing(
+            [NotNull] this string value,
+            [NotNull] string term,
+            int? length = null)
+            => throw new NotImplementedException();
+
+        public static void SubstringPreceding(
+            [NotNull] this string value,
+            [NotNull] string term,
+            int? length = null)
+            => throw new NotImplementedException();
     }
 }
