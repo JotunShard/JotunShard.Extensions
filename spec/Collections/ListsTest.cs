@@ -71,5 +71,13 @@ namespace JotunShard.Extensions.Test.Collections
         }
 
         #endregion Shuffle
+
+        #region InsertAll
+
+        [TestMethod]
+        public void InsertAll()
+            => Fail();
+
+        #endregion InsertAll
     }
 }

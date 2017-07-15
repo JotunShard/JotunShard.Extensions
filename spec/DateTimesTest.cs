@@ -220,5 +220,13 @@ namespace JotunShard.Extensions.Test
                 CALENDAR.AddYears(CALENDAR.AddMonths(DAY_AFTER, -1), 1));
 
         #endregion NextDayOfMonth
+
+        #region EndOfMonth
+
+        [TestMethod]
+        public void EndOfMonth()
+            => Fail();
+
+        #endregion EndOfMonth
     }
 }

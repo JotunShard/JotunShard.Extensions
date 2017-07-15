@@ -197,5 +197,45 @@ namespace JotunShard.Extensions.Test
             => IsFalse(SENTENCE.Match(WORD_UNKNOWN));
 
         #endregion Match
+
+        #region EnsureEndsWith
+
+        [TestMethod]
+        public void EnsureEndsWith()
+            => Fail();
+
+        #endregion EnsureEndsWith
+
+        #region EnsureStartsWith
+
+        [TestMethod]
+        public void EnsureStartsWith()
+            => Fail();
+
+        #endregion EnsureStartsWith
+
+        #region Reverse
+
+        [TestMethod]
+        public void Reverse()
+            => Fail();
+
+        #endregion Reverse
+
+        #region SubstringFollowing
+
+        [TestMethod]
+        public void SubstringFollowing()
+            => Fail();
+
+        #endregion SubstringFollowing
+
+        #region SubstringPreceding
+
+        [TestMethod]
+        public void SubstringPreceding()
+            => Fail();
+
+        #endregion SubstringPreceding
     }
 }

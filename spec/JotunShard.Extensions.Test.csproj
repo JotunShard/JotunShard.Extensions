@@ -55,6 +55,7 @@
     <Compile Include="StringsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DateTimesTest.cs" />
+    <Compile Include="ObjectsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
