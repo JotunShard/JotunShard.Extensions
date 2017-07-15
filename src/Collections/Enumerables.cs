@@ -144,11 +144,11 @@ namespace JotunShard.Extensions
 
         public static TElem GetRandom<TElem>(
             [NotNull] this IEnumerable<TElem> source,
-            Func<int, int, int> randomSource = null)
+            Func<int, int> randomSource = null)
         {
             source.CheckArgumentNull(nameof(source));
             randomSource = randomSource ?? new Random().Next;
-            return source.ElementAt(randomSource(0, source.Count()));
+            return source.ElementAt(randomSource(source.Count()));
         }
 
         public static bool TryGetFirst<TElem>(
