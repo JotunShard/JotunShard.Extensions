@@ -110,6 +110,8 @@ namespace JotunShard.Extensions
         {
             source.CheckArgumentNull(nameof(source));
             repeat?.CheckArgumentIsGreaterOrEqual(nameof(repeat), 0);
+            if (!source.Any() || repeat == 0)
+                yield break;
             var index = 0;
             while (!repeat.HasValue || index++ < repeat)
                 foreach (var item in source)
