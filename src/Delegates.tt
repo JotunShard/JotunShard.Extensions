@@ -245,6 +245,38 @@ for (var index = 1; index <= maxArgs; ++index)
         }
 <#
 }
+#>
+
+        public static class Trampoline
+        {
+<#
+globalTypesLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    globalTypesLine += typePrefix + index + itemSep;
+#>
+
+            public static Bounce<<#=globalTypesLine#>TResult> ReturnResult<<#=globalTypesLine#>TResult>(TResult result)
+                => new Bounce<<#=globalTypesLine#>TResult>(result);
+<#
+}
+globalTypesLine = string.Empty;
+var recurseArgsLine = string.Empty;
+globalValuesLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    globalTypesLine += typePrefix + index + itemSep;
+    recurseArgsLine += itemSep + typePrefix + index + " " + argPrefix + index;
+    globalValuesLine += itemSep + argPrefix + index;
+#>
+
+            public static Bounce<<#=globalTypesLine#>TResult> Recurse<<#=globalTypesLine#>TResult>(<#=recurseArgsLine.Substring(2)#>)
+                => new Bounce<<#=globalTypesLine#>TResult>(<#=globalValuesLine.Substring(2)#>);
+<#
+}
+#>
+        }
+<#
 globalTypesLine = string.Empty;
 resultTypeLine = string.Empty;
 globalValuesLine = string.Empty;
