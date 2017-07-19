@@ -1,5 +1,6 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Collections.Generic;
 
 namespace JotunShard.Extensions
 {
@@ -9251,6 +9252,1018 @@ namespace JotunShard.Extensions
         {
             act.CheckArgumentNull(nameof(act));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15) => act(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
+        }
+
+        public static IEnumerable<TArg1> ToGenerator<TArg1>(
+            [NotNull] this Func<TArg1, TArg1> func,
+            TArg1 seed = default(TArg1))
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed); ;
+                value = func(value))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2>> ToGenerator<TArg1, TArg2>(
+            [NotNull] this Func<TArg1, TArg2, Tuple<TArg1, TArg2>> func,
+            Tuple<TArg1, TArg2> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2); ;
+                value = func(value.Item1, value.Item2))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3>> ToGenerator<TArg1, TArg2, TArg3>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>> func,
+            Tuple<TArg1, TArg2, TArg3> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2, seed.Item3); ;
+                value = func(value.Item1, value.Item2, value.Item3))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>> ToGenerator<TArg1, TArg2, TArg3, TArg4>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>> func,
+            Tuple<TArg1, TArg2, TArg3, TArg4> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4); ;
+                value = func(value.Item1, value.Item2, value.Item3, value.Item4))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> func,
+            Tuple<TArg1, TArg2, TArg3, TArg4, TArg5> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5); ;
+                value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> func,
+            Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6); ;
+                value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> func,
+            Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6, seed.Item7); ;
+                value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6, value.Item7))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> func,
+            Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6, seed.Item7, seed.Rest); ;
+                value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6, value.Item7, value.Rest))
+                yield return value;
+        }
+
+        public static IEnumerable<Tuple<TArg1, TArg2>> ToGenerator<TArg1, TArg2>(
+            [NotNull] this Func<TArg1, TArg2, Tuple<TArg1, TArg2>> func)
+            => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2)));
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3>> ToGenerator<TArg1, TArg2, TArg3>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>> func)
+            => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3)));
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>> ToGenerator<TArg1, TArg2, TArg3, TArg4>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>> func)
+            => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4)));
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> func)
+            => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5)));
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> func)
+            => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6)));
+
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> func)
+            => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7)));
+
+        // public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        //     [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> func)
+        //     => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7), default(TArg8)));
+
+        public struct Bounce<TArg1, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1) : this()
+            {
+                Param1 = param1;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public TArg11 Param11 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10, TArg11 param11) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                Param11 = param11;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public TArg11 Param11 { get; }
+
+            public TArg12 Param12 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10, TArg11 param11, TArg12 param12) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                Param11 = param11;
+                Param12 = param12;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public TArg11 Param11 { get; }
+
+            public TArg12 Param12 { get; }
+
+            public TArg13 Param13 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10, TArg11 param11, TArg12 param12, TArg13 param13) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                Param11 = param11;
+                Param12 = param12;
+                Param13 = param13;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public TArg11 Param11 { get; }
+
+            public TArg12 Param12 { get; }
+
+            public TArg13 Param13 { get; }
+
+            public TArg14 Param14 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10, TArg11 param11, TArg12 param12, TArg13 param13, TArg14 param14) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                Param11 = param11;
+                Param12 = param12;
+                Param13 = param13;
+                Param14 = param14;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public TArg11 Param11 { get; }
+
+            public TArg12 Param12 { get; }
+
+            public TArg13 Param13 { get; }
+
+            public TArg14 Param14 { get; }
+
+            public TArg15 Param15 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10, TArg11 param11, TArg12 param12, TArg13 param13, TArg14 param14, TArg15 param15) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                Param11 = param11;
+                Param12 = param12;
+                Param13 = param13;
+                Param14 = param14;
+                Param15 = param15;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public struct Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>
+        {
+            public TArg1 Param1 { get; }
+
+            public TArg2 Param2 { get; }
+
+            public TArg3 Param3 { get; }
+
+            public TArg4 Param4 { get; }
+
+            public TArg5 Param5 { get; }
+
+            public TArg6 Param6 { get; }
+
+            public TArg7 Param7 { get; }
+
+            public TArg8 Param8 { get; }
+
+            public TArg9 Param9 { get; }
+
+            public TArg10 Param10 { get; }
+
+            public TArg11 Param11 { get; }
+
+            public TArg12 Param12 { get; }
+
+            public TArg13 Param13 { get; }
+
+            public TArg14 Param14 { get; }
+
+            public TArg15 Param15 { get; }
+
+            public TArg16 Param16 { get; }
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(TArg1 param1, TArg2 param2, TArg3 param3, TArg4 param4, TArg5 param5, TArg6 param6, TArg7 param7, TArg8 param8, TArg9 param9, TArg10 param10, TArg11 param11, TArg12 param12, TArg13 param13, TArg14 param14, TArg15 param15, TArg16 param16) : this()
+            {
+                Param1 = param1;
+                Param2 = param2;
+                Param3 = param3;
+                Param4 = param4;
+                Param5 = param5;
+                Param6 = param6;
+                Param7 = param7;
+                Param8 = param8;
+                Param9 = param9;
+                Param10 = param10;
+                Param11 = param11;
+                Param12 = param12;
+                Param13 = param13;
+                Param14 = param14;
+                Param15 = param15;
+                Param16 = param16;
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+
+        public static Func<TArg1, TResult> ToTrampoline<TArg1, TResult>(
+            [NotNull] this Func<TArg1, Bounce<TArg1, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1) =>
+            {
+                for (var value = func(arg1); ;
+                    value = func(value.Param1))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TResult> ToTrampoline<TArg1, TArg2, TResult>(
+            [NotNull] this Func<TArg1, TArg2, Bounce<TArg1, TArg2, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2) =>
+            {
+                for (var value = func(arg1, arg2); ;
+                    value = func(value.Param1, value.Param2))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TResult> ToTrampoline<TArg1, TArg2, TArg3, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, Bounce<TArg1, TArg2, TArg3, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3) =>
+            {
+                for (var value = func(arg1, arg2, arg3); ;
+                    value = func(value.Param1, value.Param2, value.Param3))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, Bounce<TArg1, TArg2, TArg3, TArg4, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14, value.Param15))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16) =>
+            {
+                for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16); ;
+                    value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14, value.Param15, value.Param16))
+                    if (value.HasResult)
+                        return value.Result;
+            };
         }
     }
 }

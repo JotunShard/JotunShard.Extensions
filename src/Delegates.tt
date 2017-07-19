@@ -1,6 +1,7 @@
 ﻿<#@ template language="C#" #>
 using JetBrains.Annotations;
 using System;
+using System.Collections.Generic;
 
 namespace JotunShard.Extensions
 {
@@ -8,9 +9,11 @@ namespace JotunShard.Extensions
     {<#
 var typePrefix = "TArg";
 var argPrefix = "arg";
+var paramPrefix = "param";
 var maxArgs = 16;
-
+var maxTuple = 7;
 var itemSep = ", ";
+
 var globalTypesLine = string.Empty;
 var globalValuesLine = string.Empty;
 var resultTypeLine = string.Empty;
@@ -118,6 +121,155 @@ for (var index = 1; index <= maxArgs; ++index)
     globalValuesLine += itemSep + argPrefix + index;
     resultTypeLine += itemSep + typePrefix + index;
     paramLine += itemSep + argPrefix + index;
+}
+resultTypeLine = typePrefix + 1 + itemSep;
+globalTypesLine = itemSep + typePrefix + 1;
+#>
+
+        public static IEnumerable<<#=globalTypesLine.Substring(2)#>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
+            [NotNull] this Func<<#=resultTypeLine#><#=globalTypesLine.Substring(2)#>> func,
+            <#=globalTypesLine.Substring(2)#> seed = default(<#=globalTypesLine.Substring(2)#>))
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(seed); ;
+                value = func(value))
+                yield return value;
+        }
+<#
+globalValuesLine = "value.Item1";
+paramLine = "seed.Item1";
+for (var index = 2; index <= maxTuple; ++index)
+{
+    resultTypeLine += typePrefix + index + itemSep;
+    globalTypesLine += itemSep + typePrefix + index;
+    globalValuesLine += itemSep + "value.Item" + index;
+    paramLine += itemSep + "seed.Item" + index;
+#>
+
+        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
+            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func,
+            Tuple<<#=globalTypesLine.Substring(2)#>> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(<#=paramLine#>); ;
+                value = func(<#=globalValuesLine#>))
+                yield return value;
+        }
+<#
+}
+resultTypeLine += typePrefix + 8 + itemSep;
+globalTypesLine += itemSep + typePrefix + 8;
+globalValuesLine += itemSep + "value.Rest";
+paramLine += itemSep + "seed.Rest";
+#>
+
+        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
+            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func,
+            Tuple<<#=globalTypesLine.Substring(2)#>> seed)
+        {
+            func.CheckArgumentNull(nameof(func));
+            for (var value = func(<#=paramLine#>); ;
+                value = func(<#=globalValuesLine#>))
+                yield return value;
+        }
+<#
+resultTypeLine = typePrefix + 1 + itemSep;
+globalTypesLine = itemSep + typePrefix + 1;
+paramLine = "default(" + typePrefix + 1 + ")";
+for (var index = 2; index <= maxTuple; ++index)
+{
+    resultTypeLine += typePrefix + index + itemSep;
+    globalTypesLine += itemSep + typePrefix + index;
+    paramLine += itemSep + "default(" + typePrefix + index + ")";
+#>
+
+        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
+            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func)
+            => func.ToGenerator(Tuple.Create(<#=paramLine#>));
+<#
+}
+resultTypeLine += typePrefix + 8 + itemSep;
+globalTypesLine += itemSep + typePrefix + 8;
+paramLine += itemSep + "default(" + typePrefix + 8 + ")";
+#>
+
+        // public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
+        //     [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func)
+        //     => func.ToGenerator(Tuple.Create(<#=paramLine#>));
+<#
+globalTypesLine = string.Empty;
+resultTypeLine = string.Empty;
+globalValuesLine = string.Empty;
+var bounceArgsLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    globalTypesLine += typePrefix + index + itemSep;
+    resultTypeLine += typePrefix + index + itemSep;
+    globalValuesLine += itemSep + paramPrefix + index;
+    bounceArgsLine += itemSep + typePrefix + index + " " + paramPrefix + index;
+#>
+
+        public struct Bounce<<#=globalTypesLine#>TResult>
+        {<#
+    for (var innerIndex = 1; innerIndex <= index; ++innerIndex)
+    {
+#>
+
+            public <#=typePrefix + innerIndex#> Param<#=innerIndex#> { get; }
+<#
+    }
+#>
+
+            public bool HasResult { get; }
+
+            public TResult Result { get; }
+
+            internal Bounce(<#=bounceArgsLine.Substring(2)#>) : this()
+            {
+<#
+    for (var innerIndex = 1; innerIndex <= index; ++innerIndex)
+    {
+#>
+                Param<#=innerIndex#> = <#=paramPrefix + innerIndex#>;
+<#
+    }
+#>
+                HasResult = false;
+            }
+
+            internal Bounce(TResult result) : this()
+            {
+                Result = result;
+                HasResult = true;
+            }
+        }
+<#
+}
+globalTypesLine = string.Empty;
+resultTypeLine = string.Empty;
+globalValuesLine = string.Empty;
+paramLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    globalTypesLine += typePrefix + index + itemSep;
+    resultTypeLine += typePrefix + index + itemSep;
+    globalValuesLine += itemSep + argPrefix + index;
+    paramLine += itemSep + "value.Param" + index;
+#>
+
+        public static Func<<#=resultTypeLine#>TResult> ToTrampoline<<#=globalTypesLine#>TResult>(
+            [NotNull] this Func<<#=globalTypesLine#>Bounce<<#=globalTypesLine#>TResult>> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (<#=globalValuesLine.Substring(2)#>) =>
+            {
+                for (var value = func(<#=globalValuesLine.Substring(2)#>); ;
+                    value = func(<#=paramLine.Substring(2)#>))
+                    if (value.HasResult)
+                        return value.Result;
+            };
+        }
+<#
 }
 #>
     }
