@@ -9254,6 +9254,83 @@ namespace JotunShard.Extensions
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15) => act(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
         }
 
+        public static Func<TArg1, TArg1> Chain<TArg1>(
+            [NotNull] this Action<TArg1> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return arg1 =>
+            {
+                act(arg1);
+                return arg1;
+            };
+        }
+
+        public static Func<TArg1, TArg2, Tuple<TArg1, TArg2>> Chain<TArg1, TArg2>(
+            [NotNull] this Action<TArg1, TArg2> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (arg1, arg2) =>
+            {
+                act(arg1, arg2);
+                return Tuple.Create(arg1, arg2);
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>> Chain<TArg1, TArg2, TArg3>(
+            [NotNull] this Action<TArg1, TArg2, TArg3> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (arg1, arg2, arg3) =>
+            {
+                act(arg1, arg2, arg3);
+                return Tuple.Create(arg1, arg2, arg3);
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>> Chain<TArg1, TArg2, TArg3, TArg4>(
+            [NotNull] this Action<TArg1, TArg2, TArg3, TArg4> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (arg1, arg2, arg3, arg4) =>
+            {
+                act(arg1, arg2, arg3, arg4);
+                return Tuple.Create(arg1, arg2, arg3, arg4);
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> Chain<TArg1, TArg2, TArg3, TArg4, TArg5>(
+            [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (arg1, arg2, arg3, arg4, arg5) =>
+            {
+                act(arg1, arg2, arg3, arg4, arg5);
+                return Tuple.Create(arg1, arg2, arg3, arg4, arg5);
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> Chain<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+            [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (arg1, arg2, arg3, arg4, arg5, arg6) =>
+            {
+                act(arg1, arg2, arg3, arg4, arg5, arg6);
+                return Tuple.Create(arg1, arg2, arg3, arg4, arg5, arg6);
+            };
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> Chain<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+            [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7) =>
+            {
+                act(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+                return Tuple.Create(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            };
+        }
+
         public static IEnumerable<TArg1> ToGenerator<TArg1>(
             [NotNull] this Func<TArg1, TArg1> func,
             TArg1 seed = default(TArg1))
@@ -10060,7 +10137,6 @@ namespace JotunShard.Extensions
 
         public static class Trampoline
         {
-
             public static Bounce<TArg1, TResult> ReturnResult<TArg1, TResult>(TResult result)
                 => new Bounce<TArg1, TResult>(result);
 

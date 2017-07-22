@@ -122,6 +122,41 @@ for (var index = 1; index <= maxArgs; ++index)
     resultTypeLine += itemSep + typePrefix + index;
     paramLine += itemSep + argPrefix + index;
 }
+globalTypesLine = typePrefix + 1;
+paramLine = argPrefix + 1;
+#>
+
+        public static Func<<#=globalTypesLine#>, <#=globalTypesLine#>> Chain<<#=globalTypesLine#>>(
+            [NotNull] this Action<<#=globalTypesLine#>> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return <#=paramLine#> =>
+            {
+                act(<#=paramLine#>);
+                return <#=paramLine#>;
+            };
+        }
+<#
+globalValuesLine = "value.Item1";
+for (var index = 2; index <= maxTuple; ++index)
+{
+    globalTypesLine += itemSep + typePrefix + index;
+    globalValuesLine += itemSep + "value.Item" + index;
+    paramLine += itemSep + argPrefix + index;
+#>
+
+        public static Func<<#=globalTypesLine#>, Tuple<<#=globalTypesLine#>>> Chain<<#=globalTypesLine#>>(
+            [NotNull] this Action<<#=globalTypesLine#>> act)
+        {
+            act.CheckArgumentNull(nameof(act));
+            return (<#=paramLine#>) =>
+            {
+                act(<#=paramLine#>);
+                return Tuple.Create(<#=paramLine#>);
+            };
+        }
+<#
+}
 resultTypeLine = typePrefix + 1 + itemSep;
 globalTypesLine = itemSep + typePrefix + 1;
 #>
@@ -158,7 +193,7 @@ for (var index = 2; index <= maxTuple; ++index)
 <#
 }
 resultTypeLine += typePrefix + 8 + itemSep;
-globalTypesLine += itemSep + typePrefix + 8;
+globalTypesLine += itemSep + typePrefix + (maxTuple + 1);
 globalValuesLine += itemSep + "value.Rest";
 paramLine += itemSep + "seed.Rest";
 #>
@@ -189,7 +224,7 @@ for (var index = 2; index <= maxTuple; ++index)
 <#
 }
 resultTypeLine += typePrefix + 8 + itemSep;
-globalTypesLine += itemSep + typePrefix + 8;
+globalTypesLine += itemSep + typePrefix + (maxTuple + 1);
 paramLine += itemSep + "default(" + typePrefix + 8 + ")";
 #>
 
@@ -248,8 +283,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
 
         public static class Trampoline
-        {
-<#
+        {<#
 globalTypesLine = string.Empty;
 for (var index = 1; index <= maxArgs; ++index)
 {
