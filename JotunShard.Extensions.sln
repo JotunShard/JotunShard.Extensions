@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JotunShard.Extensions", "src\JotunShard.Extensions.csproj", "{3EC4FA5B-0FA4-4975-9A52-28865C450C7D}"
 EndProject
@@ -13,6 +13,69 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CodeMaid.config = CodeMaid.config
 		LICENSE = LICENSE
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{EB5F1BA8-9F9F-414B-A35B-C52297E621C0}"
+	ProjectSection(SolutionItems) = preProject
+		.github\CODE_OF_CONDUCT.md = .github\CODE_OF_CONDUCT.md
+		.github\CONTRIBUTING.md = .github\CONTRIBUTING.md
+		.github\ISSUE_TEMPLATE.md = .github\ISSUE_TEMPLATE.md
+		.github\PULL_REQUEST_TEMPLATE.md = .github\PULL_REQUEST_TEMPLATE.md
+		.github\SUPPORT.md = .github\SUPPORT.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0D389364-2A07-4CDB-9B7A-24BE04BD915B}"
+	ProjectSection(SolutionItems) = preProject
+		docs\favicon.ico = docs\favicon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{6A5A7057-ADC9-4A19-8FC2-53715774BCAB}"
+	ProjectSection(SolutionItems) = preProject
+		docs\api\index.html = docs\api\index.html
+		docs\api\JotunShard.Extensions.Arguments.html = docs\api\JotunShard.Extensions.Arguments.html
+		docs\api\JotunShard.Extensions.Collections.html = docs\api\JotunShard.Extensions.Collections.html
+		docs\api\JotunShard.Extensions.Comparables.html = docs\api\JotunShard.Extensions.Comparables.html
+		docs\api\JotunShard.Extensions.DateTimes.html = docs\api\JotunShard.Extensions.DateTimes.html
+		docs\api\JotunShard.Extensions.DefaultDelegates-1.html = docs\api\JotunShard.Extensions.DefaultDelegates-1.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-10.html = docs\api\JotunShard.Extensions.Delegates.Bounce-10.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-11.html = docs\api\JotunShard.Extensions.Delegates.Bounce-11.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-12.html = docs\api\JotunShard.Extensions.Delegates.Bounce-12.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-13.html = docs\api\JotunShard.Extensions.Delegates.Bounce-13.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-14.html = docs\api\JotunShard.Extensions.Delegates.Bounce-14.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-15.html = docs\api\JotunShard.Extensions.Delegates.Bounce-15.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-16.html = docs\api\JotunShard.Extensions.Delegates.Bounce-16.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-17.html = docs\api\JotunShard.Extensions.Delegates.Bounce-17.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-2.html = docs\api\JotunShard.Extensions.Delegates.Bounce-2.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-3.html = docs\api\JotunShard.Extensions.Delegates.Bounce-3.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-4.html = docs\api\JotunShard.Extensions.Delegates.Bounce-4.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-5.html = docs\api\JotunShard.Extensions.Delegates.Bounce-5.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-6.html = docs\api\JotunShard.Extensions.Delegates.Bounce-6.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-7.html = docs\api\JotunShard.Extensions.Delegates.Bounce-7.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-8.html = docs\api\JotunShard.Extensions.Delegates.Bounce-8.html
+		docs\api\JotunShard.Extensions.Delegates.Bounce-9.html = docs\api\JotunShard.Extensions.Delegates.Bounce-9.html
+		docs\api\JotunShard.Extensions.Delegates.html = docs\api\JotunShard.Extensions.Delegates.html
+		docs\api\JotunShard.Extensions.Delegates.Trampoline.html = docs\api\JotunShard.Extensions.Delegates.Trampoline.html
+		docs\api\JotunShard.Extensions.Enumerables.html = docs\api\JotunShard.Extensions.Enumerables.html
+		docs\api\JotunShard.Extensions.html = docs\api\JotunShard.Extensions.html
+		docs\api\JotunShard.Extensions.Lists.html = docs\api\JotunShard.Extensions.Lists.html
+		docs\api\JotunShard.Extensions.Objects.html = docs\api\JotunShard.Extensions.Objects.html
+		docs\api\JotunShard.Extensions.Strings.html = docs\api\JotunShard.Extensions.Strings.html
+		docs\api\JotunShard.Extensions.TreeTraversalMode.html = docs\api\JotunShard.Extensions.TreeTraversalMode.html
+		docs\api\JotunShard.Extensions.WeeklySchedule.html = docs\api\JotunShard.Extensions.WeeklySchedule.html
+		docs\api\toc.html = docs\api\toc.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "articles", "articles", "{D5A95CFD-3AD2-4054-8D32-6D719B026B9A}"
+	ProjectSection(SolutionItems) = preProject
+		docs\articles\intro.html = docs\articles\intro.html
+		docs\articles\toc.html = docs\articles\toc.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{FA8B5980-77C3-4172-B013-154616567EE2}"
+	ProjectSection(SolutionItems) = preProject
+		docs\fonts\glyphicons-halflings-regular.eot = docs\fonts\glyphicons-halflings-regular.eot
+		docs\fonts\glyphicons-halflings-regular.svg = docs\fonts\glyphicons-halflings-regular.svg
+		docs\fonts\glyphicons-halflings-regular.ttf = docs\fonts\glyphicons-halflings-regular.ttf
 	EndProjectSection
 EndProject
 Global
@@ -32,5 +95,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A5A7057-ADC9-4A19-8FC2-53715774BCAB} = {0D389364-2A07-4CDB-9B7A-24BE04BD915B}
+		{D5A95CFD-3AD2-4054-8D32-6D719B026B9A} = {0D389364-2A07-4CDB-9B7A-24BE04BD915B}
+		{FA8B5980-77C3-4172-B013-154616567EE2} = {0D389364-2A07-4CDB-9B7A-24BE04BD915B}
 	EndGlobalSection
 EndGlobal
