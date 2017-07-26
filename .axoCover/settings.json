@@ -1,5 +1,5 @@
 {
-  "TestRunner": "MsTestRunner",
+  "TestRunner": "",
   "TestPlatform": "x86",
   "TestApartmentState": "STA",
   "TestAdapterMode": "Standard",
