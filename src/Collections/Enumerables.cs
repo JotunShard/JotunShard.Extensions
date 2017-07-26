@@ -211,18 +211,12 @@ namespace JotunShard.Extensions
             [NotNull] Func<TElem, TValue> valueSelector,
             IEqualityComparer<TKey> comparer = null)
         {
-            source.CheckArgumentNull(nameof(source));
-            keySelector.CheckArgumentNull(nameof(keySelector));
-            valueSelector.CheckArgumentNull(nameof(valueSelector));
             var result = new Dictionary<TKey, IEnumerable<TValue>>(comparer);
-            foreach (var item in source)
-            {
-                var key = keySelector(item);
-                var values = Enumerable.Repeat(valueSelector(item), 1);
-                if (result.TryGetValue(key, out IEnumerable<TValue> oldValues))
-                    values = oldValues.Union(values);
-                result[key] = values;
-            }
+            result.AddAll(source.GroupBy(
+                keySelector,
+                valueSelector,
+                (key, coll) => new KeyValuePair<TKey, IEnumerable<TValue>>(key, coll),
+                comparer));
             return result;
         }
 
