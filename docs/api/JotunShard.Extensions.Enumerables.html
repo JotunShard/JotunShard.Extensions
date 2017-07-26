@@ -322,7 +322,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GetFNVHashCode__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GetFNVHashCode%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L236">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L232">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GetFNVHashCode_" data-uid="JotunShard.Extensions.Enumerables.GetFNVHashCode*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GetFNVHashCode__1_System_Collections_Generic_IEnumerable___0__" data-uid="JotunShard.Extensions.Enumerables.GetFNVHashCode``1(System.Collections.Generic.IEnumerable{``0})">GetFNVHashCode&lt;TElem&gt;(IEnumerable&lt;TElem&gt;)</h4>
@@ -381,18 +381,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GetRandom__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GetRandom%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GetRandom__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GetRandom%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L143">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L145">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GetRandom_" data-uid="JotunShard.Extensions.Enumerables.GetRandom*"></a>
-  <h4 id="JotunShard_Extensions_Enumerables_GetRandom__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__" data-uid="JotunShard.Extensions.Enumerables.GetRandom``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32,System.Int32})">GetRandom&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;Int32, Int32, Int32&gt;)</h4>
+  <h4 id="JotunShard_Extensions_Enumerables_GetRandom__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32__" data-uid="JotunShard.Extensions.Enumerables.GetRandom``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32})">GetRandom&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;Int32, Int32&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TElem GetRandom&lt;TElem&gt;([NotNull] this IEnumerable&lt;TElem&gt; source, Func&lt;int, int, int&gt; randomSource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TElem GetRandom&lt;TElem&gt;([NotNull] this IEnumerable&lt;TElem&gt; source, Func&lt;int, int&gt; randomSource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -410,7 +410,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">randomSource</span></td>
         <td></td>
       </tr>
@@ -451,7 +451,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GroupToDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GroupToDictionary%60%602(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L227">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L223">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GroupToDictionary_" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GroupToDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IEqualityComparer{``1})">GroupToDictionary&lt;TElem, TKey&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
@@ -527,7 +527,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GroupToDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GroupToDictionary%60%603(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L206">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L208">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GroupToDictionary_" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GroupToDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},System.Collections.Generic.IEqualityComparer{``1})">GroupToDictionary&lt;TElem, TKey, TValue&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, TKey&gt;, Func&lt;TElem, TValue&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
@@ -823,7 +823,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_ToShuffled__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0___.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.ToShuffled%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%2CSystem.Func%7BSystem.Collections.Generic.IList%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L119">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L121">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_ToShuffled_" data-uid="JotunShard.Extensions.Enumerables.ToShuffled*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_ToShuffled__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0___" data-uid="JotunShard.Extensions.Enumerables.ToShuffled``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32,System.Int32},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0}})">ToShuffled&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;Int32, Int32, Int32&gt;, Func&lt;IList&lt;TElem&gt;, IEnumerable&lt;TElem&gt;&gt;)</h4>
@@ -895,7 +895,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_TryGetFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.TryGetFirst%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L152">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L154">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_TryGetFirst_" data-uid="JotunShard.Extensions.Enumerables.TryGetFirst*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_TryGetFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__" data-uid="JotunShard.Extensions.Enumerables.TryGetFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetFirst&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, Boolean&gt;, out TElem)</h4>
@@ -967,7 +967,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_TryGetLast__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.TryGetLast%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L169">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L171">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_TryGetLast_" data-uid="JotunShard.Extensions.Enumerables.TryGetLast*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_TryGetLast__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__" data-uid="JotunShard.Extensions.Enumerables.TryGetLast``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetLast&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, Boolean&gt;, out TElem)</h4>
@@ -1039,7 +1039,7 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_TryGetSingle__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.TryGetSingle%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L187">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L189">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_TryGetSingle_" data-uid="JotunShard.Extensions.Enumerables.TryGetSingle*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_TryGetSingle__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__" data-uid="JotunShard.Extensions.Enumerables.TryGetSingle``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetSingle&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, Boolean&gt;, out TElem)</h4>
