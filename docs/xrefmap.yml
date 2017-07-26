@@ -773,7 +773,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_ContradictionalFunction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.ContradictionalFunction
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.ContradictionalFunction
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).ContradictionalFunction
   nameWithType: DefaultDelegates<TValue>.ContradictionalFunction
+  nameWithType.vb: DefaultDelegates(Of TValue).ContradictionalFunction
 - uid: JotunShard.Extensions.DefaultDelegates`1.ContradictionalPredicate
   name: ContradictionalPredicate
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_ContradictionalPredicate
@@ -787,7 +789,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_ContradictionalPredicate_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.ContradictionalPredicate
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.ContradictionalPredicate
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).ContradictionalPredicate
   nameWithType: DefaultDelegates<TValue>.ContradictionalPredicate
+  nameWithType.vb: DefaultDelegates(Of TValue).ContradictionalPredicate
 - uid: JotunShard.Extensions.DefaultDelegates`1.DefaultValue
   name: DefaultValue
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_DefaultValue
@@ -801,7 +805,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_DefaultValue_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.DefaultValue
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.DefaultValue
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).DefaultValue
   nameWithType: DefaultDelegates<TValue>.DefaultValue
+  nameWithType.vb: DefaultDelegates(Of TValue).DefaultValue
 - uid: JotunShard.Extensions.DefaultDelegates`1.EmptyAction
   name: EmptyAction
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_EmptyAction
@@ -815,7 +821,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_EmptyAction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.EmptyAction
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.EmptyAction
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).EmptyAction
   nameWithType: DefaultDelegates<TValue>.EmptyAction
+  nameWithType.vb: DefaultDelegates(Of TValue).EmptyAction
 - uid: JotunShard.Extensions.DefaultDelegates`1.IdentityFunction
   name: IdentityFunction
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_IdentityFunction
@@ -829,7 +837,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_IdentityFunction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.IdentityFunction
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.IdentityFunction
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).IdentityFunction
   nameWithType: DefaultDelegates<TValue>.IdentityFunction
+  nameWithType.vb: DefaultDelegates(Of TValue).IdentityFunction
 - uid: JotunShard.Extensions.DefaultDelegates`1.TautologicalFunction
   name: TautologicalFunction
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_TautologicalFunction
@@ -843,7 +853,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_TautologicalFunction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.TautologicalFunction
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.TautologicalFunction
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).TautologicalFunction
   nameWithType: DefaultDelegates<TValue>.TautologicalFunction
+  nameWithType.vb: DefaultDelegates(Of TValue).TautologicalFunction
 - uid: JotunShard.Extensions.DefaultDelegates`1.TautologicalPredicate
   name: TautologicalPredicate
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_TautologicalPredicate
@@ -857,7 +869,9 @@ references:
   href: api/JotunShard.Extensions.DefaultDelegates-1.html#JotunShard_Extensions_DefaultDelegates_1_TautologicalPredicate_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates`1.TautologicalPredicate
   fullName: JotunShard.Extensions.DefaultDelegates<TValue>.TautologicalPredicate
+  fullName.vb: JotunShard.Extensions.DefaultDelegates(Of TValue).TautologicalPredicate
   nameWithType: DefaultDelegates<TValue>.TautologicalPredicate
+  nameWithType.vb: DefaultDelegates(Of TValue).TautologicalPredicate
 - uid: JotunShard.Extensions.Delegates
   name: Delegates
   href: api/JotunShard.Extensions.Delegates.html
