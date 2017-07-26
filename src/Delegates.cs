@@ -7,7 +7,7 @@ namespace JotunShard.Extensions
     public static class Delegates
     {
         /// <summary>
-        /// Composition of a function of 1 parameters with its arguments 1 binded
+        /// Redefinition of a function of 1 parameters with its arguments 1 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TResult">Resultant type of the function</typeparam>
@@ -22,7 +22,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 2 parameters with its arguments 1, 2 binded
+        /// Redefinition of a function of 2 parameters with its arguments 1, 2 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -39,7 +39,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 3 parameters with its arguments 1, 2, 3 binded
+        /// Redefinition of a function of 3 parameters with its arguments 1, 2, 3 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -58,7 +58,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 4 parameters with its arguments 1, 2, 3, 4 binded
+        /// Redefinition of a function of 4 parameters with its arguments 1, 2, 3, 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -79,7 +79,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 5 parameters with its arguments 1, 2, 3, 4, 5 binded
+        /// Redefinition of a function of 5 parameters with its arguments 1, 2, 3, 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -102,7 +102,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 6 parameters with its arguments 1, 2, 3, 4, 5, 6 binded
+        /// Redefinition of a function of 6 parameters with its arguments 1, 2, 3, 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -127,7 +127,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 1, 2, 3, 4, 5, 6, 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 1, 2, 3, 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -154,7 +154,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -183,7 +183,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -214,7 +214,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -247,7 +247,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -282,7 +282,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -319,7 +319,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -358,7 +358,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -399,7 +399,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -442,7 +442,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -487,7 +487,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 2 parameters with its arguments 2 binded
+        /// Redefinition of a function of 2 parameters with its arguments 2 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -504,7 +504,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 3 parameters with its arguments 2, 3 binded
+        /// Redefinition of a function of 3 parameters with its arguments 2, 3 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -523,7 +523,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 4 parameters with its arguments 2, 3, 4 binded
+        /// Redefinition of a function of 4 parameters with its arguments 2, 3, 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -544,7 +544,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 5 parameters with its arguments 2, 3, 4, 5 binded
+        /// Redefinition of a function of 5 parameters with its arguments 2, 3, 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -567,7 +567,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 6 parameters with its arguments 2, 3, 4, 5, 6 binded
+        /// Redefinition of a function of 6 parameters with its arguments 2, 3, 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -592,7 +592,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 2, 3, 4, 5, 6, 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 2, 3, 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -619,7 +619,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 2, 3, 4, 5, 6, 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 2, 3, 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -648,7 +648,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -679,7 +679,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -712,7 +712,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -747,7 +747,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -784,7 +784,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -823,7 +823,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -864,7 +864,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -907,7 +907,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -952,7 +952,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 3 parameters with its arguments 3 binded
+        /// Redefinition of a function of 3 parameters with its arguments 3 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -971,7 +971,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 4 parameters with its arguments 3, 4 binded
+        /// Redefinition of a function of 4 parameters with its arguments 3, 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -992,7 +992,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 5 parameters with its arguments 3, 4, 5 binded
+        /// Redefinition of a function of 5 parameters with its arguments 3, 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1015,7 +1015,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 6 parameters with its arguments 3, 4, 5, 6 binded
+        /// Redefinition of a function of 6 parameters with its arguments 3, 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1040,7 +1040,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 3, 4, 5, 6, 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 3, 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1067,7 +1067,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 3, 4, 5, 6, 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 3, 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1096,7 +1096,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 3, 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 3, 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1127,7 +1127,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1160,7 +1160,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1195,7 +1195,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1232,7 +1232,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1271,7 +1271,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1312,7 +1312,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1355,7 +1355,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1400,7 +1400,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 4 parameters with its arguments 4 binded
+        /// Redefinition of a function of 4 parameters with its arguments 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1421,7 +1421,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 5 parameters with its arguments 4, 5 binded
+        /// Redefinition of a function of 5 parameters with its arguments 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1444,7 +1444,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 6 parameters with its arguments 4, 5, 6 binded
+        /// Redefinition of a function of 6 parameters with its arguments 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1469,7 +1469,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 4, 5, 6, 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1496,7 +1496,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 4, 5, 6, 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1525,7 +1525,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1556,7 +1556,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1589,7 +1589,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1624,7 +1624,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1661,7 +1661,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1700,7 +1700,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1741,7 +1741,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1784,7 +1784,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1829,7 +1829,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 5 parameters with its arguments 5 binded
+        /// Redefinition of a function of 5 parameters with its arguments 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1852,7 +1852,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 6 parameters with its arguments 5, 6 binded
+        /// Redefinition of a function of 6 parameters with its arguments 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1877,7 +1877,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 5, 6, 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1904,7 +1904,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 5, 6, 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1933,7 +1933,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 5, 6, 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1964,7 +1964,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -1997,7 +1997,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2032,7 +2032,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2069,7 +2069,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2108,7 +2108,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2149,7 +2149,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2192,7 +2192,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2237,7 +2237,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 6 parameters with its arguments 6 binded
+        /// Redefinition of a function of 6 parameters with its arguments 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2262,7 +2262,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 6, 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2289,7 +2289,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 6, 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2318,7 +2318,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 6, 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2349,7 +2349,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 6, 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2382,7 +2382,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2417,7 +2417,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2454,7 +2454,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2493,7 +2493,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2534,7 +2534,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2577,7 +2577,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2622,7 +2622,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 7 parameters with its arguments 7 binded
+        /// Redefinition of a function of 7 parameters with its arguments 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2649,7 +2649,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 7, 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2678,7 +2678,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 7, 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2709,7 +2709,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 7, 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2742,7 +2742,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 7, 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2777,7 +2777,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2814,7 +2814,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2853,7 +2853,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2894,7 +2894,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2937,7 +2937,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -2982,7 +2982,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 8 parameters with its arguments 8 binded
+        /// Redefinition of a function of 8 parameters with its arguments 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3011,7 +3011,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 8, 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3042,7 +3042,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 8, 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3075,7 +3075,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 8, 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3110,7 +3110,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 8, 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3147,7 +3147,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3186,7 +3186,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3227,7 +3227,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3270,7 +3270,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3315,7 +3315,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 9 parameters with its arguments 9 binded
+        /// Redefinition of a function of 9 parameters with its arguments 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3346,7 +3346,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 9, 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3379,7 +3379,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 9, 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3414,7 +3414,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 9, 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3451,7 +3451,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 9, 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3490,7 +3490,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3531,7 +3531,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3574,7 +3574,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3619,7 +3619,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 10 parameters with its arguments 10 binded
+        /// Redefinition of a function of 10 parameters with its arguments 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3652,7 +3652,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 10, 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3687,7 +3687,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 10, 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3724,7 +3724,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 10, 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3763,7 +3763,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 10, 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3804,7 +3804,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3847,7 +3847,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3892,7 +3892,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 11 parameters with its arguments 11 binded
+        /// Redefinition of a function of 11 parameters with its arguments 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3927,7 +3927,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 11, 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -3964,7 +3964,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 11, 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4003,7 +4003,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 11, 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4044,7 +4044,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 11, 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4087,7 +4087,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4132,7 +4132,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 12 parameters with its arguments 12 binded
+        /// Redefinition of a function of 12 parameters with its arguments 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4169,7 +4169,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 12, 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4208,7 +4208,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 12, 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4249,7 +4249,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 12, 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4292,7 +4292,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 12, 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4337,7 +4337,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 13 parameters with its arguments 13 binded
+        /// Redefinition of a function of 13 parameters with its arguments 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4376,7 +4376,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 13, 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4417,7 +4417,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 13, 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4460,7 +4460,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 13, 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4505,7 +4505,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 14 parameters with its arguments 14 binded
+        /// Redefinition of a function of 14 parameters with its arguments 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4546,7 +4546,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 14, 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4589,7 +4589,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 14, 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4634,7 +4634,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 15 parameters with its arguments 15 binded
+        /// Redefinition of a function of 15 parameters with its arguments 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4677,7 +4677,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 15, 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4722,7 +4722,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of a function of 16 parameters with its arguments 16 binded
+        /// Redefinition of a function of 16 parameters with its arguments 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4767,7 +4767,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 1 parameters with its arguments 1 binded
+        /// Redefinition of an action of 1 parameters with its arguments 1 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <param name="act">The targeted action</param>
@@ -4780,7 +4780,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 2 parameters with its arguments 1, 2 binded
+        /// Redefinition of an action of 2 parameters with its arguments 1, 2 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4795,7 +4795,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 3 parameters with its arguments 1, 2, 3 binded
+        /// Redefinition of an action of 3 parameters with its arguments 1, 2, 3 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4812,7 +4812,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 4 parameters with its arguments 1, 2, 3, 4 binded
+        /// Redefinition of an action of 4 parameters with its arguments 1, 2, 3, 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4831,7 +4831,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 5 parameters with its arguments 1, 2, 3, 4, 5 binded
+        /// Redefinition of an action of 5 parameters with its arguments 1, 2, 3, 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4852,7 +4852,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 6 parameters with its arguments 1, 2, 3, 4, 5, 6 binded
+        /// Redefinition of an action of 6 parameters with its arguments 1, 2, 3, 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4875,7 +4875,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 1, 2, 3, 4, 5, 6, 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 1, 2, 3, 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4900,7 +4900,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4927,7 +4927,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4956,7 +4956,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -4987,7 +4987,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5020,7 +5020,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5055,7 +5055,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5092,7 +5092,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5131,7 +5131,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5172,7 +5172,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5215,7 +5215,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 2 parameters with its arguments 2 binded
+        /// Redefinition of an action of 2 parameters with its arguments 2 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5230,7 +5230,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 3 parameters with its arguments 2, 3 binded
+        /// Redefinition of an action of 3 parameters with its arguments 2, 3 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5247,7 +5247,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 4 parameters with its arguments 2, 3, 4 binded
+        /// Redefinition of an action of 4 parameters with its arguments 2, 3, 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5266,7 +5266,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 5 parameters with its arguments 2, 3, 4, 5 binded
+        /// Redefinition of an action of 5 parameters with its arguments 2, 3, 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5287,7 +5287,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 6 parameters with its arguments 2, 3, 4, 5, 6 binded
+        /// Redefinition of an action of 6 parameters with its arguments 2, 3, 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5310,7 +5310,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 2, 3, 4, 5, 6, 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 2, 3, 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5335,7 +5335,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 2, 3, 4, 5, 6, 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 2, 3, 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5362,7 +5362,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5391,7 +5391,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5422,7 +5422,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5455,7 +5455,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5490,7 +5490,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5527,7 +5527,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5566,7 +5566,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5607,7 +5607,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5650,7 +5650,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 3 parameters with its arguments 3 binded
+        /// Redefinition of an action of 3 parameters with its arguments 3 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5667,7 +5667,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 4 parameters with its arguments 3, 4 binded
+        /// Redefinition of an action of 4 parameters with its arguments 3, 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5686,7 +5686,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 5 parameters with its arguments 3, 4, 5 binded
+        /// Redefinition of an action of 5 parameters with its arguments 3, 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5707,7 +5707,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 6 parameters with its arguments 3, 4, 5, 6 binded
+        /// Redefinition of an action of 6 parameters with its arguments 3, 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5730,7 +5730,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 3, 4, 5, 6, 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 3, 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5755,7 +5755,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 3, 4, 5, 6, 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 3, 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5782,7 +5782,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 3, 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 3, 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5811,7 +5811,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5842,7 +5842,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5875,7 +5875,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5910,7 +5910,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5947,7 +5947,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -5986,7 +5986,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6027,7 +6027,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6070,7 +6070,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 4 parameters with its arguments 4 binded
+        /// Redefinition of an action of 4 parameters with its arguments 4 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6089,7 +6089,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 5 parameters with its arguments 4, 5 binded
+        /// Redefinition of an action of 5 parameters with its arguments 4, 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6110,7 +6110,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 6 parameters with its arguments 4, 5, 6 binded
+        /// Redefinition of an action of 6 parameters with its arguments 4, 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6133,7 +6133,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 4, 5, 6, 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 4, 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6158,7 +6158,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 4, 5, 6, 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 4, 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6185,7 +6185,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 4, 5, 6, 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 4, 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6214,7 +6214,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 4, 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 4, 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6245,7 +6245,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6278,7 +6278,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6313,7 +6313,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6350,7 +6350,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6389,7 +6389,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6430,7 +6430,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6473,7 +6473,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 5 parameters with its arguments 5 binded
+        /// Redefinition of an action of 5 parameters with its arguments 5 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6494,7 +6494,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 6 parameters with its arguments 5, 6 binded
+        /// Redefinition of an action of 6 parameters with its arguments 5, 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6517,7 +6517,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 5, 6, 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 5, 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6542,7 +6542,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 5, 6, 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 5, 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6569,7 +6569,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 5, 6, 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 5, 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6598,7 +6598,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 5, 6, 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 5, 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6629,7 +6629,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 5, 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 5, 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6662,7 +6662,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6697,7 +6697,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6734,7 +6734,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6773,7 +6773,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6814,7 +6814,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6857,7 +6857,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 6 parameters with its arguments 6 binded
+        /// Redefinition of an action of 6 parameters with its arguments 6 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6880,7 +6880,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 6, 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 6, 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6905,7 +6905,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 6, 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 6, 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6932,7 +6932,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 6, 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 6, 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6961,7 +6961,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 6, 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 6, 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -6992,7 +6992,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 6, 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 6, 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7025,7 +7025,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 6, 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 6, 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7060,7 +7060,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7097,7 +7097,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7136,7 +7136,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7177,7 +7177,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7220,7 +7220,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 7 parameters with its arguments 7 binded
+        /// Redefinition of an action of 7 parameters with its arguments 7 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7245,7 +7245,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 7, 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 7, 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7272,7 +7272,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 7, 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 7, 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7301,7 +7301,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 7, 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 7, 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7332,7 +7332,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 7, 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 7, 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7365,7 +7365,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 7, 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 7, 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7400,7 +7400,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 7, 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 7, 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7437,7 +7437,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7476,7 +7476,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7517,7 +7517,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7560,7 +7560,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 8 parameters with its arguments 8 binded
+        /// Redefinition of an action of 8 parameters with its arguments 8 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7587,7 +7587,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 8, 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 8, 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7616,7 +7616,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 8, 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 8, 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7647,7 +7647,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 8, 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 8, 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7680,7 +7680,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 8, 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 8, 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7715,7 +7715,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 8, 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 8, 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7752,7 +7752,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 8, 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 8, 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7791,7 +7791,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7832,7 +7832,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 8, 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7875,7 +7875,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 9 parameters with its arguments 9 binded
+        /// Redefinition of an action of 9 parameters with its arguments 9 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7904,7 +7904,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 9, 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 9, 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7935,7 +7935,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 9, 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 9, 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -7968,7 +7968,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 9, 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 9, 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8003,7 +8003,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 9, 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 9, 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8040,7 +8040,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 9, 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 9, 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8079,7 +8079,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 9, 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 9, 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8120,7 +8120,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 9, 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 9, 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8163,7 +8163,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 10 parameters with its arguments 10 binded
+        /// Redefinition of an action of 10 parameters with its arguments 10 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8194,7 +8194,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 10, 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 10, 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8227,7 +8227,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 10, 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 10, 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8262,7 +8262,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 10, 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 10, 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8299,7 +8299,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 10, 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 10, 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8338,7 +8338,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 10, 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 10, 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8379,7 +8379,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 10, 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 10, 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8422,7 +8422,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 11 parameters with its arguments 11 binded
+        /// Redefinition of an action of 11 parameters with its arguments 11 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8455,7 +8455,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 11, 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 11, 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8490,7 +8490,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 11, 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 11, 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8527,7 +8527,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 11, 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 11, 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8566,7 +8566,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 11, 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 11, 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8607,7 +8607,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 11, 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 11, 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8650,7 +8650,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 12 parameters with its arguments 12 binded
+        /// Redefinition of an action of 12 parameters with its arguments 12 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8685,7 +8685,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 12, 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 12, 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8722,7 +8722,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 12, 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 12, 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8761,7 +8761,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 12, 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 12, 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8802,7 +8802,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 12, 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 12, 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8845,7 +8845,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 13 parameters with its arguments 13 binded
+        /// Redefinition of an action of 13 parameters with its arguments 13 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8882,7 +8882,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 13, 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 13, 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8921,7 +8921,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 13, 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 13, 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -8962,7 +8962,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 13, 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 13, 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9005,7 +9005,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 14 parameters with its arguments 14 binded
+        /// Redefinition of an action of 14 parameters with its arguments 14 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9044,7 +9044,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 14, 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 14, 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9085,7 +9085,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 14, 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 14, 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9128,7 +9128,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 15 parameters with its arguments 15 binded
+        /// Redefinition of an action of 15 parameters with its arguments 15 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9169,7 +9169,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 15, 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 15, 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9212,7 +9212,7 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Composition of an action of 16 parameters with its arguments 16 binded
+        /// Redefinition of an action of 16 parameters with its arguments 16 binded
         /// </summary>
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <typeparam name="TArg2">The type of argument 2</typeparam>
@@ -9435,9 +9435,9 @@ namespace JotunShard.Extensions
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7)));
 
-        // public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
-        //     [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> func)
-        //     => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7), default(TArg8)));
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> func)
+            => func.ToGenerator(new Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7), default(TArg8)));
 
         public struct Bounce<TArg1, TResult>
         {

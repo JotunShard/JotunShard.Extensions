@@ -35,7 +35,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
 
         /// <summary>
-        /// Composition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// Redefinition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
         /// </summary>
 <#
         for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
@@ -90,7 +90,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
 
         /// <summary>
-        /// Composition of an action of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// Redefinition of an action of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
         /// </summary>
 <#
         for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
@@ -192,7 +192,7 @@ for (var index = 2; index <= maxTuple; ++index)
         }
 <#
 }
-resultTypeLine += typePrefix + 8 + itemSep;
+resultTypeLine += typePrefix + (maxTuple + 1) + itemSep;
 globalTypesLine += itemSep + typePrefix + (maxTuple + 1);
 globalValuesLine += itemSep + "value.Rest";
 paramLine += itemSep + "seed.Rest";
@@ -223,14 +223,14 @@ for (var index = 2; index <= maxTuple; ++index)
             => func.ToGenerator(Tuple.Create(<#=paramLine#>));
 <#
 }
-resultTypeLine += typePrefix + 8 + itemSep;
+resultTypeLine += typePrefix + (maxTuple + 1) + itemSep;
 globalTypesLine += itemSep + typePrefix + (maxTuple + 1);
-paramLine += itemSep + "default(" + typePrefix + 8 + ")";
+paramLine += itemSep + "default(" + typePrefix + (maxTuple + 1) + ")";
 #>
 
-        // public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
-        //     [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func)
-        //     => func.ToGenerator(Tuple.Create(<#=paramLine#>));
+        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
+            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func)
+            => func.ToGenerator(new Tuple<<#=globalTypesLine.Substring(2)#>>(<#=paramLine#>));
 <#
 globalTypesLine = string.Empty;
 resultTypeLine = string.Empty;
