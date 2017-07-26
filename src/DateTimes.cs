@@ -31,7 +31,7 @@ namespace JotunShard.Extensions
         /// </summary>
         /// <param name="value">The subjected value</param>
         /// <param name="weeks">The number of weeks</param>
-        /// <param name="calendar">The calendar on wich to count a week</param>
+        /// <param name="calendar">The calendar on which to count a week</param>
         /// <returns>Projected DateTime by the count of weeks</returns>
         public static DateTime AddWeeks(
             this DateTime value,
@@ -161,7 +161,7 @@ namespace JotunShard.Extensions
         /// </summary>
         /// <param name="value">The subjected value</param>
         /// <param name="weeks">The number of weeks</param>
-        /// <param name="culture">The culture on wich to count a week</param>
+        /// <param name="culture">The culture on which to count a week</param>
         /// <returns>Projected DateTime by the count of weeks</returns>
         public static DateTime AddWeeks(this DateTime value, int weeks, CultureInfo culture = null)
             => AddWeeks(value, weeks, (culture ?? CultureInfo.CurrentCulture).Calendar);
