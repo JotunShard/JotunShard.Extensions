@@ -1,12 +1,14 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace JotunShard.Extensions.Test.Collections
 {
     using static Assert;
 
+    [ExcludeFromCodeCoverage]
     internal static class Utilities
     {
         public static void AssertManySequences<TElem>(
