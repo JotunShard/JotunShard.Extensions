@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.20.0" />
-    <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
+    <PackageReference Include="docfx.console" Version="2.22.1" />
+    <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
   </ItemGroup>
 
   <ItemGroup>
