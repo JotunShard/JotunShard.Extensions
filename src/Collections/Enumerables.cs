@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+
 using System.Linq;
 
 namespace JotunShard.Extensions
@@ -34,7 +34,7 @@ namespace JotunShard.Extensions
             [NotNull] Func<int, TElem, bool> partitioner,
             Func<IList<TElem>, IReadOnlyCollection<TElem>> partitionProvider = null)
         {
-            IReadOnlyCollection<TElem> Iterator(
+            IReadOnlyCollection<TElem> PartitionBuilder(
                 IEnumerator<TElem> enmrtr)
             {
                 var partition = new List<TElem>();
@@ -50,10 +50,10 @@ namespace JotunShard.Extensions
             source.CheckArgumentNull(nameof(source));
             partitioner.CheckArgumentNull(nameof(partitioner));
             partitionProvider = partitionProvider
-                ?? (list => new ReadOnlyCollection<TElem>(list));
+                ?? (list => new System.Collections.ObjectModel.ReadOnlyCollection<TElem>(list));
             using (var enmrtr = source.GetEnumerator())
                 while (enmrtr.MoveNext())
-                    yield return Iterator(enmrtr);
+                    yield return PartitionBuilder(enmrtr);
         }
 
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionBy<TElem>(
@@ -126,7 +126,7 @@ namespace JotunShard.Extensions
             source.CheckArgumentNull(nameof(source));
             randomSource = randomSource ?? new Random().Next;
             resultProvider = resultProvider
-                ?? (list => new ReadOnlyCollection<TElem>(list));
+                ?? (list => new System.Collections.ObjectModel.ReadOnlyCollection<TElem>(list));
             var result = new List<TElem>();
             foreach (var item in source)
             {
