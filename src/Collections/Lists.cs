@@ -57,12 +57,12 @@ namespace JotunShard.Extensions
             int index,
             [NotNull] IEnumerable<TElem> items)
         {
+            list.CheckArgumentNull(nameof(list));
             if (list is List<TElem> trueList)
             {
                 trueList.InsertRange(index, items);
                 return;
             }
-            list.CheckArgumentNull(nameof(list));
             items.CheckArgumentNull(nameof(items));
             index.CheckArgumentOutOfRange(nameof(index), 0, list.Count);
             foreach (var item in items)
