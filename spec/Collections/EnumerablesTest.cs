@@ -165,21 +165,9 @@ namespace JotunShard.Extensions.Test.Collections
         public void PartitionBy_WithNonEmptyEnumerableAndLesserCount_ExpectsEnumerableWithMultipleSlices()
         {
             var slices = ENMRBL_NON_EMPTY.PartitionBy(COUNT_LESSER);
-            var comparison = true;
-            var count = 0;
-            using (var enmrtr = ENMRBL_NON_EMPTY.GetEnumerator())
-                foreach (var slice in slices)
-                    using (var slice_enmrtr = slice.GetEnumerator())
-                        while (comparison
-                            && slice_enmrtr.MoveNext()
-                            && enmrtr.MoveNext())
-                        {
-                            comparison = comparison
-                                && Equals(enmrtr.Current, slice_enmrtr.Current);
-                            ++count;
-                        }
-            IsTrue(comparison);
-            AreEqual(count, ENMRBL_NON_EMPTY.Count());
+
+            AreEqual(Math.Ceiling((double)ENMRBL_NON_EMPTY.Count() / COUNT_LESSER), slices.Count());
+            IsTrue(slices.SelectMany(s => s).SequenceEqual(ENMRBL_NON_EMPTY));
         }
 
         #endregion PartitionBy
