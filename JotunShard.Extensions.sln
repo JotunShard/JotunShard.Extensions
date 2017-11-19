@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JotunShard.Extensions", "src\JotunShard.Extensions.csproj", "{3EC4FA5B-0FA4-4975-9A52-28865C450C7D}"
 EndProject
@@ -36,37 +36,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{4D2BDAF8-DE3
 	ProjectSection(SolutionItems) = preProject
 		pres\api\.manifest = pres\api\.manifest
 		pres\api\index.md = pres\api\index.md
-		pres\api\JotunShard.Extensions.Arguments.yml = pres\api\JotunShard.Extensions.Arguments.yml
-		pres\api\JotunShard.Extensions.Collections.yml = pres\api\JotunShard.Extensions.Collections.yml
-		pres\api\JotunShard.Extensions.Comparables.yml = pres\api\JotunShard.Extensions.Comparables.yml
-		pres\api\JotunShard.Extensions.DateTimes.yml = pres\api\JotunShard.Extensions.DateTimes.yml
-		pres\api\JotunShard.Extensions.DefaultDelegates-1.yml = pres\api\JotunShard.Extensions.DefaultDelegates-1.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-10.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-10.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-11.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-11.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-12.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-12.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-13.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-13.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-14.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-14.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-15.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-15.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-16.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-16.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-17.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-17.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-2.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-2.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-3.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-3.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-4.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-4.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-5.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-5.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-6.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-6.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-7.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-7.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-8.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-8.yml
-		pres\api\JotunShard.Extensions.Delegates.Bounce-9.yml = pres\api\JotunShard.Extensions.Delegates.Bounce-9.yml
-		pres\api\JotunShard.Extensions.Delegates.Trampoline.yml = pres\api\JotunShard.Extensions.Delegates.Trampoline.yml
-		pres\api\JotunShard.Extensions.Delegates.yml = pres\api\JotunShard.Extensions.Delegates.yml
-		pres\api\JotunShard.Extensions.Enumerables.yml = pres\api\JotunShard.Extensions.Enumerables.yml
-		pres\api\JotunShard.Extensions.Lists.yml = pres\api\JotunShard.Extensions.Lists.yml
-		pres\api\JotunShard.Extensions.Objects.yml = pres\api\JotunShard.Extensions.Objects.yml
-		pres\api\JotunShard.Extensions.Strings.yml = pres\api\JotunShard.Extensions.Strings.yml
-		pres\api\JotunShard.Extensions.TreeTraversalMode.yml = pres\api\JotunShard.Extensions.TreeTraversalMode.yml
-		pres\api\JotunShard.Extensions.WeeklySchedule.yml = pres\api\JotunShard.Extensions.WeeklySchedule.yml
-		pres\api\JotunShard.Extensions.yml = pres\api\JotunShard.Extensions.yml
-		pres\api\toc.yml = pres\api\toc.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "articles", "articles", "{8AA194F5-D6DF-4269-B393-728523C804CC}"
@@ -96,5 +65,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4D2BDAF8-DE31-4AC0-B23C-D746DA402851} = {DF4EE51F-5BAF-404D-9474-88C581CF5637}
 		{8AA194F5-D6DF-4269-B393-728523C804CC} = {DF4EE51F-5BAF-404D-9474-88C581CF5637}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4267536D-0C04-4E86-BEC5-12E3CA547544}
 	EndGlobalSection
 EndGlobal
