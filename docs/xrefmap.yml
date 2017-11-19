@@ -6830,6 +6830,51 @@ references:
   fullName.vb: JotunShard.Extensions.Delegates.Trampoline.ReturnResult(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult)(TResult)
   nameWithType: Delegates.Trampoline.ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(TResult)
   nameWithType.vb: Delegates.Trampoline.ReturnResult(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult)(TResult)
+- uid: JotunShard.Extensions.Dictionaries
+  name: Dictionaries
+  href: api/JotunShard.Extensions.Dictionaries.html
+  commentId: T:JotunShard.Extensions.Dictionaries
+  fullName: JotunShard.Extensions.Dictionaries
+  nameWithType: Dictionaries
+- uid: JotunShard.Extensions.Dictionaries.DefaultIfEmpty*
+  name: DefaultIfEmpty
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_DefaultIfEmpty_
+  commentId: Overload:JotunShard.Extensions.Dictionaries.DefaultIfEmpty
+  fullName: JotunShard.Extensions.Dictionaries.DefaultIfEmpty
+  nameWithType: Dictionaries.DefaultIfEmpty
+- uid: JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  name: DefaultIfEmpty<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_DefaultIfEmpty__2_System_Collections_Generic_IDictionary___0___1____0___1_
+  commentId: M:JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  name.vb: DefaultIfEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
+  fullName: JotunShard.Extensions.Dictionaries.DefaultIfEmpty<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, TKey, TValue)
+  fullName.vb: JotunShard.Extensions.Dictionaries.DefaultIfEmpty(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, TValue)
+  nameWithType: Dictionaries.DefaultIfEmpty<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  nameWithType.vb: Dictionaries.DefaultIfEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
+- uid: JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.KeyValuePair{``0,``1})
+  name: DefaultIfEmpty<TKey, TValue>(IDictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_DefaultIfEmpty__2_System_Collections_Generic_IDictionary___0___1__System_Collections_Generic_KeyValuePair___0___1__
+  commentId: M:JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.KeyValuePair{``0,``1})
+  name.vb: DefaultIfEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue), KeyValuePair(Of TKey, TValue))
+  fullName: JotunShard.Extensions.Dictionaries.DefaultIfEmpty<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, System.Collections.Generic.KeyValuePair<TKey, TValue>)
+  fullName.vb: JotunShard.Extensions.Dictionaries.DefaultIfEmpty(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  nameWithType: Dictionaries.DefaultIfEmpty<TKey, TValue>(IDictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)
+  nameWithType.vb: Dictionaries.DefaultIfEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue), KeyValuePair(Of TKey, TValue))
+- uid: JotunShard.Extensions.Dictionaries.ToDictionary*
+  name: ToDictionary
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_ToDictionary_
+  commentId: Overload:JotunShard.Extensions.Dictionaries.ToDictionary
+  fullName: JotunShard.Extensions.Dictionaries.ToDictionary
+  nameWithType: Dictionaries.ToDictionary
+- uid: JotunShard.Extensions.Dictionaries.ToDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{``0})
+  name: ToDictionary<TKey, TValue>(IEnumerable<KeyValuePair<TKey, TValue>>, IEqualityComparer<TKey>)
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_ToDictionary__2_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair___0___1___System_Collections_Generic_IEqualityComparer___0__
+  commentId: M:JotunShard.Extensions.Dictionaries.ToDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{``0})
+  name.vb: ToDictionary(Of TKey, TValue)(IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEqualityComparer(Of TKey))
+  fullName: JotunShard.Extensions.Dictionaries.ToDictionary<TKey, TValue>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>, System.Collections.Generic.IEqualityComparer<TKey>)
+  fullName.vb: JotunShard.Extensions.Dictionaries.ToDictionary(Of TKey, TValue)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), System.Collections.Generic.IEqualityComparer(Of TKey))
+  nameWithType: Dictionaries.ToDictionary<TKey, TValue>(IEnumerable<KeyValuePair<TKey, TValue>>, IEqualityComparer<TKey>)
+  nameWithType.vb: Dictionaries.ToDictionary(Of TKey, TValue)(IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEqualityComparer(Of TKey))
 - uid: JotunShard.Extensions.Enumerables
   name: Enumerables
   href: api/JotunShard.Extensions.Enumerables.html
@@ -7064,6 +7109,21 @@ references:
   fullName.vb: JotunShard.Extensions.Lists.InsertAll(Of TElem)(System.Collections.Generic.IList(Of TElem), System.Int32, System.Collections.Generic.IEnumerable(Of TElem))
   nameWithType: Lists.InsertAll<TElem>(IList<TElem>, Int32, IEnumerable<TElem>)
   nameWithType.vb: Lists.InsertAll(Of TElem)(IList(Of TElem), Int32, IEnumerable(Of TElem))
+- uid: JotunShard.Extensions.Lists.PartitionBy*
+  name: PartitionBy
+  href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_PartitionBy_
+  commentId: Overload:JotunShard.Extensions.Lists.PartitionBy
+  fullName: JotunShard.Extensions.Lists.PartitionBy
+  nameWithType: Lists.PartitionBy
+- uid: JotunShard.Extensions.Lists.PartitionBy``1(System.Collections.Generic.List{``0},System.Int32,System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})
+  name: PartitionBy<TElem>(List<TElem>, Int32, Func<IList<TElem>, IReadOnlyCollection<TElem>>)
+  href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_PartitionBy__1_System_Collections_Generic_List___0__System_Int32_System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IReadOnlyCollection___0___
+  commentId: M:JotunShard.Extensions.Lists.PartitionBy``1(System.Collections.Generic.List{``0},System.Int32,System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})
+  name.vb: PartitionBy(Of TElem)(List(Of TElem), Int32, Func(Of IList(Of TElem), IReadOnlyCollection(Of TElem)))
+  fullName: JotunShard.Extensions.Lists.PartitionBy<TElem>(System.Collections.Generic.List<TElem>, System.Int32, System.Func<System.Collections.Generic.IList<TElem>, System.Collections.Generic.IReadOnlyCollection<TElem>>)
+  fullName.vb: JotunShard.Extensions.Lists.PartitionBy(Of TElem)(System.Collections.Generic.List(Of TElem), System.Int32, System.Func(Of System.Collections.Generic.IList(Of TElem), System.Collections.Generic.IReadOnlyCollection(Of TElem)))
+  nameWithType: Lists.PartitionBy<TElem>(List<TElem>, Int32, Func<IList<TElem>, IReadOnlyCollection<TElem>>)
+  nameWithType.vb: Lists.PartitionBy(Of TElem)(List(Of TElem), Int32, Func(Of IList(Of TElem), IReadOnlyCollection(Of TElem)))
 - uid: JotunShard.Extensions.Lists.Shuffle*
   name: Shuffle
   href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_Shuffle_
@@ -7115,6 +7175,66 @@ references:
   fullName.vb: JotunShard.Extensions.Objects.EqualsOrNull(Of TObject)(TObject, TObject)
   nameWithType: Objects.EqualsOrNull<TObject>(TObject, TObject)
   nameWithType.vb: Objects.EqualsOrNull(Of TObject)(TObject, TObject)
+- uid: JotunShard.Extensions.Streams
+  name: Streams
+  href: api/JotunShard.Extensions.Streams.html
+  commentId: T:JotunShard.Extensions.Streams
+  fullName: JotunShard.Extensions.Streams
+  nameWithType: Streams
+- uid: JotunShard.Extensions.Streams.ReadLines(System.IO.TextReader)
+  name: ReadLines(TextReader)
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_ReadLines_System_IO_TextReader_
+  commentId: M:JotunShard.Extensions.Streams.ReadLines(System.IO.TextReader)
+  fullName: JotunShard.Extensions.Streams.ReadLines(System.IO.TextReader)
+  nameWithType: Streams.ReadLines(TextReader)
+- uid: JotunShard.Extensions.Streams.ReadLines*
+  name: ReadLines
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_ReadLines_
+  commentId: Overload:JotunShard.Extensions.Streams.ReadLines
+  fullName: JotunShard.Extensions.Streams.ReadLines
+  nameWithType: Streams.ReadLines
+- uid: JotunShard.Extensions.Streams.ReadLinesAsync(System.IO.TextReader)
+  name: ReadLinesAsync(TextReader)
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_ReadLinesAsync_System_IO_TextReader_
+  commentId: M:JotunShard.Extensions.Streams.ReadLinesAsync(System.IO.TextReader)
+  fullName: JotunShard.Extensions.Streams.ReadLinesAsync(System.IO.TextReader)
+  nameWithType: Streams.ReadLinesAsync(TextReader)
+- uid: JotunShard.Extensions.Streams.ReadLinesAsync*
+  name: ReadLinesAsync
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_ReadLinesAsync_
+  commentId: Overload:JotunShard.Extensions.Streams.ReadLinesAsync
+  fullName: JotunShard.Extensions.Streams.ReadLinesAsync
+  nameWithType: Streams.ReadLinesAsync
+- uid: JotunShard.Extensions.Streams.WriteLines(System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.String})
+  name: WriteLines(TextWriter, IEnumerable<String>)
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_WriteLines_System_IO_TextWriter_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:JotunShard.Extensions.Streams.WriteLines(System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: WriteLines(TextWriter, IEnumerable(Of String))
+  fullName: JotunShard.Extensions.Streams.WriteLines(System.IO.TextWriter, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: JotunShard.Extensions.Streams.WriteLines(System.IO.TextWriter, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: Streams.WriteLines(TextWriter, IEnumerable<String>)
+  nameWithType.vb: Streams.WriteLines(TextWriter, IEnumerable(Of String))
+- uid: JotunShard.Extensions.Streams.WriteLines*
+  name: WriteLines
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_WriteLines_
+  commentId: Overload:JotunShard.Extensions.Streams.WriteLines
+  fullName: JotunShard.Extensions.Streams.WriteLines
+  nameWithType: Streams.WriteLines
+- uid: JotunShard.Extensions.Streams.WriteLinesAsync(System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.String})
+  name: WriteLinesAsync(TextWriter, IEnumerable<String>)
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_WriteLinesAsync_System_IO_TextWriter_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:JotunShard.Extensions.Streams.WriteLinesAsync(System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: WriteLinesAsync(TextWriter, IEnumerable(Of String))
+  fullName: JotunShard.Extensions.Streams.WriteLinesAsync(System.IO.TextWriter, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: JotunShard.Extensions.Streams.WriteLinesAsync(System.IO.TextWriter, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: Streams.WriteLinesAsync(TextWriter, IEnumerable<String>)
+  nameWithType.vb: Streams.WriteLinesAsync(TextWriter, IEnumerable(Of String))
+- uid: JotunShard.Extensions.Streams.WriteLinesAsync*
+  name: WriteLinesAsync
+  href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_WriteLinesAsync_
+  commentId: Overload:JotunShard.Extensions.Streams.WriteLinesAsync
+  fullName: JotunShard.Extensions.Streams.WriteLinesAsync
+  nameWithType: Streams.WriteLinesAsync
 - uid: JotunShard.Extensions.Strings
   name: Strings
   href: api/JotunShard.Extensions.Strings.html

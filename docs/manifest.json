@@ -1,1 +1,451 @@
-{"homepages":[],"source_base_path":"E:/GitHub/JotunShard.Extensions/pres","xrefmap":"xrefmap.yml","files":[{"type":"Toc","source_relative_path":"toc.yml","output":{".html":{"relative_path":"toc.html","hash":"3mzO2XU3vGs/pY6w/BFtNw=="}},"is_incremental":false,"version":""},{"type":"Toc","source_relative_path":"api/toc.yml","output":{".html":{"relative_path":"api/toc.html","hash":"Cir4PL2mZYzGXvy5KxgPiQ=="}},"is_incremental":false,"version":""},{"type":"Toc","source_relative_path":"articles/toc.yml","output":{".html":{"relative_path":"articles/toc.html","hash":"MthxFYC+doDRUguh/vpudA=="}},"is_incremental":false,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-2.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-2.html","hash":"k9uPJ4b4/ONzx554YN5w8g=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-14.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-14.html","hash":"Uz40+e9HqbltyeJhC8wh/A=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.TreeTraversalMode.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.TreeTraversalMode.html","hash":"XmFQDahRBz/nXzOpB/yRdw=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Lists.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Lists.html","hash":"ssihxJc6M7RZ/hFphvZkyw=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-5.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-5.html","hash":"Th8fLjAG58nuZp16s46YZA=="}},"is_incremental":true,"version":""},{"type":"Conceptual","source_relative_path":"articles/intro.md","output":{".html":{"relative_path":"articles/intro.html","hash":"ezBMVezQLTK7IzkWixcJbA=="}},"is_incremental":true,"version":""},{"type":"Conceptual","source_relative_path":"index.md","output":{".html":{"relative_path":"index.html","hash":"p9n5UJ2Za/3FnZR9M0vv5Q=="}},"is_incremental":true,"version":""},{"type":"Conceptual","source_relative_path":"api/index.md","output":{".html":{"relative_path":"api/index.html","hash":"wBt/Tvfq0xFT7+tbqRdwYA=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Strings.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Strings.html","hash":"105F9/uWz2i93q8ruWEydA=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-8.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-8.html","hash":"ryHE+PpACM7rWBY0DZPUGQ=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-11.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-11.html","hash":"BV0ornyS9OgTQC4LkD80Ag=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-13.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-13.html","hash":"bqm39qIXY8vMW4ILb575Ig=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Enumerables.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Enumerables.html","hash":"znx5rhh3KYQl22x0TvFsxg=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-4.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-4.html","hash":"6Q2+IZHNiDk6WY2l7sZKfA=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-10.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-10.html","hash":"1TLlkUp2ZA+CTd63FSVfyw=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.WeeklySchedule.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.WeeklySchedule.html","hash":"G20zxu8827WKefZBa0WaWg=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Objects.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Objects.html","hash":"//ZA9fCdeyb1ntuOkhUL0w=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-6.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-6.html","hash":"DaTGD0VhMIDETUksij5SQw=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Collections.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Collections.html","hash":"fu47XLMFY6RElqIWWrkaoA=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.html","hash":"oC3AW4+yVXHRUB9AqBt/LQ=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-7.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-7.html","hash":"JXwWVVFELZYRFRLMKdhD8g=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.DefaultDelegates-1.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.DefaultDelegates-1.html","hash":"/I7W6pT4/3LxBt5fLQMo7w=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.html","hash":"c82ZSRC3gXR2VPVRxYwYRg=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-9.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-9.html","hash":"k1jgKDnwFYInN7yugq8RuQ=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Comparables.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Comparables.html","hash":"bpbH2DFJjDKziYkBwOhJhg=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-15.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-15.html","hash":"HLxWuyRCqkJf0lXg4KBm8A=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-12.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-12.html","hash":"W6up1ipv4OwWUk7JEosxYQ=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-16.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-16.html","hash":"HZyLC6Gni+/WD1WlEG1y7g=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-17.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-17.html","hash":"F/a7Ficy5QBDW05bLhYBtw=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Bounce-3.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Bounce-3.html","hash":"B94n6mPAAsqy3gMubZ008A=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Arguments.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Arguments.html","hash":"1KI0JLyQZS8vcvvuJEhEEw=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.Delegates.Trampoline.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.Delegates.Trampoline.html","hash":"u6AM8R2JR7ePDk8ux6qZyQ=="}},"is_incremental":true,"version":""},{"type":"ManagedReference","source_relative_path":"api/JotunShard.Extensions.DateTimes.yml","output":{".html":{"relative_path":"api/JotunShard.Extensions.DateTimes.html","hash":"tv+d2LUggb1DGH4+3g6otQ=="}},"is_incremental":true,"version":""}],"incremental_info":[{"status":{"can_incremental":true,"incrementalPhase":"build"},"processors":{"RestApiDocumentProcessor":{"can_incremental":false,"details":"Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.","incrementalPhase":"build"},"TocDocumentProcessor":{"can_incremental":false,"details":"Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.","incrementalPhase":"build"},"ResourceDocumentProcessor":{"can_incremental":false,"details":"Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.","incrementalPhase":"build"},"ManagedReferenceDocumentProcessor":{"can_incremental":true,"incrementalPhase":"build"},"ConceptualDocumentProcessor":{"can_incremental":true,"incrementalPhase":"build"}}},{"status":{"can_incremental":true,"details":"Can support incremental post processing.","incrementalPhase":"postProcessing"},"processors":{}}],"version_info":{}}
+{
+  "homepages": [],
+  "source_base_path": "E:/GitHub/JotunShard.Extensions/pres",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Arguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Arguments.html",
+          "hash": "GuhlU+f5IUiwgMZqBP8LVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Collections.html",
+          "hash": "Z6vBvZHK8G6W/0/fAYFlBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Comparables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Comparables.html",
+          "hash": "uBPU4Uq5ZX6QHCtepiWwLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.DateTimes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.DateTimes.html",
+          "hash": "f48+ELfxDWMsLdCxSEWLeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.DefaultDelegates-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.DefaultDelegates-1.html",
+          "hash": "8t4AI3r/+5Sq+c727MvgSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-10.html",
+          "hash": "/Sz49V1AxMCC8/Zs2ag11Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-11.html",
+          "hash": "D5Ylke7ACIAhdIlV7+VITw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-12.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-12.html",
+          "hash": "AP69kTdLfwRCVPJcnGHOPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-13.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-13.html",
+          "hash": "k+vHcOBRlDOSsbXJlXitFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-14.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-14.html",
+          "hash": "SXiTb9JYzXp1GcSumlBSow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-15.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-15.html",
+          "hash": "pPCKV5Wb035JJwPHO2xdiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-16.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-16.html",
+          "hash": "j47oahY94QESQUm6LQB/ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-17.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-17.html",
+          "hash": "KiyfouKdhWsuIDKwWgQx/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-2.html",
+          "hash": "/SSJ/SkR5dd8N9gCJKO0aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-3.html",
+          "hash": "OrncTchHPxwkjjGA2X8JoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-4.html",
+          "hash": "TmmrdKmq3lRuJnpsnrN4tQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-5.html",
+          "hash": "8RnBT2hKtSLzFFauM8EcbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-6.html",
+          "hash": "xCnrSYA4L70F/WR+Gxvm6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-7.html",
+          "hash": "I//kOYF5BV+rgzOymEXxkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-8.html",
+          "hash": "epQGF95AtckCrZsHKGR7gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Bounce-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-9.html",
+          "hash": "kR4Wc2ym5SMi5qnX04ScRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.Trampoline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.Trampoline.html",
+          "hash": "MyLhGDwhxjwWJGMHbz6pmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Delegates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Delegates.html",
+          "hash": "7WhdYRTj090NEddYuoJbww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Dictionaries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Dictionaries.html",
+          "hash": "SFvWJdwbWnC3y8wOOhbSxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Enumerables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Enumerables.html",
+          "hash": "5cInbeYLLqe1fYvrgDTCAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Lists.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Lists.html",
+          "hash": "CV0bKf9ijLOM2rs4tl8RTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Objects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Objects.html",
+          "hash": "hn0frmGGjdzbesYIjCiG2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Streams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Streams.html",
+          "hash": "IZJXnznvj9pMoWctBBiw8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.Strings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.Strings.html",
+          "hash": "XVZwToCad5p+nZ+iuWlT5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.TreeTraversalMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.TreeTraversalMode.html",
+          "hash": "JTaOoMJzL9bUazek/m6MvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.WeeklySchedule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.WeeklySchedule.html",
+          "hash": "myKShEzBHF1v8gSZDEqS+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JotunShard.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JotunShard.Extensions.html",
+          "hash": "lYg95z8lET72UuFj1Blf+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "I/cLgTqk0YR4aItVfFwcOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
