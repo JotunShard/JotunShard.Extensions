@@ -83,5 +83,15 @@ namespace JotunShard.Extensions
             [NotNull] string term,
             int? length = null)
             => throw new NotImplementedException();
+
+        public static string DefaultIfEmpty(
+            this string value,
+            string defaultValue,
+            bool ignoreWhiteSpace = false)
+            => (ignoreWhiteSpace
+                ? string.IsNullOrWhiteSpace(value)
+                : string.IsNullOrEmpty(value))
+                ? defaultValue
+                : value;
     }
 }
