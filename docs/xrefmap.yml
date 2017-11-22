@@ -6233,6 +6233,156 @@ references:
   fullName.vb: JotunShard.Extensions.Delegates.Chain(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)(System.Action(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7))
   nameWithType: Delegates.Chain<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>)
   nameWithType.vb: Delegates.Chain(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)(Action(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7))
+- uid: JotunShard.Extensions.Delegates.Not*
+  name: Not
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not_
+  commentId: Overload:JotunShard.Extensions.Delegates.Not
+  fullName: JotunShard.Extensions.Delegates.Not
+  nameWithType: Delegates.Not
+- uid: JotunShard.Extensions.Delegates.Not``1(System.Func{``0,System.Boolean})
+  name: Not<TArg1>(Func<TArg1, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__1_System_Func___0_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``1(System.Func{``0,System.Boolean})
+  name.vb: Not(Of TArg1)(Func(Of TArg1, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1>(System.Func<TArg1, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1)(System.Func(Of TArg1, System.Boolean))
+  nameWithType: Delegates.Not<TArg1>(Func<TArg1, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1)(Func(Of TArg1, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__10_System_Func___0___1___2___3___4___5___6___7___8___9_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__11_System_Func___0___1___2___3___4___5___6___7___8___9___10_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__12_System_Func___0___1___2___3___4___5___6___7___8___9___10___11_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__13_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__14_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``15(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__15_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13___14_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``15(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``16(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__16_System_Func___0___1___2___3___4___5___6___7___8___9___10___11___12___13___14___15_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``16(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``2(System.Func{``0,``1,System.Boolean})
+  name: Not<TArg1, TArg2>(Func<TArg1, TArg2, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__2_System_Func___0___1_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``2(System.Func{``0,``1,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2)(Func(Of TArg1, TArg2, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2>(System.Func<TArg1, TArg2, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2)(System.Func(Of TArg1, TArg2, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2>(Func<TArg1, TArg2, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2)(Func(Of TArg1, TArg2, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``3(System.Func{``0,``1,``2,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3>(Func<TArg1, TArg2, TArg3, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__3_System_Func___0___1___2_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``3(System.Func{``0,``1,``2,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3)(Func(Of TArg1, TArg2, TArg3, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3>(System.Func<TArg1, TArg2, TArg3, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3)(System.Func(Of TArg1, TArg2, TArg3, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3>(Func<TArg1, TArg2, TArg3, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3)(Func(Of TArg1, TArg2, TArg3, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``4(System.Func{``0,``1,``2,``3,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4>(Func<TArg1, TArg2, TArg3, TArg4, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__4_System_Func___0___1___2___3_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``4(System.Func{``0,``1,``2,``3,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4)(Func(Of TArg1, TArg2, TArg3, TArg4, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4>(System.Func<TArg1, TArg2, TArg3, TArg4, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4)(System.Func(Of TArg1, TArg2, TArg3, TArg4, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4>(Func<TArg1, TArg2, TArg3, TArg4, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4)(Func(Of TArg1, TArg2, TArg3, TArg4, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``5(System.Func{``0,``1,``2,``3,``4,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__5_System_Func___0___1___2___3___4_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``5(System.Func{``0,``1,``2,``3,``4,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``6(System.Func{``0,``1,``2,``3,``4,``5,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__6_System_Func___0___1___2___3___4___5_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``6(System.Func{``0,``1,``2,``3,``4,``5,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``7(System.Func{``0,``1,``2,``3,``4,``5,``6,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__7_System_Func___0___1___2___3___4___5___6_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``7(System.Func{``0,``1,``2,``3,``4,``5,``6,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__8_System_Func___0___1___2___3___4___5___6___7_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Boolean))
+- uid: JotunShard.Extensions.Delegates.Not``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.Boolean})
+  name: Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, Boolean>)
+  href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not__9_System_Func___0___1___2___3___4___5___6___7___8_System_Boolean__
+  commentId: M:JotunShard.Extensions.Delegates.Not``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.Boolean})
+  name.vb: Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, Boolean))
+  fullName: JotunShard.Extensions.Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(System.Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, System.Boolean>)
+  fullName.vb: JotunShard.Extensions.Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)(System.Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, System.Boolean))
+  nameWithType: Delegates.Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, Boolean>)
+  nameWithType.vb: Delegates.Not(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)(Func(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, Boolean))
 - uid: JotunShard.Extensions.Delegates.ToGenerator*
   name: ToGenerator
   href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_ToGenerator_
@@ -7241,6 +7391,18 @@ references:
   commentId: T:JotunShard.Extensions.Strings
   fullName: JotunShard.Extensions.Strings
   nameWithType: Strings
+- uid: JotunShard.Extensions.Strings.DefaultIfEmpty(System.String,System.String,System.Boolean)
+  name: DefaultIfEmpty(String, String, Boolean)
+  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_DefaultIfEmpty_System_String_System_String_System_Boolean_
+  commentId: M:JotunShard.Extensions.Strings.DefaultIfEmpty(System.String,System.String,System.Boolean)
+  fullName: JotunShard.Extensions.Strings.DefaultIfEmpty(System.String, System.String, System.Boolean)
+  nameWithType: Strings.DefaultIfEmpty(String, String, Boolean)
+- uid: JotunShard.Extensions.Strings.DefaultIfEmpty*
+  name: DefaultIfEmpty
+  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_DefaultIfEmpty_
+  commentId: Overload:JotunShard.Extensions.Strings.DefaultIfEmpty
+  fullName: JotunShard.Extensions.Strings.DefaultIfEmpty
+  nameWithType: Strings.DefaultIfEmpty
 - uid: JotunShard.Extensions.Strings.EnsureEndsWith(System.String,System.String)
   name: EnsureEndsWith(String, String)
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureEndsWith_System_String_System_String_
