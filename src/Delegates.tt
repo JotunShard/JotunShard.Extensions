@@ -27,15 +27,15 @@ for (var index = 1; index <= maxArgs; ++index)
     var valuesLine = globalValuesLine;
     for (var innerIndex = index; innerIndex <= maxArgs; ++innerIndex)
     {
-        typesLine += typePrefix + innerIndex + itemSep;
-        summaryArgsLine += itemSep + innerIndex;
-        commentArgsLine += itemSep + argPrefix + innerIndex;
+        typesLine += typePrefix + innerIndex;
+        summaryArgsLine += innerIndex;
+        commentArgsLine += argPrefix + innerIndex;
         argsLine += itemSep + typePrefix + innerIndex + " " + argPrefix + innerIndex;
-        valuesLine += itemSep + argPrefix + innerIndex;
+        valuesLine += argPrefix + innerIndex;
 #>
 
         /// <summary>
-        /// Redefinition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// Redefinition of a function of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine#> binded
         /// </summary>
 <#
         for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
@@ -55,17 +55,21 @@ for (var index = 1; index <= maxArgs; ++index)
 <#
         }
 #>
-        /// <returns>Function with the binded values of <#=commentArgsLine.Substring(2)#></returns>
-        public static Func<<#=resultTypeLine#>TResult> Bind<<#=typesLine#>TResult>(
-            [NotNull] this Func<<#=typesLine#>TResult> func<#=argsLine#>)
+        /// <returns>Function with the binded values of <#=commentArgsLine#></returns>
+        public static Func<<#=resultTypeLine#>TResult> Bind<<#=typesLine#>, TResult>(
+            [NotNull] this Func<<#=typesLine#>, TResult> func<#=argsLine#>)
         {
             func.CheckArgumentNull(nameof(func));
-            return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => func(<#=valuesLine.Substring(2)#>);
+            return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => func(<#=valuesLine#>);
         }
 <#
+        typesLine += itemSep;
+        summaryArgsLine += itemSep;
+        commentArgsLine += itemSep;
+        valuesLine += itemSep;
     }
     globalTypesLine += typePrefix + index + itemSep;
-    globalValuesLine += itemSep + argPrefix + index;
+    globalValuesLine += argPrefix + index + itemSep;
     resultTypeLine += typePrefix + index + itemSep;
     paramLine += itemSep + argPrefix + index;
 }
@@ -77,20 +81,18 @@ for (var index = 1; index <= maxArgs; ++index)
 {
     var typesLine = globalTypesLine;
     var summaryArgsLine = string.Empty;
-    var commentArgsLine = string.Empty;
     var argsLine = string.Empty;
     var valuesLine = globalValuesLine;
     for (var innerIndex = index; innerIndex <= maxArgs; ++innerIndex)
     {
-        typesLine += itemSep + typePrefix + innerIndex;
-        summaryArgsLine += itemSep + innerIndex;
-        commentArgsLine += itemSep + argPrefix + innerIndex;
+        typesLine += typePrefix + innerIndex;
+        summaryArgsLine += innerIndex;
         argsLine += itemSep + typePrefix + innerIndex + " " + argPrefix + innerIndex;
-        valuesLine += itemSep + argPrefix + innerIndex;
+        valuesLine += argPrefix + innerIndex;
 #>
 
         /// <summary>
-        /// Redefinition of an action of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine.Substring(2)#> binded
+        /// Redefinition of an action of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine#> binded
         /// </summary>
 <#
         for (var commentIndex = 1; commentIndex <= innerIndex; ++commentIndex)
@@ -109,16 +111,19 @@ for (var index = 1; index <= maxArgs; ++index)
 <#
         }
 #>
-        public static Action<#=resultTypeLine.Length == 0 ? "" : "<" + resultTypeLine.Substring(2) + ">"#> Bind<<#=typesLine.Substring(2)#>>(
-            [NotNull] this Action<<#=typesLine.Substring(2)#>> act<#=argsLine#>)
+        public static Action<#=resultTypeLine.Length == 0 ? "" : "<" + resultTypeLine.Substring(2) + ">"#> Bind<<#=typesLine#>>(
+            [NotNull] this Action<<#=typesLine#>> act<#=argsLine#>)
         {
             act.CheckArgumentNull(nameof(act));
-            return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => act(<#=valuesLine.Substring(2)#>);
+            return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => act(<#=valuesLine#>);
         }
 <#
+        typesLine += itemSep;
+        summaryArgsLine += itemSep;
+        valuesLine += itemSep;
     }
-    globalTypesLine += itemSep + typePrefix + index;
-    globalValuesLine += itemSep + argPrefix + index;
+    globalTypesLine += typePrefix + index + itemSep;
+    globalValuesLine += argPrefix + index + itemSep;
     resultTypeLine += itemSep + typePrefix + index;
     paramLine += itemSep + argPrefix + index;
 }
@@ -157,13 +162,13 @@ for (var index = 2; index <= maxTuple; ++index)
         }
 <#
 }
-resultTypeLine = typePrefix + 1 + itemSep;
-globalTypesLine = itemSep + typePrefix + 1;
+resultTypeLine = typePrefix + 1;
+globalTypesLine = typePrefix + 1;
 #>
 
-        public static IEnumerable<<#=globalTypesLine.Substring(2)#>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
-            [NotNull] this Func<<#=resultTypeLine#><#=globalTypesLine.Substring(2)#>> func,
-            <#=globalTypesLine.Substring(2)#> seed = default(<#=globalTypesLine.Substring(2)#>))
+        public static IEnumerable<<#=globalTypesLine#>> ToGenerator<<#=globalTypesLine#>>(
+            [NotNull] this Func<<#=resultTypeLine#>, <#=globalTypesLine#>> func,
+            <#=globalTypesLine#> seed = default(<#=globalTypesLine#>))
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed); ;
@@ -175,15 +180,15 @@ globalValuesLine = "value.Item1";
 paramLine = "seed.Item1";
 for (var index = 2; index <= maxTuple; ++index)
 {
-    resultTypeLine += typePrefix + index + itemSep;
+    resultTypeLine += itemSep + typePrefix + index;
     globalTypesLine += itemSep + typePrefix + index;
     globalValuesLine += itemSep + "value.Item" + index;
     paramLine += itemSep + "seed.Item" + index;
 #>
 
-        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
-            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func,
-            Tuple<<#=globalTypesLine.Substring(2)#>> seed)
+        public static IEnumerable<Tuple<<#=globalTypesLine#>>> ToGenerator<<#=globalTypesLine#>>(
+            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func,
+            Tuple<<#=globalTypesLine#>> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(<#=paramLine#>); ;
@@ -192,15 +197,15 @@ for (var index = 2; index <= maxTuple; ++index)
         }
 <#
 }
-resultTypeLine += typePrefix + (maxTuple + 1) + itemSep;
+resultTypeLine += itemSep + typePrefix + (maxTuple + 1);
 globalTypesLine += itemSep + typePrefix + (maxTuple + 1);
 globalValuesLine += itemSep + "value.Rest";
 paramLine += itemSep + "seed.Rest";
 #>
 
-        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
-            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func,
-            Tuple<<#=globalTypesLine.Substring(2)#>> seed)
+        public static IEnumerable<Tuple<<#=globalTypesLine#>>> ToGenerator<<#=globalTypesLine#>>(
+            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func,
+            Tuple<<#=globalTypesLine#>> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(<#=paramLine#>); ;
@@ -208,29 +213,29 @@ paramLine += itemSep + "seed.Rest";
                 yield return value;
         }
 <#
-resultTypeLine = typePrefix + 1 + itemSep;
-globalTypesLine = itemSep + typePrefix + 1;
+resultTypeLine = typePrefix + 1;
+globalTypesLine = typePrefix + 1;
 paramLine = "default(" + typePrefix + 1 + ")";
 for (var index = 2; index <= maxTuple; ++index)
 {
-    resultTypeLine += typePrefix + index + itemSep;
+    resultTypeLine += itemSep + typePrefix + index;
     globalTypesLine += itemSep + typePrefix + index;
     paramLine += itemSep + "default(" + typePrefix + index + ")";
 #>
 
-        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
-            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func)
+        public static IEnumerable<Tuple<<#=globalTypesLine#>>> ToGenerator<<#=globalTypesLine#>>(
+            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func)
             => func.ToGenerator(Tuple.Create(<#=paramLine#>));
 <#
 }
-resultTypeLine += typePrefix + (maxTuple + 1) + itemSep;
+resultTypeLine += itemSep + typePrefix + (maxTuple + 1);
 globalTypesLine += itemSep + typePrefix + (maxTuple + 1);
 paramLine += itemSep + "default(" + typePrefix + (maxTuple + 1) + ")";
 #>
 
-        public static IEnumerable<Tuple<<#=globalTypesLine.Substring(2)#>>> ToGenerator<<#=globalTypesLine.Substring(2)#>>(
-            [NotNull] this Func<<#=resultTypeLine#>Tuple<<#=globalTypesLine.Substring(2)#>>> func)
-            => func.ToGenerator(new Tuple<<#=globalTypesLine.Substring(2)#>>(<#=paramLine#>));
+        public static IEnumerable<Tuple<<#=globalTypesLine#>>> ToGenerator<<#=globalTypesLine#>>(
+            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func)
+            => func.ToGenerator(new Tuple<<#=globalTypesLine#>>(<#=paramLine#>));
 <#
 globalTypesLine = string.Empty;
 resultTypeLine = string.Empty;
@@ -241,7 +246,7 @@ for (var index = 1; index <= maxArgs; ++index)
     globalTypesLine += typePrefix + index + itemSep;
     resultTypeLine += typePrefix + index + itemSep;
     globalValuesLine += itemSep + paramPrefix + index;
-    bounceArgsLine += itemSep + typePrefix + index + " " + paramPrefix + index;
+    bounceArgsLine += typePrefix + index + " " + paramPrefix + index;
 #>
 
         public struct Bounce<<#=globalTypesLine#>TResult>
@@ -259,7 +264,7 @@ for (var index = 1; index <= maxArgs; ++index)
 
             public TResult Result { get; }
 
-            internal Bounce(<#=bounceArgsLine.Substring(2)#>) : this()
+            internal Bounce(<#=bounceArgsLine#>) : this()
             {
 <#
     for (var innerIndex = 1; innerIndex <= index; ++innerIndex)
@@ -279,6 +284,7 @@ for (var index = 1; index <= maxArgs; ++index)
             }
         }
 <#
+    bounceArgsLine += itemSep;
 }
 #>
 
@@ -300,13 +306,15 @@ globalValuesLine = string.Empty;
 for (var index = 1; index <= maxArgs; ++index)
 {
     globalTypesLine += typePrefix + index + itemSep;
-    recurseArgsLine += itemSep + typePrefix + index + " " + argPrefix + index;
-    globalValuesLine += itemSep + argPrefix + index;
+    recurseArgsLine += typePrefix + index + " " + argPrefix + index;
+    globalValuesLine += argPrefix + index;
 #>
 
-            public static Bounce<<#=globalTypesLine#>TResult> Recurse<<#=globalTypesLine#>TResult>(<#=recurseArgsLine.Substring(2)#>)
-                => new Bounce<<#=globalTypesLine#>TResult>(<#=globalValuesLine.Substring(2)#>);
+            public static Bounce<<#=globalTypesLine#>TResult> Recurse<<#=globalTypesLine#>TResult>(<#=recurseArgsLine#>)
+                => new Bounce<<#=globalTypesLine#>TResult>(<#=globalValuesLine#>);
 <#
+    recurseArgsLine += itemSep;
+    globalValuesLine += itemSep;
 }
 #>
         }
@@ -319,23 +327,47 @@ for (var index = 1; index <= maxArgs; ++index)
 {
     globalTypesLine += typePrefix + index + itemSep;
     resultTypeLine += typePrefix + index + itemSep;
-    globalValuesLine += itemSep + argPrefix + index;
-    paramLine += itemSep + "value.Param" + index;
+    globalValuesLine += argPrefix + index;
+    paramLine += "value.Param" + index;
 #>
 
         public static Func<<#=resultTypeLine#>TResult> ToTrampoline<<#=globalTypesLine#>TResult>(
             [NotNull] this Func<<#=globalTypesLine#>Bounce<<#=globalTypesLine#>TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
-            return (<#=globalValuesLine.Substring(2)#>) =>
+            return (<#=globalValuesLine#>) =>
             {
-                for (var value = func(<#=globalValuesLine.Substring(2)#>); ;
-                    value = func(<#=paramLine.Substring(2)#>))
+                for (var value = func(<#=globalValuesLine#>); ;
+                    value = func(<#=paramLine#>))
                     if (value.HasResult)
                         return value.Result;
             };
         }
 <#
+    globalValuesLine += itemSep;
+    paramLine += itemSep;
+}
+globalTypesLine = string.Empty;
+globalValuesLine = string.Empty;
+resultTypeLine = string.Empty;
+paramLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    globalTypesLine += typePrefix + index;
+    resultTypeLine += typePrefix + index;
+    paramLine += argPrefix + index;
+#>
+
+        public static Func<<#=resultTypeLine#>, bool> Not<<#=globalTypesLine#>>(
+            [NotNull] this Func<<#=resultTypeLine#>, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (<#=paramLine#>) => !func(<#=paramLine#>);
+        }
+<#
+    globalTypesLine += itemSep;
+    resultTypeLine += itemSep;
+    paramLine += itemSep;
 }
 #>
     }

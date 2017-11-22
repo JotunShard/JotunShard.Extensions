@@ -10441,5 +10441,117 @@ namespace JotunShard.Extensions
                         return value.Result;
             };
         }
+
+        public static Func<TArg1, bool> Not<TArg1>(
+            [NotNull] this Func<TArg1, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1) => !func(arg1);
+        }
+
+        public static Func<TArg1, TArg2, bool> Not<TArg1, TArg2>(
+            [NotNull] this Func<TArg1, TArg2, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2) => !func(arg1, arg2);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, bool> Not<TArg1, TArg2, TArg3>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3) => !func(arg1, arg2, arg3);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, bool> Not<TArg1, TArg2, TArg3, TArg4>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4) => !func(arg1, arg2, arg3, arg4);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5) => !func(arg1, arg2, arg3, arg4, arg5);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6) => !func(arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+        }
+
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+            [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, bool> func)
+        {
+            func.CheckArgumentNull(nameof(func));
+            return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
+        }
     }
 }
