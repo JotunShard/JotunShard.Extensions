@@ -9,7 +9,7 @@
 					]
 				}
 			],
-			"dest": "api"
+			"dest": "../pres/api"
 		}
 	],
 	"build": {
