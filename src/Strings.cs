@@ -7,11 +7,11 @@ namespace JotunShard.Extensions
     public static class Strings
     {
         public static bool IsNullOrEmpty(
-            [NotNull] this string value)
+            this string value)
             => string.IsNullOrEmpty(value);
 
         public static bool IsNullOrWhiteSpace(
-            [NotNull] this string value)
+            this string value)
             => string.IsNullOrWhiteSpace(value);
 
         [StringFormatMethod("format")]
