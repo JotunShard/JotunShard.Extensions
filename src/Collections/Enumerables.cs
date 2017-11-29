@@ -42,7 +42,8 @@ namespace JotunShard.Extensions
                 TElem item;
                 do
                 {
-                    partition.Add(item = enmrtr.Current);
+                    item = enmrtr.Current;
+                    partition.Add(item);
                 } while (partitioner(++index, item) && enmrtr.MoveNext());
                 return partitionProvider(partition);
             }
