@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace JotunShard.Extensions
 {
+#pragma warning disable S2436 // Classes and methods should not have too many generic parameters
     public static class Delegates
     {
         /// <summary>
@@ -10554,4 +10555,5 @@ namespace JotunShard.Extensions
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
         }
     }
+#pragma warning restore S2436 // Classes and methods should not have too many generic parameters
 }

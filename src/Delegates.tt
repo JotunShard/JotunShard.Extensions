@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace JotunShard.Extensions
 {
+#pragma warning disable S2436 // Classes and methods should not have too many generic parameters
     public static class Delegates
     {<#
 var typePrefix = "TArg";
@@ -371,4 +372,5 @@ for (var index = 1; index <= maxArgs; ++index)
 }
 #>
     }
+#pragma warning restore S2436 // Classes and methods should not have too many generic parameters
 }
