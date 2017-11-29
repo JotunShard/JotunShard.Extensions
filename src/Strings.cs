@@ -1,5 +1,7 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Regex = System.Text.RegularExpressions.Regex;
 
 namespace JotunShard.Extensions
@@ -93,5 +95,25 @@ namespace JotunShard.Extensions
                 : string.IsNullOrEmpty(value))
                 ? defaultValue
                 : value;
+
+        public static string[] Split(
+            [NotNull] this string value,
+            IEnumerable<char> separator,
+            int? count = int.MaxValue,
+            StringSplitOptions? options = StringSplitOptions.None)
+        {
+            value.CheckArgumentNull(nameof(value));
+            return value.Split(separator?.ToArray(), count, options);
+        }
+
+        public static string[] Split(
+            [NotNull] this string value,
+            IEnumerable<string> separator,
+            int? count = int.MaxValue,
+            StringSplitOptions? options = StringSplitOptions.None)
+        {
+            value.CheckArgumentNull(nameof(value));
+            return value.Split(separator?.ToArray(), count, options);
+        }
     }
 }
