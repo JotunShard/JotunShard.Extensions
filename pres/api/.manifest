@@ -12,6 +12,7 @@
   "JotunShard.Extensions.Collections": "JotunShard.Extensions.Collections.yml",
   "JotunShard.Extensions.Collections.AddAll``1(System.Collections.Generic.ICollection{``0},``0[])": "JotunShard.Extensions.Collections.yml",
   "JotunShard.Extensions.Collections.AddAll``1(System.Collections.Generic.ICollection{``0},System.Collections.Generic.IEnumerable{``0})": "JotunShard.Extensions.Collections.yml",
+  "JotunShard.Extensions.Collections.Any``1(System.Collections.Generic.ICollection{``0})": "JotunShard.Extensions.Collections.yml",
   "JotunShard.Extensions.Collections.RemoveAll``1(System.Collections.Generic.ICollection{``0},``0[])": "JotunShard.Extensions.Collections.yml",
   "JotunShard.Extensions.Collections.RemoveAll``1(System.Collections.Generic.ICollection{``0},System.Collections.Generic.IEnumerable{``0})": "JotunShard.Extensions.Collections.yml",
   "JotunShard.Extensions.Comparables": "JotunShard.Extensions.Comparables.yml",

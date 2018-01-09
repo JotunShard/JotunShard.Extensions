@@ -6,6 +6,13 @@ namespace JotunShard.Extensions
 {
     public static class Collections
     {
+        public static bool Any<TElem>(
+            [NotNull] this ICollection<TElem> coll)
+        {
+            coll.CheckArgumentNull(nameof(coll));
+            return coll.Count != 0;
+        }
+
         public static void AddAll<TElem>(
             [NotNull] this ICollection<TElem> coll,
             [NotNull] IEnumerable<TElem> items)

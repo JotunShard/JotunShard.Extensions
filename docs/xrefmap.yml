@@ -163,6 +163,21 @@ references:
   fullName.vb: JotunShard.Extensions.Collections.AddAll(Of TElem)(System.Collections.Generic.ICollection(Of TElem), System.Collections.Generic.IEnumerable(Of TElem))
   nameWithType: Collections.AddAll<TElem>(ICollection<TElem>, IEnumerable<TElem>)
   nameWithType.vb: Collections.AddAll(Of TElem)(ICollection(Of TElem), IEnumerable(Of TElem))
+- uid: JotunShard.Extensions.Collections.Any*
+  name: Any
+  href: api/JotunShard.Extensions.Collections.html#JotunShard_Extensions_Collections_Any_
+  commentId: Overload:JotunShard.Extensions.Collections.Any
+  fullName: JotunShard.Extensions.Collections.Any
+  nameWithType: Collections.Any
+- uid: JotunShard.Extensions.Collections.Any``1(System.Collections.Generic.ICollection{``0})
+  name: Any<TElem>(ICollection<TElem>)
+  href: api/JotunShard.Extensions.Collections.html#JotunShard_Extensions_Collections_Any__1_System_Collections_Generic_ICollection___0__
+  commentId: M:JotunShard.Extensions.Collections.Any``1(System.Collections.Generic.ICollection{``0})
+  name.vb: Any(Of TElem)(ICollection(Of TElem))
+  fullName: JotunShard.Extensions.Collections.Any<TElem>(System.Collections.Generic.ICollection<TElem>)
+  fullName.vb: JotunShard.Extensions.Collections.Any(Of TElem)(System.Collections.Generic.ICollection(Of TElem))
+  nameWithType: Collections.Any<TElem>(ICollection<TElem>)
+  nameWithType.vb: Collections.Any(Of TElem)(ICollection(Of TElem))
 - uid: JotunShard.Extensions.Collections.RemoveAll*
   name: RemoveAll
   href: api/JotunShard.Extensions.Collections.html#JotunShard_Extensions_Collections_RemoveAll_
