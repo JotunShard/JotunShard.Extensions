@@ -28,9 +28,21 @@ namespace JotunShard.Extensions
             Func<string, int, string> slicer)
         {
             value.CheckArgumentNull(nameof(value));
-            if (value.Length * length == 0) return string.Empty;
-            if (value.Length <= Math.Abs(length)) return value;
-            if (length < 0) length += value.Length;
+            if (value.Length * length == 0)
+            {
+                return string.Empty;
+            }
+
+            if (value.Length <= Math.Abs(length))
+            {
+                return value;
+            }
+
+            if (length < 0)
+            {
+                length += value.Length;
+            }
+
             return slicer(value, length);
         }
 

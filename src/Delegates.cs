@@ -9339,7 +9339,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed); ;
                 value = func(value))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2>> ToGenerator<TArg1, TArg2>(
@@ -9349,7 +9351,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2); ;
                 value = func(value.Item1, value.Item2))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2, TArg3>> ToGenerator<TArg1, TArg2, TArg3>(
@@ -9359,7 +9363,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3); ;
                 value = func(value.Item1, value.Item2, value.Item3))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>> ToGenerator<TArg1, TArg2, TArg3, TArg4>(
@@ -9369,7 +9375,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
@@ -9379,7 +9387,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
@@ -9389,7 +9399,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
@@ -9399,7 +9411,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6, seed.Item7); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6, value.Item7))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
@@ -9409,7 +9423,9 @@ namespace JotunShard.Extensions
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6, seed.Item7, seed.Rest); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6, value.Item7, value.Rest))
+            {
                 yield return value;
+            }
         }
 
         public static IEnumerable<Tuple<TArg1, TArg2>> ToGenerator<TArg1, TArg2>(
@@ -10243,8 +10259,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1); ;
                     value = func(value.Param1))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10256,8 +10276,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2); ;
                     value = func(value.Param1, value.Param2))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10269,8 +10293,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3); ;
                     value = func(value.Param1, value.Param2, value.Param3))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10282,8 +10310,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10295,8 +10327,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10308,8 +10344,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10321,8 +10361,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10334,8 +10378,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10347,8 +10395,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10360,8 +10412,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10373,8 +10429,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10386,8 +10446,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10399,8 +10463,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10412,8 +10480,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10425,8 +10497,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14, value.Param15))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
@@ -10438,8 +10514,12 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14, value.Param15, value.Param16))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 

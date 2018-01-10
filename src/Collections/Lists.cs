@@ -17,9 +17,11 @@ namespace JotunShard.Extensions
             partitionProvider = partitionProvider
                 ?? (list => new System.Collections.ObjectModel.ReadOnlyCollection<TElem>(list));
             for (var index = 0; index < source.Count; index += count)
+            {
                 yield return partitionProvider(source.GetRange(
                     index,
                     Math.Min(count, source.Count - index - 1)));
+            }
         }
 
         public static void Swap<TElem>(
@@ -30,7 +32,11 @@ namespace JotunShard.Extensions
             list.CheckArgumentNull(nameof(list));
             index.CheckArgumentOutOfRangeOrEqual(nameof(index), 0, list.Count - 1);
             otherIndex.CheckArgumentOutOfRangeOrEqual(nameof(otherIndex), 0, list.Count - 1);
-            if (index == otherIndex) return;
+            if (index == otherIndex)
+            {
+                return;
+            }
+
             var item = list[otherIndex];
             list[otherIndex] = list[index];
             list[index] = item;
@@ -66,7 +72,9 @@ namespace JotunShard.Extensions
             items.CheckArgumentNull(nameof(items));
             index.CheckArgumentOutOfRange(nameof(index), 0, list.Count);
             foreach (var item in items)
+            {
                 list.Insert(index++, item);
+            }
         }
 
         public static void InsertAll<TElem>(

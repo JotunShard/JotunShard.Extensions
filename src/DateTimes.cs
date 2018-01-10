@@ -49,7 +49,10 @@ namespace JotunShard.Extensions
         {
             calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
             if (comparerOtherValue(value.DayOfWeek - target))
+            {
                 value = calendar.AddWeeks(value.Date, weekDiff);
+            }
+
             return calendar.AddDays(
                 value.Date,
                 target - calendar.GetDayOfWeek(value));
@@ -96,9 +99,12 @@ namespace JotunShard.Extensions
             var diffDays = calendar.GetDayOfMonth(value) - day;
             var year = calendar.GetYear(value);
             if (comparerOtherValue(diffMonths)
-                || diffMonths == 0
-                    && (diffDays == 0 || comparerOtherValue(diffDays)))
+                || (diffMonths == 0
+                    && (diffDays == 0 || comparerOtherValue(diffDays))))
+            {
                 year += yearsDiff;
+            }
+
             month.CheckArgumentIsLesserOrEqual(
                 nameof(month),
                 calendar.GetMonthsInYear(year));

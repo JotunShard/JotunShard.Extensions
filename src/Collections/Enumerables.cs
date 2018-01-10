@@ -21,11 +21,19 @@ namespace JotunShard.Extensions
             source.CheckArgumentNull(nameof(source));
             count.CheckArgumentIsGreaterOrEqual(nameof(count), 0);
             if (source is ICollection<TElem> coll)
+            {
                 return coll.Count == count;
+            }
+
             var index = 0;
             foreach (var item in source)
+            {
                 if (index++ >= count)
+                {
                     break;
+                }
+            }
+
             return index == count;
         }
 
@@ -53,8 +61,12 @@ namespace JotunShard.Extensions
             partitionProvider = partitionProvider
                 ?? (list => new System.Collections.ObjectModel.ReadOnlyCollection<TElem>(list));
             using (var enmrtr = source.GetEnumerator())
+            {
                 while (enmrtr.MoveNext())
+                {
                     yield return PartitionBuilder(enmrtr);
+                }
+            }
         }
 
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionBy<TElem>(
@@ -84,17 +96,27 @@ namespace JotunShard.Extensions
                         yield return item;
                         foreach (var subItem in provider(item)
                             .Flatten(provider, mode))
+                        {
                             yield return subItem;
+                        }
                     }
                     break;
 
                 case TreeTraversalMode.Breadth:
                     foreach (var item in source)
+                    {
                         yield return item;
+                    }
+
                     foreach (var item in source)
+                    {
                         foreach (var subItem in provider(item)
                             .Flatten(provider, mode))
+                        {
                             yield return subItem;
+                        }
+                    }
+
                     break;
             }
         }
@@ -112,11 +134,18 @@ namespace JotunShard.Extensions
             source.CheckArgumentNull(nameof(source));
             repeat?.CheckArgumentIsGreaterOrEqual(nameof(repeat), 0);
             if (!source.Any() || repeat == 0)
+            {
                 yield break;
+            }
+
             var index = 0;
             while (!repeat.HasValue || index++ < repeat)
+            {
                 foreach (var item in source)
+                {
                     yield return item;
+                }
+            }
         }
 
         public static IEnumerable<TElem> ToShuffled<TElem>(
@@ -133,7 +162,9 @@ namespace JotunShard.Extensions
             {
                 var index = randomSource(0, result.Count + 1);
                 if (index == result.Count)
+                {
                     result.Add(item);
+                }
                 else
                 {
                     result.Add(result[index]);
@@ -161,11 +192,14 @@ namespace JotunShard.Extensions
             predicate.CheckArgumentNull(nameof(predicate));
             firstItem = default(TElem);
             foreach (var item in source)
+            {
                 if (predicate(item))
                 {
                     firstItem = item;
                     return true;
                 }
+            }
+
             return false;
         }
 
@@ -179,11 +213,14 @@ namespace JotunShard.Extensions
             lastItem = default(TElem);
             var found = false;
             foreach (var item in source)
+            {
                 if (predicate(item))
                 {
                     found = true;
                     lastItem = item;
                 }
+            }
+
             return found;
         }
 
@@ -197,12 +234,19 @@ namespace JotunShard.Extensions
             singleItem = default(TElem);
             var found = false;
             foreach (var item in source)
+            {
                 if (predicate(item))
                 {
-                    if (found) return false;
+                    if (found)
+                    {
+                        return false;
+                    }
+
                     found = true;
                     singleItem = item;
                 }
+            }
+
             return found;
         }
 

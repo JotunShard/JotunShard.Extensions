@@ -174,7 +174,9 @@ globalTypesLine = typePrefix + 1;
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed); ;
                 value = func(value))
+            {
                 yield return value;
+            }
         }
 <#
 globalValuesLine = "value.Item1";
@@ -194,7 +196,9 @@ for (var index = 2; index <= maxTuple; ++index)
             func.CheckArgumentNull(nameof(func));
             for (var value = func(<#=paramLine#>); ;
                 value = func(<#=globalValuesLine#>))
+            {
                 yield return value;
+            }
         }
 <#
 }
@@ -211,7 +215,9 @@ paramLine += itemSep + "seed.Rest";
             func.CheckArgumentNull(nameof(func));
             for (var value = func(<#=paramLine#>); ;
                 value = func(<#=globalValuesLine#>))
+            {
                 yield return value;
+            }
         }
 <#
 resultTypeLine = typePrefix + 1;
@@ -340,8 +346,12 @@ for (var index = 1; index <= maxArgs; ++index)
             {
                 for (var value = func(<#=globalValuesLine#>); ;
                     value = func(<#=paramLine#>))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 <#

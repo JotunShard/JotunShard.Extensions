@@ -25,7 +25,9 @@ namespace JotunShard.Extensions
             coll.CheckArgumentNull(nameof(coll));
             items.CheckArgumentNull(nameof(items));
             foreach (var item in items)
+            {
                 coll.Add(item);
+            }
         }
 
         public static void AddAll<TElem>(
@@ -40,7 +42,9 @@ namespace JotunShard.Extensions
             coll.CheckArgumentNull(nameof(coll));
             items.CheckArgumentNull(nameof(items));
             foreach (var item in items.ToList())
+            {
                 coll.Remove(item);
+            }
         }
 
         public static void RemoveAll<TElem>(

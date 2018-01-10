@@ -12,9 +12,12 @@ namespace JotunShard.Extensions
         {
             values.CheckArgumentNull(nameof(values));
             if (values is Dictionary<TKey, TValue> dict)
+            {
                 return dict.Comparer.Equals(comparer)
                    ? dict
                    : new Dictionary<TKey, TValue>(dict, comparer);
+            }
+
             return values.ToDictionary(kv => kv.Key, kv => kv.Value, comparer);
         }
 
