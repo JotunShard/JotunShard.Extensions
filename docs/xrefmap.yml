@@ -262,18 +262,18 @@ references:
   commentId: Overload:JotunShard.Extensions.DateTimes.AddWeeks
   fullName: JotunShard.Extensions.DateTimes.AddWeeks
   nameWithType: DateTimes.AddWeeks
-- uid: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.DayOfWeek,System.Globalization.CultureInfo)
-  name: EndOfMonth(DateTime, DayOfWeek, CultureInfo)
-  href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_EndOfMonth_System_DateTime_System_DayOfWeek_System_Globalization_CultureInfo_
-  commentId: M:JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.DayOfWeek,System.Globalization.CultureInfo)
-  fullName: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime, System.DayOfWeek, System.Globalization.CultureInfo)
-  nameWithType: DateTimes.EndOfMonth(DateTime, DayOfWeek, CultureInfo)
 - uid: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.Globalization.Calendar)
   name: EndOfMonth(DateTime, Calendar)
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_EndOfMonth_System_DateTime_System_Globalization_Calendar_
   commentId: M:JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.Globalization.Calendar)
   fullName: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime, System.Globalization.Calendar)
   nameWithType: DateTimes.EndOfMonth(DateTime, Calendar)
+- uid: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.Globalization.CultureInfo)
+  name: EndOfMonth(DateTime, CultureInfo)
+  href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_EndOfMonth_System_DateTime_System_Globalization_CultureInfo_
+  commentId: M:JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.Globalization.CultureInfo)
+  fullName: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime, System.Globalization.CultureInfo)
+  nameWithType: DateTimes.EndOfMonth(DateTime, CultureInfo)
 - uid: JotunShard.Extensions.DateTimes.EndOfMonth*
   name: EndOfMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_EndOfMonth_
@@ -694,12 +694,12 @@ references:
   commentId: Overload:JotunShard.Extensions.DateTimes.IsToday
   fullName: JotunShard.Extensions.DateTimes.IsToday
   nameWithType: DateTimes.IsToday
-- uid: JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime,System.DayOfWeek,System.Globalization.CultureInfo)
-  name: NextDayOfMonth(DateTime, DayOfWeek, CultureInfo)
-  href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_NextDayOfMonth_System_DateTime_System_DayOfWeek_System_Globalization_CultureInfo_
-  commentId: M:JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime,System.DayOfWeek,System.Globalization.CultureInfo)
-  fullName: JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime, System.DayOfWeek, System.Globalization.CultureInfo)
-  nameWithType: DateTimes.NextDayOfMonth(DateTime, DayOfWeek, CultureInfo)
+- uid: JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime,System.Int32,System.Globalization.CultureInfo)
+  name: NextDayOfMonth(DateTime, Int32, CultureInfo)
+  href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_NextDayOfMonth_System_DateTime_System_Int32_System_Globalization_CultureInfo_
+  commentId: M:JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime,System.Int32,System.Globalization.CultureInfo)
+  fullName: JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime, System.Int32, System.Globalization.CultureInfo)
+  nameWithType: DateTimes.NextDayOfMonth(DateTime, Int32, CultureInfo)
 - uid: JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime,System.Int32,System.Int32,System.Globalization.Calendar)
   name: NextDayOfMonth(DateTime, Int32, Int32, Calendar)
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_NextDayOfMonth_System_DateTime_System_Int32_System_Int32_System_Globalization_Calendar_
@@ -730,12 +730,12 @@ references:
   commentId: Overload:JotunShard.Extensions.DateTimes.NextDayOfWeek
   fullName: JotunShard.Extensions.DateTimes.NextDayOfWeek
   nameWithType: DateTimes.NextDayOfWeek
-- uid: JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime,System.DayOfWeek,System.Globalization.CultureInfo)
-  name: PreviousDayOfMonth(DateTime, DayOfWeek, CultureInfo)
-  href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_PreviousDayOfMonth_System_DateTime_System_DayOfWeek_System_Globalization_CultureInfo_
-  commentId: M:JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime,System.DayOfWeek,System.Globalization.CultureInfo)
-  fullName: JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime, System.DayOfWeek, System.Globalization.CultureInfo)
-  nameWithType: DateTimes.PreviousDayOfMonth(DateTime, DayOfWeek, CultureInfo)
+- uid: JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime,System.Int32,System.Globalization.CultureInfo)
+  name: PreviousDayOfMonth(DateTime, Int32, CultureInfo)
+  href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_PreviousDayOfMonth_System_DateTime_System_Int32_System_Globalization_CultureInfo_
+  commentId: M:JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime,System.Int32,System.Globalization.CultureInfo)
+  fullName: JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime, System.Int32, System.Globalization.CultureInfo)
+  nameWithType: DateTimes.PreviousDayOfMonth(DateTime, Int32, CultureInfo)
 - uid: JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime,System.Int32,System.Int32,System.Globalization.Calendar)
   name: PreviousDayOfMonth(DateTime, Int32, Int32, Calendar)
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_PreviousDayOfMonth_System_DateTime_System_Int32_System_Int32_System_Globalization_Calendar_
