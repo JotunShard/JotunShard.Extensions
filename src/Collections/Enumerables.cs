@@ -11,11 +11,11 @@ namespace JotunShard.Extensions
         // TryFind
 
         /// <summary>
-        /// Determines whether the specified count has count.
+        /// Determines efficiently whether the enumerable has the provided count.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="count">The count.</param>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to test.</param>
+        /// <param name="count">The count to find.</param>
         /// <returns>
         ///   <c>true</c> if the specified count has count; otherwise, <c>false</c>.
         /// </returns>
@@ -43,13 +43,13 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Partitions if.
+        /// Partitions the enumerable on a specified predicate.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="partitioner">The partitioner.</param>
-        /// <param name="partitionProvider">The partition provider.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to partition.</param>
+        /// <param name="partitioner">The predicate.</param>
+        /// <param name="partitionProvider">The partition container provider.</param>
+        /// <returns>A lazy enumerable</returns>
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionIf<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<int, TElem, bool> partitioner,
@@ -83,13 +83,13 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Partitions the by.
+        /// Partitions the enumerable by the specified size.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="count">The count.</param>
-        /// <param name="partitionProvider">The partition provider.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to partition.</param>
+        /// <param name="count">The size of the partition.</param>
+        /// <param name="partitionProvider">The partition container provider.</param>
+        /// <returns>A lazy enumerable</returns>
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionBy<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             int count,
@@ -103,13 +103,13 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Flattens the specified provider.
+        /// Flattens the specified enumerable to every item available.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="provider">The provider.</param>
-        /// <param name="mode">The mode.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to flatten.</param>
+        /// <param name="provider">The enumerable provider from the item.</param>
+        /// <param name="mode">The flattening mode.</param>
+        /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Flatten<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<TElem, IEnumerable<TElem>> provider,
@@ -151,12 +151,12 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Flattens the specified mode.
+        /// Flattens the specified enumerable which every item in itself is an enumerable.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="mode">The mode.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to flatten.</param>
+        /// <param name="mode">The flattening mode.</param>
+        /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Flatten<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             TreeTraversalMode mode = TreeTraversalMode.Depth)
@@ -164,12 +164,12 @@ namespace JotunShard.Extensions
         => source.Flatten(c => c, mode);
 
         /// <summary>
-        /// Cycles the specified repeat.
+        /// Cycles the specified enumerable indefinitely or up to the specified limit if provided.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="repeat">The repeat.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to cycle.</param>
+        /// <param name="repeat">The repeating limit.</param>
+        /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Cycle<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             int? repeat = null)
@@ -192,13 +192,13 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// To the shuffled.
+        /// Generates a shuffled enumerable.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to shuffle.</param>
         /// <param name="randomSource">The random source.</param>
-        /// <param name="resultProvider">The result provider.</param>
-        /// <returns></returns>
+        /// <param name="resultProvider">The shuffled container provider.</param>
+        /// <returns>A new shuffled enumerable</returns>
         public static IEnumerable<TElem> ToShuffled<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             Func<int, int, int> randomSource = null,
@@ -226,12 +226,12 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Gets the random.
+        /// Gets a random item from the enumerable.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to take from.</param>
         /// <param name="randomSource">The random source.</param>
-        /// <returns></returns>
+        /// <returns>A random item</returns>
         public static TElem GetRandom<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             Func<int, int> randomSource = null)
@@ -242,13 +242,15 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Tries the get first.
+        /// Tries to get the first element corresponding to the specified predicate.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="predicate">The predicate.</param>
-        /// <param name="firstItem">The first item.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to iterate through.</param>
+        /// <param name="predicate">The predicat to test.</param>
+        /// <param name="firstItem">The first item to be found.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified predicate finds an item; otherwise, <c>false</c>.
+        /// </returns>
         public static bool TryGetFirst<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<TElem, bool> predicate,
@@ -270,13 +272,15 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Tries the get last.
+        /// Tries to get the last element corresponding to the specified predicate.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="predicate">The predicate.</param>
-        /// <param name="lastItem">The last item.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to iterate through.</param>
+        /// <param name="predicate">The predicate to test.</param>
+        /// <param name="lastItem">The last item to be found.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified predicate finds an item; otherwise, <c>false</c>.
+        /// </returns>
         public static bool TryGetLast<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<TElem, bool> predicate,
@@ -299,13 +303,15 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Tries the get single.
+        /// Tries to get a last single corresponding to the specified predicate.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="predicate">The predicate.</param>
-        /// <param name="singleItem">The single item.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to iterate through.</param>
+        /// <param name="predicate">The predicate to test.</param>
+        /// <param name="singleItem">The single item to be found.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified predicate finds an item; otherwise, <c>false</c>.
+        /// </returns>
         public static bool TryGetSingle<TElem>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<TElem, bool> predicate,
@@ -333,16 +339,16 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Groups to dictionary.
+        /// Groups en enumerable to a dictionary of partitions of new items.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <typeparam name="TKey">The type of the key.</typeparam>
-        /// <typeparam name="TValue">The type of the value.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="keySelector">The key selector.</param>
-        /// <param name="valueSelector">The value selector.</param>
-        /// <param name="comparer">The comparer.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <typeparam name="TKey">The type of the discriminator.</typeparam>
+        /// <typeparam name="TValue">The type of the partition's item.</typeparam>
+        /// <param name="source">The enumerable to partition.</param>
+        /// <param name="keySelector">The discriminator selector.</param>
+        /// <param name="valueSelector">The partition's item selector.</param>
+        /// <param name="comparer">The discriminator's comparer.</param>
+        /// <returns>A dictionary of partitions</returns>
         public static Dictionary<TKey, IEnumerable<TValue>> GroupToDictionary<TElem, TKey, TValue>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<TElem, TKey> keySelector,
@@ -359,14 +365,14 @@ namespace JotunShard.Extensions
         }
 
         /// <summary>
-        /// Groups to dictionary.
+        /// Groups en enumerable to a dictionary of partitions.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <typeparam name="TKey">The type of the key.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <param name="keySelector">The key selector.</param>
-        /// <param name="comparer">The comparer.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <typeparam name="TKey">The type of the discriminator.</typeparam>
+        /// <param name="source">The enumerable to partition.</param>
+        /// <param name="keySelector">The discriminator selector.</param>
+        /// <param name="comparer">The discriminator's comparer.</param>
+        /// <returns>A dictionary of partitions</returns>
         public static Dictionary<TKey, IEnumerable<TElem>> GroupToDictionary<TElem, TKey>(
             [NotNull] this IEnumerable<TElem> source,
             [NotNull] Func<TElem, TKey> keySelector,
@@ -377,11 +383,11 @@ namespace JotunShard.Extensions
             comparer);
 
         /// <summary>
-        /// Gets the FNV hash code.
+        /// Gets the Fowler–Noll–Vo hash code.
         /// </summary>
-        /// <typeparam name="TElem">The type of the elem.</typeparam>
-        /// <param name="source">The source.</param>
-        /// <returns></returns>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to calculate.</param>
+        /// <returns>The resulting hash code</returns>
         public static uint GetFNVHashCode<TElem>(
             [NotNull] this IEnumerable<TElem> source)
         {
