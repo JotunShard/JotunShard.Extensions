@@ -1,0 +1,197 @@
+﻿<#@ template language="C#"#>
+<#@ assembly name="System.Core"#>
+<#@ assembly name="System.Linq.Expressions"#>
+<#@ import namespace="System.Linq"#>
+<#@ import namespace="System.Linq.Expressions"#>
+using JetBrains.Annotations;
+using System;
+using System.Linq;
+using System.Linq.Expressions;
+
+namespace JotunShard.Extensions
+{
+#pragma warning disable S2436 // Classes and methods should not have too many generic parameters
+    public static class Expressions
+    {<#
+var maxArgs = 16;
+var typePrefix = "TArg";
+var argPrefix = "arg";
+var itemSep = ", ";
+
+var typesLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    typesLine += $"{typePrefix}{index}{itemSep}";
+    var summaryArgsLine = string.Empty;
+    var commentArgsLine = string.Empty;
+    var argsLine = string.Empty;
+    var valuesLine = string.Empty;
+    for (var innerIndex = index; innerIndex > 1; --innerIndex)
+    {
+        summaryArgsLine += innerIndex;
+        commentArgsLine += argPrefix + innerIndex;
+        var resultTypeLine = string.Concat(Enumerable.Range(1, innerIndex - 1).Select(n => $"{typePrefix}{n}{itemSep}"));
+        argsLine = $"{itemSep}{typePrefix}{innerIndex} {argPrefix}{innerIndex}{argsLine}";
+        valuesLine = $"{argPrefix}{innerIndex}{itemSep}{valuesLine}";
+#>
+
+        /// <summary>
+        /// Redefinition of a function expression of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine#> binded
+        /// </summary>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <typeparam name="TArg<#=commentIndex#>">The type of argument <#=commentIndex#></typeparam>
+<#
+        }
+#>
+        /// <typeparam name="TResult">Resultant type of the function expression</typeparam>
+        /// <param name="func">The targeted function expression</param>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <param name="arg<#=commentIndex#>">The provided value for the argument <#=commentIndex#></param>
+<#
+        }
+#>
+        /// <returns>Function with the binded values of <#=commentArgsLine#></returns>
+        public static Expression<Func<<#=resultTypeLine#>TResult>> BindParameters<<#=typesLine#>TResult>(
+            [NotNull] this Expression<Func<<#=typesLine#>TResult>> func<#=argsLine#>)
+        {
+            var newParameters = func.Parameters.Take(<#=innerIndex - 1#>);
+            var boundParameters = new object[] { <#=valuesLine#>}
+                .Select(Expression.Constant);
+            var innerFunc = Expression.Invoke(func, newParameters.Cast<Expression>().Union(boundParameters));
+            return Expression.Lambda<Func<<#=resultTypeLine#>TResult>>(innerFunc, newParameters);
+        }
+<#
+    }
+    argsLine = $"{itemSep}{typePrefix}1 {argPrefix}1{argsLine}";
+    valuesLine = $"{argPrefix}1{itemSep}{valuesLine}";
+#>
+
+        /// <summary>
+        /// Redefinition of a function expression of <#=index#> parameters with all its arguments binded
+        /// </summary>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <typeparam name="TArg<#=commentIndex#>">The type of argument <#=commentIndex#></typeparam>
+<#
+        }
+#>
+        /// <typeparam name="TResult">Resultant type of the function expression</typeparam>
+        /// <param name="func">The targeted function expression</param>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <param name="arg<#=commentIndex#>">The provided value for the argument <#=commentIndex#></param>
+<#
+        }
+#>
+        /// <returns>Function with all the binded values</returns>
+        public static Expression<Func<TResult>> BindParameters<<#=typesLine#>TResult>(
+            [NotNull] this Expression<Func<<#=typesLine#>TResult>> func<#=argsLine#>)
+        {
+            var boundParameters = new object[] { <#=valuesLine#>}
+                .Select(Expression.Constant);
+            var innerFunc = Expression.Invoke(func, boundParameters);
+            return Expression.Lambda<Func<TResult>>(innerFunc);
+        }
+<#
+}
+typesLine = string.Empty;
+for (var index = 1; index <= maxArgs; ++index)
+{
+    typesLine += $"{typePrefix}{index}";
+    var summaryArgsLine = string.Empty;
+    var commentArgsLine = string.Empty;
+    var argsLine = string.Empty;
+    var valuesLine = string.Empty;
+    for (var innerIndex = index; innerIndex > 1; --innerIndex)
+    {
+        summaryArgsLine += innerIndex;
+        commentArgsLine += argPrefix + innerIndex;
+        var resultTypeLine = string.Join(itemSep, Enumerable.Range(1, innerIndex - 1).Select(n => $"{typePrefix}{n}"));
+        argsLine = $"{itemSep}{typePrefix}{innerIndex} {argPrefix}{innerIndex}{argsLine}";
+        valuesLine = $"{argPrefix}{innerIndex}{itemSep}{valuesLine}";
+#>
+
+        /// <summary>
+        /// Redefinition of an action expression of <#=innerIndex#> parameters with its arguments <#=summaryArgsLine#> binded
+        /// </summary>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <typeparam name="TArg<#=commentIndex#>">The type of argument <#=commentIndex#></typeparam>
+<#
+        }
+#>
+        /// <typeparam name="TResult">Resultant type of the action expression</typeparam>
+        /// <param name="act">The targeted action expression</param>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <param name="arg<#=commentIndex#>">The provided value for the argument <#=commentIndex#></param>
+<#
+        }
+#>
+        /// <returns>Action with the binded values of <#=commentArgsLine#></returns>
+        public static Expression<Action<<#=resultTypeLine#>>> BindParameters<<#=typesLine#>>(
+            [NotNull] this Expression<Action<<#=typesLine#>>> act<#=argsLine#>)
+        {
+            var newParameters = act.Parameters.Take(<#=innerIndex - 1#>);
+            var boundParameters = new object[] { <#=valuesLine#>}
+                .Select(Expression.Constant);
+            var innerAct = Expression.Invoke(act, newParameters.Cast<Expression>().Union(boundParameters));
+            return Expression.Lambda<Action<<#=resultTypeLine#>>>(innerAct, newParameters);
+        }
+<#
+    }
+    argsLine = $"{itemSep}{typePrefix}1 {argPrefix}1{argsLine}";
+    valuesLine = $"{argPrefix}1{itemSep}{valuesLine}";
+#>
+
+        /// <summary>
+        /// Redefinition of an action expression of <#=index#> parameters with all its arguments binded
+        /// </summary>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <typeparam name="TArg<#=commentIndex#>">The type of argument <#=commentIndex#></typeparam>
+<#
+        }
+#>
+        /// <typeparam name="TResult">Resultant type of the action expression</typeparam>
+        /// <param name="act">The targeted action expression</param>
+<#
+        for (var commentIndex = 1; commentIndex <= index; ++commentIndex)
+        {
+#>
+        /// <param name="arg<#=commentIndex#>">The provided value for the argument <#=commentIndex#></param>
+<#
+        }
+#>
+        /// <returns>Action with all the binded values</returns>
+        public static BlockExpression BindParameters<<#=typesLine#>>(
+            [NotNull] this Expression<Action<<#=typesLine#>>> act<#=argsLine#>)
+        {
+            var boundParameters = new object[] { <#=valuesLine#>}
+                .Select(Expression.Constant);
+            var innerAct = Expression.Invoke(act, boundParameters);
+            return Expression.Block(innerAct);
+        }
+<#
+    typesLine += itemSep;
+}
+#>
+    }
+#pragma warning restore S2436 // Classes and methods should not have too many generic parameters
+}

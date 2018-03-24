@@ -14,6 +14,7 @@
   <ItemGroup>
     <PackageReference Include="docfx.console" Version="2.28.3" />
     <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +25,10 @@
     <None Update="Delegates.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Delegates.cs</LastGenOutput>
+    </None>
+    <None Update="Expressions.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Expressions.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -41,6 +46,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Delegates.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Expressions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Expressions.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 
