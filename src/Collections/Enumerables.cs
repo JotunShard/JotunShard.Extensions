@@ -17,7 +17,7 @@ namespace JotunShard.Extensions
         /// <param name="source">The enumerable to test.</param>
         /// <param name="count">The count to find.</param>
         /// <returns>
-        ///   <c>true</c> if the specified count has count; otherwise, <c>false</c>.
+        ///   <c>true</c> if the number of elements is <c>count</c>; otherwise, <c>false</c>.
         /// </returns>
         public static bool HasCount<TElem>(
             [NotNull] this IEnumerable<TElem> source,
