@@ -31,12 +31,9 @@ namespace JotunShard.Extensions
             }
 
             var index = 0;
-            foreach (var item in source)
+            using (var enmrtr = source.GetEnumerator())
             {
-                if (index++ >= count)
-                {
-                    break;
-                }
+                while (enmrtr.MoveNext() && index++ < count) { }
             }
 
             return index == count;
@@ -379,7 +376,7 @@ namespace JotunShard.Extensions
             IEqualityComparer<TKey> comparer = null)
         => source.GroupToDictionary(
             keySelector,
-            DefaultDelegates<TElem>.IdentityFunction,
+            DefaultDelegates.IdentityFunction<TElem>(),
             comparer);
 
         /// <summary>

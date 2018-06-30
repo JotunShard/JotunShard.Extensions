@@ -7,7 +7,7 @@ namespace JotunShard.Extensions
     public static class Dictionaries
     {
         public static Dictionary<TKey, TValue> ToDictionary<TKey, TValue>(
-            [NotNull] this IEnumerable<KeyValuePair<TKey, TValue>> values,
+            [NotNull] this IDictionary<TKey, TValue> values,
             IEqualityComparer<TKey> comparer = null)
         {
             values.CheckArgumentNull(nameof(values));

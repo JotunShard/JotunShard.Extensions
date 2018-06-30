@@ -6,7 +6,7 @@ namespace JotunShard.Extensions
     /// Definition of the days composing a week schedule
     /// </summary>
     [Flags]
-    public enum WeeklySchedule : byte
+    public enum WeeklyOccurrences : byte
     {
         None = 0x00,
         Sunday = 0x01,
