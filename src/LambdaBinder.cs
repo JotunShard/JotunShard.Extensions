@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace JotunShard.Extensions
 {
-    public class LambdaBinder : ExpressionVisitor
+    public sealed class LambdaBinder : ExpressionVisitor
     {
         public static Expression Modify(Expression expr, params object[] boundParameterValues)
             => new LambdaBinder(boundParameterValues).Visit(expr);

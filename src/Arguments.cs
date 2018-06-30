@@ -1,5 +1,6 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Collections;
 
 namespace JotunShard.Extensions
 {
@@ -78,5 +79,17 @@ namespace JotunShard.Extensions
             TParam limit)
             where TParam : IComparable
         => value.CheckArgumentOutOfLimit(paramName, limit, (a, b) => a > b);
+
+        public static void CheckArgumentTooLarge<TParam>(
+            [NoEnumeration] this TParam value,
+            [InvokerParameterName] string paramName,
+            int size)
+            where TParam : ICollection
+        {
+            if (value.Count > size)
+            {
+                throw new ArgumentOutOfRangeException(paramName);
+            }
+        }
     }
 }
