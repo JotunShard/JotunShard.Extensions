@@ -117,11 +117,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_Cycle__1_System_Collections_Generic_IEnumerable___0__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.Cycle%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L130">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L170">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_Cycle_" data-uid="JotunShard.Extensions.Enumerables.Cycle*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_Cycle__1_System_Collections_Generic_IEnumerable___0__System_Nullable_System_Int32__" data-uid="JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.Int32})">Cycle&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cycles the specified enumerable indefinitely or up to the specified limit if provided.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -140,12 +141,14 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to cycle.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">repeat</span></td>
-        <td></td>
+        <td><p>The repeating limit.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -160,7 +163,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
-        <td></td>
+        <td><p>A lazy enumerable</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -175,7 +179,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -184,11 +189,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_Flatten__1_System_Collections_Generic_IEnumerable___0__JotunShard_Extensions_TreeTraversalMode_.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.Flatten%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CJotunShard.Extensions.TreeTraversalMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L124">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L157">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_Flatten_" data-uid="JotunShard.Extensions.Enumerables.Flatten*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_Flatten__1_System_Collections_Generic_IEnumerable___0__JotunShard_Extensions_TreeTraversalMode_" data-uid="JotunShard.Extensions.Enumerables.Flatten``1(System.Collections.Generic.IEnumerable{``0},JotunShard.Extensions.TreeTraversalMode)">Flatten&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, TreeTraversalMode)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Flattens the specified enumerable which every item in itself is an enumerable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,12 +213,14 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to flatten.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="JotunShard.Extensions.TreeTraversalMode.html">TreeTraversalMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The flattening mode.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -227,7 +235,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
-        <td></td>
+        <td><p>A lazy enumerable</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -242,7 +251,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -251,11 +261,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_Flatten__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Collections_Generic_IEnumerable___0___JotunShard_Extensions_TreeTraversalMode_.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.Flatten%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D%2CJotunShard.Extensions.TreeTraversalMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L84">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L110">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_Flatten_" data-uid="JotunShard.Extensions.Enumerables.Flatten*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_Flatten__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Collections_Generic_IEnumerable___0___JotunShard_Extensions_TreeTraversalMode_" data-uid="JotunShard.Extensions.Enumerables.Flatten``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}},JotunShard.Extensions.TreeTraversalMode)">Flatten&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, IEnumerable&lt;TElem&gt;&gt;, TreeTraversalMode)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Flattens the specified enumerable to every item available.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -274,17 +285,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to flatten.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;&gt;</td>
         <td><span class="parametername">provider</span></td>
-        <td></td>
+        <td><p>The enumerable provider from the item.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="JotunShard.Extensions.TreeTraversalMode.html">TreeTraversalMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The flattening mode.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,7 +313,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
-        <td></td>
+        <td><p>A lazy enumerable</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -314,7 +329,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,11 +339,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GetFNVHashCode__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GetFNVHashCode%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L277">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L388">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GetFNVHashCode_" data-uid="JotunShard.Extensions.Enumerables.GetFNVHashCode*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GetFNVHashCode__1_System_Collections_Generic_IEnumerable___0__" data-uid="JotunShard.Extensions.Enumerables.GetFNVHashCode``1(System.Collections.Generic.IEnumerable{``0})">GetFNVHashCode&lt;TElem&gt;(IEnumerable&lt;TElem&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Fowler–Noll–Vo hash code.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -346,7 +363,8 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to calculate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -361,7 +379,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The resulting hash code</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,7 +395,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -385,11 +405,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GetRandom__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GetRandom%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L177">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L232">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GetRandom_" data-uid="JotunShard.Extensions.Enumerables.GetRandom*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GetRandom__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32__" data-uid="JotunShard.Extensions.Enumerables.GetRandom``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32})">GetRandom&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;Int32, Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a random item from the enumerable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -408,12 +429,14 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to take from.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">randomSource</span></td>
-        <td></td>
+        <td><p>The random source.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -428,7 +451,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TElem</span></td>
-        <td></td>
+        <td><p>A random item</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -443,7 +467,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -452,11 +477,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GroupToDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GroupToDictionary%60%602(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L268">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L373">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GroupToDictionary_" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GroupToDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IEqualityComparer{``1})">GroupToDictionary&lt;TElem, TKey&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Groups en enumerable to a dictionary of partitions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -475,17 +501,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, TKey&gt;</td>
         <td><span class="parametername">keySelector</span></td>
-        <td></td>
+        <td><p>The discriminator selector.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEqualityComparer</span>&lt;TKey&gt;</td>
         <td><span class="parametername">comparer</span></td>
-        <td></td>
+        <td><p>The discriminator&apos;s comparer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -500,7 +529,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;TKey, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;&gt;</td>
-        <td></td>
+        <td><p>A dictionary of partitions</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -515,11 +545,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TKey</span></td>
-        <td></td>
+        <td><p>The type of the discriminator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -528,11 +560,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_GroupToDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.GroupToDictionary%60%603(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L253">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L349">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_GroupToDictionary_" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_GroupToDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__" data-uid="JotunShard.Extensions.Enumerables.GroupToDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},System.Collections.Generic.IEqualityComparer{``1})">GroupToDictionary&lt;TElem, TKey, TValue&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, TKey&gt;, Func&lt;TElem, TValue&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Groups en enumerable to a dictionary of partitions of new items.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -551,22 +584,26 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, TKey&gt;</td>
         <td><span class="parametername">keySelector</span></td>
-        <td></td>
+        <td><p>The discriminator selector.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, TValue&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
-        <td></td>
+        <td><p>The partition&apos;s item selector.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEqualityComparer</span>&lt;TKey&gt;</td>
         <td><span class="parametername">comparer</span></td>
-        <td></td>
+        <td><p>The discriminator&apos;s comparer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -581,7 +618,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;TKey, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TValue&gt;&gt;</td>
-        <td></td>
+        <td><p>A dictionary of partitions</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -596,15 +634,18 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TKey</span></td>
-        <td></td>
+        <td><p>The type of the discriminator.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TValue</span></td>
-        <td></td>
+        <td><p>The type of the partition&apos;s item.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -613,11 +654,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_HasCount__1_System_Collections_Generic_IEnumerable___0__System_Int32_.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.HasCount%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L17">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L22">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_HasCount_" data-uid="JotunShard.Extensions.Enumerables.HasCount*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_HasCount__1_System_Collections_Generic_IEnumerable___0__System_Int32_" data-uid="JotunShard.Extensions.Enumerables.HasCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">HasCount&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines efficiently whether the enumerable has the provided count.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -636,12 +678,14 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to test.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>The count to find.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -656,7 +700,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the number of elements is <code>count</code>; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -671,7 +716,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -680,11 +726,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_PartitionBy__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IReadOnlyCollection___0___.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.PartitionBy%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Int32%2CSystem.Func%7BSystem.Collections.Generic.IList%7B%60%600%7D%2CSystem.Collections.Generic.IReadOnlyCollection%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L72">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L90">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_PartitionBy_" data-uid="JotunShard.Extensions.Enumerables.PartitionBy*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_PartitionBy__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IReadOnlyCollection___0___" data-uid="JotunShard.Extensions.Enumerables.PartitionBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})">PartitionBy&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Int32, Func&lt;IList&lt;TElem&gt;, IReadOnlyCollection&lt;TElem&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Partitions the enumerable by the specified size.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -703,17 +750,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>The size of the partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;TElem&gt;, <span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;TElem&gt;&gt;</td>
         <td><span class="parametername">partitionProvider</span></td>
-        <td></td>
+        <td><p>The partition container provider.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -728,7 +778,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;TElem&gt;&gt;</td>
-        <td></td>
+        <td><p>A lazy enumerable</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -743,7 +794,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -752,11 +804,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_PartitionIf__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32___0_System_Boolean__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IReadOnlyCollection___0___.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.PartitionIf%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2C%60%600%2CSystem.Boolean%7D%2CSystem.Func%7BSystem.Collections.Generic.IList%7B%60%600%7D%2CSystem.Collections.Generic.IReadOnlyCollection%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L40">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L50">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_PartitionIf_" data-uid="JotunShard.Extensions.Enumerables.PartitionIf*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_PartitionIf__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32___0_System_Boolean__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IReadOnlyCollection___0___" data-uid="JotunShard.Extensions.Enumerables.PartitionIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,``0,System.Boolean},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})">PartitionIf&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;Int32, TElem, Boolean&gt;, Func&lt;IList&lt;TElem&gt;, IReadOnlyCollection&lt;TElem&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Partitions the enumerable on a specified predicate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -775,17 +828,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Int32</span>, TElem, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">partitioner</span></td>
-        <td></td>
+        <td><p>The predicate.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;TElem&gt;, <span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;TElem&gt;&gt;</td>
         <td><span class="parametername">partitionProvider</span></td>
-        <td></td>
+        <td><p>The partition container provider.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -800,7 +856,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;TElem&gt;&gt;</td>
-        <td></td>
+        <td><p>A lazy enumerable</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -815,7 +872,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -824,11 +882,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_ToShuffled__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0___.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.ToShuffled%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%2CSystem.Func%7BSystem.Collections.Generic.IList%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L151">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L199">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_ToShuffled_" data-uid="JotunShard.Extensions.Enumerables.ToShuffled*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_ToShuffled__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0___" data-uid="JotunShard.Extensions.Enumerables.ToShuffled``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32,System.Int32},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0}})">ToShuffled&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;Int32, Int32, Int32&gt;, Func&lt;IList&lt;TElem&gt;, IEnumerable&lt;TElem&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a shuffled enumerable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -847,17 +906,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to shuffle.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">randomSource</span></td>
-        <td></td>
+        <td><p>The random source.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;TElem&gt;, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;&gt;</td>
         <td><span class="parametername">resultProvider</span></td>
-        <td></td>
+        <td><p>The shuffled container provider.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -872,7 +934,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
-        <td></td>
+        <td><p>A new shuffled enumerable</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -887,7 +950,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -896,11 +960,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_TryGetFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.TryGetFirst%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L186">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L251">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_TryGetFirst_" data-uid="JotunShard.Extensions.Enumerables.TryGetFirst*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_TryGetFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__" data-uid="JotunShard.Extensions.Enumerables.TryGetFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetFirst&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, Boolean&gt;, out TElem)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to get the first element corresponding to the specified predicate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -919,17 +984,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to iterate through.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>The predicat to test.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">TElem</span></td>
         <td><span class="parametername">firstItem</span></td>
-        <td></td>
+        <td><p>The first item to be found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -944,7 +1012,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the specified predicate finds an item; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -959,7 +1028,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -968,11 +1038,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_TryGetLast__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.TryGetLast%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L206">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L281">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_TryGetLast_" data-uid="JotunShard.Extensions.Enumerables.TryGetLast*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_TryGetLast__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__" data-uid="JotunShard.Extensions.Enumerables.TryGetLast``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetLast&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, Boolean&gt;, out TElem)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to get the last element corresponding to the specified predicate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -991,17 +1062,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to iterate through.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>The predicate to test.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">TElem</span></td>
         <td><span class="parametername">lastItem</span></td>
-        <td></td>
+        <td><p>The last item to be found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1016,7 +1090,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the specified predicate finds an item; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1031,7 +1106,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1040,11 +1116,12 @@
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_TryGetSingle__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.TryGetSingle%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L227">View Source</a>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L312">View Source</a>
   </span>
   <a id="JotunShard_Extensions_Enumerables_TryGetSingle_" data-uid="JotunShard.Extensions.Enumerables.TryGetSingle*"></a>
   <h4 id="JotunShard_Extensions_Enumerables_TryGetSingle__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0__" data-uid="JotunShard.Extensions.Enumerables.TryGetSingle``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetSingle&lt;TElem&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, Boolean&gt;, out TElem)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to get a last single corresponding to the specified predicate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1063,17 +1140,20 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The enumerable to iterate through.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TElem, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>The predicate to test.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">TElem</span></td>
         <td><span class="parametername">singleItem</span></td>
-        <td></td>
+        <td><p>The single item to be found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1088,7 +1168,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the specified predicate finds an item; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1103,7 +1184,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TElem</span></td>
-        <td></td>
+        <td><p>The type of the item in the enumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>
