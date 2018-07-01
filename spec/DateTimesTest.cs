@@ -18,7 +18,8 @@ namespace JotunShard.Extensions.Test
         private static readonly DateTime
             DAY = new DateTime(2017, 7, 4),
             DAY_BEFORE = DAY.AddDays(-1),
-            DAY_AFTER = DAY.AddDays(1);
+            DAY_AFTER = DAY.AddDays(1),
+            DAY_EOMONTH = new DateTime(2017, 7, 31);
 
         public static readonly Calendar
             CALENDAR = new GregorianCalendar(GregorianCalendarTypes.USEnglish);
@@ -150,8 +151,8 @@ namespace JotunShard.Extensions.Test
         #region EndOfMonth
 
         [TestMethod]
-        public void EndOfMonth()
-            => Fail();
+        public void EndOfMonth_WithEndOfMonth_ExpectsSame()
+            => AreEqual(DAY_EOMONTH, DAY.EndOfMonth(CALENDAR));
 
         #endregion EndOfMonth
     }
