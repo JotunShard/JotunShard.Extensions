@@ -86,31 +86,31 @@ namespace JotunShard.Extensions
 
         private static DateTime OtherDayOfMonth(
             DateTime value,
-            int month,
             int day,
             Calendar calendar,
-            int yearsDiff,
+            int valueDiff,
             Func<int, bool> comparerOtherValue)
         {
-            month.CheckArgumentIsGreaterOrEqual(nameof(month), 1);
             day.CheckArgumentIsGreaterOrEqual(nameof(day), 1);
             calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            var diffMonths = calendar.GetMonth(value) - month;
+            var year = value.Year;
+            var month = value.Month;
+            day.CheckArgumentIsLesserOrEqual(
+                nameof(day),
+                calendar.GetDaysInMonth(year, month));
             var diffDays = calendar.GetDayOfMonth(value) - day;
-            var year = calendar.GetYear(value);
-            if (comparerOtherValue(diffMonths)
-                || (diffMonths == 0
-                    && (diffDays == 0 || comparerOtherValue(diffDays))))
+            if (comparerOtherValue(diffDays))
             {
-                year += yearsDiff;
+                month += valueDiff;
+            }
+            else if (diffDays == 0)
+            {
+                year += valueDiff;
             }
 
             month.CheckArgumentIsLesserOrEqual(
                 nameof(month),
                 calendar.GetMonthsInYear(year));
-            day.CheckArgumentIsLesserOrEqual(
-                nameof(day),
-                calendar.GetDaysInMonth(year, month));
             return calendar.ToDateTime(year, month, day, 0, 0, 0, 0);
         }
 
@@ -118,31 +118,27 @@ namespace JotunShard.Extensions
         /// Precedence of a certain day of the month
         /// </summary>
         /// <param name="value">The subjected value</param>
-        /// <param name="month">The month of the targeted day</param>
         /// <param name="day">The day of the targeted day</param>
         /// <param name="calendar">The calendar on which to base a month</param>
         /// <returns>Projected DateTime on the corresponding day of the month</returns>
         public static DateTime PreviousDayOfMonth(
             this DateTime value,
-            int month,
             int day,
             Calendar calendar = null)
-            => OtherDayOfMonth(value, month, day, calendar, -1, v => v < 0);
+            => OtherDayOfMonth(value, day, calendar, -1, v => v < 0);
 
         /// <summary>
         /// Succession of a certain day of the month
         /// </summary>
         /// <param name="value">The subjected value</param>
-        /// <param name="month">The month of the targeted day</param>
         /// <param name="day">The day of the targeted day</param>
         /// <param name="calendar">The calendar on which to base a month</param>
         /// <returns>Projected DateTime on the corresponding day of the month</returns>
         public static DateTime NextDayOfMonth(
             this DateTime value,
-            int month,
             int day,
             Calendar calendar = null)
-            => OtherDayOfMonth(value, month, day, calendar, 1, v => v > 0);
+            => OtherDayOfMonth(value, day, calendar, 1, v => v > 0);
 
         /// <summary>
         /// Succession of the last day of the month
@@ -202,7 +198,7 @@ namespace JotunShard.Extensions
         /// <param name="culture">The culture on which to base a month</param>
         /// <returns>Projected DateTime on the corresponding day of the month</returns>
         public static DateTime PreviousDayOfMonth(this DateTime value, int day, CultureInfo culture = null)
-            => throw new NotImplementedException();
+            => PreviousDayOfMonth(value, day, (culture ?? CultureInfo.CurrentCulture).Calendar);
 
         /// <summary>
         /// Succession of a certain day of the month
@@ -212,7 +208,7 @@ namespace JotunShard.Extensions
         /// <param name="culture">The culture on which to base a month</param>
         /// <returns>Projected DateTime on the corresponding day of the month</returns>
         public static DateTime NextDayOfMonth(this DateTime value, int day, CultureInfo culture = null)
-            => throw new NotImplementedException();
+            => NextDayOfMonth(value, day, (culture ?? CultureInfo.CurrentCulture).Calendar);
 
         /// <summary>
         /// Succession of the last day of the month
@@ -221,6 +217,6 @@ namespace JotunShard.Extensions
         /// <param name="culture">The culture on which to base a month</param>
         /// <returns>Projected DateTime on the corresponding last day of the month</returns>
         public static DateTime EndOfMonth(this DateTime value, CultureInfo culture = null)
-            => throw new NotImplementedException();
+            => EndOfMonth(value, (culture ?? CultureInfo.CurrentCulture).Calendar);
     }
 }
