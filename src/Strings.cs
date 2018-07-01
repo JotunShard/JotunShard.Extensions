@@ -86,17 +86,30 @@ namespace JotunShard.Extensions
             return new string(arr);
         }
 
-        public static void SubstringFollowing(
+        public static string SubstringFollowing(
             [NotNull] this string value,
             [NotNull] string term,
             int? length = null)
-            => throw new NotImplementedException();
+        {
+            value.CheckArgumentNull(nameof(value));
+            term.CheckArgumentNull(nameof(term));
+            var startIndex = value.IndexOf(term);
+            return length.HasValue
+                ? value.Substring(startIndex, length.Value)
+                : value.Substring(startIndex);
+        }
 
-        public static void SubstringPreceding(
+        public static string SubstringPreceding(
             [NotNull] this string value,
             [NotNull] string term,
             int? length = null)
-            => throw new NotImplementedException();
+        {
+            value.CheckArgumentNull(nameof(value));
+            term.CheckArgumentNull(nameof(term));
+            var endIndex = value.LastIndexOf(term);
+            var len = length ?? term.Length;
+            return value.Substring(endIndex - len, len);
+        }
 
         public static string DefaultIfEmpty(
             this string value,
