@@ -434,8 +434,19 @@ namespace JotunShard.Extensions.Test.Collections
         #region GetFNVHashCode
 
         [TestMethod]
-        public void GetFNVHashCode()
-            => Fail();
+        public void GetFNVHashCode_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.GetFNVHashCode());
+
+        [TestMethod]
+        public void GetFNVHashCode_WithEmptyEnumerable_ExpectsConstant()
+            => AreEqual(Constants.FNV_OFFSET_BASIS, ENMRBL_EMPTY.GetFNVHashCode());
+
+        [TestMethod]
+        public void GetFNVHashCode_WithNonEmptyEnumerable_ExpectsAllUniqueHashCodes()
+            => CollectionAssert.AllItemsAreUnique(ENMRBL_NON_EMPTY
+                .Select(item => new[] { item }.GetFNVHashCode())
+                .ToList());
 
         #endregion GetFNVHashCode
     }
