@@ -10,7 +10,7 @@ namespace JotunShard.Extensions
 {
     public static partial class DateTimes
     {<#
-var calendarMethods = typeof(Calendar).GetMethods(BindingFlags.Public | BindingFlags.Instance);
+var calendarMethods = typeof(Calendar).GetMethods(BindingFlags.Public | BindingFlags.Instance).OrderBy(m => m.Name);
 foreach (var m in calendarMethods)
 {
     if (m.GetParameters().Any() && m.GetParameters().All(p => p.ParameterType == typeof(DateTime)))
