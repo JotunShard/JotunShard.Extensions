@@ -933,6 +933,21 @@ references:
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.ContradictionalFunction
   fullName: JotunShard.Extensions.DefaultDelegates.ContradictionalFunction
   nameWithType: DefaultDelegates.ContradictionalFunction
+- uid: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda*
+  name: ContradictionalLambda
+  href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_ContradictionalLambda_
+  commentId: Overload:JotunShard.Extensions.DefaultDelegates.ContradictionalLambda
+  fullName: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda
+  nameWithType: DefaultDelegates.ContradictionalLambda
+- uid: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda``1
+  name: ContradictionalLambda<TValue>()
+  href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_ContradictionalLambda__1
+  commentId: M:JotunShard.Extensions.DefaultDelegates.ContradictionalLambda``1
+  name.vb: ContradictionalLambda(Of TValue)()
+  fullName: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda<TValue>()
+  fullName.vb: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda(Of TValue)()
+  nameWithType: DefaultDelegates.ContradictionalLambda<TValue>()
+  nameWithType.vb: DefaultDelegates.ContradictionalLambda(Of TValue)()
 - uid: JotunShard.Extensions.DefaultDelegates.ContradictionalPredicate*
   name: ContradictionalPredicate
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_ContradictionalPredicate_
@@ -1002,6 +1017,21 @@ references:
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.TautologicalFunction
   fullName: JotunShard.Extensions.DefaultDelegates.TautologicalFunction
   nameWithType: DefaultDelegates.TautologicalFunction
+- uid: JotunShard.Extensions.DefaultDelegates.TautologicalLambda*
+  name: TautologicalLambda
+  href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_TautologicalLambda_
+  commentId: Overload:JotunShard.Extensions.DefaultDelegates.TautologicalLambda
+  fullName: JotunShard.Extensions.DefaultDelegates.TautologicalLambda
+  nameWithType: DefaultDelegates.TautologicalLambda
+- uid: JotunShard.Extensions.DefaultDelegates.TautologicalLambda``1
+  name: TautologicalLambda<TValue>()
+  href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_TautologicalLambda__1
+  commentId: M:JotunShard.Extensions.DefaultDelegates.TautologicalLambda``1
+  name.vb: TautologicalLambda(Of TValue)()
+  fullName: JotunShard.Extensions.DefaultDelegates.TautologicalLambda<TValue>()
+  fullName.vb: JotunShard.Extensions.DefaultDelegates.TautologicalLambda(Of TValue)()
+  nameWithType: DefaultDelegates.TautologicalLambda<TValue>()
+  nameWithType.vb: DefaultDelegates.TautologicalLambda(Of TValue)()
 - uid: JotunShard.Extensions.DefaultDelegates.TautologicalPredicate*
   name: TautologicalPredicate
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_TautologicalPredicate_

@@ -290,40 +290,144 @@ namespace JotunShard.Extensions.Test.Collections
                 () => ENMRBL_EMPTY.GetRandom());
 
         [TestMethod]
-        public void GetRandom_WithNonEmptyEnumerable_ExpectsItemFromEnumerable()
-            => IsTrue(ENMRBL_NON_EMPTY.Contains(ENMRBL_NON_EMPTY.GetRandom()));
+        public void GetRandom_WithNonEmptyEnumerableAndIndexedRandomSource_ExpectsSameItems()
+            => CollectionAssert.AreEqual(
+                ENMRBL_NON_EMPTY.ToList(),
+                Enumerable.Range(0, COUNT_RIGHT)
+                    .Select(index => ENMRBL_NON_EMPTY.GetRandom(x => index))
+                    .ToList());
 
         #endregion GetRandom
 
         #region TryGetFirst
 
         [TestMethod]
-        public void TryGetFirst()
-            => Fail();
+        public void TryGetFirst_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.TryGetFirst(DefaultDelegates.TautologicalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetFirst_WithNullPredicate_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NON_EMPTY.TryGetFirst(null, out _));
+
+        [TestMethod]
+        public void TryGetFirst_WithEmptyEnumerable_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetFirst(DefaultDelegates.TautologicalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetFirst_WithNonEmptyEnumerableAndContradictionalLambda_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetFirst(DefaultDelegates.ContradictionalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetFirst_WithNonEmptyEnumerableAndTautologicalLambda_ExpectsFirstItem()
+        {
+            IsTrue(ENMRBL_NON_EMPTY.TryGetFirst(DefaultDelegates.TautologicalLambda<MultiItems>(), out var firstItem));
+            AreEqual(ENMRBL_NON_EMPTY.FirstOrDefault(), firstItem);
+        }
 
         #endregion TryGetFirst
 
         #region TryGetLast
 
         [TestMethod]
-        public void TryGetLast()
-            => Fail();
+        public void TryGetLast_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.TryGetLast(DefaultDelegates.TautologicalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetLast_WithNullPredicate_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NON_EMPTY.TryGetLast(null, out _));
+
+        [TestMethod]
+        public void TryGetLast_WithEmptyEnumerable_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetLast(DefaultDelegates.TautologicalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetLast_WithNonEmptyEnumerableAndContradictionalLambda_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetLast(DefaultDelegates.ContradictionalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetLast_WithNonEmptyEnumerableAndTautologicalLambda_ExpectsLastItem()
+        {
+            IsTrue(ENMRBL_NON_EMPTY.TryGetLast(DefaultDelegates.TautologicalLambda<MultiItems>(), out var lastItem));
+            AreEqual(ENMRBL_NON_EMPTY.LastOrDefault(), lastItem);
+        }
 
         #endregion TryGetLast
 
         #region TryGetSingle
 
         [TestMethod]
-        public void TryGetSingle()
-            => Fail();
+        public void TryGetSingle_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.TryGetSingle(DefaultDelegates.TautologicalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetSingle_WithNullPredicate_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NON_EMPTY.TryGetSingle(null, out _));
+
+        [TestMethod]
+        public void TryGetSingle_WithEmptyEnumerable_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetSingle(DefaultDelegates.TautologicalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetSingle_WithNonEmptyEnumerableAndContradictionalLambda_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetSingle(DefaultDelegates.ContradictionalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetSingle_WithNonEmptyEnumerableAndTautologicalLambda_ExpectsFalse()
+            => IsFalse(ENMRBL_EMPTY.TryGetSingle(DefaultDelegates.ContradictionalLambda<MultiItems>(), out _));
+
+        [TestMethod]
+        public void TryGetSingle_WithNonEmptyEnumerableAndTautologicalLambda_ExpectsRightItem()
+        {
+            foreach (var itemPredicate in ENMRBL_NON_EMPTY)
+            {
+                IsTrue(ENMRBL_NON_EMPTY.TryGetSingle(item => item.ID == itemPredicate.ID, out var rightItem));
+                AreEqual(ENMRBL_NON_EMPTY.SingleOrDefault(item => item.ID == itemPredicate.ID), rightItem);
+            }
+        }
 
         #endregion TryGetSingle
 
         #region GroupToDictionary
 
         [TestMethod]
-        public void GroupToDictionary()
-            => Fail();
+        public void GroupToDictionary_WithNullEnumerable_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NULL.GroupToDictionary(DefaultDelegates.IdentityFunction<MultiItems>()));
+
+        [TestMethod]
+        public void GroupToDictionary_WithNullKeySelector_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NON_EMPTY.GroupToDictionary<MultiItems, MultiItems>(null));
+
+        [TestMethod]
+        public void GroupToDictionary_WithNullValueSelector_ThrowsException()
+            => ThrowsException<ArgumentNullException>(
+                () => ENMRBL_NON_EMPTY.GroupToDictionary<MultiItems, MultiItems, MultiItems>(
+                    DefaultDelegates.IdentityFunction<MultiItems>(), null));
+
+        [TestMethod]
+        public void GroupToDictionary_WithEmptyEnumerable_ExpectsEmptyDictionary()
+            => CollectionAssert.AreEqual(
+                new Dictionary<MultiItems, MultiItems>(),
+                ENMRBL_EMPTY.GroupToDictionary(
+                    DefaultDelegates.IdentityFunction<MultiItems>()));
+
+        [TestMethod]
+        public void GroupToDictionary_WithNonEmptyEnumerableAndIdentifyFunction_ExpectsDictionaryOfSingles()
+        {
+            var dictionary = ENMRBL_NON_EMPTY.GroupToDictionary(DefaultDelegates.IdentityFunction<MultiItems>());
+
+            CollectionAssert.AreEqual(ENMRBL_NON_EMPTY.ToList(), dictionary.Keys);
+            Utilities.AssertManySequencesEqual(
+                ENMRBL_NON_EMPTY.Select(item => new[] { item }),
+                dictionary.Values);
+        }
 
         #endregion GroupToDictionary
 

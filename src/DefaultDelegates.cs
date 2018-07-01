@@ -27,7 +27,19 @@ namespace JotunShard.Extensions
         public static Predicate<TValue> ContradictionalPredicate<TValue>() => _ => false;
 
         /// <summary>
-        /// Definition of an function doing nothing
+        /// Definition of an always true lambda
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        public static Func<TValue, bool> TautologicalLambda<TValue>() => _ => true;
+
+        /// <summary>
+        /// Definition of an always false lambda
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        public static Func<TValue, bool> ContradictionalLambda<TValue>() => _ => false;
+
+        /// <summary>
+        /// Definition of a lambda doing nothing
         /// </summary>
         /// <typeparam name="TValue"></typeparam>
         public static Func<TValue, TValue> IdentityFunction<TValue>() => value => value;
