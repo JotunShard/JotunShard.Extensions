@@ -17,6 +17,7 @@ references:
   name: CheckArgumentIsGreater
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentIsGreater_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentIsGreater
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentIsGreater
   nameWithType: Arguments.CheckArgumentIsGreater
 - uid: JotunShard.Extensions.Arguments.CheckArgumentIsGreater``1(``0,System.String,``0)
@@ -32,6 +33,7 @@ references:
   name: CheckArgumentIsGreaterOrEqual
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentIsGreaterOrEqual_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentIsGreaterOrEqual
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentIsGreaterOrEqual
   nameWithType: Arguments.CheckArgumentIsGreaterOrEqual
 - uid: JotunShard.Extensions.Arguments.CheckArgumentIsGreaterOrEqual``1(``0,System.String,``0)
@@ -47,6 +49,7 @@ references:
   name: CheckArgumentIsLesser
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentIsLesser_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentIsLesser
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentIsLesser
   nameWithType: Arguments.CheckArgumentIsLesser
 - uid: JotunShard.Extensions.Arguments.CheckArgumentIsLesser``1(``0,System.String,``0)
@@ -62,6 +65,7 @@ references:
   name: CheckArgumentIsLesserOrEqual
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentIsLesserOrEqual_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentIsLesserOrEqual
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentIsLesserOrEqual
   nameWithType: Arguments.CheckArgumentIsLesserOrEqual
 - uid: JotunShard.Extensions.Arguments.CheckArgumentIsLesserOrEqual``1(``0,System.String,``0)
@@ -77,6 +81,7 @@ references:
   name: CheckArgumentNull
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentNull_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentNull
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentNull
   nameWithType: Arguments.CheckArgumentNull
 - uid: JotunShard.Extensions.Arguments.CheckArgumentNull``1(``0,System.String)
@@ -92,6 +97,7 @@ references:
   name: CheckArgumentOutOfLimit
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentOutOfLimit_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentOutOfLimit
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentOutOfLimit
   nameWithType: Arguments.CheckArgumentOutOfLimit
 - uid: JotunShard.Extensions.Arguments.CheckArgumentOutOfLimit``1(``0,System.String,``0,System.Func{System.Int32,System.Int32,System.Boolean})
@@ -107,6 +113,7 @@ references:
   name: CheckArgumentOutOfRange
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentOutOfRange_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentOutOfRange
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentOutOfRange
   nameWithType: Arguments.CheckArgumentOutOfRange
 - uid: JotunShard.Extensions.Arguments.CheckArgumentOutOfRange``1(``0,System.String,``0,``0)
@@ -122,6 +129,7 @@ references:
   name: CheckArgumentOutOfRangeOrEqual
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentOutOfRangeOrEqual_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentOutOfRangeOrEqual
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentOutOfRangeOrEqual
   nameWithType: Arguments.CheckArgumentOutOfRangeOrEqual
 - uid: JotunShard.Extensions.Arguments.CheckArgumentOutOfRangeOrEqual``1(``0,System.String,``0,``0)
@@ -137,6 +145,7 @@ references:
   name: CheckArgumentTooLarge
   href: api/JotunShard.Extensions.Arguments.html#JotunShard_Extensions_Arguments_CheckArgumentTooLarge_
   commentId: Overload:JotunShard.Extensions.Arguments.CheckArgumentTooLarge
+  isSpec: "True"
   fullName: JotunShard.Extensions.Arguments.CheckArgumentTooLarge
   nameWithType: Arguments.CheckArgumentTooLarge
 - uid: JotunShard.Extensions.Arguments.CheckArgumentTooLarge``1(``0,System.String,System.Int32)
@@ -158,6 +167,7 @@ references:
   name: AddAll
   href: api/JotunShard.Extensions.Collections.html#JotunShard_Extensions_Collections_AddAll_
   commentId: Overload:JotunShard.Extensions.Collections.AddAll
+  isSpec: "True"
   fullName: JotunShard.Extensions.Collections.AddAll
   nameWithType: Collections.AddAll
 - uid: JotunShard.Extensions.Collections.AddAll``1(System.Collections.Generic.ICollection{``0},``0[])
@@ -182,6 +192,7 @@ references:
   name: Any
   href: api/JotunShard.Extensions.Collections.html#JotunShard_Extensions_Collections_Any_
   commentId: Overload:JotunShard.Extensions.Collections.Any
+  isSpec: "True"
   fullName: JotunShard.Extensions.Collections.Any
   nameWithType: Collections.Any
 - uid: JotunShard.Extensions.Collections.Any``1(System.Collections.Generic.ICollection{``0})
@@ -197,6 +208,7 @@ references:
   name: RemoveAll
   href: api/JotunShard.Extensions.Collections.html#JotunShard_Extensions_Collections_RemoveAll_
   commentId: Overload:JotunShard.Extensions.Collections.RemoveAll
+  isSpec: "True"
   fullName: JotunShard.Extensions.Collections.RemoveAll
   nameWithType: Collections.RemoveAll
 - uid: JotunShard.Extensions.Collections.RemoveAll``1(System.Collections.Generic.ICollection{``0},``0[])
@@ -227,6 +239,7 @@ references:
   name: Between
   href: api/JotunShard.Extensions.Comparables.html#JotunShard_Extensions_Comparables_Between_
   commentId: Overload:JotunShard.Extensions.Comparables.Between
+  isSpec: "True"
   fullName: JotunShard.Extensions.Comparables.Between
   nameWithType: Comparables.Between
 - uid: JotunShard.Extensions.Comparables.Between``1(System.IComparable{``0},``0,``0)
@@ -242,6 +255,7 @@ references:
   name: BetweenOrEqual
   href: api/JotunShard.Extensions.Comparables.html#JotunShard_Extensions_Comparables_BetweenOrEqual_
   commentId: Overload:JotunShard.Extensions.Comparables.BetweenOrEqual
+  isSpec: "True"
   fullName: JotunShard.Extensions.Comparables.BetweenOrEqual
   nameWithType: Comparables.BetweenOrEqual
 - uid: JotunShard.Extensions.Comparables.BetweenOrEqual``1(System.IComparable{``0},``0,``0)
@@ -275,6 +289,7 @@ references:
   name: CompositeFormatter
   href: api/JotunShard.Extensions.CompositeFormatter-1.html#JotunShard_Extensions_CompositeFormatter_1__ctor_
   commentId: Overload:JotunShard.Extensions.CompositeFormatter`1.#ctor
+  isSpec: "True"
   fullName: JotunShard.Extensions.CompositeFormatter<TContainer>.CompositeFormatter
   fullName.vb: JotunShard.Extensions.CompositeFormatter(Of TContainer).CompositeFormatter
   nameWithType: CompositeFormatter<TContainer>.CompositeFormatter
@@ -299,6 +314,7 @@ references:
   name: Format
   href: api/JotunShard.Extensions.CompositeFormatter-1.html#JotunShard_Extensions_CompositeFormatter_1_Format_
   commentId: Overload:JotunShard.Extensions.CompositeFormatter`1.Format
+  isSpec: "True"
   fullName: JotunShard.Extensions.CompositeFormatter<TContainer>.Format
   fullName.vb: JotunShard.Extensions.CompositeFormatter(Of TContainer).Format
   nameWithType: CompositeFormatter<TContainer>.Format
@@ -337,6 +353,7 @@ references:
   name: Format
   href: api/JotunShard.Extensions.CustomFormatProvider.html#JotunShard_Extensions_CustomFormatProvider_Format_
   commentId: Overload:JotunShard.Extensions.CustomFormatProvider.Format
+  isSpec: "True"
   fullName: JotunShard.Extensions.CustomFormatProvider.Format
   nameWithType: CustomFormatProvider.Format
 - uid: JotunShard.Extensions.CustomFormatProvider.GetFormat(System.Type)
@@ -349,6 +366,7 @@ references:
   name: GetFormat
   href: api/JotunShard.Extensions.CustomFormatProvider.html#JotunShard_Extensions_CustomFormatProvider_GetFormat_
   commentId: Overload:JotunShard.Extensions.CustomFormatProvider.GetFormat
+  isSpec: "True"
   fullName: JotunShard.Extensions.CustomFormatProvider.GetFormat
   nameWithType: CustomFormatProvider.GetFormat
 - uid: JotunShard.Extensions.CustomFormattable
@@ -367,6 +385,7 @@ references:
   name: FormatProvider
   href: api/JotunShard.Extensions.CustomFormattable.html#JotunShard_Extensions_CustomFormattable_FormatProvider_
   commentId: Overload:JotunShard.Extensions.CustomFormattable.FormatProvider
+  isSpec: "True"
   fullName: JotunShard.Extensions.CustomFormattable.FormatProvider
   nameWithType: CustomFormattable.FormatProvider
 - uid: JotunShard.Extensions.CustomFormattable.ToString(System.String)
@@ -385,6 +404,7 @@ references:
   name: ToString
   href: api/JotunShard.Extensions.CustomFormattable.html#JotunShard_Extensions_CustomFormattable_ToString_
   commentId: Overload:JotunShard.Extensions.CustomFormattable.ToString
+  isSpec: "True"
   fullName: JotunShard.Extensions.CustomFormattable.ToString
   nameWithType: CustomFormattable.ToString
 - uid: JotunShard.Extensions.DateTimes
@@ -409,6 +429,7 @@ references:
   name: AddWeeks
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_AddWeeks_
   commentId: Overload:JotunShard.Extensions.DateTimes.AddWeeks
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.AddWeeks
   nameWithType: DateTimes.AddWeeks
 - uid: JotunShard.Extensions.DateTimes.EndOfMonth(System.DateTime,System.Globalization.Calendar)
@@ -427,6 +448,7 @@ references:
   name: EndOfMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_EndOfMonth_
   commentId: Overload:JotunShard.Extensions.DateTimes.EndOfMonth
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.EndOfMonth
   nameWithType: DateTimes.EndOfMonth
 - uid: JotunShard.Extensions.DateTimes.GetDayOfMonth(System.DateTime,System.Globalization.Calendar)
@@ -445,6 +467,7 @@ references:
   name: GetDayOfMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetDayOfMonth_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetDayOfMonth
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetDayOfMonth
   nameWithType: DateTimes.GetDayOfMonth
 - uid: JotunShard.Extensions.DateTimes.GetDayOfWeek(System.DateTime,System.Globalization.Calendar)
@@ -463,6 +486,7 @@ references:
   name: GetDayOfWeek
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetDayOfWeek_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetDayOfWeek
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetDayOfWeek
   nameWithType: DateTimes.GetDayOfWeek
 - uid: JotunShard.Extensions.DateTimes.GetDayOfYear(System.DateTime,System.Globalization.Calendar)
@@ -481,6 +505,7 @@ references:
   name: GetDayOfYear
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetDayOfYear_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetDayOfYear
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetDayOfYear
   nameWithType: DateTimes.GetDayOfYear
 - uid: JotunShard.Extensions.DateTimes.GetEra(System.DateTime,System.Globalization.Calendar)
@@ -499,6 +524,7 @@ references:
   name: GetEra
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetEra_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetEra
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetEra
   nameWithType: DateTimes.GetEra
 - uid: JotunShard.Extensions.DateTimes.GetHour(System.DateTime,System.Globalization.Calendar)
@@ -517,6 +543,7 @@ references:
   name: GetHour
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetHour_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetHour
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetHour
   nameWithType: DateTimes.GetHour
 - uid: JotunShard.Extensions.DateTimes.GetMilliseconds(System.DateTime,System.Globalization.Calendar)
@@ -535,6 +562,7 @@ references:
   name: GetMilliseconds
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetMilliseconds_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetMilliseconds
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetMilliseconds
   nameWithType: DateTimes.GetMilliseconds
 - uid: JotunShard.Extensions.DateTimes.GetMinute(System.DateTime,System.Globalization.Calendar)
@@ -553,6 +581,7 @@ references:
   name: GetMinute
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetMinute_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetMinute
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetMinute
   nameWithType: DateTimes.GetMinute
 - uid: JotunShard.Extensions.DateTimes.GetMonth(System.DateTime,System.Globalization.Calendar)
@@ -571,6 +600,7 @@ references:
   name: GetMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetMonth_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetMonth
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetMonth
   nameWithType: DateTimes.GetMonth
 - uid: JotunShard.Extensions.DateTimes.GetSecond(System.DateTime,System.Globalization.Calendar)
@@ -589,6 +619,7 @@ references:
   name: GetSecond
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetSecond_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetSecond
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetSecond
   nameWithType: DateTimes.GetSecond
 - uid: JotunShard.Extensions.DateTimes.GetYear(System.DateTime,System.Globalization.Calendar)
@@ -607,6 +638,7 @@ references:
   name: GetYear
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_GetYear_
   commentId: Overload:JotunShard.Extensions.DateTimes.GetYear
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.GetYear
   nameWithType: DateTimes.GetYear
 - uid: JotunShard.Extensions.DateTimes.IsFuture(System.DateTime)
@@ -619,6 +651,7 @@ references:
   name: IsFuture
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsFuture_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsFuture
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsFuture
   nameWithType: DateTimes.IsFuture
 - uid: JotunShard.Extensions.DateTimes.IsPast(System.DateTime)
@@ -631,6 +664,7 @@ references:
   name: IsPast
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsPast_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsPast
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsPast
   nameWithType: DateTimes.IsPast
 - uid: JotunShard.Extensions.DateTimes.IsSameDate(System.DateTime)
@@ -643,6 +677,7 @@ references:
   name: IsSameDate
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameDate_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameDate
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameDate
   nameWithType: DateTimes.IsSameDate
 - uid: JotunShard.Extensions.DateTimes.IsSameDay(System.DateTime)
@@ -655,6 +690,7 @@ references:
   name: IsSameDay
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameDay_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameDay
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameDay
   nameWithType: DateTimes.IsSameDay
 - uid: JotunShard.Extensions.DateTimes.IsSameDayOfWeek(System.DateTime,System.Globalization.Calendar)
@@ -673,6 +709,7 @@ references:
   name: IsSameDayOfWeek
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameDayOfWeek_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameDayOfWeek
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameDayOfWeek
   nameWithType: DateTimes.IsSameDayOfWeek
 - uid: JotunShard.Extensions.DateTimes.IsSameDayOfYear(System.DateTime,System.Globalization.Calendar)
@@ -691,6 +728,7 @@ references:
   name: IsSameDayOfYear
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameDayOfYear_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameDayOfYear
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameDayOfYear
   nameWithType: DateTimes.IsSameDayOfYear
 - uid: JotunShard.Extensions.DateTimes.IsSameHour(System.DateTime,System.Globalization.Calendar)
@@ -709,6 +747,7 @@ references:
   name: IsSameHour
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameHour_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameHour
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameHour
   nameWithType: DateTimes.IsSameHour
 - uid: JotunShard.Extensions.DateTimes.IsSameKind(System.DateTime)
@@ -721,6 +760,7 @@ references:
   name: IsSameKind
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameKind_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameKind
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameKind
   nameWithType: DateTimes.IsSameKind
 - uid: JotunShard.Extensions.DateTimes.IsSameMillisecond(System.DateTime)
@@ -733,6 +773,7 @@ references:
   name: IsSameMillisecond
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameMillisecond_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameMillisecond
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameMillisecond
   nameWithType: DateTimes.IsSameMillisecond
 - uid: JotunShard.Extensions.DateTimes.IsSameMinute(System.DateTime,System.Globalization.Calendar)
@@ -751,6 +792,7 @@ references:
   name: IsSameMinute
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameMinute_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameMinute
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameMinute
   nameWithType: DateTimes.IsSameMinute
 - uid: JotunShard.Extensions.DateTimes.IsSameMonth(System.DateTime,System.Globalization.Calendar)
@@ -769,6 +811,7 @@ references:
   name: IsSameMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameMonth_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameMonth
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameMonth
   nameWithType: DateTimes.IsSameMonth
 - uid: JotunShard.Extensions.DateTimes.IsSameSecond(System.DateTime,System.Globalization.Calendar)
@@ -787,6 +830,7 @@ references:
   name: IsSameSecond
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameSecond_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameSecond
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameSecond
   nameWithType: DateTimes.IsSameSecond
 - uid: JotunShard.Extensions.DateTimes.IsSameTicks(System.DateTime)
@@ -799,6 +843,7 @@ references:
   name: IsSameTicks
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameTicks_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameTicks
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameTicks
   nameWithType: DateTimes.IsSameTicks
 - uid: JotunShard.Extensions.DateTimes.IsSameTimeOfDay(System.DateTime)
@@ -811,6 +856,7 @@ references:
   name: IsSameTimeOfDay
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameTimeOfDay_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameTimeOfDay
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameTimeOfDay
   nameWithType: DateTimes.IsSameTimeOfDay
 - uid: JotunShard.Extensions.DateTimes.IsSameYear(System.DateTime,System.Globalization.Calendar)
@@ -829,6 +875,7 @@ references:
   name: IsSameYear
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsSameYear_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsSameYear
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsSameYear
   nameWithType: DateTimes.IsSameYear
 - uid: JotunShard.Extensions.DateTimes.IsToday(System.DateTime)
@@ -841,6 +888,7 @@ references:
   name: IsToday
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_IsToday_
   commentId: Overload:JotunShard.Extensions.DateTimes.IsToday
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.IsToday
   nameWithType: DateTimes.IsToday
 - uid: JotunShard.Extensions.DateTimes.NextDayOfMonth(System.DateTime,System.Int32,System.Globalization.Calendar)
@@ -859,6 +907,7 @@ references:
   name: NextDayOfMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_NextDayOfMonth_
   commentId: Overload:JotunShard.Extensions.DateTimes.NextDayOfMonth
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.NextDayOfMonth
   nameWithType: DateTimes.NextDayOfMonth
 - uid: JotunShard.Extensions.DateTimes.NextDayOfWeek(System.DateTime,System.DayOfWeek,System.Globalization.Calendar)
@@ -877,6 +926,7 @@ references:
   name: NextDayOfWeek
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_NextDayOfWeek_
   commentId: Overload:JotunShard.Extensions.DateTimes.NextDayOfWeek
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.NextDayOfWeek
   nameWithType: DateTimes.NextDayOfWeek
 - uid: JotunShard.Extensions.DateTimes.PreviousDayOfMonth(System.DateTime,System.Int32,System.Globalization.Calendar)
@@ -895,6 +945,7 @@ references:
   name: PreviousDayOfMonth
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_PreviousDayOfMonth_
   commentId: Overload:JotunShard.Extensions.DateTimes.PreviousDayOfMonth
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.PreviousDayOfMonth
   nameWithType: DateTimes.PreviousDayOfMonth
 - uid: JotunShard.Extensions.DateTimes.PreviousDayOfWeek(System.DateTime,System.DayOfWeek,System.Globalization.Calendar)
@@ -913,6 +964,7 @@ references:
   name: PreviousDayOfWeek
   href: api/JotunShard.Extensions.DateTimes.html#JotunShard_Extensions_DateTimes_PreviousDayOfWeek_
   commentId: Overload:JotunShard.Extensions.DateTimes.PreviousDayOfWeek
+  isSpec: "True"
   fullName: JotunShard.Extensions.DateTimes.PreviousDayOfWeek
   nameWithType: DateTimes.PreviousDayOfWeek
 - uid: JotunShard.Extensions.DefaultDelegates
@@ -931,12 +983,14 @@ references:
   name: ContradictionalFunction
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_ContradictionalFunction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.ContradictionalFunction
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.ContradictionalFunction
   nameWithType: DefaultDelegates.ContradictionalFunction
 - uid: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda*
   name: ContradictionalLambda
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_ContradictionalLambda_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.ContradictionalLambda
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda
   nameWithType: DefaultDelegates.ContradictionalLambda
 - uid: JotunShard.Extensions.DefaultDelegates.ContradictionalLambda``1
@@ -952,6 +1006,7 @@ references:
   name: ContradictionalPredicate
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_ContradictionalPredicate_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.ContradictionalPredicate
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.ContradictionalPredicate
   nameWithType: DefaultDelegates.ContradictionalPredicate
 - uid: JotunShard.Extensions.DefaultDelegates.ContradictionalPredicate``1
@@ -967,6 +1022,7 @@ references:
   name: DefaultValue
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_DefaultValue_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.DefaultValue
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.DefaultValue
   nameWithType: DefaultDelegates.DefaultValue
 - uid: JotunShard.Extensions.DefaultDelegates.DefaultValue``1
@@ -988,12 +1044,14 @@ references:
   name: EmptyAction
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_EmptyAction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.EmptyAction
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.EmptyAction
   nameWithType: DefaultDelegates.EmptyAction
 - uid: JotunShard.Extensions.DefaultDelegates.IdentityFunction*
   name: IdentityFunction
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_IdentityFunction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.IdentityFunction
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.IdentityFunction
   nameWithType: DefaultDelegates.IdentityFunction
 - uid: JotunShard.Extensions.DefaultDelegates.IdentityFunction``1
@@ -1015,12 +1073,14 @@ references:
   name: TautologicalFunction
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_TautologicalFunction_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.TautologicalFunction
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.TautologicalFunction
   nameWithType: DefaultDelegates.TautologicalFunction
 - uid: JotunShard.Extensions.DefaultDelegates.TautologicalLambda*
   name: TautologicalLambda
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_TautologicalLambda_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.TautologicalLambda
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.TautologicalLambda
   nameWithType: DefaultDelegates.TautologicalLambda
 - uid: JotunShard.Extensions.DefaultDelegates.TautologicalLambda``1
@@ -1036,6 +1096,7 @@ references:
   name: TautologicalPredicate
   href: api/JotunShard.Extensions.DefaultDelegates.html#JotunShard_Extensions_DefaultDelegates_TautologicalPredicate_
   commentId: Overload:JotunShard.Extensions.DefaultDelegates.TautologicalPredicate
+  isSpec: "True"
   fullName: JotunShard.Extensions.DefaultDelegates.TautologicalPredicate
   nameWithType: DefaultDelegates.TautologicalPredicate
 - uid: JotunShard.Extensions.DefaultDelegates.TautologicalPredicate``1
@@ -1057,6 +1118,7 @@ references:
   name: AsFluent
   href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_AsFluent_
   commentId: Overload:JotunShard.Extensions.Delegates.AsFluent
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.AsFluent
   nameWithType: Delegates.AsFluent
 - uid: JotunShard.Extensions.Delegates.AsFluent``1(System.Action{``0})
@@ -1126,6 +1188,7 @@ references:
   name: BindParameters
   href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_BindParameters_
   commentId: Overload:JotunShard.Extensions.Delegates.BindParameters
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.BindParameters
   nameWithType: Delegates.BindParameters
 - uid: JotunShard.Extensions.Delegates.BindParameters``1(System.Action{``0},``0)
@@ -3597,6 +3660,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.HasResult
@@ -3613,6 +3677,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param1
@@ -3629,6 +3694,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param2
@@ -3645,6 +3711,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param3
@@ -3661,6 +3728,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param4
@@ -3677,6 +3745,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param5
@@ -3693,6 +3762,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param6
@@ -3709,6 +3779,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param7
@@ -3725,6 +3796,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param8
@@ -3741,6 +3813,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Param9
@@ -3757,6 +3830,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-10.html#JotunShard_Extensions_Delegates_Bounce_10_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`10.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>.Result
@@ -3782,6 +3856,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.HasResult
@@ -3798,6 +3873,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param1
@@ -3814,6 +3890,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param10
@@ -3830,6 +3907,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param2
@@ -3846,6 +3924,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param3
@@ -3862,6 +3941,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param4
@@ -3878,6 +3958,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param5
@@ -3894,6 +3975,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param6
@@ -3910,6 +3992,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param7
@@ -3926,6 +4009,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param8
@@ -3942,6 +4026,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Param9
@@ -3958,6 +4043,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-11.html#JotunShard_Extensions_Delegates_Bounce_11_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`11.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>.Result
@@ -3983,6 +4069,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.HasResult
@@ -3999,6 +4086,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param1
@@ -4015,6 +4103,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param10
@@ -4031,6 +4120,7 @@ references:
   name: Param11
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param11_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param11
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param11
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param11
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param11
@@ -4047,6 +4137,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param2
@@ -4063,6 +4154,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param3
@@ -4079,6 +4171,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param4
@@ -4095,6 +4188,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param5
@@ -4111,6 +4205,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param6
@@ -4127,6 +4222,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param7
@@ -4143,6 +4239,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param8
@@ -4159,6 +4256,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Param9
@@ -4175,6 +4273,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-12.html#JotunShard_Extensions_Delegates_Bounce_12_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`12.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>.Result
@@ -4200,6 +4299,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.HasResult
@@ -4216,6 +4316,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param1
@@ -4232,6 +4333,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param10
@@ -4248,6 +4350,7 @@ references:
   name: Param11
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param11_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param11
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param11
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param11
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param11
@@ -4264,6 +4367,7 @@ references:
   name: Param12
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param12_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param12
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param12
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param12
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param12
@@ -4280,6 +4384,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param2
@@ -4296,6 +4401,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param3
@@ -4312,6 +4418,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param4
@@ -4328,6 +4435,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param5
@@ -4344,6 +4452,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param6
@@ -4360,6 +4469,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param7
@@ -4376,6 +4486,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param8
@@ -4392,6 +4503,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Param9
@@ -4408,6 +4520,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-13.html#JotunShard_Extensions_Delegates_Bounce_13_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`13.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>.Result
@@ -4433,6 +4546,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.HasResult
@@ -4449,6 +4563,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param1
@@ -4465,6 +4580,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param10
@@ -4481,6 +4597,7 @@ references:
   name: Param11
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param11_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param11
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param11
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param11
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param11
@@ -4497,6 +4614,7 @@ references:
   name: Param12
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param12_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param12
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param12
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param12
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param12
@@ -4513,6 +4631,7 @@ references:
   name: Param13
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param13_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param13
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param13
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param13
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param13
@@ -4529,6 +4648,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param2
@@ -4545,6 +4665,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param3
@@ -4561,6 +4682,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param4
@@ -4577,6 +4699,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param5
@@ -4593,6 +4716,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param6
@@ -4609,6 +4733,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param7
@@ -4625,6 +4750,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param8
@@ -4641,6 +4767,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Param9
@@ -4657,6 +4784,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-14.html#JotunShard_Extensions_Delegates_Bounce_14_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`14.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>.Result
@@ -4682,6 +4810,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.HasResult
@@ -4698,6 +4827,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param1
@@ -4714,6 +4844,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param10
@@ -4730,6 +4861,7 @@ references:
   name: Param11
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param11_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param11
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param11
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param11
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param11
@@ -4746,6 +4878,7 @@ references:
   name: Param12
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param12_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param12
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param12
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param12
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param12
@@ -4762,6 +4895,7 @@ references:
   name: Param13
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param13_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param13
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param13
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param13
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param13
@@ -4778,6 +4912,7 @@ references:
   name: Param14
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param14_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param14
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param14
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param14
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param14
@@ -4794,6 +4929,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param2
@@ -4810,6 +4946,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param3
@@ -4826,6 +4963,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param4
@@ -4842,6 +4980,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param5
@@ -4858,6 +4997,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param6
@@ -4874,6 +5014,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param7
@@ -4890,6 +5031,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param8
@@ -4906,6 +5048,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Param9
@@ -4922,6 +5065,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-15.html#JotunShard_Extensions_Delegates_Bounce_15_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`15.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>.Result
@@ -4947,6 +5091,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.HasResult
@@ -4963,6 +5108,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param1
@@ -4979,6 +5125,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param10
@@ -4995,6 +5142,7 @@ references:
   name: Param11
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param11_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param11
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param11
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param11
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param11
@@ -5011,6 +5159,7 @@ references:
   name: Param12
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param12_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param12
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param12
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param12
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param12
@@ -5027,6 +5176,7 @@ references:
   name: Param13
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param13_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param13
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param13
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param13
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param13
@@ -5043,6 +5193,7 @@ references:
   name: Param14
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param14_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param14
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param14
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param14
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param14
@@ -5059,6 +5210,7 @@ references:
   name: Param15
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param15_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param15
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param15
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param15
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param15
@@ -5075,6 +5227,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param2
@@ -5091,6 +5244,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param3
@@ -5107,6 +5261,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param4
@@ -5123,6 +5278,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param5
@@ -5139,6 +5295,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param6
@@ -5155,6 +5312,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param7
@@ -5171,6 +5329,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param8
@@ -5187,6 +5346,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Param9
@@ -5203,6 +5363,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-16.html#JotunShard_Extensions_Delegates_Bounce_16_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`16.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>.Result
@@ -5228,6 +5389,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.HasResult
@@ -5244,6 +5406,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param1
@@ -5260,6 +5423,7 @@ references:
   name: Param10
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param10_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param10
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param10
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param10
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param10
@@ -5276,6 +5440,7 @@ references:
   name: Param11
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param11_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param11
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param11
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param11
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param11
@@ -5292,6 +5457,7 @@ references:
   name: Param12
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param12_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param12
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param12
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param12
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param12
@@ -5308,6 +5474,7 @@ references:
   name: Param13
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param13_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param13
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param13
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param13
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param13
@@ -5324,6 +5491,7 @@ references:
   name: Param14
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param14_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param14
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param14
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param14
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param14
@@ -5340,6 +5508,7 @@ references:
   name: Param15
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param15_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param15
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param15
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param15
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param15
@@ -5356,6 +5525,7 @@ references:
   name: Param16
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param16_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param16
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param16
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param16
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param16
@@ -5372,6 +5542,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param2
@@ -5388,6 +5559,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param3
@@ -5404,6 +5576,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param4
@@ -5420,6 +5593,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param5
@@ -5436,6 +5610,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param6
@@ -5452,6 +5627,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param7
@@ -5468,6 +5644,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param8
@@ -5484,6 +5661,7 @@ references:
   name: Param9
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Param9_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Param9
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param9
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Param9
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Param9
@@ -5500,6 +5678,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-17.html#JotunShard_Extensions_Delegates_Bounce_17_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`17.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>.Result
@@ -5525,6 +5704,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-2.html#JotunShard_Extensions_Delegates_Bounce_2_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`2.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TResult>.HasResult
@@ -5541,6 +5721,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-2.html#JotunShard_Extensions_Delegates_Bounce_2_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`2.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TResult>.Param1
@@ -5557,6 +5738,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-2.html#JotunShard_Extensions_Delegates_Bounce_2_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`2.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TResult>.Result
@@ -5582,6 +5764,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-3.html#JotunShard_Extensions_Delegates_Bounce_3_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`3.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TResult>.HasResult
@@ -5598,6 +5781,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-3.html#JotunShard_Extensions_Delegates_Bounce_3_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`3.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TResult>.Param1
@@ -5614,6 +5798,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-3.html#JotunShard_Extensions_Delegates_Bounce_3_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`3.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TResult>.Param2
@@ -5630,6 +5815,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-3.html#JotunShard_Extensions_Delegates_Bounce_3_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`3.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TResult>.Result
@@ -5655,6 +5841,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-4.html#JotunShard_Extensions_Delegates_Bounce_4_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`4.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.HasResult
@@ -5671,6 +5858,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-4.html#JotunShard_Extensions_Delegates_Bounce_4_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`4.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Param1
@@ -5687,6 +5875,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-4.html#JotunShard_Extensions_Delegates_Bounce_4_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`4.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Param2
@@ -5703,6 +5892,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-4.html#JotunShard_Extensions_Delegates_Bounce_4_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`4.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Param3
@@ -5719,6 +5909,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-4.html#JotunShard_Extensions_Delegates_Bounce_4_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`4.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TResult>.Result
@@ -5744,6 +5935,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-5.html#JotunShard_Extensions_Delegates_Bounce_5_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`5.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.HasResult
@@ -5760,6 +5952,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-5.html#JotunShard_Extensions_Delegates_Bounce_5_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`5.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param1
@@ -5776,6 +5969,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-5.html#JotunShard_Extensions_Delegates_Bounce_5_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`5.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param2
@@ -5792,6 +5986,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-5.html#JotunShard_Extensions_Delegates_Bounce_5_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`5.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param3
@@ -5808,6 +6003,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-5.html#JotunShard_Extensions_Delegates_Bounce_5_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`5.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Param4
@@ -5824,6 +6020,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-5.html#JotunShard_Extensions_Delegates_Bounce_5_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`5.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TResult>.Result
@@ -5849,6 +6046,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.HasResult
@@ -5865,6 +6063,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param1
@@ -5881,6 +6080,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param2
@@ -5897,6 +6097,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param3
@@ -5913,6 +6114,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param4
@@ -5929,6 +6131,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Param5
@@ -5945,6 +6148,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-6.html#JotunShard_Extensions_Delegates_Bounce_6_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`6.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>.Result
@@ -5970,6 +6174,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.HasResult
@@ -5986,6 +6191,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param1
@@ -6002,6 +6208,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param2
@@ -6018,6 +6225,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param3
@@ -6034,6 +6242,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param4
@@ -6050,6 +6259,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param5
@@ -6066,6 +6276,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Param6
@@ -6082,6 +6293,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-7.html#JotunShard_Extensions_Delegates_Bounce_7_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`7.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>.Result
@@ -6107,6 +6319,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.HasResult
@@ -6123,6 +6336,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param1
@@ -6139,6 +6353,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param2
@@ -6155,6 +6370,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param3
@@ -6171,6 +6387,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param4
@@ -6187,6 +6404,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param5
@@ -6203,6 +6421,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param6
@@ -6219,6 +6438,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Param7
@@ -6235,6 +6455,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-8.html#JotunShard_Extensions_Delegates_Bounce_8_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`8.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>.Result
@@ -6260,6 +6481,7 @@ references:
   name: HasResult
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_HasResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.HasResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.HasResult
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).HasResult
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.HasResult
@@ -6276,6 +6498,7 @@ references:
   name: Param1
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param1_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param1
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param1
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param1
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param1
@@ -6292,6 +6515,7 @@ references:
   name: Param2
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param2_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param2
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param2
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param2
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param2
@@ -6308,6 +6532,7 @@ references:
   name: Param3
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param3_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param3
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param3
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param3
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param3
@@ -6324,6 +6549,7 @@ references:
   name: Param4
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param4_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param4
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param4
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param4
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param4
@@ -6340,6 +6566,7 @@ references:
   name: Param5
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param5_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param5
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param5
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param5
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param5
@@ -6356,6 +6583,7 @@ references:
   name: Param6
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param6_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param6
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param6
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param6
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param6
@@ -6372,6 +6600,7 @@ references:
   name: Param7
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param7_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param7
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param7
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param7
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param7
@@ -6388,6 +6617,7 @@ references:
   name: Param8
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Param8_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Param8
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param8
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Param8
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Param8
@@ -6404,6 +6634,7 @@ references:
   name: Result
   href: api/JotunShard.Extensions.Delegates.Bounce-9.html#JotunShard_Extensions_Delegates_Bounce_9_Result_
   commentId: Overload:JotunShard.Extensions.Delegates.Bounce`9.Result
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Result
   fullName.vb: JotunShard.Extensions.Delegates.Bounce(Of TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult).Result
   nameWithType: Delegates.Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>.Result
@@ -6412,6 +6643,7 @@ references:
   name: Not
   href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_Not_
   commentId: Overload:JotunShard.Extensions.Delegates.Not
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Not
   nameWithType: Delegates.Not
 - uid: JotunShard.Extensions.Delegates.Not``1(System.Func{``0,System.Boolean})
@@ -6562,6 +6794,7 @@ references:
   name: ToGenerator
   href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_ToGenerator_
   commentId: Overload:JotunShard.Extensions.Delegates.ToGenerator
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.ToGenerator
   nameWithType: Delegates.ToGenerator
 - uid: JotunShard.Extensions.Delegates.ToGenerator``1(System.Func{``0,``0},``0)
@@ -6703,6 +6936,7 @@ references:
   name: ToTrampoline
   href: api/JotunShard.Extensions.Delegates.html#JotunShard_Extensions_Delegates_ToTrampoline_
   commentId: Overload:JotunShard.Extensions.Delegates.ToTrampoline
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.ToTrampoline
   nameWithType: Delegates.ToTrampoline
 - uid: JotunShard.Extensions.Delegates.ToTrampoline``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,JotunShard.Extensions.Delegates.Bounce{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9}})
@@ -6859,6 +7093,7 @@ references:
   name: Recurse
   href: api/JotunShard.Extensions.Delegates.Trampoline.html#JotunShard_Extensions_Delegates_Trampoline_Recurse_
   commentId: Overload:JotunShard.Extensions.Delegates.Trampoline.Recurse
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Trampoline.Recurse
   nameWithType: Delegates.Trampoline.Recurse
 - uid: JotunShard.Extensions.Delegates.Trampoline.Recurse``10(``0,``1,``2,``3,``4,``5,``6,``7,``8)
@@ -7009,6 +7244,7 @@ references:
   name: ReturnResult
   href: api/JotunShard.Extensions.Delegates.Trampoline.html#JotunShard_Extensions_Delegates_Trampoline_ReturnResult_
   commentId: Overload:JotunShard.Extensions.Delegates.Trampoline.ReturnResult
+  isSpec: "True"
   fullName: JotunShard.Extensions.Delegates.Trampoline.ReturnResult
   nameWithType: Delegates.Trampoline.ReturnResult
 - uid: JotunShard.Extensions.Delegates.Trampoline.ReturnResult``10(``9)
@@ -7165,6 +7401,7 @@ references:
   name: DefaultIfEmpty
   href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_DefaultIfEmpty_
   commentId: Overload:JotunShard.Extensions.Dictionaries.DefaultIfEmpty
+  isSpec: "True"
   fullName: JotunShard.Extensions.Dictionaries.DefaultIfEmpty
   nameWithType: Dictionaries.DefaultIfEmpty
 - uid: JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
@@ -7189,6 +7426,7 @@ references:
   name: ToDictionary
   href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_ToDictionary_
   commentId: Overload:JotunShard.Extensions.Dictionaries.ToDictionary
+  isSpec: "True"
   fullName: JotunShard.Extensions.Dictionaries.ToDictionary
   nameWithType: Dictionaries.ToDictionary
 - uid: JotunShard.Extensions.Dictionaries.ToDictionary``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEqualityComparer{``0})
@@ -7210,6 +7448,7 @@ references:
   name: Cycle
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_Cycle_
   commentId: Overload:JotunShard.Extensions.Enumerables.Cycle
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.Cycle
   nameWithType: Enumerables.Cycle
 - uid: JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.Int32})
@@ -7225,6 +7464,7 @@ references:
   name: Flatten
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_Flatten_
   commentId: Overload:JotunShard.Extensions.Enumerables.Flatten
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.Flatten
   nameWithType: Enumerables.Flatten
 - uid: JotunShard.Extensions.Enumerables.Flatten``1(System.Collections.Generic.IEnumerable{``0},JotunShard.Extensions.TreeTraversalMode)
@@ -7249,6 +7489,7 @@ references:
   name: GetFNVHashCode
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_GetFNVHashCode_
   commentId: Overload:JotunShard.Extensions.Enumerables.GetFNVHashCode
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.GetFNVHashCode
   nameWithType: Enumerables.GetFNVHashCode
 - uid: JotunShard.Extensions.Enumerables.GetFNVHashCode``1(System.Collections.Generic.IEnumerable{``0})
@@ -7264,6 +7505,7 @@ references:
   name: GetRandom
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_GetRandom_
   commentId: Overload:JotunShard.Extensions.Enumerables.GetRandom
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.GetRandom
   nameWithType: Enumerables.GetRandom
 - uid: JotunShard.Extensions.Enumerables.GetRandom``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32})
@@ -7279,6 +7521,7 @@ references:
   name: GroupToDictionary
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_GroupToDictionary_
   commentId: Overload:JotunShard.Extensions.Enumerables.GroupToDictionary
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.GroupToDictionary
   nameWithType: Enumerables.GroupToDictionary
 - uid: JotunShard.Extensions.Enumerables.GroupToDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IEqualityComparer{``1})
@@ -7303,6 +7546,7 @@ references:
   name: HasCount
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_HasCount_
   commentId: Overload:JotunShard.Extensions.Enumerables.HasCount
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.HasCount
   nameWithType: Enumerables.HasCount
 - uid: JotunShard.Extensions.Enumerables.HasCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
@@ -7318,6 +7562,7 @@ references:
   name: PartitionBy
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_PartitionBy_
   commentId: Overload:JotunShard.Extensions.Enumerables.PartitionBy
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.PartitionBy
   nameWithType: Enumerables.PartitionBy
 - uid: JotunShard.Extensions.Enumerables.PartitionBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})
@@ -7333,6 +7578,7 @@ references:
   name: PartitionIf
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_PartitionIf_
   commentId: Overload:JotunShard.Extensions.Enumerables.PartitionIf
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.PartitionIf
   nameWithType: Enumerables.PartitionIf
 - uid: JotunShard.Extensions.Enumerables.PartitionIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,``0,System.Boolean},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})
@@ -7348,6 +7594,7 @@ references:
   name: ToShuffled
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_ToShuffled_
   commentId: Overload:JotunShard.Extensions.Enumerables.ToShuffled
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.ToShuffled
   nameWithType: Enumerables.ToShuffled
 - uid: JotunShard.Extensions.Enumerables.ToShuffled``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32,System.Int32},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0}})
@@ -7363,6 +7610,7 @@ references:
   name: TryGetFirst
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_TryGetFirst_
   commentId: Overload:JotunShard.Extensions.Enumerables.TryGetFirst
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.TryGetFirst
   nameWithType: Enumerables.TryGetFirst
 - uid: JotunShard.Extensions.Enumerables.TryGetFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)
@@ -7378,6 +7626,7 @@ references:
   name: TryGetLast
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_TryGetLast_
   commentId: Overload:JotunShard.Extensions.Enumerables.TryGetLast
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.TryGetLast
   nameWithType: Enumerables.TryGetLast
 - uid: JotunShard.Extensions.Enumerables.TryGetLast``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)
@@ -7393,6 +7642,7 @@ references:
   name: TryGetSingle
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_TryGetSingle_
   commentId: Overload:JotunShard.Extensions.Enumerables.TryGetSingle
+  isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.TryGetSingle
   nameWithType: Enumerables.TryGetSingle
 - uid: JotunShard.Extensions.Enumerables.TryGetSingle``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)
@@ -7414,6 +7664,7 @@ references:
   name: BindParameters
   href: api/JotunShard.Extensions.Expressions.html#JotunShard_Extensions_Expressions_BindParameters_
   commentId: Overload:JotunShard.Extensions.Expressions.BindParameters
+  isSpec: "True"
   fullName: JotunShard.Extensions.Expressions.BindParameters
   nameWithType: Expressions.BindParameters
 - uid: JotunShard.Extensions.Expressions.BindParameters``1(System.Linq.Expressions.Expression{System.Action{``0}},``0)
@@ -9886,6 +10137,7 @@ references:
   name: FieldFormatter
   href: api/JotunShard.Extensions.FieldFormatter-1.html#JotunShard_Extensions_FieldFormatter_1__ctor_
   commentId: Overload:JotunShard.Extensions.FieldFormatter`1.#ctor
+  isSpec: "True"
   fullName: JotunShard.Extensions.FieldFormatter<TContainer>.FieldFormatter
   fullName.vb: JotunShard.Extensions.FieldFormatter(Of TContainer).FieldFormatter
   nameWithType: FieldFormatter<TContainer>.FieldFormatter
@@ -9902,6 +10154,7 @@ references:
   name: Accessor
   href: api/JotunShard.Extensions.FieldFormatter-1.html#JotunShard_Extensions_FieldFormatter_1_Accessor_
   commentId: Overload:JotunShard.Extensions.FieldFormatter`1.Accessor
+  isSpec: "True"
   fullName: JotunShard.Extensions.FieldFormatter<TContainer>.Accessor
   fullName.vb: JotunShard.Extensions.FieldFormatter(Of TContainer).Accessor
   nameWithType: FieldFormatter<TContainer>.Accessor
@@ -9918,6 +10171,7 @@ references:
   name: Token
   href: api/JotunShard.Extensions.FieldFormatter-1.html#JotunShard_Extensions_FieldFormatter_1_Token_
   commentId: Overload:JotunShard.Extensions.FieldFormatter`1.Token
+  isSpec: "True"
   fullName: JotunShard.Extensions.FieldFormatter<TContainer>.Token
   fullName.vb: JotunShard.Extensions.FieldFormatter(Of TContainer).Token
   nameWithType: FieldFormatter<TContainer>.Token
@@ -9941,12 +10195,14 @@ references:
   name: Modify
   href: api/JotunShard.Extensions.LambdaBinder.html#JotunShard_Extensions_LambdaBinder_Modify_
   commentId: Overload:JotunShard.Extensions.LambdaBinder.Modify
+  isSpec: "True"
   fullName: JotunShard.Extensions.LambdaBinder.Modify
   nameWithType: LambdaBinder.Modify
 - uid: JotunShard.Extensions.LambdaBinder.VisitLambda*
   name: VisitLambda
   href: api/JotunShard.Extensions.LambdaBinder.html#JotunShard_Extensions_LambdaBinder_VisitLambda_
   commentId: Overload:JotunShard.Extensions.LambdaBinder.VisitLambda
+  isSpec: "True"
   fullName: JotunShard.Extensions.LambdaBinder.VisitLambda
   nameWithType: LambdaBinder.VisitLambda
 - uid: JotunShard.Extensions.LambdaBinder.VisitLambda``1(System.Linq.Expressions.Expression{``0})
@@ -9968,6 +10224,7 @@ references:
   name: InsertAll
   href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_InsertAll_
   commentId: Overload:JotunShard.Extensions.Lists.InsertAll
+  isSpec: "True"
   fullName: JotunShard.Extensions.Lists.InsertAll
   nameWithType: Lists.InsertAll
 - uid: JotunShard.Extensions.Lists.InsertAll``1(System.Collections.Generic.IList{``0},System.Int32,``0[])
@@ -9992,6 +10249,7 @@ references:
   name: PartitionBy
   href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_PartitionBy_
   commentId: Overload:JotunShard.Extensions.Lists.PartitionBy
+  isSpec: "True"
   fullName: JotunShard.Extensions.Lists.PartitionBy
   nameWithType: Lists.PartitionBy
 - uid: JotunShard.Extensions.Lists.PartitionBy``1(System.Collections.Generic.List{``0},System.Int32,System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})
@@ -10007,6 +10265,7 @@ references:
   name: Shuffle
   href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_Shuffle_
   commentId: Overload:JotunShard.Extensions.Lists.Shuffle
+  isSpec: "True"
   fullName: JotunShard.Extensions.Lists.Shuffle
   nameWithType: Lists.Shuffle
 - uid: JotunShard.Extensions.Lists.Shuffle``1(System.Collections.Generic.IList{``0},System.Func{System.Int32,System.Int32,System.Int32})
@@ -10022,6 +10281,7 @@ references:
   name: Swap
   href: api/JotunShard.Extensions.Lists.html#JotunShard_Extensions_Lists_Swap_
   commentId: Overload:JotunShard.Extensions.Lists.Swap
+  isSpec: "True"
   fullName: JotunShard.Extensions.Lists.Swap
   nameWithType: Lists.Swap
 - uid: JotunShard.Extensions.Lists.Swap``1(System.Collections.Generic.IList{``0},System.Int32,System.Int32)
@@ -10043,6 +10303,7 @@ references:
   name: EqualsOrNull
   href: api/JotunShard.Extensions.Objects.html#JotunShard_Extensions_Objects_EqualsOrNull_
   commentId: Overload:JotunShard.Extensions.Objects.EqualsOrNull
+  isSpec: "True"
   fullName: JotunShard.Extensions.Objects.EqualsOrNull
   nameWithType: Objects.EqualsOrNull
 - uid: JotunShard.Extensions.Objects.EqualsOrNull``1(``0,``0)
@@ -10070,6 +10331,7 @@ references:
   name: ReadLines
   href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_ReadLines_
   commentId: Overload:JotunShard.Extensions.Streams.ReadLines
+  isSpec: "True"
   fullName: JotunShard.Extensions.Streams.ReadLines
   nameWithType: Streams.ReadLines
 - uid: JotunShard.Extensions.Streams.ReadLinesAsync(System.IO.TextReader)
@@ -10082,6 +10344,7 @@ references:
   name: ReadLinesAsync
   href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_ReadLinesAsync_
   commentId: Overload:JotunShard.Extensions.Streams.ReadLinesAsync
+  isSpec: "True"
   fullName: JotunShard.Extensions.Streams.ReadLinesAsync
   nameWithType: Streams.ReadLinesAsync
 - uid: JotunShard.Extensions.Streams.WriteLines(System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.String})
@@ -10097,6 +10360,7 @@ references:
   name: WriteLines
   href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_WriteLines_
   commentId: Overload:JotunShard.Extensions.Streams.WriteLines
+  isSpec: "True"
   fullName: JotunShard.Extensions.Streams.WriteLines
   nameWithType: Streams.WriteLines
 - uid: JotunShard.Extensions.Streams.WriteLinesAsync(System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.String})
@@ -10112,6 +10376,7 @@ references:
   name: WriteLinesAsync
   href: api/JotunShard.Extensions.Streams.html#JotunShard_Extensions_Streams_WriteLinesAsync_
   commentId: Overload:JotunShard.Extensions.Streams.WriteLinesAsync
+  isSpec: "True"
   fullName: JotunShard.Extensions.Streams.WriteLinesAsync
   nameWithType: Streams.WriteLinesAsync
 - uid: JotunShard.Extensions.Strings
@@ -10130,6 +10395,7 @@ references:
   name: DefaultIfEmpty
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_DefaultIfEmpty_
   commentId: Overload:JotunShard.Extensions.Strings.DefaultIfEmpty
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.DefaultIfEmpty
   nameWithType: Strings.DefaultIfEmpty
 - uid: JotunShard.Extensions.Strings.EnsureEndsWith(System.String,System.String)
@@ -10142,6 +10408,7 @@ references:
   name: EnsureEndsWith
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureEndsWith_
   commentId: Overload:JotunShard.Extensions.Strings.EnsureEndsWith
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.EnsureEndsWith
   nameWithType: Strings.EnsureEndsWith
 - uid: JotunShard.Extensions.Strings.EnsureStartsWith(System.String,System.String)
@@ -10154,6 +10421,7 @@ references:
   name: EnsureStartsWith
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureStartsWith_
   commentId: Overload:JotunShard.Extensions.Strings.EnsureStartsWith
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.EnsureStartsWith
   nameWithType: Strings.EnsureStartsWith
 - uid: JotunShard.Extensions.Strings.FormatWith(System.String,System.Object[])
@@ -10169,6 +10437,7 @@ references:
   name: FormatWith
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_FormatWith_
   commentId: Overload:JotunShard.Extensions.Strings.FormatWith
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.FormatWith
   nameWithType: Strings.FormatWith
 - uid: JotunShard.Extensions.Strings.IsNullOrEmpty(System.String)
@@ -10181,6 +10450,7 @@ references:
   name: IsNullOrEmpty
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_IsNullOrEmpty_
   commentId: Overload:JotunShard.Extensions.Strings.IsNullOrEmpty
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.IsNullOrEmpty
   nameWithType: Strings.IsNullOrEmpty
 - uid: JotunShard.Extensions.Strings.IsNullOrWhiteSpace(System.String)
@@ -10193,6 +10463,7 @@ references:
   name: IsNullOrWhiteSpace
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_IsNullOrWhiteSpace_
   commentId: Overload:JotunShard.Extensions.Strings.IsNullOrWhiteSpace
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.IsNullOrWhiteSpace
   nameWithType: Strings.IsNullOrWhiteSpace
 - uid: JotunShard.Extensions.Strings.Left(System.String,System.Int32)
@@ -10205,6 +10476,7 @@ references:
   name: Left
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Left_
   commentId: Overload:JotunShard.Extensions.Strings.Left
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.Left
   nameWithType: Strings.Left
 - uid: JotunShard.Extensions.Strings.Match(System.String,System.String)
@@ -10217,6 +10489,7 @@ references:
   name: Match
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Match_
   commentId: Overload:JotunShard.Extensions.Strings.Match
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.Match
   nameWithType: Strings.Match
 - uid: JotunShard.Extensions.Strings.Reverse(System.String)
@@ -10229,6 +10502,7 @@ references:
   name: Reverse
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Reverse_
   commentId: Overload:JotunShard.Extensions.Strings.Reverse
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.Reverse
   nameWithType: Strings.Reverse
 - uid: JotunShard.Extensions.Strings.Right(System.String,System.Int32)
@@ -10241,6 +10515,7 @@ references:
   name: Right
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Right_
   commentId: Overload:JotunShard.Extensions.Strings.Right
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.Right
   nameWithType: Strings.Right
 - uid: JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.Char},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})
@@ -10265,6 +10540,7 @@ references:
   name: Split
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Split_
   commentId: Overload:JotunShard.Extensions.Strings.Split
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.Split
   nameWithType: Strings.Split
 - uid: JotunShard.Extensions.Strings.SubstringFollowing(System.String,System.String,System.Nullable{System.Int32})
@@ -10280,6 +10556,7 @@ references:
   name: SubstringFollowing
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_SubstringFollowing_
   commentId: Overload:JotunShard.Extensions.Strings.SubstringFollowing
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.SubstringFollowing
   nameWithType: Strings.SubstringFollowing
 - uid: JotunShard.Extensions.Strings.SubstringPreceding(System.String,System.String,System.Nullable{System.Int32})
@@ -10295,6 +10572,7 @@ references:
   name: SubstringPreceding
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_SubstringPreceding_
   commentId: Overload:JotunShard.Extensions.Strings.SubstringPreceding
+  isSpec: "True"
   fullName: JotunShard.Extensions.Strings.SubstringPreceding
   nameWithType: Strings.SubstringPreceding
 - uid: JotunShard.Extensions.TreeTraversalMode

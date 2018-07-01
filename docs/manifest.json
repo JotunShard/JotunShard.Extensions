@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Arguments.html",
-          "hash": "Rs9mdVAIvsKuNeyJElLl0g=="
+          "hash": "PhuF2DNPmJjowrGhLFt87A=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Collections.html",
-          "hash": "WxTiMlyPEDZ5yfs7tliaXg=="
+          "hash": "WEsDANuu+LcZZsM4Tw2w6w=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Comparables.html",
-          "hash": "T0Yjpx+JaWY6NSkuFMOUOw=="
+          "hash": "J3uJMHMkoFz3SSovGNhxXQ=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.CompositeFormatter-1.html",
-          "hash": "sI9Lbrew9SlIPQDtgDYj7w=="
+          "hash": "NK0rvZIuBTkNDHS8xadXXg=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Constants.html",
-          "hash": "1QERUwi+Rf8UXviH2wyvRA=="
+          "hash": "fmR3RC3f3vyrJDjScLRfAQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.CustomFormatProvider.html",
-          "hash": "rmIGmFi+3nUNP3cXZkCoyw=="
+          "hash": "Stm/LstezfHOxyRICFNf0g=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.CustomFormattable.html",
-          "hash": "6LqE0tSva86vwCP6P/OkgQ=="
+          "hash": "1sUiXViZVScbG3cJdERAhQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.DateTimes.html",
-          "hash": "KF1JYNUDmqz23BF7edaMcw=="
+          "hash": "wZBGhHx1no5NFZHnB/pAFQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.DefaultDelegates.html",
-          "hash": "1oa5VTuXf7Snq8efcxpU6w=="
+          "hash": "lA93dUtmQrgZplB1fGGfcQ=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-10.html",
-          "hash": "8lRAwn/x4uIkBuBzQalESw=="
+          "hash": "EiGiywfz/SnIeeTJlaXsoQ=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-11.html",
-          "hash": "xyBQbf199jrF+qZ+GOr3aA=="
+          "hash": "ebjWgRQTk/t8ImJLqVPFkA=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-12.html",
-          "hash": "JsHbAa/SNxbtGO29vGy7QQ=="
+          "hash": "jZoDwqJzlfJojm0Jz/SKXg=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-13.html",
-          "hash": "kUDRhndzqkGyqi2QObS82w=="
+          "hash": "lGnrvTDZZP2a2MO9zPV/IQ=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-14.html",
-          "hash": "0CVohEk898btDBwOrZdECQ=="
+          "hash": "HGkWiJKsfTOXkS2AKNpC+g=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-15.html",
-          "hash": "yA5GhGLqQqwuJ/nDYsWXPw=="
+          "hash": "ARZ8BoRlgUkP/a5dtnEDGA=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-16.html",
-          "hash": "PU/SCxIc+pc1Ap3JIbfATQ=="
+          "hash": "qGvAXk14idJkPPxm7fN2QA=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-17.html",
-          "hash": "uf0Ae9dlTeYeE43Wz6tH/Q=="
+          "hash": "xpPLkHu30UwQ07wOmX3/pA=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-2.html",
-          "hash": "5J1L/yIZj1PEVQSgqTWI4Q=="
+          "hash": "xwiYKd/L7tHeWSBXnmLKRw=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-3.html",
-          "hash": "95VZxdnZU2eYYyjEJNeTMg=="
+          "hash": "WuW1uxhNpaA7WRUzyldshQ=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-4.html",
-          "hash": "hpx2NH+O/rkFItfAKMPLoA=="
+          "hash": "QlkriNbMfxmQcidhnQylmA=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-5.html",
-          "hash": "BOJXlqwtZPRPOfgwT6dUsA=="
+          "hash": "FTzmJ3WyN9CfOCmRGOQrnQ=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-6.html",
-          "hash": "Yr0gXXSVzAlfx/Q9sebfNA=="
+          "hash": "ogyHrswxseP/4J6B375EYQ=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-7.html",
-          "hash": "vHN+xpy3e0T22Zbk6xddwA=="
+          "hash": "FZonJbp8tFIsOF18YYtGZw=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-8.html",
-          "hash": "5SsJ2SA075cgIOUdhtiQjg=="
+          "hash": "e/Ezn9CvWhWpj3Yrie1xJQ=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Bounce-9.html",
-          "hash": "8ej4KBCOYxP/aBBb93wvTQ=="
+          "hash": "HKXzpemM9UHfk+Y+gPb/4w=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.Trampoline.html",
-          "hash": "cMUcVboGVvowpaX8Oq6nuQ=="
+          "hash": "/HgY+WIbbZ8EO2lBKyM2Yw=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Delegates.html",
-          "hash": "NITmmWykpBNboEJNGLhMqQ=="
+          "hash": "xrGWzjTsmtDMrFnXv4/mmg=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Dictionaries.html",
-          "hash": "TUVSpWhdzVD9d3AGMNNcug=="
+          "hash": "Q/H5TZTTg2ZEU+SaoQzS2Q=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Enumerables.html",
-          "hash": "RkzbQSOE3loBrlnHuQEo0w=="
+          "hash": "LHQ5EfcYa0ibinTtmuW9yA=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Expressions.html",
-          "hash": "D8720yA057V7JDpX/Zy0Ew=="
+          "hash": "tbHalRrT+CVakfRmQzEIdQ=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.FieldFormatter-1.html",
-          "hash": "4Ek41lEFRlte/wgBmm6y2A=="
+          "hash": "4YCq7cQaVIjcfb76sTbfoA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.LambdaBinder.html",
-          "hash": "R0ak1KmmkB/SwD1PczRqZQ=="
+          "hash": "lkEocfZT8O5pd8dpMTrYTg=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Lists.html",
-          "hash": "eMMozA07oF3O1MxTNhwzsA=="
+          "hash": "oSbJtWp7FQmdb14+403jNQ=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Objects.html",
-          "hash": "ZAkiy7sCudAh7c4pzXc1aA=="
+          "hash": "INU/NT6a/0ApI9lMEZUc5A=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Streams.html",
-          "hash": "frvt/2ZL9VZepF1YzBMhPg=="
+          "hash": "2sr/W4TokGHadhOIwRiU5g=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Strings.html",
-          "hash": "Ss0XKLOVRLO7kqOGKnjCqQ=="
+          "hash": "Ac5KuqPKjp31TrEJOTM5+w=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.TreeTraversalMode.html",
-          "hash": "Lew7pySdSzCZQwc0cYdtSQ=="
+          "hash": "yoTx/Q2QvIwo5SeXi6x5RA=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.WeeklyOccurrences.html",
-          "hash": "zZPUH+eTl4DGXZKrGhgCnw=="
+          "hash": "irSYG7Fa8CVKbpa/MJ5JUw=="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.html",
-          "hash": "erM8qJOMGMNBLlonpUmlkg=="
+          "hash": "P+WjCiJiZmYj5gyX79Gy7A=="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "6cUok1m/bjsyZ7Hr+Y3pZg=="
+          "hash": "HB1GRQF8mqVNwyzPXvAJKQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "rMMSn+NOVMmPham+lH8QPA=="
+          "hash": "ZNa3O7OYfMRavvBSfLpX/A=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "WZRa4B99gV9Mvws81z1nfQ=="
+          "hash": "l/BGmzHV2Ww3VPYMUcKNdA=="
         }
       },
       "is_incremental": false,
@@ -548,20 +548,20 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "details": "Cannot build incrementally because docfx version changed from 2.28.3.0 to 2.36.2.0.",
         "incrementalPhase": "build"
       },
       "processors": {
         "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
