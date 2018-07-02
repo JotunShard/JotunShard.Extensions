@@ -237,5 +237,21 @@ namespace JotunShard.Extensions.Test
             => Fail();
 
         #endregion SubstringPreceding
+
+        #region DefaultIfEmpty
+
+        [TestMethod]
+        public void DefaultIfEmpty()
+            => Fail();
+
+        #endregion DefaultIfEmpty
+
+        #region Split
+
+        [TestMethod]
+        public void Split()
+            => Fail();
+
+        #endregion Split
     }
 }
