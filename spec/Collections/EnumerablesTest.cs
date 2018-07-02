@@ -166,7 +166,7 @@ namespace JotunShard.Extensions.Test.Collections
         {
             var slices = ENMRBL_NON_EMPTY.PartitionBy(COUNT_LESSER);
 
-            AreEqual(Math.Ceiling((double)ENMRBL_NON_EMPTY.Count() / COUNT_LESSER), slices.Count());
+            AreEqual(Math.Ceiling((double)COUNT_RIGHT / COUNT_LESSER), slices.Count());
             IsTrue(slices.SelectMany(s => s).SequenceEqual(ENMRBL_NON_EMPTY));
         }
 
@@ -291,11 +291,9 @@ namespace JotunShard.Extensions.Test.Collections
 
         [TestMethod]
         public void GetRandom_WithNonEmptyEnumerableAndIndexedRandomSource_ExpectsSameItems()
-            => CollectionAssert.AreEqual(
-                ENMRBL_NON_EMPTY.ToList(),
+            => IsTrue(ENMRBL_NON_EMPTY.SequenceEqual(
                 Enumerable.Range(0, COUNT_RIGHT)
-                    .Select(index => ENMRBL_NON_EMPTY.GetRandom(x => index))
-                    .ToList());
+                    .Select(index => ENMRBL_NON_EMPTY.GetRandom(x => index))));
 
         #endregion GetRandom
 

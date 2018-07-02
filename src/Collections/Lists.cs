@@ -20,7 +20,7 @@ namespace JotunShard.Extensions
             {
                 yield return partitionProvider(source.GetRange(
                     index,
-                    Math.Min(count, source.Count - index - 1)));
+                    Math.Min(count, source.Count - index)));
             }
         }
 
@@ -30,8 +30,12 @@ namespace JotunShard.Extensions
             int otherIndex)
         {
             list.CheckArgumentNull(nameof(list));
-            index.CheckArgumentOutOfRangeOrEqual(nameof(index), 0, list.Count - 1);
-            otherIndex.CheckArgumentOutOfRangeOrEqual(nameof(otherIndex), 0, list.Count - 1);
+            if (list.Count == 0)
+            {
+                return;
+            }
+            index.CheckArgumentOutOfRange(nameof(index), 0, list.Count - 1);
+            otherIndex.CheckArgumentOutOfRange(nameof(otherIndex), 0, list.Count - 1);
             if (index == otherIndex)
             {
                 return;

@@ -52,6 +52,7 @@
     <Compile Include="Collections\ListsTest.cs" />
     <Compile Include="Collections\MultiItems.cs" />
     <Compile Include="Collections\Utilities.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="StringsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DateTimesTest.cs" />
