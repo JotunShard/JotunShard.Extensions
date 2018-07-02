@@ -10414,12 +10414,12 @@ references:
   isSpec: "True"
   fullName: JotunShard.Extensions.Strings.DefaultIfEmpty
   nameWithType: Strings.DefaultIfEmpty
-- uid: JotunShard.Extensions.Strings.EnsureEndsWith(System.String,System.String)
-  name: EnsureEndsWith(String, String)
-  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureEndsWith_System_String_System_String_
-  commentId: M:JotunShard.Extensions.Strings.EnsureEndsWith(System.String,System.String)
-  fullName: JotunShard.Extensions.Strings.EnsureEndsWith(System.String, System.String)
-  nameWithType: Strings.EnsureEndsWith(String, String)
+- uid: JotunShard.Extensions.Strings.EnsureEndsWith(System.String,System.String,System.StringComparison)
+  name: EnsureEndsWith(String, String, StringComparison)
+  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureEndsWith_System_String_System_String_System_StringComparison_
+  commentId: M:JotunShard.Extensions.Strings.EnsureEndsWith(System.String,System.String,System.StringComparison)
+  fullName: JotunShard.Extensions.Strings.EnsureEndsWith(System.String, System.String, System.StringComparison)
+  nameWithType: Strings.EnsureEndsWith(String, String, StringComparison)
 - uid: JotunShard.Extensions.Strings.EnsureEndsWith*
   name: EnsureEndsWith
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureEndsWith_
@@ -10427,12 +10427,12 @@ references:
   isSpec: "True"
   fullName: JotunShard.Extensions.Strings.EnsureEndsWith
   nameWithType: Strings.EnsureEndsWith
-- uid: JotunShard.Extensions.Strings.EnsureStartsWith(System.String,System.String)
-  name: EnsureStartsWith(String, String)
-  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureStartsWith_System_String_System_String_
-  commentId: M:JotunShard.Extensions.Strings.EnsureStartsWith(System.String,System.String)
-  fullName: JotunShard.Extensions.Strings.EnsureStartsWith(System.String, System.String)
-  nameWithType: Strings.EnsureStartsWith(String, String)
+- uid: JotunShard.Extensions.Strings.EnsureStartsWith(System.String,System.String,System.StringComparison)
+  name: EnsureStartsWith(String, String, StringComparison)
+  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureStartsWith_System_String_System_String_System_StringComparison_
+  commentId: M:JotunShard.Extensions.Strings.EnsureStartsWith(System.String,System.String,System.StringComparison)
+  fullName: JotunShard.Extensions.Strings.EnsureStartsWith(System.String, System.String, System.StringComparison)
+  nameWithType: Strings.EnsureStartsWith(String, String, StringComparison)
 - uid: JotunShard.Extensions.Strings.EnsureStartsWith*
   name: EnsureStartsWith
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_EnsureStartsWith_

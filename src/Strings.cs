@@ -62,19 +62,21 @@ namespace JotunShard.Extensions
             => Regex.IsMatch(value, pattern);
 
         public static string EnsureEndsWith(
-            [NotNull] this string value,
-            [NotNull] string terminator)
+            [NotNull] this string target,
+            [NotNull] string value,
+            StringComparison comparisonType = StringComparison.CurrentCulture)
         {
-            value.CheckArgumentNull(nameof(value));
-            return value.EndsWith(terminator) ? value : value + terminator;
+            target.CheckArgumentNull(nameof(target));
+            return target.EndsWith(value, comparisonType) ? target : target + value;
         }
 
         public static string EnsureStartsWith(
-            [NotNull] this string value,
-            [NotNull] string terminator)
+            [NotNull] this string target,
+            [NotNull] string value,
+            StringComparison comparisonType = StringComparison.CurrentCulture)
         {
-            value.CheckArgumentNull(nameof(value));
-            return value.StartsWith(terminator) ? value : terminator + value;
+            target.CheckArgumentNull(nameof(target));
+            return target.StartsWith(value, comparisonType) ? target : value + target;
         }
 
         public static string Reverse(
