@@ -646,6 +646,7 @@
   "JotunShard.Extensions.Dictionaries": "JotunShard.Extensions.Dictionaries.yml",
   "JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)": "JotunShard.Extensions.Dictionaries.yml",
   "JotunShard.Extensions.Dictionaries.DefaultIfEmpty``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.KeyValuePair{``0,``1})": "JotunShard.Extensions.Dictionaries.yml",
+  "JotunShard.Extensions.Dictionaries.SequenceEqual``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{System.Collections.Generic.KeyValuePair{``0,``1}})": "JotunShard.Extensions.Dictionaries.yml",
   "JotunShard.Extensions.Dictionaries.ToDictionary``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEqualityComparer{``0})": "JotunShard.Extensions.Dictionaries.yml",
   "JotunShard.Extensions.Enumerables": "JotunShard.Extensions.Enumerables.yml",
   "JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.Int32})": "JotunShard.Extensions.Enumerables.yml",

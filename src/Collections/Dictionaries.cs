@@ -39,5 +39,11 @@ namespace JotunShard.Extensions
             [NotNull] this IDictionary<TKey, TValue> source,
             KeyValuePair<TKey, TValue> pair = default(KeyValuePair<TKey, TValue>))
             => source.DefaultIfEmpty(pair.Key, pair.Value);
+
+        public static bool SequenceEqual<TKey, TValue>(
+            [NotNull] this IDictionary<TKey, TValue> source,
+            [NotNull] IEnumerable<KeyValuePair<TKey, TValue>> other,
+            IEqualityComparer<KeyValuePair<TKey, TValue>> comparer = null)
+            => source.AsEnumerable().SequenceEqual(other, comparer);
     }
 }

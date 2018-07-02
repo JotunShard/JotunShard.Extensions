@@ -7422,6 +7422,22 @@ references:
   fullName.vb: JotunShard.Extensions.Dictionaries.DefaultIfEmpty(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), System.Collections.Generic.KeyValuePair(Of TKey, TValue))
   nameWithType: Dictionaries.DefaultIfEmpty<TKey, TValue>(IDictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)
   nameWithType.vb: Dictionaries.DefaultIfEmpty(Of TKey, TValue)(IDictionary(Of TKey, TValue), KeyValuePair(Of TKey, TValue))
+- uid: JotunShard.Extensions.Dictionaries.SequenceEqual*
+  name: SequenceEqual
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_SequenceEqual_
+  commentId: Overload:JotunShard.Extensions.Dictionaries.SequenceEqual
+  isSpec: "True"
+  fullName: JotunShard.Extensions.Dictionaries.SequenceEqual
+  nameWithType: Dictionaries.SequenceEqual
+- uid: JotunShard.Extensions.Dictionaries.SequenceEqual``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{System.Collections.Generic.KeyValuePair{``0,``1}})
+  name: SequenceEqual<TKey, TValue>(IDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>, IEqualityComparer<KeyValuePair<TKey, TValue>>)
+  href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_SequenceEqual__2_System_Collections_Generic_IDictionary___0___1__System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair___0___1___System_Collections_Generic_IEqualityComparer_System_Collections_Generic_KeyValuePair___0___1___
+  commentId: M:JotunShard.Extensions.Dictionaries.SequenceEqual``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{System.Collections.Generic.KeyValuePair{``0,``1}})
+  name.vb: SequenceEqual(Of TKey, TValue)(IDictionary(Of TKey, TValue), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEqualityComparer(Of KeyValuePair(Of TKey, TValue)))
+  fullName: JotunShard.Extensions.Dictionaries.SequenceEqual<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>, System.Collections.Generic.IEqualityComparer<System.Collections.Generic.KeyValuePair<TKey, TValue>>)
+  fullName.vb: JotunShard.Extensions.Dictionaries.SequenceEqual(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), System.Collections.Generic.IEqualityComparer(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)))
+  nameWithType: Dictionaries.SequenceEqual<TKey, TValue>(IDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>, IEqualityComparer<KeyValuePair<TKey, TValue>>)
+  nameWithType.vb: Dictionaries.SequenceEqual(Of TKey, TValue)(IDictionary(Of TKey, TValue), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEqualityComparer(Of KeyValuePair(Of TKey, TValue)))
 - uid: JotunShard.Extensions.Dictionaries.ToDictionary*
   name: ToDictionary
   href: api/JotunShard.Extensions.Dictionaries.html#JotunShard_Extensions_Dictionaries_ToDictionary_
