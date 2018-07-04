@@ -880,6 +880,141 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_SelectMany__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.SelectMany%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L397">View Source</a>
+  </span>
+  <a id="JotunShard_Extensions_Enumerables_SelectMany_" data-uid="JotunShard.Extensions.Enumerables.SelectMany*"></a>
+  <h4 id="JotunShard_Extensions_Enumerables_SelectMany__1_System_Collections_Generic_IEnumerable___0__" data-uid="JotunShard.Extensions.Enumerables.SelectMany``1(System.Collections.Generic.IEnumerable{``0})">SelectMany&lt;TElem&gt;(IEnumerable&lt;TElem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TElem&gt; SelectMany&lt;TElem&gt;([NotNull] this IEnumerable&lt;TElem&gt; source)
+    where TElem : IEnumerable&lt;TElem&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_SelectMany__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.SelectMany%60%602(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JotunShard/JotunShard.Extensions/blob/master/src/Collections/Enumerables.cs/#L402">View Source</a>
+  </span>
+  <a id="JotunShard_Extensions_Enumerables_SelectMany_" data-uid="JotunShard.Extensions.Enumerables.SelectMany*"></a>
+  <h4 id="JotunShard_Extensions_Enumerables_SelectMany__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__" data-uid="JotunShard.Extensions.Enumerables.SelectMany``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``1})">SelectMany&lt;TElem, TResult&gt;(IEnumerable&lt;TElem&gt;, Func&lt;TElem, TElem, TResult&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TResult&gt; SelectMany&lt;TElem, TResult&gt;([NotNull] this IEnumerable&lt;TElem&gt; source, [NotNull] Func&lt;TElem, TElem, TResult&gt; resultSelector)
+    where TElem : IEnumerable&lt;TElem&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TElem&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TElem, TElem, TResult&gt;</td>
+        <td><span class="parametername">resultSelector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/JotunShard/JotunShard.Extensions/new/master/apiSpec/new?filename=JotunShard_Extensions_Enumerables_ToShuffled__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Int32_System_Int32__System_Func_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0___.md&amp;value=---%0Auid%3A%20JotunShard.Extensions.Enumerables.ToShuffled%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%2CSystem.Func%7BSystem.Collections.Generic.IList%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">

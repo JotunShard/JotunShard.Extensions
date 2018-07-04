@@ -393,5 +393,16 @@ namespace JotunShard.Extensions
                 Constants.FNV_OFFSET_BASIS,
                 (hashCode, item) => (uint)(hashCode ^ item.GetHashCode()) * Constants.FNV_PRIME);
         }
+
+        public static IEnumerable<TElem> SelectMany<TElem>(
+            [NotNull] this IEnumerable<TElem> source)
+            where TElem : IEnumerable<TElem>
+            => source.SelectMany(elem => elem);
+
+        public static IEnumerable<TResult> SelectMany<TElem, TResult>(
+            [NotNull] this IEnumerable<TElem> source,
+            [NotNull] Func<TElem, TElem, TResult> resultSelector)
+            where TElem : IEnumerable<TElem>
+            => source.SelectMany(elem => elem, resultSelector);
     }
 }

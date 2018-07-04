@@ -659,6 +659,8 @@
   "JotunShard.Extensions.Enumerables.HasCount``1(System.Collections.Generic.IEnumerable{``0},System.Int32)": "JotunShard.Extensions.Enumerables.yml",
   "JotunShard.Extensions.Enumerables.PartitionBy``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})": "JotunShard.Extensions.Enumerables.yml",
   "JotunShard.Extensions.Enumerables.PartitionIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,``0,System.Boolean},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IReadOnlyCollection{``0}})": "JotunShard.Extensions.Enumerables.yml",
+  "JotunShard.Extensions.Enumerables.SelectMany``1(System.Collections.Generic.IEnumerable{``0})": "JotunShard.Extensions.Enumerables.yml",
+  "JotunShard.Extensions.Enumerables.SelectMany``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``1})": "JotunShard.Extensions.Enumerables.yml",
   "JotunShard.Extensions.Enumerables.ToShuffled``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32,System.Int32},System.Func{System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0}})": "JotunShard.Extensions.Enumerables.yml",
   "JotunShard.Extensions.Enumerables.TryGetFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)": "JotunShard.Extensions.Enumerables.yml",
   "JotunShard.Extensions.Enumerables.TryGetLast``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)": "JotunShard.Extensions.Enumerables.yml",

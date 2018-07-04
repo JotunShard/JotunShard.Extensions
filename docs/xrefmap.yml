@@ -7606,6 +7606,31 @@ references:
   fullName.vb: JotunShard.Extensions.Enumerables.PartitionIf(Of TElem)(System.Collections.Generic.IEnumerable(Of TElem), System.Func(Of System.Int32, TElem, System.Boolean), System.Func(Of System.Collections.Generic.IList(Of TElem), System.Collections.Generic.IReadOnlyCollection(Of TElem)))
   nameWithType: Enumerables.PartitionIf<TElem>(IEnumerable<TElem>, Func<Int32, TElem, Boolean>, Func<IList<TElem>, IReadOnlyCollection<TElem>>)
   nameWithType.vb: Enumerables.PartitionIf(Of TElem)(IEnumerable(Of TElem), Func(Of Int32, TElem, Boolean), Func(Of IList(Of TElem), IReadOnlyCollection(Of TElem)))
+- uid: JotunShard.Extensions.Enumerables.SelectMany*
+  name: SelectMany
+  href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_SelectMany_
+  commentId: Overload:JotunShard.Extensions.Enumerables.SelectMany
+  isSpec: "True"
+  fullName: JotunShard.Extensions.Enumerables.SelectMany
+  nameWithType: Enumerables.SelectMany
+- uid: JotunShard.Extensions.Enumerables.SelectMany``1(System.Collections.Generic.IEnumerable{``0})
+  name: SelectMany<TElem>(IEnumerable<TElem>)
+  href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_SelectMany__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:JotunShard.Extensions.Enumerables.SelectMany``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: SelectMany(Of TElem)(IEnumerable(Of TElem))
+  fullName: JotunShard.Extensions.Enumerables.SelectMany<TElem>(System.Collections.Generic.IEnumerable<TElem>)
+  fullName.vb: JotunShard.Extensions.Enumerables.SelectMany(Of TElem)(System.Collections.Generic.IEnumerable(Of TElem))
+  nameWithType: Enumerables.SelectMany<TElem>(IEnumerable<TElem>)
+  nameWithType.vb: Enumerables.SelectMany(Of TElem)(IEnumerable(Of TElem))
+- uid: JotunShard.Extensions.Enumerables.SelectMany``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``1})
+  name: SelectMany<TElem, TResult>(IEnumerable<TElem>, Func<TElem, TElem, TResult>)
+  href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_SelectMany__2_System_Collections_Generic_IEnumerable___0__System_Func___0___0___1__
+  commentId: M:JotunShard.Extensions.Enumerables.SelectMany``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``1})
+  name.vb: SelectMany(Of TElem, TResult)(IEnumerable(Of TElem), Func(Of TElem, TElem, TResult))
+  fullName: JotunShard.Extensions.Enumerables.SelectMany<TElem, TResult>(System.Collections.Generic.IEnumerable<TElem>, System.Func<TElem, TElem, TResult>)
+  fullName.vb: JotunShard.Extensions.Enumerables.SelectMany(Of TElem, TResult)(System.Collections.Generic.IEnumerable(Of TElem), System.Func(Of TElem, TElem, TResult))
+  nameWithType: Enumerables.SelectMany<TElem, TResult>(IEnumerable<TElem>, Func<TElem, TElem, TResult>)
+  nameWithType.vb: Enumerables.SelectMany(Of TElem, TResult)(IEnumerable(Of TElem), Func(Of TElem, TElem, TResult))
 - uid: JotunShard.Extensions.Enumerables.ToShuffled*
   name: ToShuffled
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_ToShuffled_
