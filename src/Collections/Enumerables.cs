@@ -169,16 +169,15 @@ namespace JotunShard.Extensions
         /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Cycle<TElem>(
             [NotNull] this IEnumerable<TElem> source,
-            int? repeat = null)
+            uint? repeat = null)
         {
             source.CheckArgumentNull(nameof(source));
-            repeat?.CheckArgumentIsGreaterOrEqual(nameof(repeat), 0);
-            if (!source.Any() || repeat == 0)
+            if (!source.Any() || repeat == 0u)
             {
                 yield break;
             }
 
-            var index = 0;
+            var index = 0u;
             while (!repeat.HasValue || index++ < repeat)
             {
                 foreach (var item in source)

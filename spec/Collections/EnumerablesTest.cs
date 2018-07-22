@@ -212,11 +212,6 @@ namespace JotunShard.Extensions.Test.Collections
                 () => ENMRBL_NULL.Cycle().ToList());
 
         [TestMethod]
-        public void Cycle_WithEmptyEnumerableAndNegativeRepeat_ThrowsException()
-            => ThrowsException<ArgumentOutOfRangeException>(
-                () => ENMRBL_EMPTY.Cycle(-1).ToList());
-
-        [TestMethod]
         public void Cycle_WithEmptyEnumerable_ExpectsSameEnumerable()
             => Utilities.AssertManySequencesEqual(
                 ENMRBL_EMPTY.Cycle(),

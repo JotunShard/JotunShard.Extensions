@@ -7467,15 +7467,15 @@ references:
   isSpec: "True"
   fullName: JotunShard.Extensions.Enumerables.Cycle
   nameWithType: Enumerables.Cycle
-- uid: JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.Int32})
-  name: Cycle<TElem>(IEnumerable<TElem>, Nullable<Int32>)
-  href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_Cycle__1_System_Collections_Generic_IEnumerable___0__System_Nullable_System_Int32__
-  commentId: M:JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.Int32})
-  name.vb: Cycle(Of TElem)(IEnumerable(Of TElem), Nullable(Of Int32))
-  fullName: JotunShard.Extensions.Enumerables.Cycle<TElem>(System.Collections.Generic.IEnumerable<TElem>, System.Nullable<System.Int32>)
-  fullName.vb: JotunShard.Extensions.Enumerables.Cycle(Of TElem)(System.Collections.Generic.IEnumerable(Of TElem), System.Nullable(Of System.Int32))
-  nameWithType: Enumerables.Cycle<TElem>(IEnumerable<TElem>, Nullable<Int32>)
-  nameWithType.vb: Enumerables.Cycle(Of TElem)(IEnumerable(Of TElem), Nullable(Of Int32))
+- uid: JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.UInt32})
+  name: Cycle<TElem>(IEnumerable<TElem>, Nullable<UInt32>)
+  href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_Cycle__1_System_Collections_Generic_IEnumerable___0__System_Nullable_System_UInt32__
+  commentId: M:JotunShard.Extensions.Enumerables.Cycle``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{System.UInt32})
+  name.vb: Cycle(Of TElem)(IEnumerable(Of TElem), Nullable(Of UInt32))
+  fullName: JotunShard.Extensions.Enumerables.Cycle<TElem>(System.Collections.Generic.IEnumerable<TElem>, System.Nullable<System.UInt32>)
+  fullName.vb: JotunShard.Extensions.Enumerables.Cycle(Of TElem)(System.Collections.Generic.IEnumerable(Of TElem), System.Nullable(Of System.UInt32))
+  nameWithType: Enumerables.Cycle<TElem>(IEnumerable<TElem>, Nullable<UInt32>)
+  nameWithType.vb: Enumerables.Cycle(Of TElem)(IEnumerable(Of TElem), Nullable(Of UInt32))
 - uid: JotunShard.Extensions.Enumerables.Flatten*
   name: Flatten
   href: api/JotunShard.Extensions.Enumerables.html#JotunShard_Extensions_Enumerables_Flatten_
