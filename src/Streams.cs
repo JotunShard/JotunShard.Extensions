@@ -10,19 +10,23 @@ namespace JotunShard.Extensions
         {
             reader.CheckArgumentNull(nameof(reader));
             for (string line; ((line = reader.ReadLine()) != null);)
+            {
                 yield return line;
+            }
         }
 
-        public static async Task<string[]> ReadLinesAsync(this TextReader reader)
+        public static Task<string[]> ReadLinesAsync(this TextReader reader)
         {
             IEnumerable<Task<string>> GetAsyncLines()
             {
                 for (Task<string> line; ((line = reader.ReadLineAsync()) != null);)
+                {
                     yield return line;
+                }
             }
 
             reader.CheckArgumentNull(nameof(reader));
-            return await Task.WhenAll(GetAsyncLines());
+            return Task.WhenAll(GetAsyncLines());
         }
 
         public static void WriteLines(this TextWriter writer, IEnumerable<string> lines)
@@ -30,7 +34,9 @@ namespace JotunShard.Extensions
             writer.CheckArgumentNull(nameof(writer));
             lines.CheckArgumentNull(nameof(lines));
             foreach (var line in lines)
+            {
                 writer.WriteLineAsync(line);
+            }
         }
 
         public static async Task WriteLinesAsync(this TextWriter writer, IEnumerable<string> lines)
@@ -38,7 +44,9 @@ namespace JotunShard.Extensions
             writer.CheckArgumentNull(nameof(writer));
             lines.CheckArgumentNull(nameof(lines));
             foreach (var line in lines)
-                await writer.WriteLineAsync(line);
+            {
+                await writer.WriteLineAsync(line).ConfigureAwait(false);
+            }
         }
     }
 }

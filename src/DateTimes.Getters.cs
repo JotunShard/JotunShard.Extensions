@@ -186,20 +186,125 @@ namespace JotunShard.Extensions
             => value.GetYear((culture ?? CultureInfo.CurrentCulture).Calendar);
 
         /// <summary>
-        /// Predicate of a value being having the same as now on the property Date
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <returns>Condition of equality for the property Date</returns>
-        public static bool IsSameDate(this DateTime value)
-            => value.Date == DateTime.Now.Date;
-
-        /// <summary>
         /// Predicate of a value being having the same as now on the property Day
         /// </summary>
         /// <param name="value">The subjected value</param>
         /// <returns>Condition of equality for the property Day</returns>
         public static bool IsSameDay(this DateTime value)
             => value.Day == DateTime.Now.Day;
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Hour
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property Hour</param>
+        /// <returns>Condition of equality for the property Hour</returns>
+        public static bool IsSameHour(this DateTime value, Calendar calendar)
+        {
+            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
+            return calendar.GetHour(value) == calendar.GetHour(DateTime.Now);
+        }
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Hour
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property Hour</param>
+        /// <returns>Condition of equality for the property Hour</returns>
+        public static bool IsSameHour(this DateTime value, CultureInfo culture = null)
+            => value.IsSameHour((culture ?? CultureInfo.CurrentCulture).Calendar);
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Month
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property Month</param>
+        /// <returns>Condition of equality for the property Month</returns>
+        public static bool IsSameMonth(this DateTime value, Calendar calendar)
+        {
+            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
+            return calendar.GetMonth(value) == calendar.GetMonth(DateTime.Now);
+        }
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Month
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property Month</param>
+        /// <returns>Condition of equality for the property Month</returns>
+        public static bool IsSameMonth(this DateTime value, CultureInfo culture = null)
+            => value.IsSameMonth((culture ?? CultureInfo.CurrentCulture).Calendar);
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Minute
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property Minute</param>
+        /// <returns>Condition of equality for the property Minute</returns>
+        public static bool IsSameMinute(this DateTime value, Calendar calendar)
+        {
+            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
+            return calendar.GetMinute(value) == calendar.GetMinute(DateTime.Now);
+        }
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Minute
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property Minute</param>
+        /// <returns>Condition of equality for the property Minute</returns>
+        public static bool IsSameMinute(this DateTime value, CultureInfo culture = null)
+            => value.IsSameMinute((culture ?? CultureInfo.CurrentCulture).Calendar);
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Second
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property Second</param>
+        /// <returns>Condition of equality for the property Second</returns>
+        public static bool IsSameSecond(this DateTime value, Calendar calendar)
+        {
+            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
+            return calendar.GetSecond(value) == calendar.GetSecond(DateTime.Now);
+        }
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Second
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property Second</param>
+        /// <returns>Condition of equality for the property Second</returns>
+        public static bool IsSameSecond(this DateTime value, CultureInfo culture = null)
+            => value.IsSameSecond((culture ?? CultureInfo.CurrentCulture).Calendar);
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Year
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="calendar">The calendar on which to base the property Year</param>
+        /// <returns>Condition of equality for the property Year</returns>
+        public static bool IsSameYear(this DateTime value, Calendar calendar)
+        {
+            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
+            return calendar.GetYear(value) == calendar.GetYear(DateTime.Now);
+        }
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Year
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <param name="culture">The culture on which to base the property Year</param>
+        /// <returns>Condition of equality for the property Year</returns>
+        public static bool IsSameYear(this DateTime value, CultureInfo culture = null)
+            => value.IsSameYear((culture ?? CultureInfo.CurrentCulture).Calendar);
+
+        /// <summary>
+        /// Predicate of a value being having the same as now on the property Date
+        /// </summary>
+        /// <param name="value">The subjected value</param>
+        /// <returns>Condition of equality for the property Date</returns>
+        public static bool IsSameDate(this DateTime value)
+            => value.Date == DateTime.Now.Date;
 
         /// <summary>
         /// Predicate of a value being having the same as now on the property DayOfWeek
@@ -244,27 +349,6 @@ namespace JotunShard.Extensions
             => value.IsSameDayOfYear((culture ?? CultureInfo.CurrentCulture).Calendar);
 
         /// <summary>
-        /// Predicate of a value being having the same as now on the property Hour
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="calendar">The calendar on which to base the property Hour</param>
-        /// <returns>Condition of equality for the property Hour</returns>
-        public static bool IsSameHour(this DateTime value, Calendar calendar)
-        {
-            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            return calendar.GetHour(value) == calendar.GetHour(DateTime.Now);
-        }
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Hour
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="culture">The culture on which to base the property Hour</param>
-        /// <returns>Condition of equality for the property Hour</returns>
-        public static bool IsSameHour(this DateTime value, CultureInfo culture = null)
-            => value.IsSameHour((culture ?? CultureInfo.CurrentCulture).Calendar);
-
-        /// <summary>
         /// Predicate of a value being having the same as now on the property Kind
         /// </summary>
         /// <param name="value">The subjected value</param>
@@ -281,69 +365,6 @@ namespace JotunShard.Extensions
             => value.Millisecond == DateTime.Now.Millisecond;
 
         /// <summary>
-        /// Predicate of a value being having the same as now on the property Minute
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="calendar">The calendar on which to base the property Minute</param>
-        /// <returns>Condition of equality for the property Minute</returns>
-        public static bool IsSameMinute(this DateTime value, Calendar calendar)
-        {
-            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            return calendar.GetMinute(value) == calendar.GetMinute(DateTime.Now);
-        }
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Minute
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="culture">The culture on which to base the property Minute</param>
-        /// <returns>Condition of equality for the property Minute</returns>
-        public static bool IsSameMinute(this DateTime value, CultureInfo culture = null)
-            => value.IsSameMinute((culture ?? CultureInfo.CurrentCulture).Calendar);
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Month
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="calendar">The calendar on which to base the property Month</param>
-        /// <returns>Condition of equality for the property Month</returns>
-        public static bool IsSameMonth(this DateTime value, Calendar calendar)
-        {
-            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            return calendar.GetMonth(value) == calendar.GetMonth(DateTime.Now);
-        }
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Month
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="culture">The culture on which to base the property Month</param>
-        /// <returns>Condition of equality for the property Month</returns>
-        public static bool IsSameMonth(this DateTime value, CultureInfo culture = null)
-            => value.IsSameMonth((culture ?? CultureInfo.CurrentCulture).Calendar);
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Second
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="calendar">The calendar on which to base the property Second</param>
-        /// <returns>Condition of equality for the property Second</returns>
-        public static bool IsSameSecond(this DateTime value, Calendar calendar)
-        {
-            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            return calendar.GetSecond(value) == calendar.GetSecond(DateTime.Now);
-        }
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Second
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="culture">The culture on which to base the property Second</param>
-        /// <returns>Condition of equality for the property Second</returns>
-        public static bool IsSameSecond(this DateTime value, CultureInfo culture = null)
-            => value.IsSameSecond((culture ?? CultureInfo.CurrentCulture).Calendar);
-
-        /// <summary>
         /// Predicate of a value being having the same as now on the property Ticks
         /// </summary>
         /// <param name="value">The subjected value</param>
@@ -358,26 +379,5 @@ namespace JotunShard.Extensions
         /// <returns>Condition of equality for the property TimeOfDay</returns>
         public static bool IsSameTimeOfDay(this DateTime value)
             => value.TimeOfDay == DateTime.Now.TimeOfDay;
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Year
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="calendar">The calendar on which to base the property Year</param>
-        /// <returns>Condition of equality for the property Year</returns>
-        public static bool IsSameYear(this DateTime value, Calendar calendar)
-        {
-            calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
-            return calendar.GetYear(value) == calendar.GetYear(DateTime.Now);
-        }
-
-        /// <summary>
-        /// Predicate of a value being having the same as now on the property Year
-        /// </summary>
-        /// <param name="value">The subjected value</param>
-        /// <param name="culture">The culture on which to base the property Year</param>
-        /// <returns>Condition of equality for the property Year</returns>
-        public static bool IsSameYear(this DateTime value, CultureInfo culture = null)
-            => value.IsSameYear((culture ?? CultureInfo.CurrentCulture).Calendar);
     }
 }

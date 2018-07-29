@@ -2,7 +2,7 @@
 
 namespace JotunShard.Extensions
 {
-    public static class DefaultDelegates<TValue>
+    public static class DefaultDelegates
     {
         /// <summary>
         /// Definition of an always true function
@@ -17,17 +17,32 @@ namespace JotunShard.Extensions
         /// <summary>
         /// Definition of an always true predicate
         /// </summary>
-        public static Predicate<TValue> TautologicalPredicate => value => true;
+        /// <typeparam name="TValue"></typeparam>
+        public static Predicate<TValue> TautologicalPredicate<TValue>() => _ => true;
 
         /// <summary>
         /// Definition of an always false predicate
         /// </summary>
-        public static Predicate<TValue> ContradictionalPredicate => value => false;
+        /// <typeparam name="TValue"></typeparam>
+        public static Predicate<TValue> ContradictionalPredicate<TValue>() => _ => false;
 
         /// <summary>
-        /// Definition of an function doing nothing
+        /// Definition of an always true lambda
         /// </summary>
-        public static Func<TValue, TValue> IdentityFunction => value => value;
+        /// <typeparam name="TValue"></typeparam>
+        public static Func<TValue, bool> TautologicalLambda<TValue>() => _ => true;
+
+        /// <summary>
+        /// Definition of an always false lambda
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        public static Func<TValue, bool> ContradictionalLambda<TValue>() => _ => false;
+
+        /// <summary>
+        /// Definition of a lambda doing nothing
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        public static Func<TValue, TValue> IdentityFunction<TValue>() => value => value;
 
         /// <summary>
         /// Definition of an action doing nothing
@@ -37,6 +52,7 @@ namespace JotunShard.Extensions
         /// <summary>
         /// Definition of a function always returning the default value
         /// </summary>
-        public static Func<TValue> DefaultValue => () => default(TValue);
+        /// <typeparam name="TValue"></typeparam>
+        public static Func<TValue> DefaultValue<TValue>() => () => default(TValue);
     }
 }

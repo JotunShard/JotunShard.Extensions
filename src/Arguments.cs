@@ -1,5 +1,6 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Collections;
 
 namespace JotunShard.Extensions
 {
@@ -11,7 +12,9 @@ namespace JotunShard.Extensions
             where TParam : class
         {
             if (value == null)
+            {
                 throw new ArgumentNullException(paramName);
+            }
         }
 
         public static void CheckArgumentOutOfRange<TParam>(
@@ -20,7 +23,9 @@ namespace JotunShard.Extensions
             where TParam : IComparable
         {
             if (value.CompareTo(min) < 0 || value.CompareTo(max) > 0)
+            {
                 throw new ArgumentOutOfRangeException(paramName);
+            }
         }
 
         public static void CheckArgumentOutOfRangeOrEqual<TParam>(
@@ -29,7 +34,9 @@ namespace JotunShard.Extensions
             where TParam : IComparable
         {
             if (value.CompareTo(min) <= 0 || value.CompareTo(max) >= 0)
+            {
                 throw new ArgumentOutOfRangeException(paramName);
+            }
         }
 
         public static void CheckArgumentOutOfLimit<TParam>(
@@ -40,7 +47,9 @@ namespace JotunShard.Extensions
             where TParam : IComparable
         {
             if (test(value.CompareTo(limit), 0))
+            {
                 throw new ArgumentOutOfRangeException(paramName);
+            }
         }
 
         public static void CheckArgumentIsGreater<TParam>(
@@ -70,5 +79,17 @@ namespace JotunShard.Extensions
             TParam limit)
             where TParam : IComparable
         => value.CheckArgumentOutOfLimit(paramName, limit, (a, b) => a > b);
+
+        public static void CheckArgumentTooLarge<TParam>(
+            [NoEnumeration] this TParam value,
+            [InvokerParameterName] string paramName,
+            int size)
+            where TParam : ICollection
+        {
+            if (value.Count > size)
+            {
+                throw new ArgumentOutOfRangeException(paramName);
+            }
+        }
     }
 }

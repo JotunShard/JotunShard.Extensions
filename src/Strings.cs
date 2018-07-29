@@ -28,9 +28,21 @@ namespace JotunShard.Extensions
             Func<string, int, string> slicer)
         {
             value.CheckArgumentNull(nameof(value));
-            if (value.Length * length == 0) return string.Empty;
-            if (value.Length <= Math.Abs(length)) return value;
-            if (length < 0) length += value.Length;
+            if (value.Length * length == 0)
+            {
+                return string.Empty;
+            }
+
+            if (value.Length <= Math.Abs(length))
+            {
+                return value;
+            }
+
+            if (length < 0)
+            {
+                length += value.Length;
+            }
+
             return slicer(value, length);
         }
 
@@ -50,19 +62,21 @@ namespace JotunShard.Extensions
             => Regex.IsMatch(value, pattern);
 
         public static string EnsureEndsWith(
-            [NotNull] this string value,
-            [NotNull] string terminator)
+            [NotNull] this string target,
+            [NotNull] string value,
+            StringComparison comparisonType = StringComparison.CurrentCulture)
         {
-            value.CheckArgumentNull(nameof(value));
-            return value.EndsWith(terminator) ? value : value + terminator;
+            target.CheckArgumentNull(nameof(target));
+            return target.EndsWith(value, comparisonType) ? target : target + value;
         }
 
         public static string EnsureStartsWith(
-            [NotNull] this string value,
-            [NotNull] string terminator)
+            [NotNull] this string target,
+            [NotNull] string value,
+            StringComparison comparisonType = StringComparison.CurrentCulture)
         {
-            value.CheckArgumentNull(nameof(value));
-            return value.StartsWith(terminator) ? value : terminator + value;
+            target.CheckArgumentNull(nameof(target));
+            return target.StartsWith(value, comparisonType) ? target : value + target;
         }
 
         public static string Reverse(
@@ -74,17 +88,30 @@ namespace JotunShard.Extensions
             return new string(arr);
         }
 
-        public static void SubstringFollowing(
+        public static string SubstringFollowing(
             [NotNull] this string value,
             [NotNull] string term,
             int? length = null)
-            => throw new NotImplementedException();
+        {
+            value.CheckArgumentNull(nameof(value));
+            term.CheckArgumentNull(nameof(term));
+            var startIndex = value.IndexOf(term);
+            return length.HasValue
+                ? value.Substring(startIndex, length.Value)
+                : value.Substring(startIndex);
+        }
 
-        public static void SubstringPreceding(
+        public static string SubstringPreceding(
             [NotNull] this string value,
             [NotNull] string term,
             int? length = null)
-            => throw new NotImplementedException();
+        {
+            value.CheckArgumentNull(nameof(value));
+            term.CheckArgumentNull(nameof(term));
+            var endIndex = value.LastIndexOf(term);
+            var len = length ?? term.Length;
+            return value.Substring(endIndex - len, len);
+        }
 
         public static string DefaultIfEmpty(
             this string value,

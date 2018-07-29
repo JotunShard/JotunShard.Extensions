@@ -15,7 +15,8 @@ namespace JotunShard.Extensions
         /// <param name="func">The targeted function</param>
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <returns>Function with the binded values of arg1</returns>
-        public static Func<TResult> Bind<TArg1, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TResult>(
             [NotNull] this Func<TArg1, TResult> func, TArg1 arg1)
         {
             func.CheckArgumentNull(nameof(func));
@@ -32,7 +33,8 @@ namespace JotunShard.Extensions
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <returns>Function with the binded values of arg1, arg2</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TResult>(
             [NotNull] this Func<TArg1, TArg2, TResult> func, TArg1 arg1, TArg2 arg2)
         {
             func.CheckArgumentNull(nameof(func));
@@ -51,7 +53,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3)
         {
             func.CheckArgumentNull(nameof(func));
@@ -72,7 +75,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4)
         {
             func.CheckArgumentNull(nameof(func));
@@ -95,7 +99,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5)
         {
             func.CheckArgumentNull(nameof(func));
@@ -120,7 +125,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             func.CheckArgumentNull(nameof(func));
@@ -147,7 +153,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -176,7 +183,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -207,7 +215,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -240,7 +249,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -275,7 +285,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -312,7 +323,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -351,7 +363,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -392,7 +405,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -435,7 +449,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -480,7 +495,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -497,7 +513,8 @@ namespace JotunShard.Extensions
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <returns>Function with the binded values of arg2</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TResult>(
             [NotNull] this Func<TArg1, TArg2, TResult> func, TArg2 arg2)
         {
             func.CheckArgumentNull(nameof(func));
@@ -516,7 +533,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <returns>Function with the binded values of arg2, arg3</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TResult> func, TArg2 arg2, TArg3 arg3)
         {
             func.CheckArgumentNull(nameof(func));
@@ -537,7 +555,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4)
         {
             func.CheckArgumentNull(nameof(func));
@@ -560,7 +579,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5)
         {
             func.CheckArgumentNull(nameof(func));
@@ -585,7 +605,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             func.CheckArgumentNull(nameof(func));
@@ -612,7 +633,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -641,7 +663,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -672,7 +695,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -705,7 +729,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -740,7 +765,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -777,7 +803,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -816,7 +843,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -857,7 +885,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -900,7 +929,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -945,7 +975,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -964,7 +995,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <returns>Function with the binded values of arg3</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TResult> func, TArg3 arg3)
         {
             func.CheckArgumentNull(nameof(func));
@@ -985,7 +1017,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <returns>Function with the binded values of arg3, arg4</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TResult> func, TArg3 arg3, TArg4 arg4)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1008,7 +1041,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1033,7 +1067,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1060,7 +1095,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1089,7 +1125,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1120,7 +1157,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1153,7 +1191,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1188,7 +1227,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1225,7 +1265,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1264,7 +1305,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1305,7 +1347,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1348,7 +1391,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1393,7 +1437,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1414,7 +1459,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <returns>Function with the binded values of arg4</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TResult> func, TArg4 arg4)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1437,7 +1483,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <returns>Function with the binded values of arg4, arg5</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> func, TArg4 arg4, TArg5 arg5)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1462,7 +1509,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1489,7 +1537,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1518,7 +1567,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1549,7 +1599,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1582,7 +1633,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1617,7 +1669,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1654,7 +1707,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1693,7 +1747,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1734,7 +1789,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1777,7 +1833,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1822,7 +1879,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1845,7 +1903,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <returns>Function with the binded values of arg5</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> func, TArg5 arg5)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1870,7 +1929,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <returns>Function with the binded values of arg5, arg6</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> func, TArg5 arg5, TArg6 arg6)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1897,7 +1957,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1926,7 +1987,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1957,7 +2019,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -1990,7 +2053,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2025,7 +2089,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2062,7 +2127,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2101,7 +2167,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2142,7 +2209,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2185,7 +2253,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2230,7 +2299,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2255,7 +2325,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <returns>Function with the binded values of arg6</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> func, TArg6 arg6)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2282,7 +2353,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg6, arg7</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg6 arg6, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2311,7 +2383,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2342,7 +2415,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2375,7 +2449,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2410,7 +2485,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2447,7 +2523,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2486,7 +2563,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2527,7 +2605,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2570,7 +2649,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2615,7 +2695,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2642,7 +2723,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <returns>Function with the binded values of arg7</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> func, TArg7 arg7)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2671,7 +2753,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg7, arg8</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg7 arg7, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2702,7 +2785,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2735,7 +2819,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2770,7 +2855,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2807,7 +2893,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2846,7 +2933,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2887,7 +2975,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2930,7 +3019,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -2975,7 +3065,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3004,7 +3095,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <returns>Function with the binded values of arg8</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> func, TArg8 arg8)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3035,7 +3127,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg8, arg9</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg8 arg8, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3068,7 +3161,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3103,7 +3197,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3140,7 +3235,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3179,7 +3275,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3220,7 +3317,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3263,7 +3361,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3308,7 +3407,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3339,7 +3439,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <returns>Function with the binded values of arg9</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> func, TArg9 arg9)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3372,7 +3473,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg9, arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg9 arg9, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3407,7 +3509,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg9, arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3444,7 +3547,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg9, arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3483,7 +3587,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg9, arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3524,7 +3629,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg9, arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3567,7 +3673,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg9, arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3612,7 +3719,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3645,7 +3753,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <returns>Function with the binded values of arg10</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> func, TArg10 arg10)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3680,7 +3789,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg10, arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg10 arg10, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3717,7 +3827,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg10, arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3756,7 +3867,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg10, arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3797,7 +3909,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg10, arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3840,7 +3953,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg10, arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3885,7 +3999,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg10, arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3920,7 +4035,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <returns>Function with the binded values of arg11</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> func, TArg11 arg11)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3957,7 +4073,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg11, arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg11 arg11, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -3996,7 +4113,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg11, arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4037,7 +4155,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg11, arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4080,7 +4199,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg11, arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4125,7 +4245,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg11, arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4162,7 +4283,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <returns>Function with the binded values of arg12</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> func, TArg12 arg12)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4201,7 +4323,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg12, arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg12 arg12, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4242,7 +4365,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg12, arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4285,7 +4409,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg12, arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4330,7 +4455,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg12, arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4369,7 +4495,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <returns>Function with the binded values of arg13</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> func, TArg13 arg13)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4410,7 +4537,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg13, arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg13 arg13, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4453,7 +4581,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg13, arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4498,7 +4627,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg13, arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4539,7 +4669,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <returns>Function with the binded values of arg14</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> func, TArg14 arg14)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4582,7 +4713,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg14, arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg14 arg14, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4627,7 +4759,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg14, arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4670,7 +4803,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <returns>Function with the binded values of arg15</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> func, TArg15 arg15)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4715,7 +4849,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg15, arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg15 arg15, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4760,7 +4895,8 @@ namespace JotunShard.Extensions
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
         /// <returns>Function with the binded values of arg16</returns>
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> func, TArg16 arg16)
         {
             func.CheckArgumentNull(nameof(func));
@@ -4773,7 +4909,8 @@ namespace JotunShard.Extensions
         /// <typeparam name="TArg1">The type of argument 1</typeparam>
         /// <param name="act">The targeted action</param>
         /// <param name="arg1">The provided value for the argument 1</param>
-        public static Action Bind<TArg1>(
+        public static Action
+            BindParameters<TArg1>(
             [NotNull] this Action<TArg1> act, TArg1 arg1)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4788,7 +4925,8 @@ namespace JotunShard.Extensions
         /// <param name="act">The targeted action</param>
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
-        public static Action Bind<TArg1, TArg2>(
+        public static Action
+            BindParameters<TArg1, TArg2>(
             [NotNull] this Action<TArg1, TArg2> act, TArg1 arg1, TArg2 arg2)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4805,7 +4943,8 @@ namespace JotunShard.Extensions
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
-        public static Action Bind<TArg1, TArg2, TArg3>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3>(
             [NotNull] this Action<TArg1, TArg2, TArg3> act, TArg1 arg1, TArg2 arg2, TArg3 arg3)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4824,7 +4963,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4845,7 +4985,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4868,7 +5009,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4893,7 +5035,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4920,7 +5063,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4949,7 +5093,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -4980,7 +5125,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5013,7 +5159,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5048,7 +5195,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5085,7 +5233,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5124,7 +5273,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5165,7 +5315,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5208,7 +5359,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5223,7 +5375,8 @@ namespace JotunShard.Extensions
         /// <param name="act">The targeted action</param>
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
-        public static Action<TArg1> Bind<TArg1, TArg2>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2>(
             [NotNull] this Action<TArg1, TArg2> act, TArg2 arg2)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5240,7 +5393,8 @@ namespace JotunShard.Extensions
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3>(
             [NotNull] this Action<TArg1, TArg2, TArg3> act, TArg2 arg2, TArg3 arg3)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5259,7 +5413,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4> act, TArg2 arg2, TArg3 arg3, TArg4 arg4)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5280,7 +5435,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5303,7 +5459,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5328,7 +5485,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5355,7 +5513,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5384,7 +5543,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5415,7 +5575,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5448,7 +5609,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5483,7 +5645,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5520,7 +5683,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5559,7 +5723,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5600,7 +5765,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5643,7 +5809,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5660,7 +5827,8 @@ namespace JotunShard.Extensions
         /// <param name="arg1">The provided value for the argument 1</param>
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3>(
             [NotNull] this Action<TArg1, TArg2, TArg3> act, TArg3 arg3)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5679,7 +5847,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4> act, TArg3 arg3, TArg4 arg4)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5700,7 +5869,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act, TArg3 arg3, TArg4 arg4, TArg5 arg5)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5723,7 +5893,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5748,7 +5919,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5775,7 +5947,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5804,7 +5977,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5835,7 +6009,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5868,7 +6043,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5903,7 +6079,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5940,7 +6117,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -5979,7 +6157,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6020,7 +6199,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6063,7 +6243,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6082,7 +6263,8 @@ namespace JotunShard.Extensions
         /// <param name="arg2">The provided value for the argument 2</param>
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4> act, TArg4 arg4)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6103,7 +6285,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act, TArg4 arg4, TArg5 arg5)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6126,7 +6309,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act, TArg4 arg4, TArg5 arg5, TArg6 arg6)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6151,7 +6335,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6178,7 +6363,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6207,7 +6393,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6238,7 +6425,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6271,7 +6459,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6306,7 +6495,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6343,7 +6533,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6382,7 +6573,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6423,7 +6615,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6466,7 +6659,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6487,7 +6681,8 @@ namespace JotunShard.Extensions
         /// <param name="arg3">The provided value for the argument 3</param>
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act, TArg5 arg5)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6510,7 +6705,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act, TArg5 arg5, TArg6 arg6)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6535,7 +6731,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg5 arg5, TArg6 arg6, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6562,7 +6759,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6591,7 +6789,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6622,7 +6821,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6655,7 +6855,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6690,7 +6891,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6727,7 +6929,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6766,7 +6969,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6807,7 +7011,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6850,7 +7055,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6873,7 +7079,8 @@ namespace JotunShard.Extensions
         /// <param name="arg4">The provided value for the argument 4</param>
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act, TArg6 arg6)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6898,7 +7105,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg6 arg6, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6925,7 +7133,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg6 arg6, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6954,7 +7163,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -6985,7 +7195,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7018,7 +7229,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7053,7 +7265,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7090,7 +7303,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7129,7 +7343,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7170,7 +7385,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7213,7 +7429,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7238,7 +7455,8 @@ namespace JotunShard.Extensions
         /// <param name="arg5">The provided value for the argument 5</param>
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act, TArg7 arg7)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7265,7 +7483,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg7 arg7, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7294,7 +7513,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg7 arg7, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7325,7 +7545,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7358,7 +7579,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7393,7 +7615,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7430,7 +7653,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7469,7 +7693,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7510,7 +7735,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7553,7 +7779,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7580,7 +7807,8 @@ namespace JotunShard.Extensions
         /// <param name="arg6">The provided value for the argument 6</param>
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> act, TArg8 arg8)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7609,7 +7837,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg8 arg8, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7640,7 +7869,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg8 arg8, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7673,7 +7903,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7708,7 +7939,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7745,7 +7977,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7784,7 +8017,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7825,7 +8059,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7868,7 +8103,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7897,7 +8133,8 @@ namespace JotunShard.Extensions
         /// <param name="arg7">The provided value for the argument 7</param>
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> act, TArg9 arg9)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7928,7 +8165,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg9 arg9, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7961,7 +8199,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg9 arg9, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -7996,7 +8235,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8033,7 +8273,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8072,7 +8313,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8113,7 +8355,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8156,7 +8399,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8187,7 +8431,8 @@ namespace JotunShard.Extensions
         /// <param name="arg8">The provided value for the argument 8</param>
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> act, TArg10 arg10)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8220,7 +8465,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg10 arg10, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8255,7 +8501,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg10 arg10, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8292,7 +8539,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8331,7 +8579,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8372,7 +8621,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8415,7 +8665,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8448,7 +8699,8 @@ namespace JotunShard.Extensions
         /// <param name="arg9">The provided value for the argument 9</param>
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> act, TArg11 arg11)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8483,7 +8735,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg11 arg11, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8520,7 +8773,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg11 arg11, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8559,7 +8813,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8600,7 +8855,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8643,7 +8899,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8678,7 +8935,8 @@ namespace JotunShard.Extensions
         /// <param name="arg10">The provided value for the argument 10</param>
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> act, TArg12 arg12)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8715,7 +8973,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg12 arg12, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8754,7 +9013,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg12 arg12, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8795,7 +9055,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8838,7 +9099,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8875,7 +9137,8 @@ namespace JotunShard.Extensions
         /// <param name="arg11">The provided value for the argument 11</param>
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> act, TArg13 arg13)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8914,7 +9177,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg13 arg13, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8955,7 +9219,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg13 arg13, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -8998,7 +9263,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9037,7 +9303,8 @@ namespace JotunShard.Extensions
         /// <param name="arg12">The provided value for the argument 12</param>
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> act, TArg14 arg14)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9078,7 +9345,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg14 arg14, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9121,7 +9389,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg14 arg14, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9162,7 +9431,8 @@ namespace JotunShard.Extensions
         /// <param name="arg13">The provided value for the argument 13</param>
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> act, TArg15 arg15)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9205,7 +9475,8 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg15 arg15, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9248,14 +9519,16 @@ namespace JotunShard.Extensions
         /// <param name="arg14">The provided value for the argument 14</param>
         /// <param name="arg15">The provided value for the argument 15</param>
         /// <param name="arg16">The provided value for the argument 16</param>
-        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15> Bind<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>
+            BindParameters<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16> act, TArg16 arg16)
         {
             act.CheckArgumentNull(nameof(act));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15) => act(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
         }
 
-        public static Func<TArg1, TArg1> Chain<TArg1>(
+        public static Func<TArg1, TArg1>
+            AsFluent<TArg1>(
             [NotNull] this Action<TArg1> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9266,7 +9539,8 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static Func<TArg1, TArg2, Tuple<TArg1, TArg2>> Chain<TArg1, TArg2>(
+        public static Func<TArg1, TArg2, Tuple<TArg1, TArg2>>
+            AsFluent<TArg1, TArg2>(
             [NotNull] this Action<TArg1, TArg2> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9277,7 +9551,8 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>> Chain<TArg1, TArg2, TArg3>(
+        public static Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>>
+            AsFluent<TArg1, TArg2, TArg3>(
             [NotNull] this Action<TArg1, TArg2, TArg3> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9288,7 +9563,8 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>> Chain<TArg1, TArg2, TArg3, TArg4>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>>
+            AsFluent<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9299,7 +9575,8 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> Chain<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>>
+            AsFluent<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9310,7 +9587,8 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> Chain<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>>
+            AsFluent<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9321,7 +9599,8 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> Chain<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>>
+            AsFluent<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Action<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> act)
         {
             act.CheckArgumentNull(nameof(act));
@@ -9332,111 +9611,142 @@ namespace JotunShard.Extensions
             };
         }
 
-        public static IEnumerable<TArg1> ToGenerator<TArg1>(
+        public static IEnumerable<TArg1>
+            ToGenerator<TArg1>(
             [NotNull] this Func<TArg1, TArg1> func,
             TArg1 seed = default(TArg1))
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed); ;
                 value = func(value))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2>> ToGenerator<TArg1, TArg2>(
+        public static IEnumerable<Tuple<TArg1, TArg2>>
+            ToGenerator<TArg1, TArg2>(
             [NotNull] this Func<TArg1, TArg2, Tuple<TArg1, TArg2>> func,
             Tuple<TArg1, TArg2> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2); ;
                 value = func(value.Item1, value.Item2))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3>> ToGenerator<TArg1, TArg2, TArg3>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3>>
+            ToGenerator<TArg1, TArg2, TArg3>(
             [NotNull] this Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>> func,
             Tuple<TArg1, TArg2, TArg3> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3); ;
                 value = func(value.Item1, value.Item2, value.Item3))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>> ToGenerator<TArg1, TArg2, TArg3, TArg4>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>> func,
             Tuple<TArg1, TArg2, TArg3, TArg4> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> func,
             Tuple<TArg1, TArg2, TArg3, TArg4, TArg5> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> func,
             Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> func,
             Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6, seed.Item7); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6, value.Item7))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> func,
             Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8> seed)
         {
             func.CheckArgumentNull(nameof(func));
             for (var value = func(seed.Item1, seed.Item2, seed.Item3, seed.Item4, seed.Item5, seed.Item6, seed.Item7, seed.Rest); ;
                 value = func(value.Item1, value.Item2, value.Item3, value.Item4, value.Item5, value.Item6, value.Item7, value.Rest))
+            {
                 yield return value;
+            }
         }
 
-        public static IEnumerable<Tuple<TArg1, TArg2>> ToGenerator<TArg1, TArg2>(
+        public static IEnumerable<Tuple<TArg1, TArg2>>
+            ToGenerator<TArg1, TArg2>(
             [NotNull] this Func<TArg1, TArg2, Tuple<TArg1, TArg2>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2)));
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3>> ToGenerator<TArg1, TArg2, TArg3>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3>>
+            ToGenerator<TArg1, TArg2, TArg3>(
             [NotNull] this Func<TArg1, TArg2, TArg3, Tuple<TArg1, TArg2, TArg3>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3)));
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>> ToGenerator<TArg1, TArg2, TArg3, TArg4>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, Tuple<TArg1, TArg2, TArg3, TArg4>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4)));
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5)));
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6)));
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>> func)
             => func.ToGenerator(Tuple.Create(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7)));
 
-        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static IEnumerable<Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>>
+            ToGenerator<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>> func)
             => func.ToGenerator(new Tuple<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(default(TArg1), default(TArg2), default(TArg3), default(TArg4), default(TArg5), default(TArg6), default(TArg7), default(TArg8)));
 
@@ -10138,104 +10448,137 @@ namespace JotunShard.Extensions
 
         public static class Trampoline
         {
-            public static Bounce<TArg1, TResult> ReturnResult<TArg1, TResult>(TResult result)
+            public static Bounce<TArg1, TResult>
+                ReturnResult<TArg1, TResult>(TResult result)
                 => new Bounce<TArg1, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TResult> ReturnResult<TArg1, TArg2, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TResult>
+                ReturnResult<TArg1, TArg2, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TResult> ReturnResult<TArg1, TArg2, TArg3, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(result);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(TResult result)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>
+                ReturnResult<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(TResult result)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(result);
 
-            public static Bounce<TArg1, TResult> Recurse<TArg1, TResult>(TArg1 arg1)
+            public static Bounce<TArg1, TResult>
+                Recurse<TArg1, TResult>(TArg1 arg1)
                 => new Bounce<TArg1, TResult>(arg1);
 
-            public static Bounce<TArg1, TArg2, TResult> Recurse<TArg1, TArg2, TResult>(TArg1 arg1, TArg2 arg2)
+            public static Bounce<TArg1, TArg2, TResult>
+                Recurse<TArg1, TArg2, TResult>(TArg1 arg1, TArg2 arg2)
                 => new Bounce<TArg1, TArg2, TResult>(arg1, arg2);
 
-            public static Bounce<TArg1, TArg2, TArg3, TResult> Recurse<TArg1, TArg2, TArg3, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3)
+            public static Bounce<TArg1, TArg2, TArg3, TResult>
+                Recurse<TArg1, TArg2, TArg3, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3)
                 => new Bounce<TArg1, TArg2, TArg3, TResult>(arg1, arg2, arg3);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TResult>(arg1, arg2, arg3, arg4);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(arg1, arg2, arg3, arg4, arg5);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(arg1, arg2, arg3, arg4, arg5, arg6);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
 
-            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
+            public static Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>
+                Recurse<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10, TArg11 arg11, TArg12 arg12, TArg13 arg13, TArg14 arg14, TArg15 arg15, TArg16 arg16)
                 => new Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
         }
 
-        public static Func<TArg1, TResult> ToTrampoline<TArg1, TResult>(
+        public static Func<TArg1, TResult>
+            ToTrampoline<TArg1, TResult>(
             [NotNull] this Func<TArg1, Bounce<TArg1, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10243,12 +10586,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1); ;
                     value = func(value.Param1))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TResult> ToTrampoline<TArg1, TArg2, TResult>(
+        public static Func<TArg1, TArg2, TResult>
+            ToTrampoline<TArg1, TArg2, TResult>(
             [NotNull] this Func<TArg1, TArg2, Bounce<TArg1, TArg2, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10256,12 +10604,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2); ;
                     value = func(value.Param1, value.Param2))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TResult> ToTrampoline<TArg1, TArg2, TArg3, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, Bounce<TArg1, TArg2, TArg3, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10269,12 +10622,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3); ;
                     value = func(value.Param1, value.Param2, value.Param3))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, Bounce<TArg1, TArg2, TArg3, TArg4, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10282,12 +10640,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10295,12 +10658,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10308,12 +10676,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10321,12 +10694,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10334,12 +10712,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10347,12 +10730,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10360,12 +10748,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10373,12 +10766,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10386,12 +10784,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10399,12 +10802,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10412,12 +10820,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10425,12 +10838,17 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14, value.Param15))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult> ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>
+            ToTrampoline<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, Bounce<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
@@ -10438,117 +10856,137 @@ namespace JotunShard.Extensions
             {
                 for (var value = func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16); ;
                     value = func(value.Param1, value.Param2, value.Param3, value.Param4, value.Param5, value.Param6, value.Param7, value.Param8, value.Param9, value.Param10, value.Param11, value.Param12, value.Param13, value.Param14, value.Param15, value.Param16))
+                {
                     if (value.HasResult)
+                    {
                         return value.Result;
+                    }
+                }
             };
         }
 
-        public static Func<TArg1, bool> Not<TArg1>(
+        public static Func<TArg1, bool>
+            Not<TArg1>(
             [NotNull] this Func<TArg1, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1) => !func(arg1);
         }
 
-        public static Func<TArg1, TArg2, bool> Not<TArg1, TArg2>(
+        public static Func<TArg1, TArg2, bool>
+            Not<TArg1, TArg2>(
             [NotNull] this Func<TArg1, TArg2, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2) => !func(arg1, arg2);
         }
 
-        public static Func<TArg1, TArg2, TArg3, bool> Not<TArg1, TArg2, TArg3>(
+        public static Func<TArg1, TArg2, TArg3, bool>
+            Not<TArg1, TArg2, TArg3>(
             [NotNull] this Func<TArg1, TArg2, TArg3, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3) => !func(arg1, arg2, arg3);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, bool> Not<TArg1, TArg2, TArg3, TArg4>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, bool>
+            Not<TArg1, TArg2, TArg3, TArg4>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4) => !func(arg1, arg2, arg3, arg4);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5) => !func(arg1, arg2, arg3, arg4, arg5);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6) => !func(arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15) => !func(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
 
-        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, bool> Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
+        public static Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, bool>
+            Not<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16>(
             [NotNull] this Func<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9, TArg10, TArg11, TArg12, TArg13, TArg14, TArg15, TArg16, bool> func)
         {
             func.CheckArgumentNull(nameof(func));

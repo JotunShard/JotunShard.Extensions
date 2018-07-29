@@ -7,14 +7,17 @@ namespace JotunShard.Extensions
     public static class Dictionaries
     {
         public static Dictionary<TKey, TValue> ToDictionary<TKey, TValue>(
-            [NotNull] this IEnumerable<KeyValuePair<TKey, TValue>> values,
+            [NotNull] this IDictionary<TKey, TValue> values,
             IEqualityComparer<TKey> comparer = null)
         {
             values.CheckArgumentNull(nameof(values));
             if (values is Dictionary<TKey, TValue> dict)
+            {
                 return dict.Comparer.Equals(comparer)
                    ? dict
                    : new Dictionary<TKey, TValue>(dict, comparer);
+            }
+
             return values.ToDictionary(kv => kv.Key, kv => kv.Value, comparer);
         }
 
@@ -36,5 +39,11 @@ namespace JotunShard.Extensions
             [NotNull] this IDictionary<TKey, TValue> source,
             KeyValuePair<TKey, TValue> pair = default(KeyValuePair<TKey, TValue>))
             => source.DefaultIfEmpty(pair.Key, pair.Value);
+
+        public static bool SequenceEqual<TKey, TValue>(
+            [NotNull] this IDictionary<TKey, TValue> source,
+            [NotNull] IEnumerable<KeyValuePair<TKey, TValue>> other,
+            IEqualityComparer<KeyValuePair<TKey, TValue>> comparer = null)
+            => source.AsEnumerable().SequenceEqual(other, comparer);
     }
 }
