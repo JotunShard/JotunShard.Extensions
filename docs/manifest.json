@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JotunShard.Extensions.Dictionaries.html",
-          "hash": "hN8h8tP+ENBJOPS6GHStGA=="
+          "hash": "u5i1w6rvxNdmrMh6E4pqtw=="
         }
       },
       "is_incremental": false,
@@ -557,11 +557,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }

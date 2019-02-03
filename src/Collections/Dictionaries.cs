@@ -6,21 +6,6 @@ namespace JotunShard.Extensions
 {
     public static class Dictionaries
     {
-        public static Dictionary<TKey, TValue> ToDictionary<TKey, TValue>(
-            [NotNull] this IDictionary<TKey, TValue> values,
-            IEqualityComparer<TKey> comparer = null)
-        {
-            values.CheckArgumentNull(nameof(values));
-            if (values is Dictionary<TKey, TValue> dict)
-            {
-                return dict.Comparer.Equals(comparer)
-                   ? dict
-                   : new Dictionary<TKey, TValue>(dict, comparer);
-            }
-
-            return values.ToDictionary(kv => kv.Key, kv => kv.Value, comparer);
-        }
-
         public static IDictionary<TKey, TValue> DefaultIfEmpty<TKey, TValue>(
             [NotNull] this IDictionary<TKey, TValue> source,
             TKey key = default(TKey),
