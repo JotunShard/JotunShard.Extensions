@@ -8,7 +8,11 @@ namespace JotunShard.Extensions.Test.Collections
 {
     using static Assert;
 
+#if NETCOREAPP2_0
+
     [ExcludeFromCodeCoverage]
+#endif
+
     internal static class Utilities
     {
         public static void AssertManySequences<TElem>(
