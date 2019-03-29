@@ -56,13 +56,13 @@ namespace JotunShard.Extensions
                 IEnumerator<TElem> enmrtr)
             {
                 var partition = new List<TElem>();
-                var index = 0;
-                TElem item;
-                do
+                var item = enmrtr.Current;
+                for (var index = 0; partitioner(index, item); ++index)
                 {
-                    item = enmrtr.Current;
                     partition.Add(item);
-                } while (partitioner(++index, item) && enmrtr.MoveNext());
+                    if (!enmrtr.MoveNext()) break;
+                    item = enmrtr.Current;
+                }
                 return partitionProvider(partition);
             }
 
@@ -74,7 +74,12 @@ namespace JotunShard.Extensions
             {
                 while (enmrtr.MoveNext())
                 {
-                    yield return PartitionBuilder(enmrtr);
+                    IReadOnlyCollection<TElem> currentPartition;
+                    do
+                    {
+                        currentPartition = PartitionBuilder(enmrtr);
+                        yield return currentPartition;
+                    } while (currentPartition.Count == 0);
                 }
             }
         }
