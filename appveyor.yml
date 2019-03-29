@@ -3,3 +3,5 @@ before_build:
   - cmd: dotnet --version
 build_script:
   - cmd: dotnet build ./JotunShard.Extensions.sln /p:BuildDocFx=false
+test_script:
+  - cmd: dotnet test --no-build
