@@ -1,0 +1,5 @@
+version: 0.0.{build}
+before_build:
+  - cmd: dotnet --version
+build_script:
+  - cmd: dotnet build --verbosity detailed ./JotunShard.Extensions.sln /p:BuildDocFx=false
