@@ -29,7 +29,7 @@ namespace JotunShard.Extensions.Test.Collections
                     Items = Enumerable.Range(0, x)
                         .Select(n => new MultiItems
                         {
-                            ID = n * x,
+                            ID = x * COUNT_RIGHT + n,
                         }),
                 }),
             ENMRBL_FLAT_DEPTH = ENMRBL_NON_EMPTY.SelectMany(
