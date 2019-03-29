@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace JotunShard.Extensions.Test.Collections
 {
-#if NETCOREAPP2_0
-
-    [ExcludeFromCodeCoverage]
-#endif
-
     internal class MultiItems : IEquatable<MultiItems>, IEnumerable<MultiItems>
     {
         public int ID { get; set; }

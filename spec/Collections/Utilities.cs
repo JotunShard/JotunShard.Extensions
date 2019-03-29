@@ -1,17 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace JotunShard.Extensions.Test.Collections
 {
     using static Assert;
-
-#if NETCOREAPP2_0
-
-    [ExcludeFromCodeCoverage]
-#endif
 
     internal static class Utilities
     {
@@ -29,11 +23,17 @@ namespace JotunShard.Extensions.Test.Collections
         public static void AssertManySequencesEqual<TElem>(
             IEnumerable<IEnumerable<TElem>> result,
             IEnumerable<IEnumerable<TElem>> expected)
-            => AssertManySequences(result, expected, IsTrue);
+        {
+            IsTrue(result.SequenceEqual(expected));
+            AssertManySequences(result, expected, IsTrue);
+        }
 
         public static void AssertManySequencesDiffer<TElem>(
             IEnumerable<IEnumerable<TElem>> result,
             IEnumerable<IEnumerable<TElem>> expected)
-            => AssertManySequences(result, expected, IsFalse);
+        {
+            IsFalse(result.SequenceEqual(expected));
+            AssertManySequences(result, expected, IsFalse);
+        }
     }
 }
