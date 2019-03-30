@@ -20,8 +20,7 @@ namespace JotunShard.Extensions.Test.Collections
             => (obj as MultiItems)?.Equals(this) ?? false;
 
         public override int GetHashCode()
-            => ID.GetHashCode()
-                ^ Items?.GetHashCode() ?? 0;
+            => ID + 397 * Items?.Sum(x => x.GetHashCode()) ?? 0;
 
         public IEnumerator<MultiItems> GetEnumerator()
             => Items?.GetEnumerator()
