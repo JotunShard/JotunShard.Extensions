@@ -52,34 +52,31 @@ namespace JotunShard.Extensions
             [NotNull] Func<int, TElem, bool> partitioner,
             Func<IList<TElem>, IReadOnlyCollection<TElem>> partitionProvider = null)
         {
-            IReadOnlyCollection<TElem> PartitionBuilder(
-                IEnumerator<TElem> enmrtr)
-            {
-                var partition = new List<TElem>();
-                var item = enmrtr.Current;
-                for (var index = 0; partitioner(index, item); ++index)
-                {
-                    partition.Add(item);
-                    if (!enmrtr.MoveNext()) break;
-                    item = enmrtr.Current;
-                }
-                return partitionProvider(partition);
-            }
-
             source.CheckArgumentNull(nameof(source));
             partitioner.CheckArgumentNull(nameof(partitioner));
             partitionProvider = partitionProvider
                 ?? (list => new System.Collections.ObjectModel.ReadOnlyCollection<TElem>(list));
             using (var enmrtr = source.GetEnumerator())
             {
-                while (enmrtr.MoveNext())
+                var foundNextItem = enmrtr.MoveNext();
+                while (foundNextItem)
                 {
-                    IReadOnlyCollection<TElem> currentPartition;
+                    IReadOnlyCollection<TElem> partition;
                     do
                     {
-                        currentPartition = PartitionBuilder(enmrtr);
-                        yield return currentPartition;
-                    } while (currentPartition.Count == 0);
+                        foundNextItem = false;
+                        var buffer = new List<TElem>();
+                        var item = enmrtr.Current;
+                        for (var index = 0; partitioner(index, item); ++index)
+                        {
+                            buffer.Add(item);
+                            foundNextItem = enmrtr.MoveNext();
+                            if (!foundNextItem) break;
+                            item = enmrtr.Current;
+                        }
+                        partition = partitionProvider(buffer);
+                        yield return partition;
+                    } while (partition.Count == 0);
                 }
             }
         }
