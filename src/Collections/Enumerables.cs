@@ -96,6 +96,8 @@ namespace JotunShard.Extensions
         {
             source.CheckArgumentNull(nameof(source));
             count.CheckArgumentIsGreater(nameof(count), 0);
+            if (source is List<TElem> trueList)
+                return trueList.PartitionBy(count, partitionProvider);
             return source.PartitionIf(
                 (index, _) => index < count,
                 partitionProvider);
