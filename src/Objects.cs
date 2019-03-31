@@ -12,8 +12,8 @@ namespace JotunShard.Extensions
         /// <param name="other">The subjected value</param>
         /// <returns>Condition of equality or being null</returns>
         public static bool EqualsOrNull<TObject>(
-            [NotNull] this TObject self,
-            TObject other)
+            [CanBeNull] this TObject self,
+            [CanBeNull] TObject other)
             => ReferenceEquals(default(TObject), self)
                 && ReferenceEquals(default(TObject), other)
                 || Equals(self, other);
