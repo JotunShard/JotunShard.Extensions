@@ -28,5 +28,11 @@ namespace JotunShard.Extensions.Test.Collections
 
         IEnumerator IEnumerable.GetEnumerator()
             => GetEnumerator();
+
+        public static int Comparison(MultiItems x, MultiItems y)
+            => x.GetHashCode() - y.GetHashCode();
+
+        public static int SubComparison(IEnumerable<MultiItems> x, IEnumerable<MultiItems> y)
+            => x.Sum(s => s.GetHashCode()) - y.Sum(s => s.GetHashCode());
     }
 }

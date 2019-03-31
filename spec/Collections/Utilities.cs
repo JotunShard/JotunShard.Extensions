@@ -9,30 +9,58 @@ namespace JotunShard.Extensions.Test.Collections
 
     internal static class Utilities
     {
-        public static void AssertManySequences<TElem>(
-            IEnumerable<IEnumerable<TElem>> result,
-            IEnumerable<IEnumerable<TElem>> expected,
+        public static void AssertManySequences(
+            IEnumerable<IEnumerable<MultiItems>> result,
+            IEnumerable<IEnumerable<MultiItems>> expected,
             Action<bool> assertion)
             => assertion(result
                 .Zip(
                     expected,
                     (resultItem, expectedItem) => new { resultItem, expectedItem, })
                 .All(item => item.resultItem
-                    .SequenceEqual(item.expectedItem)));
+                    .SequenceEqual(item.expectedItem,
+                        EqualityComparer<MultiItems>.Default)));
 
-        public static void AssertManySequencesEqual<TElem>(
-            IEnumerable<IEnumerable<TElem>> result,
-            IEnumerable<IEnumerable<TElem>> expected)
+        public static void AssertManySequencesEqual(
+            IEnumerable<IEnumerable<MultiItems>> result,
+            IEnumerable<IEnumerable<MultiItems>> expected)
         {
-            IsTrue(result.SequenceEqual(expected));
+            CollectionAssert.AreEqual(
+                expected.ToList(),
+                result.ToList(),
+                Comparer<IEnumerable<MultiItems>>.Create(MultiItems.SubComparison));
+            CollectionAssert.AreEqual(
+                expected.SelectMany(item => item).ToList(),
+                result.SelectMany(item => item).ToList(),
+                Comparer<MultiItems>.Create(MultiItems.Comparison));
             AssertManySequences(result, expected, IsTrue);
         }
 
-        public static void AssertManySequencesDiffer<TElem>(
-            IEnumerable<IEnumerable<TElem>> result,
-            IEnumerable<IEnumerable<TElem>> expected)
+        public static void AssertManySequencesEquivalent(
+            IEnumerable<IEnumerable<MultiItems>> result,
+            IEnumerable<IEnumerable<MultiItems>> expected)
         {
-            IsFalse(result.SequenceEqual(expected));
+            CollectionAssert.AreEquivalent(
+                expected.ToList(),
+                result.ToList());
+            CollectionAssert.AreEquivalent(
+                expected.SelectMany(item => item).ToList(),
+                result.SelectMany(item => item).ToList());
+            AssertManySequences(result, expected, IsFalse);
+        }
+
+        public static void AssertManySequencesDiffer(
+            IEnumerable<IEnumerable<MultiItems>> result,
+            IEnumerable<IEnumerable<MultiItems>> expected)
+        {
+            CollectionAssert.AreNotEqual(
+                expected.ToList(),
+                result.ToList(),
+                Comparer<IEnumerable<MultiItems>>.Create(MultiItems.SubComparison));
+            CollectionAssert.AreNotEqual(
+                expected.SelectMany(item => item).ToList(),
+                result.SelectMany(item => item).ToList(),
+                Comparer<MultiItems>.Create(MultiItems.Comparison));
             AssertManySequences(result, expected, IsFalse);
         }
     }
