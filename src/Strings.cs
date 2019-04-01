@@ -106,9 +106,12 @@ namespace JotunShard.Extensions
         {
             value.CheckArgumentNull(nameof(value));
             term.CheckArgumentNull(nameof(term));
-            var endIndex = value.LastIndexOf(term);
-            var len = length ?? term.Length;
-            return value.Substring(endIndex - len, len);
+            var termIndex = value.LastIndexOf(term);
+            if (termIndex < 0) throw new ArgumentOutOfRangeException(nameof(term));
+            var endIndex = termIndex + Math.Max(term.Length - 1, 0);
+            return length.HasValue
+                ? value.Substring(endIndex - length.Value, length.Value)
+                : value.Substring(0, endIndex + 1);
         }
 
         public static string DefaultIfEmpty(

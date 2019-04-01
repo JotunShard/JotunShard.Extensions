@@ -265,16 +265,60 @@ namespace JotunShard.Extensions.Test
         #region SubstringFollowing
 
         [TestMethod]
-        public void SubstringFollowing()
-            => Fail();
+        public void SubstringFollowing_WithNullString_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => NULL.SubstringFollowing(WORD));
+
+        [TestMethod]
+        public void SubstringFollowing_WithSentenceStringAndUnknownWord_ThrowsException()
+            => ThrowsException<ArgumentOutOfRangeException>(() => SENTENCE.SubstringFollowing(WORD));
+
+        [TestMethod]
+        public void SubstringFollowing_WithSentenceStringAndEmptyString_ExpectsSentenceString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE.SubstringFollowing(EMPTY));
+
+        [TestMethod]
+        public void SubstringFollowing_WithSentenceStringAndFirstWord_ExpectsSentenceString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE.SubstringFollowing(WORD_FIRST));
+
+        [TestMethod]
+        public void SubstringFollowing_WithSentenceStringAndLastWord_ExpectsLastWord()
+            => AreEqual(
+                WORD_LAST,
+                SENTENCE.SubstringFollowing(WORD_LAST));
 
         #endregion SubstringFollowing
 
         #region SubstringPreceding
 
         [TestMethod]
-        public void SubstringPreceding()
-            => Fail();
+        public void SubstringPreceding_WithNullString_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => NULL.SubstringPreceding(WORD));
+
+        [TestMethod]
+        public void SubstringPreceding_WithSentenceStringAndUnknownWord_ThrowsException()
+            => ThrowsException<ArgumentOutOfRangeException>(() => SENTENCE.SubstringPreceding(WORD));
+
+        [TestMethod]
+        public void SubstringPreceding_WithSentenceStringAndEmptyString_ExpectsSentenceString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE.SubstringPreceding(EMPTY));
+
+        [TestMethod]
+        public void SubstringPreceding_WithSentenceStringAndLastWord_ExpectsSentenceString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE.SubstringPreceding(WORD_LAST));
+
+        [TestMethod]
+        public void SubstringPreceding_WithSentenceStringAndFirstWord_ExpectsFirstWord()
+            => AreEqual(
+                WORD_FIRST,
+                SENTENCE.SubstringPreceding(WORD_FIRST));
 
         #endregion SubstringPreceding
 
