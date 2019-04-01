@@ -15,8 +15,10 @@ namespace JotunShard.Extensions.Test
             WORD_FIRST = "Hello",
             WORD_SEPARATOR = " ",
             WORD_LAST = "World",
-            WORD_UNKNOWN = "Bye",
-            SENTENCE_FORMAT = "{0}{1}{2}";
+            WORD = "Bye",
+            WORD_REVERSED = "eyB",
+            SENTENCE_FORMAT = "{0}{1}{2}",
+            SENTENCE_WHITESPACE = " ";
 
         private static readonly string
             EMPTY = string.Empty,
@@ -194,31 +196,69 @@ namespace JotunShard.Extensions.Test
 
         [TestMethod]
         public void Match_WithSentenceStringAndUnknownWordPattern_ExpectsFalse()
-            => IsFalse(SENTENCE.Match(WORD_UNKNOWN));
+            => IsFalse(SENTENCE.Match(WORD));
 
         #endregion Match
 
         #region EnsureEndsWith
 
         [TestMethod]
-        public void EnsureEndsWith()
-            => Fail();
+        public void EnsureEndsWith_WithNullString_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => NULL.EnsureEndsWith(WORD_LAST));
+
+        [TestMethod]
+        public void EnsureEndsWith_WithNullValue_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => SENTENCE.EnsureEndsWith(NULL));
+
+        [TestMethod]
+        public void EnsureEndsWith_WithSentenceStringAndUnknownWord_ExpectsConcatenationAtEnd()
+            => AreEqual(
+                SENTENCE + WORD,
+                SENTENCE.EnsureEndsWith(WORD));
+
+        [TestMethod]
+        public void EnsureEndsWith_WithSentenceStringAndLastWord_ExpectsSentenceString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE.EnsureEndsWith(WORD_LAST));
 
         #endregion EnsureEndsWith
 
         #region EnsureStartsWith
 
         [TestMethod]
-        public void EnsureStartsWith()
-            => Fail();
+        public void EnsureStartsWith_WithNullString_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => NULL.EnsureStartsWith(WORD_LAST));
+
+        [TestMethod]
+        public void EnsureStartsWith_WithNullValue_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => SENTENCE.EnsureStartsWith(NULL));
+
+        [TestMethod]
+        public void EnsureStartsWith_WithSentenceStringAndUnknownWord_ExpectsConcatenationAtStart()
+            => AreEqual(
+                WORD + SENTENCE,
+                SENTENCE.EnsureStartsWith(WORD));
+
+        [TestMethod]
+        public void EnsureStartsWith_WithSentenceStringAndFirstWord_ExpectsSentenceString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE.EnsureStartsWith(WORD_FIRST));
 
         #endregion EnsureStartsWith
 
         #region Reverse
 
         [TestMethod]
-        public void Reverse()
-            => Fail();
+        public void Reverse_WithNullString_ThrowsException()
+            => ThrowsException<ArgumentNullException>(() => NULL.Reverse());
+
+        [TestMethod]
+        public void Reverse_WithWordString_ExpectsReversedWordString()
+            => AreEqual(
+                WORD_REVERSED,
+                WORD.Reverse());
 
         #endregion Reverse
 
@@ -241,17 +281,29 @@ namespace JotunShard.Extensions.Test
         #region DefaultIfEmpty
 
         [TestMethod]
-        public void DefaultIfEmpty()
-            => Fail();
-
-        #endregion DefaultIfEmpty
-
-        #region Split
+        public void DefaultIfEmpty_WithNullString_ExpectsDefaultString()
+            => AreEqual(
+                SENTENCE,
+                NULL.DefaultIfEmpty(SENTENCE));
 
         [TestMethod]
-        public void Split()
-            => Fail();
+        public void DefaultIfEmpty_WithEmptyString_ExpectsDefaultString()
+            => AreEqual(
+                SENTENCE,
+                EMPTY.DefaultIfEmpty(SENTENCE));
 
-        #endregion Split
+        [TestMethod]
+        public void DefaultIfEmpty_WithWhitespaceStringAndNotIgnoreWhitespace_ExpectsWhitespaceString()
+            => AreEqual(
+                SENTENCE_WHITESPACE,
+                SENTENCE_WHITESPACE.DefaultIfEmpty(SENTENCE, false));
+
+        [TestMethod]
+        public void DefaultIfEmpty_WithWhitespaceStringAndDoIgnoreWhitespace_ExpectsDefaultString()
+            => AreEqual(
+                SENTENCE,
+                SENTENCE_WHITESPACE.DefaultIfEmpty(SENTENCE, true));
+
+        #endregion DefaultIfEmpty
     }
 }
