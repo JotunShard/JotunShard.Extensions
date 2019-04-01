@@ -968,8 +968,6 @@
   "JotunShard.Extensions.Strings.Match(System.String,System.String)": "JotunShard.Extensions.Strings.yml",
   "JotunShard.Extensions.Strings.Reverse(System.String)": "JotunShard.Extensions.Strings.yml",
   "JotunShard.Extensions.Strings.Right(System.String,System.Int32)": "JotunShard.Extensions.Strings.yml",
-  "JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.Char},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})": "JotunShard.Extensions.Strings.yml",
-  "JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})": "JotunShard.Extensions.Strings.yml",
   "JotunShard.Extensions.Strings.SubstringFollowing(System.String,System.String,System.Nullable{System.Int32})": "JotunShard.Extensions.Strings.yml",
   "JotunShard.Extensions.Strings.SubstringPreceding(System.String,System.String,System.Nullable{System.Int32})": "JotunShard.Extensions.Strings.yml",
   "JotunShard.Extensions.TreeTraversalMode": "JotunShard.Extensions.TreeTraversalMode.yml",

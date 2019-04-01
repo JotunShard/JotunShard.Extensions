@@ -10543,31 +10543,6 @@ references:
   isSpec: "True"
   fullName: JotunShard.Extensions.Strings.Right
   nameWithType: Strings.Right
-- uid: JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.Char},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})
-  name: Split(String, IEnumerable<Char>, Nullable<Int32>, Nullable<StringSplitOptions>)
-  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Split_System_String_System_Collections_Generic_IEnumerable_System_Char__System_Nullable_System_Int32__System_Nullable_System_StringSplitOptions__
-  commentId: M:JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.Char},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})
-  name.vb: Split(String, IEnumerable(Of Char), Nullable(Of Int32), Nullable(Of StringSplitOptions))
-  fullName: JotunShard.Extensions.Strings.Split(System.String, System.Collections.Generic.IEnumerable<System.Char>, System.Nullable<System.Int32>, System.Nullable<System.StringSplitOptions>)
-  fullName.vb: JotunShard.Extensions.Strings.Split(System.String, System.Collections.Generic.IEnumerable(Of System.Char), System.Nullable(Of System.Int32), System.Nullable(Of System.StringSplitOptions))
-  nameWithType: Strings.Split(String, IEnumerable<Char>, Nullable<Int32>, Nullable<StringSplitOptions>)
-  nameWithType.vb: Strings.Split(String, IEnumerable(Of Char), Nullable(Of Int32), Nullable(Of StringSplitOptions))
-- uid: JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})
-  name: Split(String, IEnumerable<String>, Nullable<Int32>, Nullable<StringSplitOptions>)
-  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Split_System_String_System_Collections_Generic_IEnumerable_System_String__System_Nullable_System_Int32__System_Nullable_System_StringSplitOptions__
-  commentId: M:JotunShard.Extensions.Strings.Split(System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.Nullable{System.StringSplitOptions})
-  name.vb: Split(String, IEnumerable(Of String), Nullable(Of Int32), Nullable(Of StringSplitOptions))
-  fullName: JotunShard.Extensions.Strings.Split(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.StringSplitOptions>)
-  fullName.vb: JotunShard.Extensions.Strings.Split(System.String, System.Collections.Generic.IEnumerable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.StringSplitOptions))
-  nameWithType: Strings.Split(String, IEnumerable<String>, Nullable<Int32>, Nullable<StringSplitOptions>)
-  nameWithType.vb: Strings.Split(String, IEnumerable(Of String), Nullable(Of Int32), Nullable(Of StringSplitOptions))
-- uid: JotunShard.Extensions.Strings.Split*
-  name: Split
-  href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_Split_
-  commentId: Overload:JotunShard.Extensions.Strings.Split
-  isSpec: "True"
-  fullName: JotunShard.Extensions.Strings.Split
-  nameWithType: Strings.Split
 - uid: JotunShard.Extensions.Strings.SubstringFollowing(System.String,System.String,System.Nullable{System.Int32})
   name: SubstringFollowing(String, String, Nullable<Int32>)
   href: api/JotunShard.Extensions.Strings.html#JotunShard_Extensions_Strings_SubstringFollowing_System_String_System_String_System_Nullable_System_Int32__
