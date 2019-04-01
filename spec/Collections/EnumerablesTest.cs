@@ -115,10 +115,19 @@ namespace JotunShard.Extensions.Test.Collections
                 Enumerable.Repeat(ENMRBL_NON_EMPTY, 1));
 
         [TestMethod]
-        public void PartitionIf_WithNonEmptyEnumerableAndAlwaysOtherPartition_ExpectsSameEnumerableAsEachEnumerable()
+        public void PartitionIf_WithNonEmptyEnumerableAndAlwaysOtherPartition_ExpectsEnumerableOfEmpties()
             => Utilities.AssertManySequencesEqual(
-                ENMRBL_NON_EMPTY.PartitionIf(AlwaysOtherPartition),
-                ENMRBL_NON_EMPTY.Select(item => Enumerable.Repeat(item, 1)));
+                ENMRBL_NON_EMPTY.PartitionIf(AlwaysOtherPartition).Take(COUNT_BIG),
+                Enumerable.Range(0, COUNT_BIG).Select(item => new MultiItems[0]));
+
+        [TestMethod]
+        public void PartitionIf_WithNonEmptyEnumerableAndAnyIndex_ExpectsEnumerablesOfSameTotalLength()
+            => Utilities.AssertManySequencesEqual(
+                ENMRBL_NON_EMPTY.PartitionIf((index, item) => index < COUNT_ANY),
+                new[] {
+                    ENMRBL_NON_EMPTY.Take(COUNT_ANY),
+                    ENMRBL_NON_EMPTY.Skip(COUNT_ANY),
+                });
 
         #endregion PartitionIf
 
@@ -260,7 +269,7 @@ namespace JotunShard.Extensions.Test.Collections
 
         [TestMethod]
         public void ToShuffled_WithNonEmptyEnumerable_ExpectsOtherEnumerable()
-            => Utilities.AssertManySequencesDiffer(
+            => Utilities.AssertManySequencesEquivalent(
                 ENMRBL_NON_EMPTY.ToShuffled(),
                 ENMRBL_NON_EMPTY);
 
