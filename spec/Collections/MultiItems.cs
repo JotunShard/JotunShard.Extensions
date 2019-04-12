@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace JotunShard.Extensions.Test.Collections
 {
+    [DebuggerDisplay("ID = {ID}")]
     internal class MultiItems : IEquatable<MultiItems>, IEnumerable<MultiItems>
     {
         public int ID { get; set; }
