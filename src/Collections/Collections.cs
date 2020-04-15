@@ -7,21 +7,6 @@ namespace JotunShard.Extensions
     public static class Collections
     {
         /// <summary>
-        /// Determines whether a collection contains any elements.
-        /// </summary>
-        /// <typeparam name="TElem">The type of the elements of <c>coll</c>.</typeparam>
-        /// <param name="coll">The collection to check for emptiness.</param>
-        /// <returns>
-        ///   <c>true</c> if the collection contains any elements; otherwise, <c>false</c>.
-        /// </returns>
-        public static bool Any<TElem>(
-            [NotNull] this ICollection<TElem> coll)
-        {
-            coll.CheckArgumentNull(nameof(coll));
-            return coll.Count != 0;
-        }
-
-        /// <summary>
         /// Adds the elements of the specified enumerable to the collection.
         /// </summary>
         /// <typeparam name="TElem">The type of the elements of <c>coll</c>.</typeparam>
