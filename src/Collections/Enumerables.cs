@@ -1,5 +1,6 @@
 ﻿using JetBrains.Annotations;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 using System.Linq;
@@ -29,13 +30,15 @@ namespace JotunShard.Extensions
             {
                 return coll.Count == count;
             }
-
+            if (source is ICollection coll2)
+            {
+                return coll2.Count == count;
+            }
             var index = 0;
             using (var enmrtr = source.GetEnumerator())
             {
                 while (enmrtr.MoveNext() && checked(index++ < count)) { }
             }
-
             return index == count;
         }
 
