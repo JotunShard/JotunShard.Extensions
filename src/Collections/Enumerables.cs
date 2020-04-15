@@ -407,5 +407,104 @@ namespace JotunShard.Extensions
             [NotNull] Func<TElem, TElem, TResult> resultSelector)
             where TElem : IEnumerable<TElem>
             => source.SelectMany(elem => elem, resultSelector);
+
+        /// <summary>
+        /// Tries to get the aggregated element.
+        /// </summary>
+        /// <typeparam name="TElem">The type of the item in the enumerable.</typeparam>
+        /// <param name="source">The enumerable to iterate through.</param>
+        /// <param name="aggregatedItem">The aggregated item to be found.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified source isn't empty; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool TryAggregate<TElem>(
+            [NotNull] this IEnumerable<TElem> source,
+            out TElem aggregatedItem)
+            where TElem : IComparable<TElem>
+        {
+            source.CheckArgumentNull(nameof(source));
+            using (var enmrtr = source.GetEnumerator())
+            {
+                aggregatedItem = default(TElem);
+                if (!enmrtr.MoveNext()) return false;
+                do
+                {
+                    var currentItem = enmrtr.Current;
+                    if (aggregatedItem.CompareTo(currentItem) > 0)
+                    {
+                        aggregatedItem = enmrtr.Current;
+                    }
+                } while (enmrtr.MoveNext());
+                return true;
+            }
+        }
+
+        public static IEnumerable<TResult> Join<TElem, TKey, TResult>(
+            [NotNull] this IEnumerable<TElem> outer,
+            [NotNull] IEnumerable<TElem> inner,
+            [NotNull] Func<TElem, TKey> keySelector,
+            [NotNull] Func<TElem, TElem, TResult> resultSelector,
+            EqualityComparer<TKey> keyComparer = null)
+            => outer.Join(inner, keySelector, keySelector, resultSelector, keyComparer);
+
+        public static IEnumerable<TResult> Join<TInner, TOuter, TResult>(
+            [NotNull] this IEnumerable<TOuter> outer,
+            [NotNull] IEnumerable<TInner> inner,
+            [NotNull] Func<TOuter, TInner, bool> matcher,
+            [NotNull] Func<TOuter, TInner, TResult> resultSelector)
+        {
+            outer.CheckArgumentNull(nameof(outer));
+            inner.CheckArgumentNull(nameof(inner));
+            matcher.CheckArgumentNull(nameof(matcher));
+            resultSelector.CheckArgumentNull(nameof(resultSelector));
+            foreach (var outerItem in outer)
+            {
+                foreach (var innerItem in inner)
+                {
+                    if (!matcher(outerItem, innerItem)) continue;
+                    yield return resultSelector(outerItem, innerItem);
+                }
+            }
+        }
+
+        public static IEnumerable<TResult> Join<TElem, TResult>(
+            [NotNull] this IEnumerable<TElem> outer,
+            [NotNull] IEnumerable<TElem> inner,
+            [NotNull] Func<TElem, TElem, TResult> resultSelector)
+            where TElem : IEquatable<TElem>
+            => outer.Join(inner, (o, i) => o.Equals(i), resultSelector);
+
+        public static IEnumerable<TResult> GroupJoin<TElem, TKey, TResult>(
+            [NotNull] this IEnumerable<TElem> outer,
+            [NotNull] IEnumerable<TElem> inner,
+            [NotNull] Func<TElem, TKey> keySelector,
+            [NotNull] Func<TElem, IEnumerable<TElem>, TResult> resultSelector,
+            EqualityComparer<TKey> keyComparer = null)
+            => outer.GroupJoin(inner, keySelector, keySelector, resultSelector, keyComparer);
+
+        public static IEnumerable<TResult> GroupJoin<TInner, TOuter, TResult>(
+            [NotNull] this IEnumerable<TOuter> outer,
+            [NotNull] IEnumerable<TInner> inner,
+            [NotNull] Func<TOuter, TInner, bool> matcher,
+            [NotNull] Func<TOuter, IEnumerable<TInner>, TResult> resultSelector)
+        {
+            outer.CheckArgumentNull(nameof(outer));
+            inner.CheckArgumentNull(nameof(inner));
+            matcher.CheckArgumentNull(nameof(matcher));
+            resultSelector.CheckArgumentNull(nameof(resultSelector));
+            foreach (var outerItem in outer)
+            {
+                yield return resultSelector(
+                    outerItem,
+                    inner.Where(innerItem => matcher(outerItem, innerItem)));
+            }
+        }
+
+        public static IEnumerable<TResult> GroupJoin<TElem, TResult>(
+            [NotNull] this IEnumerable<TElem> outer,
+            [NotNull] IEnumerable<TElem> inner,
+            [NotNull] Func<TElem, IEnumerable<TElem>, TResult> resultSelector)
+            where TElem : IEquatable<TElem>
+            => outer.GroupJoin(inner, (o, i) => o.Equals(i), resultSelector);
     }
 }
