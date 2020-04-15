@@ -33,7 +33,7 @@ namespace JotunShard.Extensions
             var index = 0;
             using (var enmrtr = source.GetEnumerator())
             {
-                while (enmrtr.MoveNext() && index++ < count) { }
+                while (enmrtr.MoveNext() && checked(index++ < count)) { }
             }
 
             return index == count;
@@ -182,7 +182,7 @@ namespace JotunShard.Extensions
             }
 
             var index = 0u;
-            while (!repeat.HasValue || index++ < repeat)
+            while (!repeat.HasValue || checked(index++ < repeat))
             {
                 foreach (var item in source)
                 {
