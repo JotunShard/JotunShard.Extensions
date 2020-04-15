@@ -35,7 +35,7 @@ namespace JotunShard.Extensions
             lines.CheckArgumentNull(nameof(lines));
             foreach (var line in lines)
             {
-                writer.WriteLineAsync(line);
+                writer.WriteLine(line);
             }
         }
 
