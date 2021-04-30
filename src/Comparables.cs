@@ -1,12 +1,11 @@
-﻿using JetBrains.Annotations;
-using System;
+﻿using System;
 
 namespace JotunShard.Extensions
 {
     public static class Comparables
     {
         public static bool Between<TValue>(
-            [NotNull] this IComparable<TValue> comparable,
+            this IComparable<TValue> comparable,
             TValue lowerValue,
             TValue upperValue)
         {
@@ -16,7 +15,7 @@ namespace JotunShard.Extensions
         }
 
         public static bool BetweenOrEqual<TValue>(
-            [NotNull] this IComparable<TValue> comparable,
+            this IComparable<TValue> comparable,
             TValue lowerValue,
             TValue upperValue)
         {

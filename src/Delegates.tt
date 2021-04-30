@@ -1,5 +1,4 @@
 ﻿<#@ template language="C#" #>
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 
@@ -59,7 +58,7 @@ for (var index = 1; index <= maxArgs; ++index)
         /// <returns>Function with the binded values of <#=commentArgsLine#></returns>
         public static Func<<#=resultTypeLine#>TResult>
             BindParameters<<#=typesLine#>, TResult>(
-            [NotNull] this Func<<#=typesLine#>, TResult> func<#=argsLine#>)
+            this Func<<#=typesLine#>, TResult> func<#=argsLine#>)
         {
             func.CheckArgumentNull(nameof(func));
             return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => func(<#=valuesLine#>);
@@ -115,7 +114,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
         public static Action<#=resultTypeLine.Length == 0 ? "" : "<" + resultTypeLine.Substring(2) + ">"#>
             BindParameters<<#=typesLine#>>(
-            [NotNull] this Action<<#=typesLine#>> act<#=argsLine#>)
+            this Action<<#=typesLine#>> act<#=argsLine#>)
         {
             act.CheckArgumentNull(nameof(act));
             return (<#=paramLine.Substring(System.Math.Min(2, paramLine.Length))#>) => act(<#=valuesLine#>);
@@ -136,7 +135,7 @@ paramLine = argPrefix + 1;
 
         public static Func<<#=globalTypesLine#>, <#=globalTypesLine#>>
             AsFluent<<#=globalTypesLine#>>(
-            [NotNull] this Action<<#=globalTypesLine#>> act)
+            this Action<<#=globalTypesLine#>> act)
         {
             act.CheckArgumentNull(nameof(act));
             return <#=paramLine#> =>
@@ -156,7 +155,7 @@ for (var index = 2; index <= maxTuple; ++index)
 
         public static Func<<#=globalTypesLine#>, Tuple<<#=globalTypesLine#>>>
             AsFluent<<#=globalTypesLine#>>(
-            [NotNull] this Action<<#=globalTypesLine#>> act)
+            this Action<<#=globalTypesLine#>> act)
         {
             act.CheckArgumentNull(nameof(act));
             return (<#=paramLine#>) =>
@@ -173,7 +172,7 @@ globalTypesLine = typePrefix + 1;
 
         public static IEnumerable<<#=globalTypesLine#>>
             ToGenerator<<#=globalTypesLine#>>(
-            [NotNull] this Func<<#=resultTypeLine#>, <#=globalTypesLine#>> func,
+            this Func<<#=resultTypeLine#>, <#=globalTypesLine#>> func,
             <#=globalTypesLine#> seed = default(<#=globalTypesLine#>))
         {
             func.CheckArgumentNull(nameof(func));
@@ -196,7 +195,7 @@ for (var index = 2; index <= maxTuple; ++index)
 
         public static IEnumerable<Tuple<<#=globalTypesLine#>>>
             ToGenerator<<#=globalTypesLine#>>(
-            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func,
+            this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func,
             Tuple<<#=globalTypesLine#>> seed)
         {
             func.CheckArgumentNull(nameof(func));
@@ -216,7 +215,7 @@ paramLine += itemSep + "seed.Rest";
 
         public static IEnumerable<Tuple<<#=globalTypesLine#>>>
             ToGenerator<<#=globalTypesLine#>>(
-            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func,
+            this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func,
             Tuple<<#=globalTypesLine#>> seed)
         {
             func.CheckArgumentNull(nameof(func));
@@ -239,7 +238,7 @@ for (var index = 2; index <= maxTuple; ++index)
 
         public static IEnumerable<Tuple<<#=globalTypesLine#>>>
             ToGenerator<<#=globalTypesLine#>>(
-            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func)
+            this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func)
             => func.ToGenerator(Tuple.Create(<#=paramLine#>));
 <#
 }
@@ -250,7 +249,7 @@ paramLine += itemSep + "default(" + typePrefix + (maxTuple + 1) + ")";
 
         public static IEnumerable<Tuple<<#=globalTypesLine#>>>
             ToGenerator<<#=globalTypesLine#>>(
-            [NotNull] this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func)
+            this Func<<#=resultTypeLine#>, Tuple<<#=globalTypesLine#>>> func)
             => func.ToGenerator(new Tuple<<#=globalTypesLine#>>(<#=paramLine#>));
 <#
 globalTypesLine = string.Empty;
@@ -351,7 +350,7 @@ for (var index = 1; index <= maxArgs; ++index)
 
         public static Func<<#=resultTypeLine#>TResult>
             ToTrampoline<<#=globalTypesLine#>TResult>(
-            [NotNull] this Func<<#=globalTypesLine#>Bounce<<#=globalTypesLine#>TResult>> func)
+            this Func<<#=globalTypesLine#>Bounce<<#=globalTypesLine#>TResult>> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (<#=globalValuesLine#>) =>
@@ -383,7 +382,7 @@ for (var index = 1; index <= maxArgs; ++index)
 
         public static Func<<#=resultTypeLine#>, bool>
             Not<<#=globalTypesLine#>>(
-            [NotNull] this Func<<#=resultTypeLine#>, bool> func)
+            this Func<<#=resultTypeLine#>, bool> func)
         {
             func.CheckArgumentNull(nameof(func));
             return (<#=paramLine#>) => !func(<#=paramLine#>);

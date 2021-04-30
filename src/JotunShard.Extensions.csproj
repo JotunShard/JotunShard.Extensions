@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <PackageReference Include="docfx.console" Version="2.36.2" />
-    <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
     <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
   </ItemGroup>
 

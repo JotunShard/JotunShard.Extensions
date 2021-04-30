@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -21,7 +20,7 @@ namespace JotunShard.Extensions
         ///   <c>true</c> if the number of elements is <c>count</c>; otherwise, <c>false</c>.
         /// </returns>
         public static bool HasCount<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             int count)
         {
             source.CheckArgumentNull(nameof(source));
@@ -51,8 +50,8 @@ namespace JotunShard.Extensions
         /// <param name="partitionProvider">The partition container provider.</param>
         /// <returns>A lazy enumerable</returns>
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionIf<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<int, TElem, bool> partitioner,
+            this IEnumerable<TElem> source,
+            Func<int, TElem, bool> partitioner,
             Func<IList<TElem>, IReadOnlyCollection<TElem>> partitionProvider = null)
         {
             source.CheckArgumentNull(nameof(source));
@@ -93,7 +92,7 @@ namespace JotunShard.Extensions
         /// <param name="partitionProvider">The partition container provider.</param>
         /// <returns>A lazy enumerable</returns>
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionBy<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             int count,
             Func<IList<TElem>, IReadOnlyCollection<TElem>> partitionProvider = null)
         {
@@ -115,8 +114,8 @@ namespace JotunShard.Extensions
         /// <param name="mode">The flattening mode.</param>
         /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Flatten<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, IEnumerable<TElem>> provider,
+            this IEnumerable<TElem> source,
+            Func<TElem, IEnumerable<TElem>> provider,
             TreeTraversalMode mode = TreeTraversalMode.Depth)
         {
             source.CheckArgumentNull(nameof(source));
@@ -162,7 +161,7 @@ namespace JotunShard.Extensions
         /// <param name="mode">The flattening mode.</param>
         /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Flatten<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             TreeTraversalMode mode = TreeTraversalMode.Depth)
             where TElem : IEnumerable<TElem>
         => source.Flatten(c => c, mode);
@@ -175,7 +174,7 @@ namespace JotunShard.Extensions
         /// <param name="repeat">The repeating limit.</param>
         /// <returns>A lazy enumerable</returns>
         public static IEnumerable<TElem> Cycle<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             uint? repeat = null)
         {
             source.CheckArgumentNull(nameof(source));
@@ -203,7 +202,7 @@ namespace JotunShard.Extensions
         /// <param name="resultProvider">The shuffled container provider.</param>
         /// <returns>A new shuffled enumerable</returns>
         public static IEnumerable<TElem> ToShuffled<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             Func<int, int, int> randomSource = null,
             Func<IList<TElem>, IEnumerable<TElem>> resultProvider = null)
         {
@@ -236,7 +235,7 @@ namespace JotunShard.Extensions
         /// <param name="randomSource">The random source.</param>
         /// <returns>A random item</returns>
         public static TElem GetRandom<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             Func<int, int> randomSource = null)
         {
             source.CheckArgumentNull(nameof(source));
@@ -255,8 +254,8 @@ namespace JotunShard.Extensions
         ///   <c>true</c> if the specified predicate finds an item; otherwise, <c>false</c>.
         /// </returns>
         public static bool TryGetFirst<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, bool> predicate,
+            this IEnumerable<TElem> source,
+            Func<TElem, bool> predicate,
             out TElem firstItem)
         {
             source.CheckArgumentNull(nameof(source));
@@ -285,8 +284,8 @@ namespace JotunShard.Extensions
         ///   <c>true</c> if the specified predicate finds an item; otherwise, <c>false</c>.
         /// </returns>
         public static bool TryGetLast<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, bool> predicate,
+            this IEnumerable<TElem> source,
+            Func<TElem, bool> predicate,
             out TElem lastItem)
         {
             source.CheckArgumentNull(nameof(source));
@@ -316,8 +315,8 @@ namespace JotunShard.Extensions
         ///   <c>true</c> if the specified predicate finds an item; otherwise, <c>false</c>.
         /// </returns>
         public static bool TryGetSingle<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, bool> predicate,
+            this IEnumerable<TElem> source,
+            Func<TElem, bool> predicate,
             out TElem singleItem)
         {
             source.CheckArgumentNull(nameof(source));
@@ -353,9 +352,9 @@ namespace JotunShard.Extensions
         /// <param name="comparer">The discriminator's comparer.</param>
         /// <returns>A dictionary of partitions</returns>
         public static Dictionary<TKey, IEnumerable<TValue>> GroupToDictionary<TElem, TKey, TValue>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, TKey> keySelector,
-            [NotNull] Func<TElem, TValue> valueSelector,
+            this IEnumerable<TElem> source,
+            Func<TElem, TKey> keySelector,
+            Func<TElem, TValue> valueSelector,
             IEqualityComparer<TKey> comparer = null)
         {
             var result = new Dictionary<TKey, IEnumerable<TValue>>(comparer);
@@ -377,8 +376,8 @@ namespace JotunShard.Extensions
         /// <param name="comparer">The discriminator's comparer.</param>
         /// <returns>A dictionary of partitions</returns>
         public static Dictionary<TKey, IEnumerable<TElem>> GroupToDictionary<TElem, TKey>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, TKey> keySelector,
+            this IEnumerable<TElem> source,
+            Func<TElem, TKey> keySelector,
             IEqualityComparer<TKey> comparer = null)
         => source.GroupToDictionary(
             keySelector,
@@ -392,7 +391,7 @@ namespace JotunShard.Extensions
         /// <param name="source">The enumerable to calculate.</param>
         /// <returns>The resulting hash code</returns>
         public static uint GetFNVHashCode<TElem>(
-            [NotNull] this IEnumerable<TElem> source)
+            this IEnumerable<TElem> source)
         {
             source.CheckArgumentNull(nameof(source));
             return source.Aggregate(
@@ -401,13 +400,13 @@ namespace JotunShard.Extensions
         }
 
         public static IEnumerable<TElem> SelectMany<TElem>(
-            [NotNull] this IEnumerable<TElem> source)
+            this IEnumerable<TElem> source)
             where TElem : IEnumerable<TElem>
             => source.SelectMany(elem => elem);
 
         public static IEnumerable<TResult> SelectMany<TElem, TResult>(
-            [NotNull] this IEnumerable<TElem> source,
-            [NotNull] Func<TElem, TElem, TResult> resultSelector)
+            this IEnumerable<TElem> source,
+            Func<TElem, TElem, TResult> resultSelector)
             where TElem : IEnumerable<TElem>
             => source.SelectMany(elem => elem, resultSelector);
 
@@ -421,7 +420,7 @@ namespace JotunShard.Extensions
         ///   <c>true</c> if the specified source isn't empty; otherwise, <c>false</c>.
         /// </returns>
         public static bool TryAggregate<TElem>(
-            [NotNull] this IEnumerable<TElem> source,
+            this IEnumerable<TElem> source,
             out TElem aggregatedItem)
             where TElem : IComparable<TElem>
         {
@@ -443,18 +442,18 @@ namespace JotunShard.Extensions
         }
 
         public static IEnumerable<TResult> Join<TElem, TKey, TResult>(
-            [NotNull] this IEnumerable<TElem> outer,
-            [NotNull] IEnumerable<TElem> inner,
-            [NotNull] Func<TElem, TKey> keySelector,
-            [NotNull] Func<TElem, TElem, TResult> resultSelector,
+            this IEnumerable<TElem> outer,
+            IEnumerable<TElem> inner,
+            Func<TElem, TKey> keySelector,
+            Func<TElem, TElem, TResult> resultSelector,
             EqualityComparer<TKey> keyComparer = null)
             => outer.Join(inner, keySelector, keySelector, resultSelector, keyComparer);
 
         public static IEnumerable<TResult> Join<TInner, TOuter, TResult>(
-            [NotNull] this IEnumerable<TOuter> outer,
-            [NotNull] IEnumerable<TInner> inner,
-            [NotNull] Func<TOuter, TInner, bool> matcher,
-            [NotNull] Func<TOuter, TInner, TResult> resultSelector)
+            this IEnumerable<TOuter> outer,
+            IEnumerable<TInner> inner,
+            Func<TOuter, TInner, bool> matcher,
+            Func<TOuter, TInner, TResult> resultSelector)
         {
             outer.CheckArgumentNull(nameof(outer));
             inner.CheckArgumentNull(nameof(inner));
@@ -471,25 +470,25 @@ namespace JotunShard.Extensions
         }
 
         public static IEnumerable<TResult> Join<TElem, TResult>(
-            [NotNull] this IEnumerable<TElem> outer,
-            [NotNull] IEnumerable<TElem> inner,
-            [NotNull] Func<TElem, TElem, TResult> resultSelector)
+            this IEnumerable<TElem> outer,
+            IEnumerable<TElem> inner,
+            Func<TElem, TElem, TResult> resultSelector)
             where TElem : IEquatable<TElem>
             => outer.Join(inner, (o, i) => o.Equals(i), resultSelector);
 
         public static IEnumerable<TResult> GroupJoin<TElem, TKey, TResult>(
-            [NotNull] this IEnumerable<TElem> outer,
-            [NotNull] IEnumerable<TElem> inner,
-            [NotNull] Func<TElem, TKey> keySelector,
-            [NotNull] Func<TElem, IEnumerable<TElem>, TResult> resultSelector,
+            this IEnumerable<TElem> outer,
+            IEnumerable<TElem> inner,
+            Func<TElem, TKey> keySelector,
+            Func<TElem, IEnumerable<TElem>, TResult> resultSelector,
             EqualityComparer<TKey> keyComparer = null)
             => outer.GroupJoin(inner, keySelector, keySelector, resultSelector, keyComparer);
 
         public static IEnumerable<TResult> GroupJoin<TInner, TOuter, TResult>(
-            [NotNull] this IEnumerable<TOuter> outer,
-            [NotNull] IEnumerable<TInner> inner,
-            [NotNull] Func<TOuter, TInner, bool> matcher,
-            [NotNull] Func<TOuter, IEnumerable<TInner>, TResult> resultSelector)
+            this IEnumerable<TOuter> outer,
+            IEnumerable<TInner> inner,
+            Func<TOuter, TInner, bool> matcher,
+            Func<TOuter, IEnumerable<TInner>, TResult> resultSelector)
         {
             outer.CheckArgumentNull(nameof(outer));
             inner.CheckArgumentNull(nameof(inner));
@@ -504,9 +503,9 @@ namespace JotunShard.Extensions
         }
 
         public static IEnumerable<TResult> GroupJoin<TElem, TResult>(
-            [NotNull] this IEnumerable<TElem> outer,
-            [NotNull] IEnumerable<TElem> inner,
-            [NotNull] Func<TElem, IEnumerable<TElem>, TResult> resultSelector)
+            this IEnumerable<TElem> outer,
+            IEnumerable<TElem> inner,
+            Func<TElem, IEnumerable<TElem>, TResult> resultSelector)
             where TElem : IEquatable<TElem>
             => outer.GroupJoin(inner, (o, i) => o.Equals(i), resultSelector);
     }

@@ -3,7 +3,6 @@
 <#@ assembly name="System.Linq.Expressions"#>
 <#@ import namespace="System.Linq"#>
 <#@ import namespace="System.Linq.Expressions"#>
-using JetBrains.Annotations;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
@@ -58,7 +57,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
         /// <returns>Function with the binded values of <#=commentArgsLine#></returns>
         public static Expression<Func<<#=resultTypeLine#>TResult>> BindParameters<<#=typesLine#>TResult>(
-            [NotNull] this Expression<Func<<#=typesLine#>TResult>> func<#=argsLine#>)
+            this Expression<Func<<#=typesLine#>TResult>> func<#=argsLine#>)
         {
             var newParameters = func.Parameters.Take(<#=innerIndex - 1#>);
             var boundParameters = new object[] { <#=valuesLine#>}
@@ -95,7 +94,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
         /// <returns>Function with all the binded values</returns>
         public static Expression<Func<TResult>> BindParameters<<#=typesLine#>TResult>(
-            [NotNull] this Expression<Func<<#=typesLine#>TResult>> func<#=argsLine#>)
+            this Expression<Func<<#=typesLine#>TResult>> func<#=argsLine#>)
         {
             var boundParameters = new object[] { <#=valuesLine#>}
                 .Select(Expression.Constant);
@@ -144,7 +143,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
         /// <returns>Action with the binded values of <#=commentArgsLine#></returns>
         public static Expression<Action<<#=resultTypeLine#>>> BindParameters<<#=typesLine#>>(
-            [NotNull] this Expression<Action<<#=typesLine#>>> act<#=argsLine#>)
+            this Expression<Action<<#=typesLine#>>> act<#=argsLine#>)
         {
             var newParameters = act.Parameters.Take(<#=innerIndex - 1#>);
             var boundParameters = new object[] { <#=valuesLine#>}
@@ -181,7 +180,7 @@ for (var index = 1; index <= maxArgs; ++index)
 #>
         /// <returns>Action with all the binded values</returns>
         public static BlockExpression BindParameters<<#=typesLine#>>(
-            [NotNull] this Expression<Action<<#=typesLine#>>> act<#=argsLine#>)
+            this Expression<Action<<#=typesLine#>>> act<#=argsLine#>)
         {
             var boundParameters = new object[] { <#=valuesLine#>}
                 .Select(Expression.Constant);

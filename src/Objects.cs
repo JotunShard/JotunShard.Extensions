@@ -1,6 +1,4 @@
-﻿using JetBrains.Annotations;
-
-namespace JotunShard.Extensions
+﻿namespace JotunShard.Extensions
 {
     public static class Objects
     {
@@ -12,8 +10,8 @@ namespace JotunShard.Extensions
         /// <param name="other">The subjected value</param>
         /// <returns>Condition of equality or being null</returns>
         public static bool EqualsOrNull<TObject>(
-            [CanBeNull] this TObject self,
-            [CanBeNull] TObject other)
+            this TObject self,
+            TObject other)
             => ReferenceEquals(default(TObject), self)
                 && ReferenceEquals(default(TObject), other)
                 || Equals(self, other);

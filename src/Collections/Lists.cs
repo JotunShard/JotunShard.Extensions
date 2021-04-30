@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,7 +7,7 @@ namespace JotunShard.Extensions
     public static class Lists
     {
         public static IEnumerable<IReadOnlyCollection<TElem>> PartitionBy<TElem>(
-            [NotNull] this List<TElem> source,
+            this List<TElem> source,
             int count,
             Func<IList<TElem>, IReadOnlyCollection<TElem>> partitionProvider = null)
         {
@@ -25,7 +24,7 @@ namespace JotunShard.Extensions
         }
 
         public static void Swap<TElem>(
-            [NotNull] this IList<TElem> list,
+            this IList<TElem> list,
             int index,
             int otherIndex)
         {
@@ -47,7 +46,7 @@ namespace JotunShard.Extensions
         }
 
         public static void Shuffle<TElem>(
-            [NotNull] this IList<TElem> list,
+            this IList<TElem> list,
             Func<int, int, int> randomSource = null)
         {
             list.CheckArgumentNull(nameof(list));
@@ -63,9 +62,9 @@ namespace JotunShard.Extensions
         }
 
         public static void InsertAll<TElem>(
-            [NotNull] this IList<TElem> list,
+            this IList<TElem> list,
             int index,
-            [NotNull] IEnumerable<TElem> items)
+            IEnumerable<TElem> items)
         {
             list.CheckArgumentNull(nameof(list));
             if (list is List<TElem> trueList)
@@ -82,9 +81,9 @@ namespace JotunShard.Extensions
         }
 
         public static void InsertAll<TElem>(
-            [NotNull] this IList<TElem> list,
+            this IList<TElem> list,
             int index,
-            [NotNull] params TElem[] items)
+            params TElem[] items)
             => list.InsertAll(index, items.AsEnumerable());
     }
 }

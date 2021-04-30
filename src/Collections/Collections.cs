@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace JotunShard.Extensions
@@ -13,8 +12,8 @@ namespace JotunShard.Extensions
         /// <param name="coll">The collection on which to add the items.</param>
         /// <param name="items">The enumerable whose elements should be added to the collection.</param>
         public static void AddAll<TElem>(
-            [NotNull] this ICollection<TElem> coll,
-            [NotNull] IEnumerable<TElem> items)
+            this ICollection<TElem> coll,
+            IEnumerable<TElem> items)
         {
             if (coll is List<TElem> trueList)
             {
@@ -36,8 +35,8 @@ namespace JotunShard.Extensions
         /// <param name="coll">The collection on which to add the items.</param>
         /// <param name="items">The variadic array whose elements should be added to the collection.</param>
         public static void AddAll<TElem>(
-            [NotNull] this ICollection<TElem> coll,
-            [NotNull] params TElem[] items)
+            this ICollection<TElem> coll,
+            params TElem[] items)
             => coll.AddAll(items.AsEnumerable());
 
         /// <summary>
@@ -47,8 +46,8 @@ namespace JotunShard.Extensions
         /// <param name="coll">The collection on which to remove the items.</param>
         /// <param name="items">The enumerable whose elements should be removed to the collection.</param>
         public static void RemoveAll<TElem>(
-            [NotNull] this ICollection<TElem> coll,
-            [NotNull] IEnumerable<TElem> items)
+            this ICollection<TElem> coll,
+            IEnumerable<TElem> items)
         {
             coll.CheckArgumentNull(nameof(coll));
             items.CheckArgumentNull(nameof(items));
@@ -65,8 +64,8 @@ namespace JotunShard.Extensions
         /// <param name="coll">The collection on which to remove the items.</param>
         /// <param name="items">The variadic array whose elements should be removed to the collection.</param>
         public static void RemoveAll<TElem>(
-            [NotNull] this ICollection<TElem> coll,
-            [NotNull] params TElem[] items)
+            this ICollection<TElem> coll,
+            params TElem[] items)
             => coll.RemoveAll(items.AsEnumerable());
     }
 }

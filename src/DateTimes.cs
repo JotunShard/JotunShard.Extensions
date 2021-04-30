@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
+﻿using System;
 using System.Globalization;
 
 namespace JotunShard.Extensions
@@ -37,7 +36,7 @@ namespace JotunShard.Extensions
         public static DateTime AddWeeks(
             this DateTime value,
             int weeks,
-            [CanBeNull] Calendar calendar)
+            Calendar calendar)
             => (calendar ?? CultureInfo.CurrentCulture.Calendar)
                 .AddWeeks(value, weeks);
 
@@ -69,7 +68,7 @@ namespace JotunShard.Extensions
         public static DateTime PreviousDayOfWeek(
             this DateTime value,
             DayOfWeek target,
-            [CanBeNull] Calendar calendar)
+            Calendar calendar)
             => OtherDayOfWeek(value, target, calendar, -1, v => v <= 0);
 
         /// <summary>
@@ -82,7 +81,7 @@ namespace JotunShard.Extensions
         public static DateTime NextDayOfWeek(
             this DateTime value,
             DayOfWeek target,
-            [CanBeNull] Calendar calendar)
+            Calendar calendar)
             => OtherDayOfWeek(value, target, calendar, 1, v => v >= 0);
 
         private static DateTime OtherDayOfMonth(
@@ -125,7 +124,7 @@ namespace JotunShard.Extensions
         public static DateTime PreviousDayOfMonth(
             this DateTime value,
             int day,
-            [CanBeNull] Calendar calendar)
+            Calendar calendar)
             => OtherDayOfMonth(value, day, calendar, -1, v => v < 0);
 
         /// <summary>
@@ -138,7 +137,7 @@ namespace JotunShard.Extensions
         public static DateTime NextDayOfMonth(
             this DateTime value,
             int day,
-            [CanBeNull] Calendar calendar)
+            Calendar calendar)
             => OtherDayOfMonth(value, day, calendar, 1, v => v > 0);
 
         /// <summary>
@@ -149,7 +148,7 @@ namespace JotunShard.Extensions
         /// <returns>Projected DateTime on the corresponding last day of the month</returns>
         public static DateTime EndOfMonth(
             this DateTime value,
-            [CanBeNull] Calendar calendar)
+            Calendar calendar)
         {
             calendar = calendar ?? CultureInfo.CurrentCulture.Calendar;
             var daysInMonth = calendar.GetDaysInMonth(
