@@ -50,4 +50,19 @@ namespace JotunShard.Extensions.Test.Collections
 
         public int GetHashCode(MultiItems obj) => obj.GetHashCode();
     }
+
+    internal class MultiItemsEnumerableEqualityComparer : IEqualityComparer<IEnumerable<MultiItems>>
+    {
+        public static IEqualityComparer<IEnumerable<MultiItems>> Instance { get; } = new MultiItemsEnumerableEqualityComparer();
+
+        public bool Equals(IEnumerable<MultiItems> x, IEnumerable<MultiItems> y)
+        {
+            if (ReferenceEquals(x, y)) return true;
+            if (x == null || y == null) return false;
+            return x.SequenceEqual(y, Instance);
+        }
+
+        public int GetHashCode(IEnumerable<MultiItems> obj)
+            => obj?.Sum(x => x.GetHashCode()) ?? 0;
+    }
 }

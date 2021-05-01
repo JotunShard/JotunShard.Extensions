@@ -1,11 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
+using Xunit;
 
 namespace JotunShard.Extensions.Test
 {
     using static Assert;
 
-    [TestClass]
     public class StringsTest
     {
         #region Constants
@@ -32,57 +31,57 @@ namespace JotunShard.Extensions.Test
 
         #region IsNullOrEmpty
 
-        [TestMethod]
-        public void IsNullOrEmpty_WithNull_ExpectsTrue()
-            => IsTrue(NULL.IsNullOrEmpty());
+        [Fact]
+        public void NullOrEmpty_WithNull_ExpectsTrue()
+            => True(NULL.IsNullOrEmpty());
 
-        [TestMethod]
-        public void IsNullOrEmpty_WithEmptyString_ExpectsTrue()
-            => IsTrue(EMPTY.IsNullOrEmpty());
+        [Fact]
+        public void NullOrEmpty_WithEmptyString_ExpectsTrue()
+            => True(EMPTY.IsNullOrEmpty());
 
-        [TestMethod]
-        public void IsNullOrEmpty_WithSentenceString_ExpectsFalse()
-            => IsFalse(SENTENCE.IsNullOrEmpty());
+        [Fact]
+        public void NullOrEmpty_WithSentenceString_ExpectsFalse()
+            => False(SENTENCE.IsNullOrEmpty());
 
         #endregion IsNullOrEmpty
 
         #region IsNullOrWhiteSpace
 
-        [TestMethod]
-        public void IsNullOrWhiteSpace_WithNull_ExpectsTrue()
-            => IsTrue(NULL.IsNullOrWhiteSpace());
+        [Fact]
+        public void NullOrWhiteSpace_WithNull_ExpectsTrue()
+            => True(NULL.IsNullOrWhiteSpace());
 
-        [TestMethod]
-        public void IsNullOrWhiteSpace_WithEmptyString_ExpectsTrue()
-            => IsTrue(EMPTY.IsNullOrWhiteSpace());
+        [Fact]
+        public void NullOrWhiteSpace_WithEmptyString_ExpectsTrue()
+            => True(EMPTY.IsNullOrWhiteSpace());
 
-        [TestMethod]
-        public void IsNullOrWhiteSpace_WithWordSeparator_ExpectsTrue()
-            => IsTrue(WORD_SEPARATOR.IsNullOrWhiteSpace());
+        [Fact]
+        public void NullOrWhiteSpace_WithWordSeparator_ExpectsTrue()
+            => True(WORD_SEPARATOR.IsNullOrWhiteSpace());
 
-        [TestMethod]
-        public void IsNullOrWhiteSpace_WithSentenceString_ExpectsFalse()
-            => IsFalse(SENTENCE.IsNullOrWhiteSpace());
+        [Fact]
+        public void NullOrWhiteSpace_WithSentenceString_ExpectsFalse()
+            => False(SENTENCE.IsNullOrWhiteSpace());
 
         #endregion IsNullOrWhiteSpace
 
         #region FormatWith
 
-        [TestMethod]
-        public void FormatWith_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.FormatWith());
+        [Fact]
+        public void FormatWith_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.FormatWith());
 
-        [TestMethod]
+        [Fact]
         public void FormatWith_WithEmptyString_ExpectsEmptyString()
-            => AreEqual(EMPTY.FormatWith(), EMPTY);
+            => Equal(EMPTY.FormatWith(), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void FormatWith_WithUnformattedString_ExpectsSameString()
-            => AreEqual(SENTENCE.FormatWith(), SENTENCE);
+            => Equal(SENTENCE.FormatWith(), SENTENCE);
 
-        [TestMethod]
+        [Fact]
         public void FormatWith_WithFormattedString_ExpectsSameSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE_FORMAT.FormatWith(WORD_FIRST, WORD_SEPARATOR, WORD_LAST),
                 SENTENCE);
 
@@ -90,135 +89,135 @@ namespace JotunShard.Extensions.Test
 
         #region Left
 
-        [TestMethod]
-        public void Left_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.Left(0));
+        [Fact]
+        public void Left_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.Left(0));
 
-        [TestMethod]
+        [Fact]
         public void Left_WithEmptyStringAndPositiveLength_ExpectsEmptyString()
-            => AreEqual(EMPTY.Left(LENGTH_WORD), EMPTY);
+            => Equal(EMPTY.Left(LENGTH_WORD), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithEmptyStringAndNegativeLength_ExpectsEmptyString()
-            => AreEqual(EMPTY.Left(-LENGTH_WORD), EMPTY);
+            => Equal(EMPTY.Left(-LENGTH_WORD), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithEmptyStringAndZeroLength_ExpectsEmptyString()
-            => AreEqual(EMPTY.Left(0), EMPTY);
+            => Equal(EMPTY.Left(0), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithSentenceStringAndPositiveWordLength_ExpectsFirstWord()
-            => AreEqual(SENTENCE.Left(LENGTH_WORD), WORD_FIRST);
+            => Equal(SENTENCE.Left(LENGTH_WORD), WORD_FIRST);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithSentenceStringAndNegativeWordLength_ExpectsAllButLastWord()
-            => AreEqual(SENTENCE.Left(-LENGTH_WORD), WORD_FIRST + WORD_SEPARATOR);
+            => Equal(SENTENCE.Left(-LENGTH_WORD), WORD_FIRST + WORD_SEPARATOR);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithSentenceStringAndPositiveGreaterLength_ExpectsSameString()
-            => AreEqual(SENTENCE.Left(LENGTH_GREATER), SENTENCE);
+            => Equal(SENTENCE.Left(LENGTH_GREATER), SENTENCE);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithSentenceStringAndNegativeGreaterLength_ExpectsSameString()
-            => AreEqual(SENTENCE.Left(-LENGTH_GREATER), SENTENCE);
+            => Equal(SENTENCE.Left(-LENGTH_GREATER), SENTENCE);
 
-        [TestMethod]
+        [Fact]
         public void Left_WithSentenceStringAndZeroLength_ExpectsEmptyString()
-            => AreEqual(SENTENCE.Left(0), EMPTY);
+            => Equal(SENTENCE.Left(0), EMPTY);
 
         #endregion Left
 
         #region Right
 
-        [TestMethod]
-        public void Right_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.Right(0));
+        [Fact]
+        public void Right_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.Right(0));
 
-        [TestMethod]
+        [Fact]
         public void Right_WithEmptyStringAndPositiveLength_ExpectsEmptyString()
-            => AreEqual(EMPTY.Right(LENGTH_WORD), EMPTY);
+            => Equal(EMPTY.Right(LENGTH_WORD), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithEmptyStringAndNegativeLength_ExpectsEmptyString()
-            => AreEqual(EMPTY.Right(-LENGTH_WORD), EMPTY);
+            => Equal(EMPTY.Right(-LENGTH_WORD), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithEmptyStringAndZeroLength_ExpectsEmptyString()
-            => AreEqual(EMPTY.Right(0), EMPTY);
+            => Equal(EMPTY.Right(0), EMPTY);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithSentenceStringAndPositiveWordLength_ExpectsLastWord()
-            => AreEqual(SENTENCE.Right(LENGTH_WORD), WORD_LAST);
+            => Equal(SENTENCE.Right(LENGTH_WORD), WORD_LAST);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithSentenceStringAndNegativeWordLength_ExpectsAllButFirstWord()
-            => AreEqual(SENTENCE.Right(-LENGTH_WORD), WORD_SEPARATOR + WORD_LAST);
+            => Equal(SENTENCE.Right(-LENGTH_WORD), WORD_SEPARATOR + WORD_LAST);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithSentenceStringAndPositiveGreaterLength_ExpectsSameString()
-            => AreEqual(SENTENCE.Right(LENGTH_GREATER), SENTENCE);
+            => Equal(SENTENCE.Right(LENGTH_GREATER), SENTENCE);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithSentenceStringAndNegativeGreaterLength_ExpectsSameString()
-            => AreEqual(SENTENCE.Right(-LENGTH_GREATER), SENTENCE);
+            => Equal(SENTENCE.Right(-LENGTH_GREATER), SENTENCE);
 
-        [TestMethod]
+        [Fact]
         public void Right_WithSentenceStringAndZeroLength_ExpectsEmptyString()
-            => AreEqual(SENTENCE.Right(0), EMPTY);
+            => Equal(SENTENCE.Right(0), EMPTY);
 
         #endregion Right
 
         #region Match
 
-        [TestMethod]
-        public void Match_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.Match(EMPTY));
+        [Fact]
+        public void Match_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.Match(EMPTY));
 
-        [TestMethod]
-        public void Match_WithEmptyStringAndNullPattern_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => EMPTY.Match(NULL));
+        [Fact]
+        public void Match_WithEmptyStringAndNullPattern_Throws()
+            => Throws<ArgumentNullException>(() => EMPTY.Match(NULL));
 
-        [TestMethod]
+        [Fact]
         public void Match_WithEmptyStringAndEmptyPattern_ExpectsTrue()
-            => IsTrue(EMPTY.Match(EMPTY));
+            => True(EMPTY.Match(EMPTY));
 
-        [TestMethod]
+        [Fact]
         public void Match_WithSentenceStringAndEmptyPattern_ExpectsTrue()
-            => IsTrue(SENTENCE.Match(EMPTY));
+            => True(SENTENCE.Match(EMPTY));
 
-        [TestMethod]
+        [Fact]
         public void Match_WithSentenceStringAndFirstWordPattern_ExpectsTrue()
-            => IsTrue(SENTENCE.Match(WORD_FIRST));
+            => True(SENTENCE.Match(WORD_FIRST));
 
-        [TestMethod]
+        [Fact]
         public void Match_WithSentenceStringAndSamePattern_ExpectsTrue()
-            => IsTrue(SENTENCE.Match(SENTENCE));
+            => True(SENTENCE.Match(SENTENCE));
 
-        [TestMethod]
+        [Fact]
         public void Match_WithSentenceStringAndUnknownWordPattern_ExpectsFalse()
-            => IsFalse(SENTENCE.Match(WORD));
+            => False(SENTENCE.Match(WORD));
 
         #endregion Match
 
         #region EnsureEndsWith
 
-        [TestMethod]
-        public void EnsureEndsWith_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.EnsureEndsWith(WORD_LAST));
+        [Fact]
+        public void EnsureEndsWith_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.EnsureEndsWith(WORD_LAST));
 
-        [TestMethod]
-        public void EnsureEndsWith_WithNullValue_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => SENTENCE.EnsureEndsWith(NULL));
+        [Fact]
+        public void EnsureEndsWith_WithNullValue_Throws()
+            => Throws<ArgumentNullException>(() => SENTENCE.EnsureEndsWith(NULL));
 
-        [TestMethod]
+        [Fact]
         public void EnsureEndsWith_WithSentenceStringAndUnknownWord_ExpectsConcatenationAtEnd()
-            => AreEqual(
+            => Equal(
                 SENTENCE + WORD,
                 SENTENCE.EnsureEndsWith(WORD));
 
-        [TestMethod]
+        [Fact]
         public void EnsureEndsWith_WithSentenceStringAndLastWord_ExpectsSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE.EnsureEndsWith(WORD_LAST));
 
@@ -226,23 +225,23 @@ namespace JotunShard.Extensions.Test
 
         #region EnsureStartsWith
 
-        [TestMethod]
-        public void EnsureStartsWith_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.EnsureStartsWith(WORD_LAST));
+        [Fact]
+        public void EnsureStartsWith_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.EnsureStartsWith(WORD_LAST));
 
-        [TestMethod]
-        public void EnsureStartsWith_WithNullValue_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => SENTENCE.EnsureStartsWith(NULL));
+        [Fact]
+        public void EnsureStartsWith_WithNullValue_Throws()
+            => Throws<ArgumentNullException>(() => SENTENCE.EnsureStartsWith(NULL));
 
-        [TestMethod]
+        [Fact]
         public void EnsureStartsWith_WithSentenceStringAndUnknownWord_ExpectsConcatenationAtStart()
-            => AreEqual(
+            => Equal(
                 WORD + SENTENCE,
                 SENTENCE.EnsureStartsWith(WORD));
 
-        [TestMethod]
+        [Fact]
         public void EnsureStartsWith_WithSentenceStringAndFirstWord_ExpectsSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE.EnsureStartsWith(WORD_FIRST));
 
@@ -250,13 +249,13 @@ namespace JotunShard.Extensions.Test
 
         #region Reverse
 
-        [TestMethod]
-        public void Reverse_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.Reverse());
+        [Fact]
+        public void Reverse_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.Reverse());
 
-        [TestMethod]
+        [Fact]
         public void Reverse_WithWordString_ExpectsReversedWordString()
-            => AreEqual(
+            => Equal(
                 WORD_REVERSED,
                 WORD.Reverse());
 
@@ -264,29 +263,29 @@ namespace JotunShard.Extensions.Test
 
         #region SubstringFollowing
 
-        [TestMethod]
-        public void SubstringFollowing_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.SubstringFollowing(WORD));
+        [Fact]
+        public void SubstringFollowing_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.SubstringFollowing(WORD));
 
-        [TestMethod]
-        public void SubstringFollowing_WithSentenceStringAndUnknownWord_ThrowsException()
-            => ThrowsException<ArgumentOutOfRangeException>(() => SENTENCE.SubstringFollowing(WORD));
+        [Fact]
+        public void SubstringFollowing_WithSentenceStringAndUnknownWord_Throws()
+            => Throws<ArgumentOutOfRangeException>(() => SENTENCE.SubstringFollowing(WORD));
 
-        [TestMethod]
+        [Fact]
         public void SubstringFollowing_WithSentenceStringAndEmptyString_ExpectsSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE.SubstringFollowing(EMPTY));
 
-        [TestMethod]
+        [Fact]
         public void SubstringFollowing_WithSentenceStringAndFirstWord_ExpectsSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE.SubstringFollowing(WORD_FIRST));
 
-        [TestMethod]
+        [Fact]
         public void SubstringFollowing_WithSentenceStringAndLastWord_ExpectsLastWord()
-            => AreEqual(
+            => Equal(
                 WORD_LAST,
                 SENTENCE.SubstringFollowing(WORD_LAST));
 
@@ -294,29 +293,29 @@ namespace JotunShard.Extensions.Test
 
         #region SubstringPreceding
 
-        [TestMethod]
-        public void SubstringPreceding_WithNullString_ThrowsException()
-            => ThrowsException<ArgumentNullException>(() => NULL.SubstringPreceding(WORD));
+        [Fact]
+        public void SubstringPreceding_WithNullString_Throws()
+            => Throws<ArgumentNullException>(() => NULL.SubstringPreceding(WORD));
 
-        [TestMethod]
-        public void SubstringPreceding_WithSentenceStringAndUnknownWord_ThrowsException()
-            => ThrowsException<ArgumentOutOfRangeException>(() => SENTENCE.SubstringPreceding(WORD));
+        [Fact]
+        public void SubstringPreceding_WithSentenceStringAndUnknownWord_Throws()
+            => Throws<ArgumentOutOfRangeException>(() => SENTENCE.SubstringPreceding(WORD));
 
-        [TestMethod]
+        [Fact]
         public void SubstringPreceding_WithSentenceStringAndEmptyString_ExpectsSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE.SubstringPreceding(EMPTY));
 
-        [TestMethod]
+        [Fact]
         public void SubstringPreceding_WithSentenceStringAndLastWord_ExpectsSentenceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE.SubstringPreceding(WORD_LAST));
 
-        [TestMethod]
+        [Fact]
         public void SubstringPreceding_WithSentenceStringAndFirstWord_ExpectsFirstWord()
-            => AreEqual(
+            => Equal(
                 WORD_FIRST,
                 SENTENCE.SubstringPreceding(WORD_FIRST));
 
@@ -324,27 +323,27 @@ namespace JotunShard.Extensions.Test
 
         #region DefaultIfEmpty
 
-        [TestMethod]
+        [Fact]
         public void DefaultIfEmpty_WithNullString_ExpectsDefaultString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 NULL.DefaultIfEmpty(SENTENCE));
 
-        [TestMethod]
+        [Fact]
         public void DefaultIfEmpty_WithEmptyString_ExpectsDefaultString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 EMPTY.DefaultIfEmpty(SENTENCE));
 
-        [TestMethod]
+        [Fact]
         public void DefaultIfEmpty_WithWhitespaceStringAndNotIgnoreWhitespace_ExpectsWhitespaceString()
-            => AreEqual(
+            => Equal(
                 SENTENCE_WHITESPACE,
                 SENTENCE_WHITESPACE.DefaultIfEmpty(SENTENCE, false));
 
-        [TestMethod]
+        [Fact]
         public void DefaultIfEmpty_WithWhitespaceStringAndDoIgnoreWhitespace_ExpectsDefaultString()
-            => AreEqual(
+            => Equal(
                 SENTENCE,
                 SENTENCE_WHITESPACE.DefaultIfEmpty(SENTENCE, true));
 

@@ -1,12 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Globalization;
+using Xunit;
 
 namespace JotunShard.Extensions.Test
 {
     using static Assert;
 
-    [TestClass]
     public class DateTimesTest
     {
         #region Constants
@@ -28,13 +27,13 @@ namespace JotunShard.Extensions.Test
 
         #region AddWeeks
 
-        [TestMethod]
+        [Fact]
         public void AddWeeks_WithNoWeek_ExpectsSameDateTime()
-            => AreEqual(DAY.AddWeeks(0, CALENDAR), DAY);
+            => Equal(DAY.AddWeeks(0, CALENDAR), DAY);
 
-        [TestMethod]
+        [Fact]
         public void AddWeeks_WithSomeWeeks_ExpectsRightDateTime()
-            => AreEqual(
+            => Equal(
                 DAY.AddWeeks(COUNT_WEEKS, CALENDAR),
                 CALENDAR.AddDays(DAY, COUNT_WEEKS * LENGTH_WEEK));
 
@@ -42,25 +41,25 @@ namespace JotunShard.Extensions.Test
 
         #region PreviousDayOfWeek
 
-        [TestMethod]
+        [Fact]
         public void PreviousDayOfWeek_WithSameDayOfWeek_ExpectsSameDateTimeWeekBefore()
-            => AreEqual(
+            => Equal(
                 DAY.PreviousDayOfWeek(
                     CALENDAR.GetDayOfWeek(DAY),
                     CALENDAR),
                 CALENDAR.AddDays(DAY, -LENGTH_WEEK));
 
-        [TestMethod]
+        [Fact]
         public void PreviousDayOfWeek_WithPreviousDayOfWeek_ExpectsPreviousDateTime()
-            => AreEqual(
+            => Equal(
                 DAY.PreviousDayOfWeek(
                     CALENDAR.GetDayOfWeek(DAY_BEFORE),
                     CALENDAR),
                 DAY_BEFORE);
 
-        [TestMethod]
+        [Fact]
         public void PreviousDayOfWeek_WithNextDayOfWeek_ExpectsNextDateTimeWeekBefore()
-            => AreEqual(
+            => Equal(
                 DAY.PreviousDayOfWeek(
                     CALENDAR.GetDayOfWeek(DAY_AFTER),
                     CALENDAR),
@@ -70,25 +69,25 @@ namespace JotunShard.Extensions.Test
 
         #region NextDayOfWeek
 
-        [TestMethod]
+        [Fact]
         public void NextDayOfWeek_WithSameDayOfWeek_ExpectsSameDateTimeWeekAfter()
-            => AreEqual(
+            => Equal(
                 DAY.NextDayOfWeek(
                     CALENDAR.GetDayOfWeek(DAY),
                     CALENDAR),
                 CALENDAR.AddDays(DAY, LENGTH_WEEK));
 
-        [TestMethod]
+        [Fact]
         public void NextDayOfWeek_WithNextDayOfWeek_ExpectsNextDateTime()
-            => AreEqual(
+            => Equal(
                 DAY.NextDayOfWeek(
                     CALENDAR.GetDayOfWeek(DAY_AFTER),
                     CALENDAR),
                 DAY_AFTER);
 
-        [TestMethod]
+        [Fact]
         public void NextDayOfWeek_WithPreviousDayOfWeek_ExpectsPreviousDateTimeWeekAfter()
-            => AreEqual(
+            => Equal(
                 DAY.NextDayOfWeek(
                     CALENDAR.GetDayOfWeek(DAY_BEFORE),
                     CALENDAR),
@@ -98,23 +97,23 @@ namespace JotunShard.Extensions.Test
 
         #region PreviousDayOfMonth
 
-        [TestMethod]
-        public void PreviousDayOfMonth_WithWrongDay_ThrowsException()
-            => ThrowsException<ArgumentOutOfRangeException>(
+        [Fact]
+        public void PreviousDayOfMonth_WithWrongDay_Throws()
+            => Throws<ArgumentOutOfRangeException>(
                 () => DAY.PreviousDayOfMonth(
                     CALENDAR.GetDaysInMonth(CALENDAR.GetYear(DAY), CALENDAR.GetMonth(DAY)) + 1,
                     CALENDAR));
 
-        [TestMethod]
+        [Fact]
         public void PreviousDayOfMonth_WithSameDayOfMonth_ExpectsSameDateTimeYearBefore()
-            => AreEqual(
+            => Equal(
                 DAY.PreviousDayOfMonth(CALENDAR.GetDayOfMonth(DAY),
                     CALENDAR),
                 CALENDAR.AddYears(DAY, -1));
 
-        [TestMethod]
+        [Fact]
         public void PreviousDayOfMonth_WithPreviousDayOfMonth_ExpectsPreviousDateTime()
-            => AreEqual(
+            => Equal(
                 DAY.PreviousDayOfMonth(CALENDAR.GetDayOfMonth(DAY_BEFORE),
                     CALENDAR),
                 DAY_BEFORE);
@@ -123,25 +122,25 @@ namespace JotunShard.Extensions.Test
 
         #region NextDayOfMonth
 
-        [TestMethod]
-        public void NextDayOfMonth_WithWrongDay_ThrowsException()
+        [Fact]
+        public void NextDayOfMonth_WithWrongDay_Throws()
         {
             var month = CALENDAR.GetMonth(DAY);
-            ThrowsException<ArgumentOutOfRangeException>(
+            Throws<ArgumentOutOfRangeException>(
                 () => DAY.NextDayOfMonth(CALENDAR.GetDaysInMonth(CALENDAR.GetYear(DAY), month) + 1,
                     CALENDAR));
         }
 
-        [TestMethod]
+        [Fact]
         public void NextDayOfMonth_WithSameDayOfMonth_ExpectsSameDateTimeYearAfter()
-            => AreEqual(
+            => Equal(
                 DAY.NextDayOfMonth(CALENDAR.GetDayOfMonth(DAY),
                     CALENDAR),
                 CALENDAR.AddYears(DAY, 1));
 
-        [TestMethod]
+        [Fact]
         public void NextDayOfMonth_WithNextDayOfMonth_ExpectsNextDateTime()
-            => AreEqual(
+            => Equal(
                 DAY.NextDayOfMonth(CALENDAR.GetDayOfMonth(DAY_AFTER),
                     CALENDAR),
                 DAY_AFTER);
@@ -150,9 +149,9 @@ namespace JotunShard.Extensions.Test
 
         #region EndOfMonth
 
-        [TestMethod]
+        [Fact]
         public void EndOfMonth_WithEndOfMonth_ExpectsSame()
-            => AreEqual(DAY_EOMONTH, DAY.EndOfMonth(CALENDAR));
+            => Equal(DAY_EOMONTH, DAY.EndOfMonth(CALENDAR));
 
         #endregion EndOfMonth
     }
