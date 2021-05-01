@@ -14,9 +14,7 @@ namespace JotunShard.Extensions.Test.Collections
         public IEnumerable<MultiItems> Items { get; set; }
 
         public bool Equals(MultiItems other)
-            => ID == other?.ID
-                && (Items?.SequenceEqual(other.Items)
-                    ?? other.Items == null);
+            => MultiItemsEqualityComparer.Instance.Equals(this, other);
 
         public override bool Equals(object obj)
             => (obj as MultiItems)?.Equals(this) ?? false;
@@ -36,5 +34,20 @@ namespace JotunShard.Extensions.Test.Collections
 
         public static int SubComparison(IEnumerable<MultiItems> x, IEnumerable<MultiItems> y)
             => x.Sum(s => s.GetHashCode()) - y.Sum(s => s.GetHashCode());
+    }
+
+    internal class MultiItemsEqualityComparer : IEqualityComparer<MultiItems>
+    {
+        public static IEqualityComparer<MultiItems> Instance { get; } = new MultiItemsEqualityComparer();
+
+        public bool Equals(MultiItems x, MultiItems y)
+        {
+            if (ReferenceEquals(x, y)) return true;
+            if (x.ID != y.ID) return false;
+            if (x.Items == null || y.Items == null) return false;
+            return x.Items.SequenceEqual(y.Items, Instance);
+        }
+
+        public int GetHashCode(MultiItems obj) => obj.GetHashCode();
     }
 }
