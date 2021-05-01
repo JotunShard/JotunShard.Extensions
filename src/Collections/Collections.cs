@@ -15,13 +15,17 @@ namespace JotunShard.Extensions
             this ICollection<TElem> coll,
             IEnumerable<TElem> items)
         {
+            coll.CheckArgumentNull(nameof(coll));
             if (coll is List<TElem> trueList)
             {
                 trueList.AddRange(items);
                 return;
             }
-            coll.CheckArgumentNull(nameof(coll));
             items.CheckArgumentNull(nameof(items));
+            if (ReferenceEquals(coll, items))
+            {
+                items = items.ToList();
+            }
             foreach (var item in items)
             {
                 coll.Add(item);
@@ -51,7 +55,11 @@ namespace JotunShard.Extensions
         {
             coll.CheckArgumentNull(nameof(coll));
             items.CheckArgumentNull(nameof(items));
-            foreach (var item in items.ToList())
+            if (ReferenceEquals(coll, items))
+            {
+                items = items.ToList();
+            }
+            foreach (var item in items)
             {
                 coll.Remove(item);
             }
