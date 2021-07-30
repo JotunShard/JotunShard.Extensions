@@ -175,7 +175,7 @@ namespace JotunShard.Extensions.Test.Collections
             var slices = ENMRBL_NON_EMPTY.PartitionBy(COUNT_LESSER);
 
             Equal(Math.Ceiling((double)COUNT_RIGHT / COUNT_LESSER), slices.Count());
-            True(slices.SelectMany(s => s).SequenceEqual(ENMRBL_NON_EMPTY));
+            Equal(ENMRBL_NON_EMPTY, slices.SelectMany(s => s), MultiItemsEnumerableEqualityComparer.Instance);
         }
 
         #endregion PartitionBy

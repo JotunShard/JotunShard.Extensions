@@ -63,22 +63,13 @@ namespace JotunShard.Extensions
                 var foundNextItem = enmrtr.MoveNext();
                 while (foundNextItem)
                 {
-                    IReadOnlyCollection<TElem> partition;
-                    do
+                    var buffer = new List<TElem>();
+                    for (var index = 0; foundNextItem && partitioner(index, enmrtr.Current); ++index)
                     {
-                        foundNextItem = false;
-                        var buffer = new List<TElem>();
-                        var item = enmrtr.Current;
-                        for (var index = 0; partitioner(index, item); ++index)
-                        {
-                            buffer.Add(item);
-                            foundNextItem = enmrtr.MoveNext();
-                            if (!foundNextItem) break;
-                            item = enmrtr.Current;
-                        }
-                        partition = partitionProvider(buffer);
-                        yield return partition;
-                    } while (partition.Count == 0);
+                        buffer.Add(enmrtr.Current);
+                        foundNextItem = enmrtr.MoveNext();
+                    }
+                    yield return partitionProvider(buffer);
                 }
             }
         }
