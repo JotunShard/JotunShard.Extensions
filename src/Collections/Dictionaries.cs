@@ -55,5 +55,14 @@ namespace JotunShard.Extensions
             }
             return dict;
         }
+
+        public static FilteredDictionary<TKey, TValue> Where<TKey, TValue>(
+            this IDictionary<TKey, TValue> source,
+            Func<TKey, bool> predicate)
+        {
+            source.CheckArgumentNull(nameof(source));
+            predicate.CheckArgumentNull(nameof(predicate));
+            return new FilteredDictionary<TKey, TValue>(source, predicate);
+        }
     }
 }
