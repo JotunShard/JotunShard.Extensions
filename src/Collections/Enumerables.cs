@@ -282,6 +282,18 @@ namespace JotunShard.Extensions
             source.CheckArgumentNull(nameof(source));
             predicate.CheckArgumentNull(nameof(predicate));
             lastItem = default(TElem);
+            if (source is List<TElem> list)
+            {
+                for (var index = list.Count - 1; index >= 0; --index)
+                {
+                    var item = list[index];
+                    if (predicate(item))
+                    {
+                        lastItem = item;
+                        return true;
+                    }
+                }
+            }
             var found = false;
             foreach (var item in source)
             {
