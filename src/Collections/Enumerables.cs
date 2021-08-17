@@ -325,21 +325,30 @@ namespace JotunShard.Extensions
             source.CheckArgumentNull(nameof(source));
             predicate.CheckArgumentNull(nameof(predicate));
             singleItem = default(TElem);
+            var item = default(TElem);
             var found = false;
-            foreach (var item in source)
+            using (var enmrtr = source.GetEnumerator())
             {
-                if (predicate(item))
+                while (enmrtr.MoveNext())
                 {
-                    if (found)
+                    item = enmrtr.Current;
+                    if (predicate(item))
                     {
-                        return false;
+                        found = true;
+                        while (enmrtr.MoveNext())
+                        {
+                            if (predicate(enmrtr.Current))
+                            {
+                                return false;
+                            }
+                        }
                     }
-
-                    found = true;
-                    singleItem = item;
                 }
             }
-
+            if (found)
+            {
+                singleItem = item;
+            }
             return found;
         }
 
